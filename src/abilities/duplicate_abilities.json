@@ -1,7 +1,7 @@
 {
-    "ABILITY_CLOUDNINE": { // ability to replace
-        "ABILITY_AIRLOCK": [ // new ability
-            "SPECIES_RAYQUAZA" // species
+    "ABILITY_CLOUDNINE": {
+        "ABILITY_AIRLOCK": [
+            "SPECIES_RAYQUAZA"
         ]
     },
     "ABILITY_INSOMNIA": {
