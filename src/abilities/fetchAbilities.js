@@ -31,10 +31,10 @@ async function getAbilitiesDescription(abilities){
 }
 
 async function getNewAbilities(abilities){
-    const rawNewAbilities = await fetch(`https://raw.githubusercontent.com/${repo1}/src/Tables/replace_abilities.h`)
-    const textNewAbilities = await rawNewAbilities.text()
+    const rawNewAbilities = await fetch(`https://raw.githubusercontent.com/ydarissep/Unbound-Pokedex/main/src/abilities/duplicate_abilities.json`)
+    const jsonNewAbilities = await rawNewAbilities.json()
 
-    return regexNewAbilities(textNewAbilities, abilities)   
+    return regexNewAbilities(jsonNewAbilities, abilities)   
 }
 
 async function buildAbilitiesObj(){
@@ -46,10 +46,18 @@ async function buildAbilitiesObj(){
     abilities = await getNewAbilities(abilities)
 
     abilities["ABILITY_NEUTRALIZINGGAS"]["description"] = "All Abilities are nullified."
-    //abilities["ABILITY_WANDERING_SPIRIT"]["description"] = "Trades Abilities on contact."
-    //abilities["ABILITY_PERISH_BODY"]["description"] = "Gives a perish count on contact."
-    //abilities["ABILITY_STEELY_SPIRIT"]["description"] = "Boosts ally Steel moves."
-    //abilities["ABILITY_GULPMISSLE"]["description"] = "Spits prey if damaged after a swim." // fixed
+    abilities["ABILITY_FULLMETALBODY"]["description"] = "Prevents ability reduction."
+    abilities["ABILITY_EVAPORATE"]["description"] = "Nullifies all water to up Sp. Atk."
+    abilities["ABILITY_GRASS_DASH"]["description"] = "Grass-type moves hit first."
+    abilities["ABILITY_SLIPPERY_TAIL"]["description"] = "Tail moves hit first."
+    abilities["ABILITY_DRILL_BEAK"]["description"] = "Drill moves land critical hits."
+
+    Object.keys(abilities).forEach(ability => {
+        if(abilities[ability]["description"] == ""){
+            delete abilities[ability]
+        }
+    })
+
     delete abilities["ABILITY_NONE"]
     delete abilities["ABILITY_NAME_LENGTH"]
     delete abilities["ABILITY_NAMELENGTH"]

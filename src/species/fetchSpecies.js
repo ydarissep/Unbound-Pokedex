@@ -79,10 +79,10 @@ async function getSprite(species){
 }
 
 async function getReplaceAbilities(species){
-    const rawReplaceAbilities = await fetch(`https://raw.githubusercontent.com/${repo1}/src/Tables/replace_abilities.h`)
-    const textReplaceAbilities = await rawReplaceAbilities.text()
+    const rawReplaceAbilities = await fetch(`https://raw.githubusercontent.com/ydarissep/Unbound-Pokedex/main/src/abilities/duplicate_abilities.json`)
+    const jsonReplaceAbilities = await rawReplaceAbilities.json()
 
-    return regexReplaceAbilities(textReplaceAbilities, species)
+    return regexReplaceAbilities(jsonReplaceAbilities, species)
 }
 
 async function getChanges(species, url){
