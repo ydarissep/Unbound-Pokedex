@@ -1,0 +1,217 @@
+{
+    "ABILITY_CLOUDNINE": { // ability to replace
+        "ABILITY_AIRLOCK": [ // new ability
+            "SPECIES_RAYQUAZA" // species
+        ]
+    },
+    "ABILITY_INSOMNIA": {
+        "ABILITY_VITALSPIRIT": [
+            "SPECIES_MANKEY",
+            "SPECIES_PRIMEAPE",
+            "SPECIES_MR_MIME_G",
+            "SPECIES_ELECTABUZZ",
+            "SPECIES_MAGMAR",
+            "SPECIES_MAGBY",
+            "SPECIES_DELIBIRD",
+            "SPECIES_TYROGUE",
+            "SPECIES_ELEKID",
+            "SPECIES_VIGOROTH",
+            "SPECIES_ELECTIVIRE",
+            "SPECIES_MAGMORTAR",
+            "SPECIES_LILLIPUP",
+            "SPECIES_ROCKRUFF",
+            "SPECIES_LYCANROC_N"
+        ]
+    },
+    "ABILITY_CLEARBODY": {
+        "ABILITY_WHITESMOKE": [
+            "SPECIES_TORKOAL",
+            "SPECIES_HEATMOR",
+            "SPECIES_SIZZLIPEDE",
+            "SPECIES_CENTISKORCH",
+            "SPECIES_CENTISKORCH_GIGA"        
+        ]
+    },
+    "ABILITY_HUGEPOWER": {
+        "ABILITY_NINE_LIVES": [
+            "SPECIES_MEOWTH",
+            "SPECIES_PERSIAN"         
+        ],
+        "ABILITY_FOCUS_BELT": [
+            "SPECIES_MACHOKE",
+            "SPECIES_MACHAMP"  
+        ]
+    },
+    "ABILITY_STURDY": {
+        "ABILITY_SOLID_ROCK": [
+            "SPECIES_CAMERUPT",
+            "SPECIES_RHYPERIOR",
+            "SPECIES_TIRTOUGA",
+            "SPECIES_CARRACOSTA",
+            "SPECIES_STONJOURNER"          
+        ]
+    },
+    "ABILITY_MOLDBREAKER": {
+        "ABILITY_TURBOBLAZE": [
+            "SPECIES_RESHIRAM",
+            "SPECIES_KYUREM_WHITE"         
+        ],
+        "ABILITY_TERAVOLT": [
+            "SPECIES_ZEKROM",
+            "SPECIES_KYUREM_BLACK"  
+        ]
+    },
+    "ABILITY_STORMDRAIN": {
+        "ABILITY_EVAPORATE": [
+            "SPECIES_MAGCARGO"         
+        ]
+    },
+    "ABILITY_MOXIE": {
+        "ABILITY_CHILLING_NEIGH": [
+            "SPECIES_GLASTRIER"         
+        ],
+        "ABILITY_FIERY_NEIGH": [
+            "SPECIES_PONYTA",
+            "SPECIES_RAPIDASH"
+        ],
+        "ABILITY_SHOCKING_NEIGH": [
+            "SPECIES_BLITZLE",
+            "SPECIES_ZEBSTRIKA"        
+        ],
+        "ABILITY_PRIDE": [
+            "SPECIES_PIDOVE",
+            "SPECIES_TRANQUILL",
+            "SPECIES_UNFEZANT",
+            "SPECIES_UNFEZANT_F"
+        ]
+    },
+    "ABILITY_MULTISCALE": {
+        "ABILITY_MULTIEYE": [
+            "SPECIES_BALTOY",
+            "SPECIES_CLAYDOL"           
+        ]
+    },
+    "ABILITY_PROTEAN": {
+        "ABILITY_LIBERO": [
+            "SPECIES_SCORBUNNY",
+            "SPECIES_RABOOT",
+            "SPECIES_CINDERACE",
+            "SPECIES_CINDERACE_GIGA"        
+        ],
+        "ABILITY_SUBTERFUGE": [
+            "SPECIES_MOTHIM"       
+        ]
+    },
+    "ABILITY_GOOEY": {
+        "ABILITY_TANGLING_HAIR": [
+            "SPECIES_DIGLETT_A",
+            "SPECIES_DUGTRIO_A"         
+        ]
+    },
+    "ABILITY_COTTONDOWN": {
+        "ABILITY_TANGLING_WOOL": [
+            "SPECIES_MAREEP",
+            "SPECIES_FLAAFFY",
+            "SPECIES_AMPHAROS",
+            "SPECIES_MAREEP"         
+        ],
+        "ABILITY_COTTON_CLOUD": [
+            "SPECIES_SWABLU",
+            "SPECIES_ALTARIA"         
+        ]
+    },
+    "ABILITY_PARENTALBOND": {
+        "ABILITY_BRAIN_BOND": [
+            "SPECIES_GIRAFARIG"           
+        ]
+    },
+    "ABILITY_GALEWINGS": {
+        "ABILITY_GRASS_DASH": [
+            "SPECIES_SUNFLORA"         
+        ],
+        "ABILITY_SLIPPERY_TAIL": [
+            "SPECIES_SEVIPER"         
+        ]
+    },
+    "ABILITY_EMERGENCYEXIT": {
+        "ABILITY_WIMP_OUT": [
+            "SPECIES_WIMPOD"          
+        ]
+    },
+    "ABILITY_DAZZLING": {
+        "ABILITY_QUEENLY_MAJESTY": [
+            "SPECIES_TSAREENA",
+            "SPECIES_NIDOQUEEN",
+            "SPECIES_VESPIQUEN"          
+        ]
+    },
+    "ABILITY_RECEIVER": {
+        "ABILITY_POWER_OF_ALCHEMY": [
+            "SPECIES_GRIMER_A",
+            "SPECIES_MUK_A"
+        ]
+    },
+    "ABILITY_MERCILESS": {
+        "ABILITY_DRILL_BEAK": [
+            "SPECIES_SPEAROW",
+            "SPECIES_FEAROW"          
+        ]
+    },
+    "ABILITY_STALWART": {
+        "ABILITY_PROPELLER_TAIL": [
+            "SPECIES_ARROKUDA",
+            "SPECIES_BARRASKEWDA"           
+        ]
+    },
+    "ABILITY_PUNKROCK": {
+        "ABILITY_BELOW": [
+            "SPECIES_WHISMUR",
+            "SPECIES_LOUDRED",
+            "SPECIES_EXPLOUD"        
+        ],
+        "ABILITY_SOUND_WAVES": [
+            "SPECIES_VIBRAVA",
+            "SPECIES_FLYGON",       
+            "SPECIES_NOIBAT",
+            "SPECIES_NOIVERN",
+        ]
+    },
+    "ABILITY_ICESCALES": {
+        "ABILITY_ICY_SKIN": [
+            "SPECIES_GLACEON",
+            "SPECIES_SMOOCHUM",
+            "SPECIES_JYNX"           
+        ],
+        "ABILITY_DUSTY_SCALES": [
+            "SPECIES_DUSTOX"        
+        ]
+    },
+    "ABILITY_GORILLATACTICS": {
+        "ABILITY_CRABBY_TACTICS": [
+            "SPECIES_CRABOMINABLE"          
+        ]
+    },
+    "ABILITY_DAUNTLESSSHIELD": {
+        "ABILITY_FACE_SHIELD": [
+            "SPECIES_SHIELDON",
+            "SPECIES_BASTIODON"           
+        ],
+        "ABILITY_HONEY_ARMOR": [
+            "SPECIES_VESPIQUEN"        
+        ]
+    },
+    "ABILITY_GRIMNEIGH": {
+        "ABILITY_ROYAL_ROAR": [
+            "SPECIES_LITLEO",
+            "SPECIES_PYROAR",
+            "SPECIES_PYROAR_FEMALE"      
+        ]
+    },
+    "ABILITY_ROUGHSKIN": {
+        "ABILITY_IRON_BARBS": [
+            "SPECIES_FERROSEED",
+            "SPECIES_FERROTHORN",
+            "SPECIES_TOGEDEMARU"      
+        ]
+    }
+}
