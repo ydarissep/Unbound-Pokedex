@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unbound Dex</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/speciesTable.css">
+  <link rel="stylesheet" href="style/abilitiesTable.css">
+  <link rel="stylesheet" href="style/movesTable.css">
+  <link rel="stylesheet" href="style/locationsTable.css">
+  <link rel="stylesheet" href="style/speciesPanel.css">
+  <script defer src="src/species/displaySpecies.js"></script>
+  <script defer src="src/species/fetchSpecies.js"></script>
+  <script defer src="src/species/regexSpecies.js"></script>
+  <script defer src="src/abilities/displayAbilities.js"></script>
+  <script defer src="src/abilities/fetchAbilities.js"></script>
+  <script defer src="src/abilities/regexAbilities.js"></script>
+  <script defer src="src/moves/displayMoves.js"></script>
+  <script defer src="src/moves/fetchMoves.js"></script>
+  <script defer src="src/moves/regexMoves.js"></script>
+  <script defer src="src/locations/displayLocations.js"></script>
+  <script defer src="src/locations/fetchLocations.js"></script>
+  <script defer src="src/locations/regexLocations.js"></script>
+  <script defer src="src/locations/filterLocations.js"></script>
+  <script defer src="src/lz-string.js"></script>
+  <script defer src="src/utility.js"></script>
+  <script defer src="src/tableUtility.js"></script>
+  <script defer src="src/speciesPanelUtility.js"></script>
+  <script defer src="src/global.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="speciesPanelMainContainer" class="hide flex">
+ <div id="speciesPanelContainer" class="flex flexColumn">
+    <div id="speciesPanelSubcontainer1">
+      <span id="speciesName"></span>
+      <span id="speciesID"></span>
+      <button type="button" id="speciesPanelCloseButton">X</button>
+      <input type="search" id="speciesPanelInputSpecies" list="speciesPanelInputSpeciesDataList">
+      <datalist id="speciesPanelInputSpeciesDataList"></datalist>
+    </div>
+    <div id="speciesPanelSubcontainer2" class="flex">
+      <img id="speciesSprite">
+      <div id="speciesPanelSubcontainer3">
+        <div id="speciesTypesMainContainer">
+          <span id="speciesTypesText" class="speciesPanelText">Types:</span>
+          <div id="speciesTypesContainer" class="flex wrap speciesPanelTextPadding">
+            <span id="speciesType1"></span>
+            <span id="speciesType2"></span>
+          </div>
+        </div>
+        <div id="speciesAbilitiesMainContainer">
+          <span id="speciesAbilitiesText" class="speciesPanelText">Abilities:</span>
+          <div id="speciesAbilitiesContainer" class="flex wrap speciesPanelTextPadding">
+            <span id="speciesAbilities"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="speciesBaseStatsGraphContainer" class="flex">
+      <section id="statsSection" class="flex">
+        <div id="statsNames">
+          <p>HP:<span class="statsGraphHeader"></span></p>
+          <p>AtK:<span class="statsGraphHeader"></span></p>
+          <p>Def:<span class="statsGraphHeader"></span></p>
+          <p>SpA:<span class="statsGraphHeader"></span></p>
+          <p>SpD:<span class="statsGraphHeader"></span></p>
+          <p>Spe:<span class="statsGraphHeader"></span></p>
+          <p>BST:<span class="statsGraphHeader"></span></p>
+        </div>
+        <div id="statsGraph">
+          <div id="statsGraphHP"></div>
+          <div id="statsGraphAttack"></div>
+          <div id="statsGraphDefense"></div>
+          <div id="statsGraphSpAttack"></div>
+          <div id="statsGraphSpDefense"></div>
+          <div id="statsGraphSpeed"></div>
+          <div id="statsGraphBST"></div>
+        </div>
+      </section>
+    </div>
+    <div id="speciesEvolutionsMainContainer">
+      <div id="speciesEvolutionsText" class="speciesPanelText">Evolution:</div>
+      <div id="speciesEvolutionsContainer" class="flex wrap"></div>
+      <div id="speciesEvoMethod" class="flex wrap flexColumn"></div>
+    </div>
+    <div id="speciesFormesContainer">
+      <div id="speciesFormesText" class="speciesPanelText">Formes:</div>
+      <div id="speciesFormes" class="flex wrap"></div>
+    </div>
+    <div id="speciesPanelSubcontainer4" class="flex">
+      <div id="speciesChangesContainer" class="hide">
+        <div id="speciesChangesText" class="speciesPanelText">Changes:</div>
+        <div id="speciesChanges" class="flex flexColumn wrap speciesPanelTextPadding"></div>
+      </div>
+      <div id="speciesHeldItemsContainer">
+        <div id="speciesHeldItemsText" class="speciesPanelText">Held Items:</div>
+        <div id="speciesHeldItems" class="flex flexColumn wrap speciesPanelTextPadding"></div>
+      </div>
+      <div id="speciesEggGroupsContainer">
+        <div id="speciesEggGroupsText" class="speciesPanelText">Egg Groups:</div>
+        <div id="speciesEggGroups" class="flex flexColumn wrap speciesPanelTextPadding"></div>
+      </div>
+    </div>
+    <div id="speciesTypeChartContainer" class="flex flexCenter">
+      <div id="speciesTypeChart" class="flex wrap"></div>
+    </div>
+    <div id="speciesPanelTablesContainer">
+      <table id="speciesPanelLevelUpTable" class="speciesPanelLearnsetsTableMargin">
+        <caption class="bold">Level-Up</caption>
+        <thead id="speciesPanelLevelUpTableTHead">
+          <tr>
+            <th>Level</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Split</th>
+            <th class="speciesPanelLearnsetsPower">Power</th>
+            <th class="speciesPanelLearnsetsAccuracy">Acc</th>
+            <th class="speciesPanelLearnsetsPP">PP</th>
+            <th class="speciesPanelLearnsetsEffect">Effect</th>
+          </tr>
+        </thead>
+        <tbody id="speciesPanelLevelUpTableTbody"></tbody>
+      </table>
+      <table id="speciesPanelTMHMTable" class="speciesPanelLearnsetsTableMargin">
+        <caption class="bold">TM/HM</caption>
+        <thead id="speciesPanelTMHMTableTHead">
+          <tr>
+            <th>TM</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Split</th>
+            <th class="speciesPanelLearnsetsPower">Power</th>
+            <th class="speciesPanelLearnsetsAccuracy">Acc</th>
+            <th class="speciesPanelLearnsetsPP">PP</th>
+            <th class="speciesPanelLearnsetsEffect">Effect</th>
+          </tr>
+        </thead>
+        <tbody id="speciesPanelTMHMTableTbody"></tbody>
+      </table>
+      <table id="speciesPanelTutorTable" class="speciesPanelLearnsetsTableMargin">
+        <caption class="bold">Tutor</caption>
+        <thead id="speciesPanelTutorTableTHead">
+          <tr>
+            <th>Tutor</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Split</th>
+            <th class="speciesPanelLearnsetsPower">Power</th>
+            <th class="speciesPanelLearnsetsAccuracy">Acc</th>
+            <th class="speciesPanelLearnsetsPP">PP</th>
+            <th class="speciesPanelLearnsetsEffect">Effect</th>
+          </tr>
+        </thead>
+        <tbody id="speciesPanelTutorTableTbody"></tbody>
+      </table>
+      <table id="speciesPanelEggMovesTable" class="speciesPanelLearnsetsTableMargin">
+        <caption class="bold">Breeding</caption>
+        <thead id="speciesPanelEggMovesTableTHead">
+          <tr>
+            <th class="hide">Hide</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Split</th>
+            <th class="speciesPanelLearnsetsPower">Power</th>
+            <th class="speciesPanelLearnsetsAccuracy">Acc</th>
+            <th class="speciesPanelLearnsetsPP">PP</th>
+            <th class="speciesPanelLearnsetsEffect">Effect</th>
+          </tr>
+        </thead>
+        <tbody id="speciesPanelEggMovesTableTbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="tableInput" class="hide">
+    <input type="search" id="abilitiesInput" class="hide" list="abilitiesInputDataList">
+    <input type="search" id="speciesInput" class="activeInput" list="speciesInputDataList">
+    <input type="search" id="locationsInput" class="hide" list="speciesInputDataList">
+    <input type="search" id="movesInput" class="hide" list="movesInputDataList">
+    <datalist id="abilitiesInputDataList"></datalist>
+    <datalist id="speciesInputDataList"></datalist>
+    <datalist id="movesInputDataList"></datalist>
+  </div>
+
+
+
+
+  <div id="tableButton" class="hide">
+    <button type="button" id="abilitiesButton">Abilities</button>
+    <button type="button" id="speciesButton" class="activeButton">Species</button>
+    <button type="button" id="locationsButton">Locations</button>
+    <button type="button" id="movesButton">Moves</button>
+  </div>
+
+
+
+
+  <div id="tableFilter" class="hide">
+
+    <div id="abilitiesFilter" class="hide">
+      <div id="abilitiesFilterButton"></div>
+    </div>
+
+    <div id="speciesFilter" class="activeFilter">
+
+      <div>
+        <label for="patchnoteModeCheckbox">Changelog Mode</label>
+        <input type="checkbox" id="patchnoteModeCheckbox">
+      </div>
+
+      <div>
+        <label for="onlyShowChangedPokemonCheckbox">Only show changed Pokemon</label>
+        <input type="checkbox" id="onlyShowChangedPokemonCheckbox">
+      </div>
+      
+      <div id="speciesFilterMainButton">
+        <button type="button" id="speciesFilterType" class="addFilterButton">Type</button>
+        <button type="button" id="speciesFilterAbility" class="addFilterButton">Ability</button>
+        <button type="button" id="speciesFilterLearnset" class="addFilterButton">Learnset</button>
+        <button type="button" id="speciesFilterHeldItem" class="addFilterButton">Held Item</button>
+        <button type="button" id="speciesFilterEggGroup" class="addFilterButton">Egg Group</button>
+      </div>
+      <div id="speciesFilterButton">
+        <button type="button" id="speciesFilterHP" class="addFilterButton">HP</button>
+        <button type="button" id="speciesFilterAtk" class="addFilterButton">Atk</button>
+        <button type="button" id="speciesFilterDef" class="addFilterButton">Def</button>
+        <button type="button" id="speciesFilterSpA" class="addFilterButton">SpA</button>
+        <button type="button" id="speciesFilterSpD" class="addFilterButton">SpD</button>
+        <button type="button" id="speciesFilterSpe" class="addFilterButton">Spe</button>
+        <button type="button" id="speciesFilterBST" class="addFilterButton">BST</button>
+      </div>
+    </div>
+
+    <div id="locationsFilter" class="hide">
+      <div id="locationsFilterButton">
+        <button type="button" id="locationsFilterType" class="addFilterButton">Type</button>
+      </div>
+    </div>
+
+    <div id="movesFilter" class="hide">
+      <div id="movesFilterButton">
+        <button type="button" id="movesFilterType" class="addFilterButton">Type</button>
+        <button type="button" id="movesFilterPower" class="addFilterButton">Power</button>
+        <button type="button" id="movesFilterFlag" class="addFilterButton">Flag</button>
+        <button type="button" id="movesFilterPriority" class="addFilterButton">Priority</button>
+        <button type="button" id="movesFilterEffect" class="addFilterButton">Effect</button>
+        <button type="button" id="movesFilterTarget" class="addFilterButton">Target</button>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <div id="table" class="hide">
+
+    <span id="observerCheck"></span>
+
+    <table id="abilitiesTable" class="hide">
+      <thead id="abilitiesTableThead">
+        <tr>
+          <th class="ability">Name</th>
+          <th class="description">Description</th>
+        </tr>
+      </thead>
+    <tbody id="abilitiesTableTbody"></tbody>
+    </table>
+
+
+    <table id="movesTable" class="hide">
+      <thead id="movesTableThead">
+        <tr>
+          <th class="move">Name</th>
+          <th class="type">Type</th>
+          <th class="split">Split</th>
+          <th class="power">Power</th>
+          <th class="accuracy">Acc</th>
+          <th class="PP">PP</th>
+          <th class="effect">Effect</th>
+        </tr>
+      </thead>
+      <tbody id="movesTableTbody"></tbody>    
+    </table>
+
+
+    <table id="speciesTable" class="activeTable">
+      <thead id="speciesTableThead">
+        <tr>
+          <th class="ID">ID</th>
+          <th class="sprite">Sprite</th>
+          <th class="species" colspan="2">Name</th>
+          <th class="types">Types</th>
+          <th class="abilities">Abilities</th>
+          <th class="baseHP">HP</th>
+          <th class="baseAttack">Atk</th>
+          <th class="baseDefense">Def</th>
+          <th class="baseSpAttack">SpA</th>
+          <th class="baseSpDefense">SpD</th>
+          <th class="baseSpeed">Spe</th>
+          <th class="BST">BST</th>
+        </tr>
+      </thead>
+      <tbody id="speciesTableTbody"></tbody>
+    </table>
+
+
+    <table id="locationsTable" class="hide">
+      <thead id="locationsTableThead">
+        <tr>
+          <th class="sprite hide">Sprite</th>
+          <th class="species hide" colspan="2">Name</th>
+          <th class="rarity hide">%</th>
+          <th class="zone hide">Zone</th>
+        </tr>
+      </thead>
+      <tbody id="locationsTableTbody"></tbody>
+    </table>
+  </div>
+
+  <a class="utilityButton hide">↑</a>
+
+</body>
+
+<footer id="footer" class="flex flexCenter flexColumn">
+  <h1>Unbound<br>Pokedex</h1>
+
+  <noscript>This page requires JavaScript.</noscript>
+  
+  <button type="button" id="openCredits" class="hide">Credits</button>
+  <dialog class="modal hide" id="modal">
+    <ul>  
+      <li>Credit to ris#0001 for
+        <ul>
+          <li>Night theme</li>
+          <li>Sprite background removal function</li>
+          <li>Back to top button</li>
+          <li>Species stats graph</li>
+          <li>Helping with CSS</li>
+          <li>Bitching and moaning about my CSS while this is literally my first ever website.</li>
+        </ul>  
+      </li>  
+    </ul>
+    <button type="button" id="closeCredits">OK</button>
+  </dialog>
+
+  <button type="button" id="update" class="hide">Update</button>
+  
+</footer>
+
+</html>
