@@ -591,19 +591,43 @@ const observeOpenCredits = new IntersectionObserver(openCreditsIsTouching, optio
 observeOpenCredits.observe(openCredits)
 
 
+
+
 utilityButton.onclick = () => {
+    utilityButtonOnClick()
+}
+document.addEventListener("keydown", e => {
+    if(e.target.nodeName !== "INPUT"){
+        //e.preventDefault()
+        if(e.code === "Space"){
+            e.preventDefault()
+            utilityButtonOnClick()
+        }    
+        else if(e.code === "Enter" && panelSpecies !== ""){
+            speciesPanelMainContainer.classList.toggle("hide")
+            window.scrollTo({ top: 0})
+        }
+        else if(e.code === "Backspace" || e.code === "Escape" || e.code === "Delete"){
+            speciesPanelMainContainer.classList.add("hide")
+        }
+    }
+})
+function utilityButtonOnClick(){
     if(utilityButton.innerText === "↓"){
         speciesPanelMainContainer.classList.add("hide")
         document.getElementById(`${panelSpecies}`).scrollIntoView({ block: "center" })
     }
     else if(utilityButton.innerText === "☰" && panelSpecies !== ""){
         speciesPanelMainContainer.classList.remove("hide")
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        window.scrollTo({ top: 0})
     }
     else{
-        window.scrollTo({top: 1})
+        window.scrollTo({top: 0})
     }
 }
+
+
+
 
 
 update.addEventListener("click", () => {

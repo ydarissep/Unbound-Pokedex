@@ -113,6 +113,13 @@ function displayMoves(){
 
         row.append(effectContainer)
 
+        row.addEventListener("click", async() => {
+            if(!speciesButton.classList.contains("activeButton"))
+                await tableButtonClick("species")
+            window.scrollTo({ top: 0})
+            const list = movesIngameNameArray
+            createFilter(list, species, ["levelUpLearnsets", "TMHMLearnsets", "tutorLearnsets", "eggMovesLearnsets"], filterCount++, speciesFilterButton, "Learnset", isInt = false, isOperator = false, text = moves[moveName]["ingameName"])
+        }) 
     }
 }
 

@@ -21,5 +21,13 @@ function displayAbilities(){
         description.className = "description"
         description.innerText = abilities[abilitiesName]["description"]
         row.append(description)
+
+        row.addEventListener("click", async() => {
+            if(!speciesButton.classList.contains("activeButton"))
+                await tableButtonClick("species")
+            window.scrollTo({ top: 0})
+            const list = abilitiesIngameNameArray
+            createFilter(list, species, ["abilities"], filterCount++, speciesFilterButton, "Ability", isInt = false, isOperator = false, text = abilities[abilitiesName]["ingameName"])
+        })
     }
 }
