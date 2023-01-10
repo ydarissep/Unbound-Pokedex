@@ -1,10 +1,9 @@
-window.repo = "BuffelSaft/pokeemerald"
+window.repoDex = "ydarissep/Unbound-Pokedex"
 window.repo1 = "Skeli789/Complete-Fire-Red-Upgrade/dev"
 window.repo2 = "Skeli789/Dynamic-Pokemon-Expansion/Unbound"
 
 window.panelSpecies = ""
 
-window.filterCount = 0
 const tableFilter = document.getElementById("tableFilter")
 
 
@@ -16,30 +15,6 @@ const update = document.getElementById("update")
 
 const patchnoteModeCheckbox = document.getElementById("patchnoteModeCheckbox")
 const onlyShowChangedPokemonCheckbox = document.getElementById("onlyShowChangedPokemonCheckbox")
-
-const speciesFilterType = document.getElementById("speciesFilterType")
-const speciesFilterAbility = document.getElementById("speciesFilterAbility")
-const speciesFilterLearnset = document.getElementById("speciesFilterLearnset")
-const speciesFilterHeldItem = document.getElementById("speciesFilterHeldItem")
-const speciesFilterEggGroup = document.getElementById("speciesFilterEggGroup")
-const speciesFilterHP = document.getElementById("speciesFilterHP")
-const speciesFilterAtk = document.getElementById("speciesFilterAtk")
-const speciesFilterDef = document.getElementById("speciesFilterDef")
-const speciesFilterSpA = document.getElementById("speciesFilterSpA")
-const speciesFilterSpD = document.getElementById("speciesFilterSpD")
-const speciesFilterSpe = document.getElementById("speciesFilterSpe")
-const speciesFilterBST = document.getElementById("speciesFilterBST")
-
-const locationsFilterType = document.getElementById("locationsFilterType")
-
-const movesFilterType = document.getElementById("movesFilterType")
-const movesFilterFlag = document.getElementById("movesFilterFlag")
-const movesFilterPriority = document.getElementById("movesFilterPriority")
-const movesFilterEffect = document.getElementById("movesFilterEffect")
-const movesFilterTarget = document.getElementById("movesFilterTarget")
-const movesFilterPower = document.getElementById("movesFilterPower")
-
-
 
 
 
@@ -62,7 +37,6 @@ const abilitiesTableTbody = document.getElementById("abilitiesTableTbody")
 const locationsInput = document.getElementById("locationsInput")
 const locationsButton = document.getElementById("locationsButton")
 const locationsTable = document.getElementById("locationsTable")
-const locationsTableThead = document.getElementById("locationsTableThead")
 const locationsTableTbody = document.getElementById("locationsTableTbody")
 
 
@@ -259,66 +233,32 @@ headerSpeciesBST.addEventListener("click", () => {
 
 
 
-headerLocationsSprite.addEventListener("click", () => {
-    if(headerLocationsSprite.classList.contains("th-sort-desc"))
-        sortTableByClassName(locationsTable, "species", asc = true, parseINT = false)
-    else
-        sortTableByClassName(locationsTable, "species", asc = false, parseINT = false)
-})
-headerLocationsSpecies.addEventListener("click", () => {
-    if(headerLocationsSpecies.classList.contains("th-sort-desc"))
-        sortTableByClassName(locationsTable, "species", asc = true, parseINT = false)
-    else
-        sortTableByClassName(locationsTable, "species", asc = false, parseINT = false)
-})
-headerLocationsRarity.addEventListener("click", () => {
-    if(headerLocationsRarity.classList.contains("th-sort-desc"))
-        sortTableByClassName(locationsTable, "rarity", asc = true, parseINT = true)
-    else
-        sortTableByClassName(locationsTable, "rarity", asc = false, parseINT = true)
-})
-headerLocationsZone.addEventListener("click", () => {
-    if(headerLocationsZone.classList.contains("th-sort-desc"))
-        sortTableByClassName(locationsTable, "zone", asc = true, parseINT = false)
-    else
-        sortTableByClassName(locationsTable, "zone", asc = false, parseINT = false)
-})
-
-
-
 
 
 
 
 speciesInput.addEventListener("input", e => {
     const value = e.target.value
-    if(speciesIngameNameArray.includes(value)){
-        speciesInput.blur()
-    }
-    filterTableInputParse(value, species, ["name", "abilities", "type1", "type2", "item1", "item2", "evolution", "evolutionLine", "forms"], speciesTableTbody)
-    //filterTableInput(value, [2, 3, 4], speciesTableTbody)
+    filterFilters(value)
+    filterTableInput(value, species, ["name", "abilities"])
 })
 abilitiesInput.addEventListener("input", e => {
     const value = e.target.value
     if(abilitiesIngameNameArray.includes(value)){
         abilitiesInput.blur()
     }
-    filterTableInput(value, [0, 1], abilitiesTableTbody)
-})
-locationsInput.addEventListener("input", e => {
-    const value = e.target.value
-    if(speciesIngameNameArray.includes(value)){
-        locationsInput.blur()
-    }
-    filterTableInput(value, [1, 3], locationsTableTbody)
-    refreshLocations()
+    filterFilters(value)
+    filterTableInput(value, abilities, ["name", "ingameName", "description"])
 })
 movesInput.addEventListener("input", e => {
     const value = e.target.value
-    if(movesIngameNameArray.includes(value)){
-        movesInput.blur()
-    }
-    filterTableInput(value, [0, 1, 6], movesTableTbody)
+    filterFilters(value)
+    filterTableInput(value, moves, ["name", "ingameName", "effect", "description"])
+})
+locationsInput.addEventListener("input", e => {
+    const value = e.target.value
+    filterFilters(value)
+    filterTableInput(value, species, ["evolutionLine", ".locationsInfo"])
 })
 
 
@@ -380,107 +320,6 @@ onlyShowChangedPokemonCheckbox.addEventListener("change", e => {
 })
 
 
-
-
-speciesFilterType.addEventListener("click", () => {
-    const list = createOptionArray(["type1", "type2"], species)
-    createFilter(list, species, ["type1", "type2"], filterCount++, speciesFilterButton, "Type")
-})
-speciesFilterAbility.addEventListener("click", () => {
-    const list = abilitiesIngameNameArray
-    createFilter(list, species, ["abilities"], filterCount++, speciesFilterButton, "Ability")
-})
-speciesFilterLearnset.addEventListener("click", () => {
-    const list = movesIngameNameArray
-    createFilter(list, species, ["levelUpLearnsets", "TMHMLearnsets", "tutorLearnsets", "eggMovesLearnsets"], filterCount++, speciesFilterButton, "Learnset")
-})
-speciesFilterHeldItem.addEventListener("click", () => {
-    const list = createOptionArray(["item1", "item2"], species)
-    createFilter(list, species, ["item1", "item2"], filterCount++, speciesFilterButton, "Held Item")
-})
-speciesFilterEggGroup.addEventListener("click", () => {
-    const list = createOptionArray(["eggGroup1", "eggGroup2"], species)
-    createFilter(list, species, ["eggGroup1", "eggGroup2"], filterCount++, speciesFilterButton, "Egg Group")
-})
-speciesFilterHP.addEventListener("click", () => {
-    const list = [">=", "<=", ">", "<", "="]
-    createFilter(list, species, ["baseHP"], filterCount++, speciesFilterButton, "HP", isInt = true, isOperator = true)
-})
-speciesFilterAtk.addEventListener("click", () => {
-    const list = [">=", "<=", ">", "<", "="]
-    createFilter(list, species, ["baseAttack"], filterCount++, speciesFilterButton, "Atk", isInt = true, isOperator = true)
-})
-speciesFilterDef.addEventListener("click", () => {
-    const list = [">=", "<=", ">", "<", "="]
-    createFilter(list, species, ["baseDefense"], filterCount++, speciesFilterButton, "Def", isInt = true, isOperator = true)
-})
-speciesFilterSpA.addEventListener("click", () => {
-    const list = [">=", "<=", ">", "<", "="]
-    createFilter(list, species, ["baseSpAttack"], filterCount++, speciesFilterButton, "SpA", isInt = true, isOperator = true)
-})
-speciesFilterSpD.addEventListener("click", () => {
-    const list = [">=", "<=", ">", "<", "="]
-    createFilter(list, species, ["baseSpDefense"], filterCount++, speciesFilterButton, "SpD", isInt = true, isOperator = true)
-})
-speciesFilterSpe.addEventListener("click", () => {
-    const list = [">=", "<=", ">", "<", "="]
-    createFilter(list, species, ["baseSpeed"], filterCount++, speciesFilterButton, "Spe", isInt = true, isOperator = true)
-})
-speciesFilterBST.addEventListener("click", () => {
-    const list = [">=", "<=", ">", "<", "="]
-    createFilter(list, species, ["BST"], filterCount++, speciesFilterButton, "BST", isInt = true, isOperator = true)
-})
-
-
-
-
-
-
-
-
-
-locationsFilterType.addEventListener("click", () => {
-    const list = createOptionArray(["type1", "type2"], species)
-    createLocationsFilter(list, locations, ["BST"], filterCount++, locationsFilterButton, "Type", isInt = false, isOperator = false)
-})
-
-
-
-
-
-
-
-movesFilterType.addEventListener("click", () => {
-    const list = createOptionArray(["type"], moves)
-    createFilter(list, moves, ["type"], filterCount++, movesFilterButton, "Type")
-})
-movesFilterPower.addEventListener("click", () => {
-    const list = [">=", "<=", ">", "<", "="]
-    createFilter(list, moves, ["power"], filterCount++, movesFilterButton, "Power", isInt = true, isOperator = true)
-})
-movesFilterFlag.addEventListener("click", () => {
-    let list = []
-    for (const name of Object.keys(moves)){
-        for (let i = 0; i < moves[name]["flags"].length; i++){
-            const value = sanitizeString(moves[name]["flags"][i])
-            if(!list.includes(value))
-                list.push(value)
-        }
-    }
-    createFilter(list, moves, ["flags"], filterCount++, movesFilterButton, "Flag")
-})
-movesFilterPriority.addEventListener("click", () => {
-    const list = createOptionArray(["priority"], moves, isInt = true).sort()
-    createFilter(list, moves, ["priority"], filterCount++, movesFilterButton, "Priority", isInt = true)
-})
-movesFilterEffect.addEventListener("click", () => {
-    const list = createOptionArray(["effect"], moves)
-    createFilter(list, moves, ["effect"], filterCount++, movesFilterButton, "Effect")
-})
-movesFilterTarget.addEventListener("click", () => {
-    const list = createOptionArray(["target"], moves)
-    createFilter(list, moves, ["target"], filterCount++, movesFilterButton, "Target")
-})
 
 
 

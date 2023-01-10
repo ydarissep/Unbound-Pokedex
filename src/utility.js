@@ -10,7 +10,7 @@ function sanitizeString(string){
             }
             matchArray[i] = matchArray[i].join(" ")
         }
-        return matchArray.join("\n")
+        return matchArray.join(" ")
     }
     else
         return unsanitizedString
@@ -35,6 +35,7 @@ async function fetchData(){
 
 
     await setDataList()
+    await setFilters()
     await displaySetup()
 
     await window.scrollTo(0, 0)
@@ -83,7 +84,6 @@ function setDataList(){
         const option = document.createElement("option")
         option.innerText = sanitizeString(speciesName)
         speciesIngameNameArray.push(option.innerText)
-        speciesInputDataList.append(option)
         speciesPanelInputSpeciesDataList.append(option)
     })
 
@@ -94,12 +94,68 @@ function setDataList(){
         abilitiesIngameNameArray.push(option.innerText)
         abilitiesInputDataList.append(option)
     })
+}
 
-    window.movesIngameNameArray = []
-    Object.keys(moves).forEach(movesName => {
-        const option = document.createElement("option")
-        option.innerText = moves[movesName]["ingameName"]
-        movesIngameNameArray.push(option.innerText)
-        movesInputDataList.append(option)
-    })
+
+
+
+
+function speciesCanLearnMove(speciesObj, moveName){
+    if("levelUpLearnsets" in speciesObj){
+        for(let i = 0; i < speciesObj["levelUpLearnsets"].length; i++){
+            if(typeof(speciesObj["levelUpLearnsets"][i]) == "object"){
+                if(speciesObj["levelUpLearnsets"][i][0] == moveName){
+                    return true
+                }
+            }
+            else if(typeof(speciesObj["levelUpLearnsets"][i] == "string")){
+                if(speciesObj["levelUpLearnsets"][i] == moveName){
+                    return true
+                }
+            }
+        }
+    }
+    if("TMHMLearnsets" in speciesObj){
+        for(let i = 0; i < speciesObj["TMHMLearnsets"].length; i++){
+            if(typeof(speciesObj["TMHMLearnsets"][i]) == "object"){
+                if(speciesObj["TMHMLearnsets"][i][0] == moveName){
+                    return true
+                }
+            }
+            else if(typeof(speciesObj["TMHMLearnsets"][i] == "string")){
+                if(speciesObj["TMHMLearnsets"][i] == moveName){
+                    return true
+                }
+            }
+        }
+    }
+    if("eggMovesLearnsets" in speciesObj){
+        for(let i = 0; i < speciesObj["eggMovesLearnsets"].length; i++){
+            if(typeof(speciesObj["eggMovesLearnsets"][i]) == "object"){
+                if(speciesObj["eggMovesLearnsets"][i][0] == moveName){
+                    return true
+                }
+            }
+            else if(typeof(speciesObj["eggMovesLearnsets"][i] == "string")){
+                if(speciesObj["eggMovesLearnsets"][i] == moveName){
+                    return true
+                }
+            }
+        }
+    }
+    if("tutorLearnsets" in speciesObj){
+        for(let i = 0; i < speciesObj["tutorLearnsets"].length; i++){
+            if(typeof(speciesObj["tutorLearnsets"][i]) == "object"){
+                if(speciesObj["tutorLearnsets"][i][0] == moveName){
+                    return true
+                }
+            }
+            else if(typeof(speciesObj["tutorLearnsets"][i] == "string")){
+                if(speciesObj["tutorLearnsets"][i] == moveName){
+                    return true
+                }
+            }
+        }
+    }
+    return false
 }

@@ -17,9 +17,6 @@ footer > p {
     padding: 0.5em 0em 0.5em 0em;
 }
 
-
-
-
 [class*="hide"] {
 	display: none !important
 }
@@ -104,7 +101,7 @@ input[type="search"]:focus, input[type="search"]:hover {
     #table > table > thead > tr > th:hover {
         background: rgba(113, 117, 126, 0.336);
     }
-    #speciesTableTbody tr:hover, #abilitiesTableTbody tr:hover, #movesTableTbody tr:hover {
+    #speciesTableTbody tr:hover, #abilitiesTableTbody tr:hover, #movesTableTbody tr:hover, #locationsTableTbody tr:hover {
         background-color: rgba(129, 135, 156, 0.301);
         cursor: pointer;
     }
@@ -117,7 +114,13 @@ input[type="search"]:focus, input[type="search"]:hover {
         background: rgba(215, 212, 231, 0.3);
     }
 
-    .addFilterButton:hover {
+    .tableFilter:hover {
+        background: rgba(215, 212, 231, 0.5) !important;
+    }
+
+    .crossOnHover:hover {
+        cursor: pointer;
+        text-decoration: line-through !important;
         background: rgba(215, 212, 231, 0.5) !important;
     }
 }
@@ -161,25 +164,29 @@ td, th {
     */
 }
 
-.tableFilter {
-    padding-top: 5px;
+#tableFilter {
+    max-width: 1000px;
+    margin: auto;
 }
 
-.filterLabel {
-    width: calc(50vw - 150px);
-    display: flex;
-    justify-content: right;
-    align-items: center;
+.tableFilter, .filter {
+    padding: 6px 12px 6px 12px;
+    margin: 1px 1px 1px 1px;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background: rgba(215, 212, 231, 0.2) !important;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-@media 
-only screen and (max-width: 500px) {
-    .filterLabel {
-        width: calc(50vw - 75px);
-    }
-    .filterInput {
-        width: 150px !important;
-    }
+.filterListContainer {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.newFilter {
+    color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .background {
@@ -228,6 +235,22 @@ only screen and (max-width: 500px) {
     padding: 0px 2px 0px 2px;
 }
 
+.background4 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    border: none;
+    width: 3.5rem;
+    height: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(54, 61, 61, 0.788);
+    padding: 0px 2px 0px 2px;
+}
+
 
 .TYPE_NORMAL {background: #A8A77A;}
 .TYPE_FIRE {background: #EE8130;}
@@ -248,14 +271,18 @@ only screen and (max-width: 500px) {
 .TYPE_STEEL {background: #8c8c9e;}
 .TYPE_FAIRY {background: #D685AD;}
 
-
 .Physical {filter: brightness(200%);}
 .Special {filter: brightness(200%);}
 .Status {filter: brightness(300%);}
 
+.Move {color: #86FF64;}
+.Item, .Split {color: #FFC2F0;}
+/*.Type {color: #70FFFA;}*/
+.Ability {color: #FFF86E;}
+.EggGroup {color: #ACAAFF;}
+.Form {color: #FFAFAF;}
 
 .splitIcon {width: 40px;}
-
 
 .modal {
     background: #232529;
@@ -263,8 +290,6 @@ only screen and (max-width: 500px) {
     padding: 1em;
     max-width: 50ch;
 }
-
-
 
 .underline {
     text-decoration: underline;

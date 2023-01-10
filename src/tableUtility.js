@@ -66,26 +66,29 @@ function sortTableByClassName(table, className, asc = true, parseINT = false) {
 
 
 
-function filterTableInput(input, columns, tbody){
-    const inputArray = input.toLowerCase().replace(/-|'/g, " ").split(" ")
-    let hideRows = {}
-    for (let j = 0; j < tbody.rows.length; j++){
-        let compareValue = ""
-        for (let i = 0; i < columns.length; i++){
-            compareValue += `${tbody.rows[j].cells[columns[i]].textContent.toLowerCase()} `
-        }
-        for (let i = 0; i < inputArray.length; i++){
-            if(!compareValue.includes(inputArray[i])){
-                hideRows[j] = "hide"
-                break
+function filterTableInput(input, obj, keyArray){
+    const sanitizedInput = input.trim().replaceAll(/-|'| |_/g, "").toLowerCase()
+    const regexInput = new RegExp(sanitizedInput, "i")
+    const table = document.getElementsByClassName("activeTable")[0]
+    const rows = table.querySelectorAll("tbody > tr")
+    for (let j = 0; j < rows.length; j++){
+        const key = rows[j].getElementsByClassName("key")[0].innerText
+        rows[j].classList.add("hide")
+        for (let i = 0; i < keyArray.length; i++){
+            if(/^\./i.test(keyArray[i])){
+                const compare = rows[j].getElementsByClassName(keyArray[i].replace(".", ""))[0].innerText.replaceAll(/-|'| |_/g, "").toLowerCase()
+                if(compare.includes(sanitizedInput)){
+                    rows[j].classList.remove("hide")
+                    break
+                }
+            }
+            else{
+                if(regexInput.test(obj[key][keyArray[i]].toString().replaceAll(/-|'| |_/g, ""))){
+                    rows[j].classList.remove("hide")
+                    break
+                }
             }
         }
-    }
-    for(let i = 0; i < tbody.rows.length; i++){
-        if(hideRows[i] !== undefined)
-            tbody.rows[i].classList.add("hide")
-        else
-            tbody.rows[i].classList.remove("hide")
     }
     lazyLoading(true)
 }
@@ -95,29 +98,20 @@ function filterTableInput(input, columns, tbody){
 
 
 
-function filterTableInputParse(input, obj, keyArray, tbody){
-    const inputArray = input.toUpperCase().replace(/-|'/g, " ").split(" ")
-    let hideRows = {}
-    for (let j = 0; j < tbody.rows.length; j++){
-        const key = tbody.rows[j].getElementsByClassName("key")[0].innerText
-                let compareValue = ""
-        for (let i = 0; i < keyArray.length; i++){
-            compareValue += `${JSON.stringify(obj[key][keyArray[i]])} `
-        }
-        for (let i = 0; i < inputArray.length; i++){
-            if(!compareValue.includes(inputArray[i])){
-                hideRows[j] = "hide"
-                break
+function refreshLocationsTables(){
+    if(!locationsTable.classList.contains("hide")){
+        const locationsTables = locationsTableTbody.children
+        for(let i = 0; i < locationsTables.length; i++){
+            locationsTables[i].classList.add("hide")
+            const tableTbody = locationsTables[i].children[1]
+            for(let j = 0; j < tableTbody.children.length; j++){
+                if(!tableTbody.children[j].className.includes("hide")){
+                    locationsTables[i].classList.remove("hide")
+                    break
+                }
             }
         }
     }
-    for(let i = 0; i < tbody.rows.length; i++){
-        if(hideRows[i] !== undefined)
-            tbody.rows[i].classList.add("hide")
-        else
-            tbody.rows[i].classList.remove("hide")
-    }
-    lazyLoading(true)
 }
 
 
@@ -127,18 +121,17 @@ function filterTableInputParse(input, obj, keyArray, tbody){
 
 
 function lazyLoading(reset = false){
-    const activeTables = document.getElementsByClassName("activeTable")
-    let rows = []
-    if(activeTables.length > 0)
+    const activeTable = document.getElementsByClassName("activeTable")[0]
+    if(activeTable)
     {
-        rows = activeTables[0].tBodies[0].rows
-        let j = 0
+        const rows = activeTable.querySelectorAll("tbody > tr")
+        let count = 0
         for(let i = 0; i < rows.length; i++){
             if(reset){
-                if(j <= 75){
+                if(count <= 75){
                     if(!rows[i].classList.contains("hide") && !rows[i].className.includes("hideFilter") && !rows[i].className.includes("hideChanged")){
                         rows[i].classList.remove("hideTemp")
-                        j++
+                        count++
                     }
                 }
                 else
@@ -147,14 +140,15 @@ function lazyLoading(reset = false){
             else{
                 if(!rows[i].classList.contains("hide") && !rows[i].className.includes("hideFilter")){
                     if(rows[i].classList.contains("hideTemp")){
-                        j++
+                        count++
                         rows[i].classList.remove("hideTemp")
                     }
                 }
-                if(j >= 75)
+                if(count >= 75)
                     break
             }
         }
+        refreshLocationsTables()
     }
 }
 
@@ -164,7 +158,6 @@ function lazyLoading(reset = false){
 
 
 async function tableButtonClick(input){
-    await lazyLoading(reset = true)
     const activeTable = await document.querySelectorAll(".activeTable")
     const activeButton = await document.querySelectorAll(".activeButton")
     const activeInput = await document.querySelectorAll(".activeInput")
@@ -186,7 +179,7 @@ async function tableButtonClick(input){
     })
 
     activeFilter.forEach(filter => {
-        filter.classList.remove("activeInput")
+        filter.classList.remove("activeFilter")
         filter.classList.add("hide")
     })
 
@@ -206,202 +199,6 @@ async function tableButtonClick(input){
 
     targetFilter.classList.remove("hide")
     targetFilter.classList.add("activeFilter")
-}
 
-
-
-
-
-
-
-
-function createFilter(list , obj, objInputArray, filterCount, element, labelString, isInt = false, isOperator = false, text = ""){
-
-    const activeTables = document.getElementsByClassName("activeTable")
-    if(activeTables.length > 0){
-        const rows = activeTables[0].tBodies[0].rows
-
-        const filter = document.createElement("div")
-        const label = document.createElement("label")
-        const input = document.createElement("input")
-        const datalist = document.createElement("datalist")
-        const button = document.createElement("button")
-
-        filter.setAttribute("id", `filter${filterCount}`)
-        filter.className = "flex tableFilter"
-
-        label.setAttribute("for", `input${filterCount}`)
-        label.className = "filterLabel"
-        label.innerText = labelString
-
-        input.setAttribute("type", "search")
-        input.setAttribute("id", `input${filterCount}`)
-        input.setAttribute("list", `datalist${filterCount}`)
-        input.className = "filterInput"
-        
-        datalist.setAttribute("id", `datalist${filterCount}`)
-
-
-        for (let i = 0; i < list.length; i++){
-            const option = document.createElement("option")
-            option.innerText = list[i]
-            datalist.append(option)
-        }
-
-
-        button.setAttribute("type", "button")
-        button.setAttribute("id", `button${filterCount}`)
-        button.innerText = "X"
-
-        if(isOperator){
-            input.value = ">= "
-        }
-        else if(text !== ""){
-
-            document.querySelectorAll("[id*=filter]").forEach(el => {
-                el.remove()
-            })
-
-            for (let i = 0; i < rows.length; i++){
-                if(rows[i].classList.contains("hideChanged")){
-                    rows[i].className = "hideChanged hideTemp"
-                }
-                else{
-                    rows[i].className = "hideTemp"
-                }
-            }
-
-            input.value = text
-            updateValue()
-        }
-
-        input.addEventListener("input", updateValue)
-
-        function updateValue(){
-            let value = input.value
-            if(!isInt)
-                value = value.replace(/-|'/g, " ").toLowerCase()
-
-            if(list.includes(input.value) && input.value !== "" && !isOperator){
-                input.setAttribute("placeholder", `${value}`)
-                input.blur()
-                filterInput(value, objInputArray, rows, filterCount, obj, isInt, isOperator)
-            }
-            else if(isOperator)
-                filterInput(value, objInputArray, rows, filterCount, obj, isInt, isOperator)
-        }
-
-        button.addEventListener("click", () => {
-            for (let i = 0; i < rows.length; i++){
-                rows[i].classList.remove(`hideFilter${filterCount}`)
-            }
-            filter.remove()
-            lazyLoading(reset = true)
-        })
-
-        filter.append(label)
-        filter.append(input)
-        filter.append(datalist)
-        filter.append(button)
-        element.append(filter)
-    }
-}
-
-
-
-
-function filterInput(value, objInputArray, rows, filterCount, obj, isInt = false, isOperator = false){
-    let hideRows = {}
-
-    for (let j = 0; j < rows.length; j++){
-
-
-        const key = rows[j].querySelector(".key").textContent
-
-        for (let i = 0; i < objInputArray.length; i++){
-            let compareValue = obj[key][objInputArray[i]]
-            if(isOperator){
-                const regex = />=|<=|=|<|>/
-
-
-                const matchInt = value.match(/\d+/)
-                if(matchInt !== null){
-                    const int = parseInt(matchInt[0])
-
-
-                    const matchOperator = value.match(regex)
-                    if(matchOperator !== null){
-                        const operator = matchOperator[0]
-
-                        switch (operator){
-                            case ">=":
-                                if(compareValue >= int)
-                                    hideRows[j] = "show"
-                                break
-                            case "<=":
-                                if(compareValue <= int)
-                                    hideRows[j] = "show"
-                                break
-                            case ">":
-                                if(compareValue > int)
-                                    hideRows[j] = "show"
-                                break
-                            case "<":
-                                if(compareValue < int)
-                                    hideRows[j] = "show"
-                                break
-                            case "=":
-                                if(compareValue == int)
-                                    hideRows[j] = "show"
-                                break
-                        }
-                    }
-                    else{
-                        if(compareValue == int)
-                            hideRows[j] = "show"
-                    }
-                }
-                else
-                    hideRows[j] = "show"
-            }
-            else if(isInt){
-                if(compareValue == value || value == ""){
-                    hideRows[j] = "show"
-                    break                        
-                }
-            }
-            else{
-                compareValue = JSON.stringify(compareValue).toLowerCase()
-                if(compareValue.includes(value.replace(/ /g, "_")) || compareValue.includes(value.replace(/ /g, ""))){
-                    hideRows[j] = "show"
-                    break
-                }
-            }
-        }
-    }
-
-
-    for(let i = 0; i < rows.length; i++){
-        if(hideRows[i] !== "show")
-            rows[i].classList.add(`hideFilter${filterCount}`)
-        else
-            rows[i].classList.remove(`hideFilter${filterCount}`)
-    }
-    lazyLoading(true)
-}
-
-
-
-function createOptionArray(objInputArray, obj, isInt = false){
-    let list = []
-    for (const name of Object.keys(obj)){
-        for (let i = 0; i < objInputArray.length; i++){
-            let value = obj[name][objInputArray[i]]
-            if(!isInt)
-                value = sanitizeString(value)
-            if(!list.includes(value))
-                list.push(value)
-        }
-    }
-    return list
+    await lazyLoading(reset = true)
 }

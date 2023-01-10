@@ -1,23 +1,20 @@
-.zoneHeader {
-	font-size: 20px;
-	width: 250px;
-}
-
-.rowZoneHeader {
+.locationTableHeader {
 	background: rgba(0, 0, 0, 0.15) !important;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: default !important;
 }
 
-.hidden {
-	visibility: hidden;
+.locationsTable {
+	margin-bottom: 50px;
+}
+
+.headerContainer {
+	width: 250px;
 }
 
 #locationsTable {
 	box-shadow: none !important;
-}
-
-.locationsHover:hover {
-	background-color: rgba(129, 135, 156, 0.301);
-    cursor: pointer;
 }
 
 .miniSprite3 {
@@ -25,28 +22,4 @@
 	width: 48px;
   	height: 48px;
   	aspect-ratio: auto 48 / 48;
-}
-
-.Day {
-	background: #FD841F;
-}
-
-.Night {
-	background: #0C090A;
-}
-
-.Surfing {
-	background: #0095b6;
-}
-
-.Old.Rod {
-	background: #327576;
-}
-
-.Good.Rod {
-	background: #376c80;
-}
-
-.Super.Rod {
-	background: #143d56;
 }

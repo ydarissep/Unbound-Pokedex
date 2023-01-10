@@ -24,8 +24,8 @@
   <script defer src="src/locations/displayLocations.js"></script>
   <script defer src="src/locations/fetchLocations.js"></script>
   <script defer src="src/locations/regexLocations.js"></script>
-  <script defer src="src/locations/filterLocations.js"></script>
   <script defer src="src/lz-string.js"></script>
+  <script defer src="src/tableFilters.js"></script>
   <script defer src="src/utility.js"></script>
   <script defer src="src/tableUtility.js"></script>
   <script defer src="src/speciesPanelUtility.js"></script>
@@ -111,11 +111,11 @@
       </div>
       <div id="speciesHeldItemsContainer">
         <div id="speciesHeldItemsText" class="speciesPanelText">Held Items:</div>
-        <div id="speciesHeldItems" class="flex flexColumn wrap speciesPanelTextPadding"></div>
+        <div id="speciesHeldItems" class="flex flexColumn wrap speciesPanelTextPadding bold"></div>
       </div>
       <div id="speciesEggGroupsContainer">
         <div id="speciesEggGroupsText" class="speciesPanelText">Egg Groups:</div>
-        <div id="speciesEggGroups" class="flex flexColumn wrap speciesPanelTextPadding"></div>
+        <div id="speciesEggGroups" class="flex flexColumn wrap speciesPanelTextPadding bold"></div>
       </div>
     </div>
     <div id="speciesTypeChartContainer" class="flex flexCenter">
@@ -233,8 +233,8 @@
   <div id="tableButton" class="hide">
     <button type="button" id="abilitiesButton">Abilities</button>
     <button type="button" id="speciesButton" class="activeButton">Species</button>
-    <button type="button" id="locationsButton">Locations</button>
     <button type="button" id="movesButton">Moves</button>
+    <button type="button" id="locationsButton">Locations</button>
   </div>
 
 
@@ -243,7 +243,8 @@
   <div id="tableFilter" class="hide">
 
     <div id="abilitiesFilter" class="hide">
-      <div id="abilitiesFilterButton"></div>
+      <div id="abilitiesFilterList" class="filterList"></div>
+      <div id="abilitiesFilterContainer" class="filterContainer"></div>
     </div>
 
     <div id="speciesFilter" class="activeFilter">
@@ -257,40 +258,18 @@
         <label for="onlyShowChangedPokemonCheckbox">Only show changed Pokemon</label>
         <input type="checkbox" id="onlyShowChangedPokemonCheckbox">
       </div>
-      
-      <div id="speciesFilterMainButton">
-        <button type="button" id="speciesFilterType" class="addFilterButton">Type</button>
-        <button type="button" id="speciesFilterAbility" class="addFilterButton">Ability</button>
-        <button type="button" id="speciesFilterLearnset" class="addFilterButton">Learnset</button>
-        <button type="button" id="speciesFilterHeldItem" class="addFilterButton">Held Item</button>
-        <button type="button" id="speciesFilterEggGroup" class="addFilterButton">Egg Group</button>
-      </div>
-      <div id="speciesFilterButton">
-        <button type="button" id="speciesFilterHP" class="addFilterButton">HP</button>
-        <button type="button" id="speciesFilterAtk" class="addFilterButton">Atk</button>
-        <button type="button" id="speciesFilterDef" class="addFilterButton">Def</button>
-        <button type="button" id="speciesFilterSpA" class="addFilterButton">SpA</button>
-        <button type="button" id="speciesFilterSpD" class="addFilterButton">SpD</button>
-        <button type="button" id="speciesFilterSpe" class="addFilterButton">Spe</button>
-        <button type="button" id="speciesFilterBST" class="addFilterButton">BST</button>
-      </div>
+      <div id="speciesFilterList" class="filterList"></div>
+      <div id="speciesFilterContainer" class="filterContainer"></div>
     </div>
 
     <div id="locationsFilter" class="hide">
-      <div id="locationsFilterButton">
-        <button type="button" id="locationsFilterType" class="addFilterButton">Type</button>
-      </div>
+      <div id="locationsFilterList" class="filterList"></div>
+      <div id="locationsFilterContainer" class="filterContainer"></div>
     </div>
 
     <div id="movesFilter" class="hide">
-      <div id="movesFilterButton">
-        <button type="button" id="movesFilterType" class="addFilterButton">Type</button>
-        <button type="button" id="movesFilterPower" class="addFilterButton">Power</button>
-        <button type="button" id="movesFilterFlag" class="addFilterButton">Flag</button>
-        <button type="button" id="movesFilterPriority" class="addFilterButton">Priority</button>
-        <button type="button" id="movesFilterEffect" class="addFilterButton">Effect</button>
-        <button type="button" id="movesFilterTarget" class="addFilterButton">Target</button>
-      </div>
+      <div id="movesFilterList" class="filterList"></div>
+      <div id="movesFilterContainer" class="filterContainer"></div>
     </div>
 
   </div>
@@ -353,14 +332,6 @@
 
 
     <table id="locationsTable" class="hide">
-      <thead id="locationsTableThead">
-        <tr>
-          <th class="sprite hide">Sprite</th>
-          <th class="species hide" colspan="2">Name</th>
-          <th class="rarity hide">%</th>
-          <th class="zone hide">Zone</th>
-        </tr>
-      </thead>
       <tbody id="locationsTableTbody"></tbody>
     </table>
   </div>

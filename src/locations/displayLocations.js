@@ -1,8 +1,6 @@
 function displayLocations(){
-    let tBody = locationsTableTbody
     const locationsArray = Object.keys(locations)
-    tBody.innerText = ""
-    let counter = 0
+    let count = 0
 
     for (let i = 0; i < locationsArray.length; i++){
 
@@ -10,8 +8,13 @@ function displayLocations(){
 
         for(let j = 0; j < methodArray.length; j++){
 
-            let rowZoneHeader = createRow(locationsArray[i], methodArray[j])
-            tBody.append(rowZoneHeader)
+            const table = document.createElement("table")
+            const tableThead = document.createElement("thead")
+            const tableTbody = document.createElement("tbody")
+
+            let locationTableHeader = createRowHeader(locationsArray[i], methodArray[j])
+            tableThead.append(locationTableHeader)
+            table.append(tableThead)
 
             const speciesArray = Object.keys(locations[locationsArray[i]][methodArray[j]])
 
@@ -22,8 +25,7 @@ function displayLocations(){
                 }
 
                 let row = document.createElement("tr")
-                tBody.append(row)
-                row.className = "locationsHover"
+                tableTbody.append(row)
 
                 let spriteContainer = document.createElement("td")
                 spriteContainer.className = "sprite"
@@ -35,75 +37,59 @@ function displayLocations(){
 
                 let speciesContainer = document.createElement("td")
                 let speciesName = document.createElement("div")
-                speciesName.className = "species hide"
+                speciesName.className = "key hide"
                 speciesName.innerText = speciesArray[k]
                 speciesContainer.innerText = sanitizeString(speciesArray[k])
-                rowZoneHeader.querySelector(".species").innerText = `${rowZoneHeader.querySelector(".species").innerText} ${sanitizeString(speciesArray[k])}`
                 speciesContainer.append(speciesName)
                 row.append(speciesContainer)
 
                 let rarity = document.createElement("td")
+                const locationsInfo = document.createElement("div")
                 rarity.className = "rarity"
                 rarity.innerText = `${locations[locationsArray[i]][methodArray[j]][speciesArray[k]]}%`
                 rarity.style.color = `hsl(${locations[locationsArray[i]][methodArray[j]][speciesArray[k]]*2},85%,45%)`
+                locationsInfo.innerText = `${locationsArray[i]} ${methodArray[j]}`
+                locationsInfo.className = "locationsInfo hide"
+                rarity.append(locationsInfo)
                 row.append(rarity)
-
-                let zone = document.createElement("td")
-                zone.className = "zone method hide"
-                zone.innerText = `${locationsArray[i]}  ${methodArray[j]}`
-                row.append(zone)
 
                 row.addEventListener("click", () => {
                     createSpeciesPanel(speciesArray[k])
                     window.scrollTo(0, 0)
                 })
 
-                counter++
-                if(counter >= 75){
+                count++
+                if(count >= 75){
                     row.classList.add("hideTemp")
                 }
-
             }
-            let blankRow = rowZoneHeader.cloneNode(true)
-            blankRow.className = "hidden"
-            blankRow.getElementsByClassName("zone")[0].innerText += "\nbreakline"
-            tBody.append(blankRow)
 
-            if(counter >= 75){
-                rowZoneHeader.classList.add("hideTemp")
-                blankRow.classList.add("hideTemp")
-            }
+            table.append(tableTbody)
+            locationsTableTbody.append(table)
+            table.classList = "locationsTable"
 
         }
     }
 }
 
-function createRow(location, method){
-    let rowZoneHeader = document.createElement("tr")
-    rowZoneHeader.className = "rowZoneHeader"
+function createRowHeader(location, method){
+    let locationTableHeader = document.createElement("tr")
+    locationTableHeader.className = "locationTableHeader"
 
-    let spriteHeaderContainer = document.createElement("td")
+    let spriteHeaderContainer = document.createElement("th")
     let spriteHeader = document.createElement("img")
     spriteHeaderContainer.className = "sprite"
-    spriteHeader.src = `https://raw.githubusercontent.com/ydarissep/inflamed-red-pokedex/main/src/locations/sprites/${returnMethodSprite(method).replaceAll(" ", "_")}.png`
+    spriteHeader.src = `https://raw.githubusercontent.com/${repoDex}/main/src/locations/sprites/${returnMethodSprite(method).replaceAll(" ", "_")}.png`
     spriteHeaderContainer.append(spriteHeader)
-    rowZoneHeader.append(spriteHeaderContainer)
+    locationTableHeader.append(spriteHeaderContainer)
 
-    let speciesHeader = document.createElement("td")
-    speciesHeader.className = "species hide"
-    rowZoneHeader.append(speciesHeader)
+    let headerContainer = document.createElement("th")
+    headerContainer.innerText = `${location} ${method}`
+    headerContainer.colSpan = "2"
+    headerContainer.className = "headerContainer"
+    locationTableHeader.append(headerContainer)
 
-    let rarityHeader = document.createElement("td")
-    rarityHeader.className = "rarity hide"
-    rowZoneHeader.append(rarityHeader)
-
-    let zoneHeader = document.createElement("td")
-    zoneHeader.className = `zone method zoneHeader bold`
-    zoneHeader.innerText = `${location} ${method}`
-    zoneHeader.colSpan = "2"
-    rowZoneHeader.append(zoneHeader)
-
-    return rowZoneHeader
+    return locationTableHeader
 }
 
 
