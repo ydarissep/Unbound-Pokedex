@@ -212,52 +212,33 @@ function setMove(move, change, input, output){
 
 function regexMovesIngameName(textMovesIngameName, moves){
     const lines = textMovesIngameName.split("\n")
-    let nameLongFound = false, move = []
+    let nameFound = false, movesArray = [], tempArray = []
 
 
     lines.forEach(line => {
-        if(nameLongFound === true){
-            for (let i = 0; i < move.length; i++)
-                moves[move[i]]["ingameName"] = line.trim()
-            nameLongFound = false
-            move = []
-        }
-
-
-        const matchNameLong = line.match(/NAME_LONG_(\w+)/i)
-        if(matchNameLong !== null){
-            const nameLong = `MOVE_${matchNameLong[1]}`
-            const nameLongReplaced = `MOVE_${matchNameLong[1].replace(/'|_/g, "")}`
-
-            if(moves[nameLong] !== undefined){
-                nameLongFound = true
-                move.push(nameLong)
-            }
-            if(moves[`${nameLong}_S`] !== undefined){
-                nameLongFound = true
-                move.push(`${nameLong}_S`)
-            }
-            if(moves[`${nameLong}_P`] !== undefined){
-                nameLongFound = true
-                move.push(`${nameLong}_P`)
-            }
-            if(moves[nameLongReplaced] !== undefined){
-                nameLongFound = true
-                move.push(nameLongReplaced)
-            }
-            if(moves[`${nameLongReplaced}_S`] !== undefined){
-                nameLongFound = true
-                move.push(`${nameLongReplaced}_S`)
-            }
-            if(moves[`${nameLongReplaced}_P`] !== undefined){
-                nameLongFound = true
-                move.push(`${nameLongReplaced}_P`)
+        if(nameFound === true){
+            if(line !== ""){
+                for(let i = 0; i < movesArray.length; i++){
+                    moves[movesArray[i]]["ingameName"] = line.trim()
+                }
+                nameFound = false
+                movesArray = []
             }
         }
-        else{
-            const test = `MOVE_${line.trim().replace(/ |-|_|'/g, "").toUpperCase()}`
-            if(moves[test] != undefined)
-                moves[test]["ingameName"] = line.trim()
+
+        const matchName = line.match(/NAME_(\w+)/i)
+        if(matchName){
+            const moveName = `MOVE_${matchName[1].toUpperCase().replace("_LONG_", "_")}`
+            const moveNameSanitized = `MOVE_${matchName[1].replaceAll("_", "").toUpperCase().replace("_LONG_", "_")}`
+
+            if(moveName in moves){
+                nameFound = true
+                movesArray.push(moveName)
+            }
+            else if(moveNameSanitized in moves){
+                nameFound = true
+                movesArray.push(moveNameSanitized)
+            }
         }
     })
 

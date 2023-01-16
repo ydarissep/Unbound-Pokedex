@@ -331,7 +331,7 @@ function regexTutorLearnsets(textTutorLearnsets, species, start, end){
                 let move = moves[matchMove[0]]["ingameName"]
                 count++
 
-                if(move === "Burningjealousy")
+                if(move === "Jealous Burn")
                     move = "Burning Jealousy"
                 else if(move === "Soft-Boiled")
                     move = "Softboiled"
@@ -345,9 +345,9 @@ function regexTutorLearnsets(textTutorLearnsets, species, start, end){
                     move = "Psychic Terrain"
                 else if(move === "Electricterrain")
                     move = "Electric Terrain"
-                else if(move === "Breakingswipe")
+                else if(move === "Break Swipe")
                     move = "Breaking Swipe"
-                else if(move === "Highhorsepower")
+                else if(move === "HiHorsepower")
                     move = "High Horsepower"
                 else if(move === "ThunderPunch")
                     move = "Thunder Punch"
@@ -359,45 +359,43 @@ function regexTutorLearnsets(textTutorLearnsets, species, start, end){
                     move = "Mystical Fire"
                 else if(move === "Psychicfangs")
                     move = "Psychic Fangs"
-                else if(move === "Expandingforce")
+                else if(move === "Expand Force")
                     move = "Expanding Force"
                 else if(move === "TerrainPulse")
                     move = "Terrain Pulse"
-                else if(move === "Risingvoltage")
+                else if(move === "Rising Volt")
                     move = "Rising Voltage"
-                else if(move === "Mistyexplosion")
+                else if(move === "MistyExplode")
                     move = "Misty Explosion"
-                else if(move === "Corrosivegas")
+                else if(move === "Corrode Gas")
                     move = "Corrosive Gas"
                 else if(move === "SkitterSmack")
                     move = "Skitter Smack"
-                else if(move === "Scorchingsands")
+                else if(move === "Scorch Sands")
                     move = "Scorching Sands"
                 else if(move === "DualWingbeat")
                     move = "Dual Wingbeat"
 
-                if(move !== "Block"){ // Could be removed later
-                    const rawTutor = fetch(`https://raw.githubusercontent.com/${repo2}/src/tutor_compatibility/${count} - ${move}.txt`)
+                const rawTutor = fetch(`https://raw.githubusercontent.com/${repo2}/src/tutor_compatibility/${count} - ${move}.txt`)
+                .then(promises => {
+                    const textTutor = promises.text()
                     .then(promises => {
-                        const textTutor = promises.text()
-                        .then(promises => {
-                            const lines = promises.split("\n")
 
-                            lines.forEach(line => {
-                                if(line.includes(":")){
-                                    const matchTutor = line.match(/\d+/)
-                                    if(matchTutor !== null)
-                                        tutor = matchTutor[0]
-                                }
+                        const lines = promises.split("\n")
+                        lines.forEach(line => {
 
+                            if(line.includes(":")){
+                                const matchTutor = line.match(/\d+/)
+                                if(matchTutor !== null)
+                                    tutor = matchTutor[0]
+                            }
 
-                                const matchSpecies = `SPECIES_${line.trim()}`
-                                if(species[matchSpecies] !== undefined)
-                                    species[matchSpecies]["tutorLearnsets"].push([matchMove[0], tutor])
-                            })
+                            const matchSpecies = `SPECIES_${line.trim()}`
+                            if(species[matchSpecies] !== undefined)
+                                species[matchSpecies]["tutorLearnsets"].push([matchMove[0], tutor])
                         })
                     })
-                } 
+                })
             }
         }
         
