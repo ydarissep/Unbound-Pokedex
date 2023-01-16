@@ -35,7 +35,7 @@ function regexMovesDescription(textMovesDescription, moves){
 
 function regexMoves(textMoves, moves){
     const lines = textMoves.split("\n")
-    let move = null, change = false, rebalanced = false
+    let move = null, change = false
 
     lines.forEach(line => {
         const matchMoves = line.match(/\[ *(MOVE_\w+) *\]/i)
@@ -57,14 +57,23 @@ function regexMoves(textMoves, moves){
             }
         }
         if(line.includes("#ifdef")){
-            rebalanced = true
+            change = false
         }
-        else if(line.includes("else") && rebalanced === true){
-            rebalanced = false
+        else if(line.includes("ifndef")){
             change = true
         }
-        else if(line.includes("endif") && change === true)
+        else if(line.includes("else")){
+            if(change === true){
+                change = false
+            }
+            else{
+                change = true
+            }
+        }
+        else if(line.includes("endif")){
             change = false
+        }
+
 
 
         if(line.includes(".power")){
@@ -110,7 +119,11 @@ function regexMoves(textMoves, moves){
         else if(line.includes(".effect")){
             const matchEffect = line.match(/EFFECT_\w+/i)
             if(matchEffect !== null){
-                const effect = matchEffect[0]
+                let effect = matchEffect[0]
+
+                if(effect === "EFFECT_FREEZE_HIT"){
+                    effect = "EFFECT_FROSTBITE_HIT"
+                }
 
                 moves[move] = setMove(moves[move], change, "effect", effect)
             }

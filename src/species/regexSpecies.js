@@ -92,21 +92,29 @@ function regexBaseStats(textBaseStats, species){
 
 
 
-function regexChanges(textChanges, species){
+function regexChanges(textChanges, species, abilitiesArrayForChanges){
     const lines = textChanges.split("\n")
 
     const regex = /baseHP|baseAttack|baseDefense|baseSpeed|baseSpAttack|baseSpDefense|type1|type2|ability1|ability2|hiddenAbility/i
-    let value, name, abilities = []
+    let value, name, abilitiesArray = []
 
     lines.forEach(line => {
 
         const matchSpecies = line.match(/SPECIES_\w+/i)
         if(matchSpecies !== null){
-            if(name in species && abilities.length >= species[name]["abilities"].length && JSON.stringify(abilities) !== JSON.stringify(species[name]["abilities"])){
-                species[name]["changes"].push(["abilities", abilities])
+
+            for(let i = 0; i < abilitiesArray.length; i++){
+                const ability = species[name]["abilities"][i]
+                if(!abilitiesArrayForChanges.includes(ability)){
+                    abilitiesArray[i] = ability
+                }
+            }
+
+            if(name in species && JSON.stringify(abilitiesArray) !== JSON.stringify(species[name]["abilities"])){
+                species[name]["changes"].push(["abilities", abilitiesArray])
             }
             name = matchSpecies[0]
-            abilities = []
+            abilitiesArray = []
         }
 
 
@@ -131,7 +139,7 @@ function regexChanges(textChanges, species){
                     value = line.match(/\w+_\w+/i)
                     if(value !== null)
                         value = value[0]
-                    abilities.push(value)
+                    abilitiesArray.push(value)
                 }
 
                 if(match in species[name] && species[name][match] !== value){
@@ -142,6 +150,32 @@ function regexChanges(textChanges, species){
     })
     return species
 }
+
+
+
+
+
+
+
+
+
+async function regexAbilitiesArrayForChanges(textAbilitiesForChanges){
+    const lines = textAbilitiesForChanges.split("\n")
+    let abilitiesArrayForChanges = []
+
+    lines.forEach(line => {
+        const matchAbility = line.match(/ABILITY_\w+/i)
+        if(matchAbility){
+            abilitiesArrayForChanges.push(matchAbility[0])
+        }
+    })
+
+    return abilitiesArrayForChanges
+}
+
+
+
+
 
 
 

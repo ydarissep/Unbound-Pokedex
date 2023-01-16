@@ -79,7 +79,7 @@ async function getSprite(species){
 }
 
 async function getReplaceAbilities(species){
-    const rawReplaceAbilities = await fetch(`https://raw.githubusercontent.com/ydarissep/Unbound-Pokedex/main/src/abilities/duplicate_abilities.json`)
+    const rawReplaceAbilities = await fetch(`https://raw.githubusercontent.com/${repoDex}/main/src/abilities/duplicate_abilities.json`)
     const jsonReplaceAbilities = await rawReplaceAbilities.json()
 
     return regexReplaceAbilities(jsonReplaceAbilities, species)
@@ -87,9 +87,17 @@ async function getReplaceAbilities(species){
 
 async function getChanges(species, url){
     footerP("Fetching species changes")
+
+    const rawAbilitiesChanges = await fetch("https://raw.githubusercontent.com/Skeli789/Complete-Fire-Red-Upgrade/master/include/constants/abilities.h")
+    const textAbilitiesForChanges =  await rawAbilitiesChanges.text()
+
+    const abilitiesArrayForChanges = await regexAbilitiesArrayForChanges(textAbilitiesForChanges)
+
+
     const rawChanges = await fetch(url)
     const textChanges = await rawChanges.text()
-    return regexChanges(textChanges, species)
+
+    return regexChanges(textChanges, species, abilitiesArrayForChanges)
 }
 
 
