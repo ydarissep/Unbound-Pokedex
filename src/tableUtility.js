@@ -72,7 +72,7 @@ function filterTableInput(input, obj, keyArray){
     const table = document.getElementsByClassName("activeTable")[0]
     const rows = table.querySelectorAll("tbody > tr")
     for (let j = 0; j < rows.length; j++){
-        const key = rows[j].getElementsByClassName("key")[0].innerText
+        const key = rows[j].querySelector(".key").innerHTML
         rows[j].classList.add("hide")
         for (let i = 0; i < keyArray.length; i++){
             if(/^\./i.test(keyArray[i])){
