@@ -27,10 +27,23 @@ async function buildLocationsObj(){
 
 
 async function fetchLocationsObj(){
-    if(!localStorage.getItem("locations"))
+    if(!localStorage.getItem("locations")){
         window.locations = await buildLocationsObj()
-    else
-        window.locations = await JSON.parse(LZString.decompressFromUTF16(localStorage.getItem("locations")))
-    
-    await displayLocations()
+    }
+    else{
+        window.locations = await JSON.parse(LZString.decompressFromUTF16(localStorage.getItem("locations")))   
+    }
+
+    let counter = 0
+    window.locationsTracker = []
+    Object.keys(locations).forEach(zone => {
+        Object.keys(locations[zone]).forEach(method => {
+            Object.keys(locations[zone][method]).forEach(speciesName => {
+                locationsTracker[counter] = {}
+                locationsTracker[counter]["key"] = `${zone}\\${method}\\${speciesName}`
+                locationsTracker[counter]["filter"] = []
+                counter++
+            })
+        })
+    })
 }

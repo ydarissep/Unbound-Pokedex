@@ -70,10 +70,17 @@ async function buildAbilitiesObj(){
 
 
 async function fetchAbilitiesObj(){
-    if(!localStorage.getItem("abilities"))
+    if(!localStorage.getItem("abilities")){
         window.abilities = await buildAbilitiesObj()
-    else
+    }
+    else{
         window.abilities = await JSON.parse(LZString.decompressFromUTF16(localStorage.getItem("abilities")))
-    
-    await displayAbilities()
+    }
+
+    window.abilitiesTracker = []
+    for(let i = 0, j = Object.keys(abilities).length; i < j; i++){
+        abilitiesTracker[i] = {}
+        abilitiesTracker[i]["key"] = Object.keys(abilities)[i]
+        abilitiesTracker[i]["filter"] = []
+    }
 }

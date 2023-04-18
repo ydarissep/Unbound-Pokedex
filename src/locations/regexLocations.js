@@ -14,7 +14,7 @@ function regexWildLocations(textWildLocations, locations){
     		index = 0
     	}
     	const matchSpecies = line.match(/SPECIES_\w+/i)
-    	if(matchSpecies !== null){
+    	if(matchSpecies !== null && matchSpecies[0] in species){
     		const tempMethod = replaceMethodString(method, index)
     		if(!(tempMethod in locations[zone])){
     			locations[zone][tempMethod] = {}

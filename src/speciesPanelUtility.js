@@ -36,7 +36,7 @@ async function createSpeciesPanel(name){
 
     const row = document.getElementById(`${name}`)
 
-    speciesName.innerText = row.getElementsByClassName("species")[0].innerText
+    speciesName.innerText = sanitizeString(name)
     speciesID.innerText = `#${species[name]["ID"]}`
 
     speciesSprite.src = getSpeciesSpriteSrc(name)
@@ -314,14 +314,12 @@ speciesPanelInputSpecies.addEventListener("input", e => {
 
 
 function getSpeciesSpriteSrc(speciesName){
-    const row = document.getElementById(`${speciesName}`)
-    
-    if(row.getElementsByClassName("src")[0].src !== undefined)
-        return row.getElementsByClassName("src")[0].src
-    else if(row.getElementsByClassName("src")[0].toDataURL() !== undefined)
-        return row.getElementsByClassName("src")[0].toDataURL()
-    else
+    if(sprites[speciesName]){
+        return sprites[speciesName]
+    }
+    else{
         return species[speciesName]["sprite"]
+    }
 }
 
 

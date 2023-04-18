@@ -61,10 +61,17 @@ async function buildMovesObj(){
 
 
 async function fetchMovesObj(){
-    if(!localStorage.getItem("moves"))
+    if(!localStorage.getItem("moves")){
         window.moves = await buildMovesObj()
-    else
+    }
+    else{
         window.moves = await JSON.parse(LZString.decompressFromUTF16(localStorage.getItem("moves")))
-    
-    await displayMoves()
+    }
+
+    window.movesTracker = []
+    for(let i = 0, j = Object.keys(moves).length; i < j; i++){
+        movesTracker[i] = {}
+        movesTracker[i]["key"] = Object.keys(moves)[i]
+        movesTracker[i]["filter"] = []
+    }
 }

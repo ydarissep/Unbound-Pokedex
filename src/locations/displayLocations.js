@@ -1,75 +1,68 @@
-function displayLocations(){
-    const locationsArray = Object.keys(locations)
-    let count = 0
+function appendLocationsToTable(key){
 
-    for (let i = 0; i < locationsArray.length; i++){
+    const location = key.split("\\")[0]
+    const method = key.split("\\")[1]
+    const speciesKey = key.split("\\")[2]
 
-        const methodArray = Object.keys(locations[locationsArray[i]])
-
-        for(let j = 0; j < methodArray.length; j++){
-
-            const table = document.createElement("table")
-            const tableThead = document.createElement("thead")
-            const tableTbody = document.createElement("tbody")
-
-            let locationTableHeader = createRowHeader(locationsArray[i], methodArray[j])
-            tableThead.append(locationTableHeader)
-            table.append(tableThead)
-
-            const speciesArray = Object.keys(locations[locationsArray[i]][methodArray[j]])
-
-            for(let k = 0; k < speciesArray.length; k++){
-
-                if(!(speciesArray[k] in species)){
-                    continue
-                }
-
-                let row = document.createElement("tr")
-                tableTbody.append(row)
-
-                let spriteContainer = document.createElement("td")
-                spriteContainer.className = "sprite"
-                let sprite = document.createElement("img")
-                sprite.src = getSpeciesSpriteSrc(speciesArray[k])
-                sprite.className = "miniSprite3"
-                spriteContainer.append(sprite)
-                row.append(spriteContainer)
-
-                let speciesContainer = document.createElement("td")
-                let speciesName = document.createElement("div")
-                speciesName.className = "key hide"
-                speciesName.innerText = speciesArray[k]
-                speciesContainer.innerText = sanitizeString(speciesArray[k])
-                speciesContainer.append(speciesName)
-                row.append(speciesContainer)
-
-                let rarity = document.createElement("td")
-                const locationsInfo = document.createElement("div")
-                rarity.className = "rarity"
-                rarity.innerText = `${locations[locationsArray[i]][methodArray[j]][speciesArray[k]]}%`
-                rarity.style.color = `hsl(${locations[locationsArray[i]][methodArray[j]][speciesArray[k]]*2},85%,45%)`
-                locationsInfo.innerText = `${locationsArray[i]} ${methodArray[j]}`
-                locationsInfo.className = "locationsInfo hide"
-                rarity.append(locationsInfo)
-                row.append(rarity)
-
-                row.addEventListener("click", () => {
-                    createSpeciesPanel(speciesArray[k])
-                    window.scrollTo(0, 0)
-                })
-
-                count++
-                if(count >= 75){
-                    row.classList.add("hideTemp")
-                }
-            }
-
-            table.append(tableTbody)
-            locationsTableTbody.append(table)
-            table.classList = "locationsTable"
-
-        }
+    let table = document.getElementById(`${location}${method}`)
+    let tableThead = document.createElement("thead")
+    let tableTbody = document.createElement("tbody")
+    if(table){
+        tableThead = table.children[0]
+        tableTbody = table.children[1]
     }
+    else{
+        const table = document.createElement("table")
+        
+        let locationTableHeader = createRowHeader(location, method)
+        table.setAttribute("id", `${location}${method}`)
+        tableThead.append(locationTableHeader)
+        table.append(tableThead)
+        table.append(tableTbody)
+        locationsTableTbody.append(table)
+        table.classList = "locationsTable"
+    }
+
+    if(!(speciesKey in species)){
+        return
+    }
+
+    let row = document.createElement("tr")
+    row.setAttribute("id", `${key}`)
+
+    let spriteContainer = document.createElement("td")
+    spriteContainer.className = "sprite"
+    let sprite = document.createElement("img")
+    sprite.src = getSpeciesSpriteSrc(speciesKey)
+    sprite.className = "miniSprite3"
+    spriteContainer.append(sprite)
+    row.append(spriteContainer)
+
+    let speciesContainer = document.createElement("td")
+    let speciesName = document.createElement("div")
+    speciesName.className = "key hide"
+    speciesName.innerText = speciesKey
+    speciesContainer.innerText = sanitizeString(speciesKey)
+    speciesContainer.append(speciesName)
+    row.append(speciesContainer)
+
+    let rarity = document.createElement("td")
+    const locationsInfo = document.createElement("div")
+    rarity.className = "rarity"
+    rarity.innerText = `${locations[location][method][speciesKey]}%`
+    rarity.style.color = `hsl(${locations[location][method][speciesKey]*2},85%,45%)`
+    locationsInfo.innerText = `${location} ${method}`
+    locationsInfo.className = "locationsInfo hide"
+    rarity.append(locationsInfo)
+    row.append(rarity)
+
+    row.addEventListener("click", () => {
+        scrollToSpecies = row.id
+        createSpeciesPanel(speciesKey)
+        window.scrollTo(0, 0)
+    })
+    
+    tableTbody.append(row)
 }
 
 function createRowHeader(location, method){

@@ -2,7 +2,9 @@ window.repoDex = "ydarissep/Unbound-Pokedex"
 window.repo1 = "Skeli789/Complete-Fire-Red-Upgrade/dev"
 window.repo2 = "Skeli789/Dynamic-Pokemon-Expansion/Unbound"
 
+window.tracker
 window.panelSpecies = ""
+window.scrollToSpecies = ""
 
 const tableFilter = document.getElementById("tableFilter")
 
@@ -90,15 +92,15 @@ const utilityButton = document.querySelector('.utilityButton')
 
 headerAbilitiesName.addEventListener("click", () => {
     if(headerAbilitiesName.classList.contains("th-sort-desc"))
-        sortTableByClassName(abilitiesTable, "ability", asc = true)
+        sortTableByClassName(abilitiesTable, abilities, ["name"], "ability", asc = true)
     else
-        sortTableByClassName(abilitiesTable, "ability", asc = false)
+        sortTableByClassName(abilitiesTable, abilities, ["name"], "ability", asc = false)
 })
 headerAbilitiesDescription.addEventListener("click", () => {
     if(headerAbilitiesDescription.classList.contains("th-sort-desc"))
-        sortTableByClassName(abilitiesTable, "description", asc = true)
+        sortTableByClassName(abilitiesTable, abilities, ["description"], "description", asc = true)
     else
-        sortTableByClassName(abilitiesTable, "description", asc = false)
+        sortTableByClassName(abilitiesTable, abilities, ["description"], "description", asc = false)
 })
 
 
@@ -108,45 +110,45 @@ headerAbilitiesDescription.addEventListener("click", () => {
 
 headerMovesMove.addEventListener("click", () => {
     if(headerMovesMove.classList.contains("th-sort-desc"))
-        sortTableByClassName(movesTable, "move", asc = true)
+        sortTableByClassName(movesTable, moves, ["name"], "move", asc = true)
     else
-        sortTableByClassName(movesTable, "move", asc = false)
+        sortTableByClassName(movesTable, moves, ["name"], "move", asc = false)
 })
 headerMovesType.addEventListener("click", () => {
     if(headerMovesType.classList.contains("th-sort-desc"))
-        sortTableByClassName(movesTable, "type", asc = true)
+        sortTableByClassName(movesTable, moves, ["type", "split"], "type", asc = true)
     else
-        sortTableByClassName(movesTable, "type", asc = false)
+        sortTableByClassName(movesTable, moves, ["type", "split"], "type", asc = false)
 })
 headerMovesSplit.addEventListener("click", () => {
     if(headerMovesSplit.classList.contains("th-sort-desc"))
-        sortTableByClassName(movesTable, "split", asc = true)
+        sortTableByClassName(movesTable, moves, ["split", "type"], "split", asc = true)
     else
-        sortTableByClassName(movesTable, "split", asc = false)
+        sortTableByClassName(movesTable, moves, ["split", "type"], "split", asc = false)
 })
 headerMovesPower.addEventListener("click", () => {
     if(headerMovesPower.classList.contains("th-sort-desc"))
-        sortTableByClassName(movesTable, "power", asc = true, parseINT = true)
+        sortTableByClassName(movesTable, moves, ["power"], "power", asc = true)
     else
-        sortTableByClassName(movesTable, "power", asc = false, parseINT = true)
+        sortTableByClassName(movesTable, moves, ["power"], "power", asc = false)
 })
 headerMovesAccuracy.addEventListener("click", () => {
     if(headerMovesAccuracy.classList.contains("th-sort-desc"))
-        sortTableByClassName(movesTable, "accuracy", asc = true, parseINT = true)
+        sortTableByClassName(movesTable, moves, ["accuracy"], "accuracy", asc = true)
     else
-        sortTableByClassName(movesTable, "accuracy", asc = false, parseINT = true)
+        sortTableByClassName(movesTable, moves, ["accuracy"], "accuracy", asc = false)
 })
 headerMovesPP.addEventListener("click", () => {
     if(headerMovesPP.classList.contains("th-sort-desc"))
-        sortTableByClassName(movesTable, "PP", asc = true, parseINT = true)
+        sortTableByClassName(movesTable, moves, ["PP"], "PP", asc = true)
     else
-        sortTableByClassName(movesTable, "PP", asc = false, parseINT = true)
+        sortTableByClassName(movesTable, moves, ["PP"], "PP", asc = false)
 })
 headerMovesEffect.addEventListener("click", () => {
     if(headerMovesEffect.classList.contains("th-sort-desc"))
-        sortTableByClassName(movesTable, "effect", asc = true)
+        sortTableByClassName(movesTable, moves, ["effect"], "effect", asc = true)
     else
-        sortTableByClassName(movesTable, "effect", asc = false)
+        sortTableByClassName(movesTable, moves, ["effect"], "effect", asc = false)
 })
 
 
@@ -157,78 +159,76 @@ headerMovesEffect.addEventListener("click", () => {
 
 headerSpeciesID.addEventListener("click", () => {
     if(headerSpeciesID.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "ID", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["ID"], "ID", asc = true)
     else
-        sortTableByClassName(speciesTable, "ID", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["ID"], "ID", asc = false)
 })
 headerSpeciesSprite.addEventListener("click", () => {
     if(headerSpeciesID.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "ID", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["ID"], "ID", asc = true)
     else
-        sortTableByClassName(speciesTable, "ID", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["ID"], "ID", asc = false)
 })
 headerSpeciesName.addEventListener("click", () => {
     if(headerSpeciesName.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "species", asc = true)
+        sortTableByClassName(speciesTable, species, ["name"], "species", asc = true)
     else
-        sortTableByClassName(speciesTable, "species", asc = false)
+        sortTableByClassName(speciesTable, species, ["name"], "species", asc = false)
 })
 headerSpeciesTypes.addEventListener("click", () => {
     if(headerSpeciesTypes.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "types", asc = true)
+        sortTableByClassName(speciesTable, species, ["type1", "type2"], "types", asc = true)
     else
-        sortTableByClassName(speciesTable, "types", asc = false)
+        sortTableByClassName(speciesTable, species, ["type1", "type2"], "types", asc = false)
 })
 headerSpeciesAbilities.addEventListener("click", () => {
     if(headerSpeciesAbilities.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "abilities", asc = true)
+        sortTableByClassName(speciesTable, species, ["abilities"], "abilities", asc = true)
     else
-        sortTableByClassName(speciesTable, "abilities", asc = false)
+        sortTableByClassName(speciesTable, species, ["abilities"], "abilities", asc = false)
 })
 headerSpeciesHP.addEventListener("click", () => {
     if(headerSpeciesHP.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "baseHP", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseHP"], "baseHP", asc = true)
     else
-        sortTableByClassName(speciesTable, "baseHP", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseHP"], "baseHP", asc = false)
 })
 headerSpeciesAtk.addEventListener("click", () => {
     if(headerSpeciesAtk.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "baseAttack", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseAttack"], "baseAttack", asc = true)
     else
-        sortTableByClassName(speciesTable, "baseAttack", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseAttack"], "baseAttack", asc = false)
 })
 headerSpeciesDef.addEventListener("click", () => {
     if(headerSpeciesDef.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "baseDefense", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseDefense"], "baseDefense", asc = true)
     else
-        sortTableByClassName(speciesTable, "baseDefense", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseDefense"], "baseDefense", asc = false)
 })
 headerSpeciesSpA.addEventListener("click", () => {
     if(headerSpeciesSpA.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "baseSpAttack", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseSpAttack"], "baseSpAttack", asc = true)
     else
-        sortTableByClassName(speciesTable, "baseSpAttack", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseSpAttack"], "baseSpAttack", asc = false)
 })
 headerSpeciesSpD.addEventListener("click", () => {
     if(headerSpeciesSpD.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "baseSpDefense", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseSpDefense"], "baseSpDefense", asc = true)
     else
-        sortTableByClassName(speciesTable, "baseSpDefense", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseSpDefense"], "baseSpDefense", asc = false)
 })
 headerSpeciesSpe.addEventListener("click", () => {
     if(headerSpeciesSpe.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "baseSpeed", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseSpeed"], "baseSpeed", asc = true)
     else
-        sortTableByClassName(speciesTable, "baseSpeed", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["baseSpeed"], "baseSpeed", asc = false)
 })
 headerSpeciesBST.addEventListener("click", () => {
     if(headerSpeciesBST.classList.contains("th-sort-desc"))
-        sortTableByClassName(speciesTable, "BST", asc = true, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["BST"], "BST", asc = true)
     else
-        sortTableByClassName(speciesTable, "BST", asc = false, parseINT = true)
+        sortTableByClassName(speciesTable, species, ["BST"], "BST", asc = false)
 })
-
-
 
 
 
@@ -258,25 +258,33 @@ movesInput.addEventListener("input", e => {
 locationsInput.addEventListener("input", e => {
     const value = e.target.value
     filterFilters(value)
-    filterTableInput(value, species, ["evolutionLine", ".locationsInfo"])
+    filterLocationsTableInput(value, species, ["evolutionLine"])
 })
 
 
 speciesButton.addEventListener("click", () => {
-    if(!speciesButton.classList.contains("activeButton"))
+    if(!speciesButton.classList.contains("activeButton")){
         tableButtonClick("species")
+        tracker = speciesTracker
+    }
 })
 abilitiesButton.addEventListener("click", () => {
-    if(!abilitiesButton.classList.contains("activeButton"))
+    if(!abilitiesButton.classList.contains("activeButton")){
         tableButtonClick("abilities")
+        tracker = abilitiesTracker
+    }
 })
 locationsButton.addEventListener("click", () => {
-    if(!locationsButton.classList.contains("activeButton"))
+    if(!locationsButton.classList.contains("activeButton")){
         tableButtonClick("locations")
+        tracker = locationsTracker
+    }
 })
 movesButton.addEventListener("click", () => {
-    if(!movesButton.classList.contains("activeButton"))
+    if(!movesButton.classList.contains("activeButton")){
         tableButtonClick("moves")
+        tracker = movesTracker
+    }
 })
 
 
@@ -286,36 +294,20 @@ movesButton.addEventListener("click", () => {
 
 
 patchnoteModeCheckbox.addEventListener("change", e => {
-    if(e.target.checked){
-        document.querySelectorAll(".changelogType").forEach(el => el.classList.add("typeChanged"))
-        document.querySelectorAll(".changelogAbilities").forEach(el => el.classList.remove("hide"))
-        document.querySelectorAll(".changelogBuff").forEach(el => el.classList.add("buff", "bold"))
-        document.querySelectorAll(".changelogNerf").forEach(el => el.classList.add("nerf", "bold"))
-    }
-    else{
-        document.querySelectorAll(".changelogType").forEach(el => el.classList.remove("typeChanged"))
-        document.querySelectorAll(".changelogAbilities").forEach(el => el.classList.add("hide"))
-        document.querySelectorAll(".changelogBuff").forEach(el => el.classList.remove("buff", "bold"))
-        document.querySelectorAll(".changelogNerf").forEach(el => el.classList.remove("nerf", "bold"))
-    }
     lazyLoading(reset = true)
 })
 
 onlyShowChangedPokemonCheckbox.addEventListener("change", e => {
-    Object.keys(species).forEach(name => {
-        const row = document.getElementById(name)
+    for(let i = 0, j = speciesTracker.length; i < j; i++){
         if(e.target.checked){
-            if(species[name]["changes"].length <= 0){
-                row.classList.add("hideChanged")
-            }
-            else{
-                row.classList.remove("hideChanged")
+            if(species[speciesTracker[i]["key"]]["changes"].length === 0){
+                speciesTracker[i]["filter"].push("changed")
             }
         }
         else{
-            row.classList.remove("hideChanged")
+            tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "changed")
         }
-    })
+    }
     lazyLoading(reset = true)
 })
 
@@ -454,7 +446,9 @@ document.addEventListener("keydown", e => {
 function utilityButtonOnClick(){
     if(utilityButton.innerText === "↓"){
         speciesPanelMainContainer.classList.add("hide")
-        document.getElementById(`${panelSpecies}`).scrollIntoView({ block: "center" })
+        if(document.getElementById(`${scrollToSpecies}`)){
+            document.getElementById(`${scrollToSpecies}`).scrollIntoView({ block: "center" })
+        }
     }
     else if(utilityButton.innerText === "☰" && panelSpecies !== ""){
         speciesPanelMainContainer.classList.remove("hide")

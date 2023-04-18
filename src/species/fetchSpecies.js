@@ -153,11 +153,7 @@ async function cleanSpecies(species){
             species[name]["evolution"] = []
         }
     })
-    Object.keys(species).forEach(name => {
-        if(species[name]["baseSpeed"] <= 0){
-            delete species[name]
-        }
-    })
+
     return species
 }
 
@@ -175,7 +171,7 @@ async function buildSpeciesObj(){
     
     species = await initializeSpeciesObj(species)
     species = await getEvolution(species)
-    //species = await getForms(species) // should be called in that order until here    // done in getLevelUpLearnsets for IR
+    //species = await getForms(species) // should be called in that order until here    // done in getLevelUpLearnsets for CFRU
     species = await getBaseStats(species)
     species = await getReplaceAbilities(species)
     species = await getChanges(species, "https://raw.githubusercontent.com/Skeli789/Dynamic-Pokemon-Expansion/master/src/Base_Stats.c")
@@ -185,18 +181,10 @@ async function buildSpeciesObj(){
     species = await getTutorLearnsets(species)
     species = await getSprite(species)
 
-
-
-
-
     species = await altFormsLearnsets(species, "forms", "tutorLearnsets")
     species = await altFormsLearnsets(species, "forms", "TMHMLearnsets")
 
-
-
     species = await cleanSpecies(species)
-
-
 
     Object.keys(species).forEach(name => {
         species[name]["tutorLearnsets"].sort((a,b) => a[1] - b[1])
@@ -256,8 +244,7 @@ function initializeSpeciesObj(species){
         species[name]["forms"] = []
         species[name]["sprite"] = ""
     }
-    delete species["SPECIES_NONE"]
-    delete species["SPECIES_EGG"]
+
     return species
 }
 
@@ -269,14 +256,23 @@ async function fetchSpeciesObj(){
         window.species = await JSON.parse(LZString.decompressFromUTF16(localStorage.getItem("species")))
 
 
-    window.spritesObj = {}
-    if(localStorage.getItem("sprites")){
-        spritesObj = JSON.parse(localStorage.getItem("sprites"))
-        Object.keys(spritesObj).forEach(species => {
-            spritesObj[species] = LZString.decompressFromUTF16(spritesObj[species])
-        })
+    window.sprites = {}
+    window.speciesTracker = []
+
+    await Object.keys(species).forEach(async name => {
+        if(!localStorage.getItem(`${name}`)){
+            await spriteRemoveBgReturnBase64(name, species)
+        }
+        if(localStorage.getItem(`${name}`)){
+            sprites[name] = await LZString.decompressFromUTF16(localStorage.getItem(`${name}`))
+        }
+    })
+    for(let i = 0, j = Object.keys(species).length; i < j; i++){
+        speciesTracker[i] = {}
+        speciesTracker[i]["key"] = Object.keys(species)[i]
+        speciesTracker[i]["filter"] = []
     }
 
-    await displaySpecies()
+    tracker = speciesTracker
 }
 

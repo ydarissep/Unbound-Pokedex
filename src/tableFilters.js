@@ -1,128 +1,158 @@
 function filterSpeciesForm(value, label){
-    const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-    for(let i = 0; i < rows.length; i++){
-        const key = rows[i].getElementsByClassName("key")[0].innerText
+    for(let i = 0, j = tracker.length; i < j; i++){
+        let name = tracker[i]["key"]
+        if(tracker === locationsTracker){
+            name = tracker[i]["key"].split("\\")[2]
+        }
         if(value === "Mega"){
             if(!/_MEGA$|_MEGA_Y$|_MEGA_X$/i.test(key)){
-                rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+                tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
             }
         }
         else if(value === "Alolan"){
-            if(!/_A$/i.test(key) || /UNOWN/i.test(key)){
-                rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+            if(!/_A$/i.test(name) || /UNOWN/i.test(name)){
+                tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
             }   
         }
         else if(value === "Galarian"){
             if(!/_G$|PERRSERKER$|SIRFETCHD$|MR_RIME$|CURSOLA$|OBSTAGOON$|RUNERIGUS$/i.test(key) || /UNOWN/i.test(key)){
-                rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+                tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
             }   
         }
         else if(value === "Hisuian"){
             if(!/_H$|OVERQWIL$|SNEASLER$|BASCULEGION$/i.test(key) || /UNOWN/i.test(key)){
-                rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+                tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
             }   
         }
-        rows[i].classList.remove("hide")
     }
 }
 
 function filterSpeciesItem(value, label){
-    const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-    for(let i = 0; i < rows.length; i++){
-        const key = rows[i].getElementsByClassName("key")[0].innerText
-        if(!(sanitizeString(species[key]["item1"]) === value) && !(sanitizeString(species[key]["item2"]) === value)){
-            rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+    for(let i = 0, j = tracker.length; i < j; i++){
+        let name = tracker[i]["key"]
+        if(tracker === locationsTracker){
+            name = tracker[i]["key"].split("\\")[2]
         }
-        rows[i].classList.remove("hide")
+        if(!(sanitizeString(species[name]["item1"]) === value) && !(sanitizeString(species[name]["item2"]) === value)){
+            tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
+        }
     }
 }
 
 function filterSpeciesAbility(value, label){
-    const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-    let name = null
+    let abilityName = null
     Object.keys(abilities).forEach(ability => {
         if(abilities[ability]["ingameName"] === value){
-            name = ability
+            abilityName = ability
         }
     })
-    if(name){
-        for(let i = 0; i < rows.length; i++){
-            const key = rows[i].getElementsByClassName("key")[0].innerText
-            if(!species[key]["abilities"].includes(name)){
-                rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+    if(abilityName){
+        for(let i = 0, j = tracker.length; i < j; i++){
+            let name = tracker[i]["key"]
+            if(tracker === locationsTracker){
+                name = tracker[i]["key"].split("\\")[2]
             }
-            rows[i].classList.remove("hide")
+            if(!species[name]["abilities"].includes(abilityName)){
+                tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
+            }
         }
     }
 }
 
 function filterSpeciesMove(value, label){
-    const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-    let name = null
+    let moveName = null
     Object.keys(moves).forEach(move => {
         if(moves[move]["ingameName"] === value){
-            name = move
+            moveName = move
         }
     })
-    if(name){
-        for(let i = 0; i < rows.length; i++){
-            const key = rows[i].getElementsByClassName("key")[0].innerText
-            if(!speciesCanLearnMove(species[key], name)){
-                rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+    if(moveName){
+        for(let i = 0, j = tracker.length; i < j; i++){
+            let name = tracker[i]["key"]
+            if(tracker === locationsTracker){
+                name = tracker[i]["key"].split("\\")[2]
             }
-            rows[i].classList.remove("hide")
+            if(!speciesCanLearnMove(species[name], moveName)){
+                tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
+            }
         }
     }
 }
 
 function filterSpeciesEggGroup(value, label){
-    const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-    for(let i = 0; i < rows.length; i++){
-        const key = rows[i].getElementsByClassName("key")[0].innerText
-        if(!(sanitizeString(species[key]["eggGroup1"]) === value) && !(sanitizeString(species[key]["eggGroup2"]) === value)){
-            rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+    for(let i = 0, j = tracker.length; i < j; i++){
+        let name = tracker[i]["key"]
+        if(tracker === locationsTracker){
+            name = tracker[i]["key"].split("\\")[2]
         }
-        rows[i].classList.remove("hide")
+        if(!(sanitizeString(species[name]["eggGroup1"]) === value) && !(sanitizeString(species[name]["eggGroup2"]) === value)){
+            tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
+        }
     }
 }
 
 function filterType(value, label){
     const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-    for(let i = 0; i < rows.length; i++){
-        const key = rows[i].getElementsByClassName("key")[0].innerText
+    for(let i = 0, j = tracker.length; i < j; i++){
+        let name = tracker[i]["key"]
+        if(tracker === locationsTracker){
+            name = tracker[i]["key"].split("\\")[2]
+        }
         if(table === speciesTable || table === locationsTable){
-            if(!(sanitizeString(species[key]["type1"]) === value) && !(sanitizeString(species[key]["type2"]) === value)){
-                rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+            if(!(sanitizeString(species[name]["type1"]) === value) && !(sanitizeString(species[name]["type2"]) === value)){
+                tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
             }
         }
         else if(table === movesTable){
-            if(!(sanitizeString(moves[key]["type"]) === value)){
-                rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+            if(!(sanitizeString(moves[name]["type"]) === value)){
+                tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
             }   
         }
-        rows[i].classList.remove("hide")
     }
 }
 
 function filterMovesSplit(value, label){
-    const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-    for(let i = 0; i < rows.length; i++){
-        const key = rows[i].getElementsByClassName("key")[0].innerText
-        if(!(sanitizeString(moves[key]["split"]) === value)){
-            rows[i].classList.add(`hideFilter${label}${value}`.replaceAll(" ", ""))
+    for(let i = 0, j = tracker.length; i < j; i++){
+        let name = tracker[i]["key"]
+
+        if(!(sanitizeString(moves[name]["split"]) === value)){
+            tracker[i]["filter"].push(`filter${label}${value}`.replaceAll(" ", ""))
         }
-        rows[i].classList.remove("hide")
     }
 }
 
+function filterBaseStats(value, label){
+    if(value === "HP"){
+        value = "baseHP"
+        label = "HP"
+    }
+    else if(value === "Atk"){
+        value = "baseAttack"
+        label = "Atk"
+    }
+    else if(value === "Def"){
+        value = "baseDefense"
+        label = "Def"
+    }
+    else if(value === "SpA"){
+        value = "baseSpAttack"
+        label = "SpA"
+    }
+    else if(value === "SpD"){
+        value = "baseSpDefense"
+        label = "SpD"
+    }
+    else if(value === "Spe"){
+        value = "baseSpeed"
+        label = "Speed"
+    }
+    else if(value === "BST"){
+        value = "BST"
+        label = "BST"
+    }
 
+    filterOperators(value, label, species)
+}
 
 
 
@@ -180,7 +210,10 @@ function selectFilter(value, label){
         filterSpeciesForm(value, label)   
     }
     else if(label === "Split"){
-        filterMovesSplit(value, label)   
+        filterMovesSplit(value, label)
+    }
+    else if(label === "Base Stats"){
+        filterBaseStats(value, label)
     }
 }
 
@@ -197,6 +230,7 @@ async function setFilters(){
     createFilterGroup(createFilterArray(["ingameName"], abilities, false), "Ability", [speciesFilterList, locationsFilterList])
     createFilterGroup(createFilterArray(["ingameName"], moves, false), "Move", [speciesFilterList, locationsFilterList])
     createFilterGroup(createFilterArray(["eggGroup1", "eggGroup2"], species), "Egg Group", [speciesFilterList, locationsFilterList])
+    createFilterGroup(["HP", "Atk", "Def", "SpA", "SpD", "Spe", "BST"], "Base Stats", [speciesFilterList, locationsFilterList], true)
 }
 
 
@@ -241,7 +275,7 @@ async function setFilters(){
 
 
 
-function hideFilterList(){
+function filterList(){
     const activeFilter = document.getElementsByClassName("activeFilter")[0]
     const filters = activeFilter.getElementsByClassName("tableFilter")
     
@@ -250,6 +284,11 @@ function hideFilterList(){
     }
 
     document.getElementsByClassName("activeInput")[0].value = ""
+
+
+    for(let i = 0, j = Object.keys(tracker).length; i < j; i++){
+        tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
+    }
 }
 
 
@@ -257,7 +296,7 @@ function hideFilterList(){
 
 
 
-function createFilterGroup(values, labelValue, tableFilterListArray){
+function createFilterGroup(values, labelValue, tableFilterListArray, operator = false){
     for(let i = 0; i < tableFilterListArray.length; i++){
         const mainContainer = document.createElement("div")
         values.forEach(value => {
@@ -270,7 +309,7 @@ function createFilterGroup(values, labelValue, tableFilterListArray){
 
             container.className = `tableFilter hide`
 
-            valueContainer.innerText = sanitizeString(value)
+            valueContainer.innerText = value
             valueContainer.className = "filterValue"
             if(labelValue.includes("Type")){
                 valueContainer.className = `TYPE_${value.toUpperCase()} background4 filterValue`
@@ -282,9 +321,17 @@ function createFilterGroup(values, labelValue, tableFilterListArray){
             mainContainer.append(container)
             mainContainer.className = "filterListContainer"
 
-            container.addEventListener("click", () => {
-                createFilter(value, labelValue)
-            })
+            if(operator){
+                container.classList.add("operator")
+                container.addEventListener("click", () => {
+                    selectFilter(value, labelValue)
+                })
+            }
+            else{
+                container.addEventListener("click", () => {
+                    createFilter(value, labelValue)
+                })
+            }
         })
         tableFilterListArray[i].append(mainContainer)
     }
@@ -301,7 +348,10 @@ function filterFilters(input){
         const filters = activeFilter[0].getElementsByClassName("tableFilter")
         for(let i = 0; i < filters.length; i++){
             const filterValue = filters[i].getElementsByClassName("filterValue")
-            if(sanitizedInput.length >= 3 && filterValue[0].innerText.replaceAll(/-|'| |_/g, "").toLowerCase().includes(sanitizedInput)){
+            if(filters[i].classList.contains("operator") && /\d+/.test(input)){
+                filters[i].classList.remove("hide")
+            }
+            else if(sanitizedInput.length >= 3 && filterValue[0].innerText.replaceAll(/-|'| |_/g, "").toLowerCase().includes(sanitizedInput) && !filters[i].classList.contains("operator")){
                 filters[i].classList.remove("hide")
             }
             else{
@@ -344,18 +394,40 @@ function createFilter(value, label){
     tableFilterContainer.append(newFilter)
 
     newFilter.addEventListener("click", () => {
-        const currentTable = document.getElementsByClassName("activeTable")[0]
-        const rows = currentTable.getElementsByClassName(`hideFilter${label}${value}`.replaceAll(" ", ""))
-        while(rows.length){
-            rows[0].classList.remove(`hideFilter${label}${value}`.replaceAll(" ", ""))
+        for(let i = 0, j = tracker.length; i < j; i++){
+            for(let k = 0; k < tracker[i]["filter"].length; k++){
+                if(tracker[i]["filter"][k] == `filter${label}${value}`.replaceAll(" ", "")){
+                    tracker[i]["filter"].splice(k, 1)
+                }
+            }
         }
         newFilter.remove()
-        refreshLocationsTables()
         lazyLoading(true)
     })
 
-    hideFilterList()
-    refreshLocationsTables()
+    filterList()
+    lazyLoading(true)
+}
+
+
+
+function createOperatorFilter(label, operator, number){
+    const activeFilter = document.getElementsByClassName("activeFilter")[0]
+    const tableFilterContainer = activeFilter.getElementsByClassName("filterContainer")[0]
+    const newFilter = document.createElement("div")
+    newFilter.innerText = `${label} ${operator} ${number}`
+    newFilter.classList = "filter crossOnHover newFilter"
+    tableFilterContainer.append(newFilter)
+
+    newFilter.addEventListener("click", () => {
+        for(let i = 0, j = tracker.length; i < j; i++){
+            tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== `filter${label}${operator}${number}`.replaceAll(" ", ""))
+        }
+        newFilter.remove()
+        lazyLoading(true)
+    })
+
+    filterList()
     lazyLoading(true)
 }
 
@@ -365,15 +437,11 @@ function deleteFiltersFromTable(){
     const activeFilter = document.getElementsByClassName("activeFilter")[0]
     const tableFilterContainer = activeFilter.getElementsByClassName("filterContainer")[0]
 
-    const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-
-    for (let i = 0; i < rows.length; i++){
-        if(rows[i].classList.contains("hideChanged")){
-            rows[i].className = "hideChanged hideTemp"
-        }
-        else{
-            rows[i].className = "hideTemp"
+    for(let i = 0, j = tracker.length; i < j; i++){
+        for(let k = 0; k < tracker[i]["filter"].length; k++){
+            if(tracker[i]["filter"][k].includes("filter")){
+                tracker[i]["filter"].splice(k, 1)
+            }
         }
     }
 
@@ -381,3 +449,120 @@ function deleteFiltersFromTable(){
         tableFilterContainer.removeChild(tableFilterContainer.firstChild)
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function filterOperators(value, label, obj){
+    let operator = document.getElementsByClassName("activeInput")[0].value.match(/>=|<=|=>|=<|=|>|</)
+    if(!operator){
+        operator = ">="
+    }
+    else{
+        operator = operator[0]   
+    }
+    const number = document.getElementsByClassName("activeInput")[0].value.match(/\d+/)[0]
+
+    for(let i = 0, j = tracker.length; i < j; i++){
+        
+        let name = tracker[i]["key"]
+        if(tracker === locationsTracker){
+            name = tracker[i]["key"].split("\\")[2]
+        }
+
+        if(operator === ">=" || operator === "=>"){
+            if(!(obj[name][value] >= number)){
+                tracker[i]["filter"].push(`filter${label}${operator}${number}`.replaceAll(" ", ""))
+            }
+        }
+        else if(operator === "<=" || operator === "=<"){
+            if(!(obj[name][value] <= number)){
+                tracker[i]["filter"].push(`filter${label}${operator}${number}`.replaceAll(" ", ""))
+            }
+        }
+        else if(operator === "="){
+            if(!(obj[name][value] == number)){
+                tracker[i]["filter"].push(`filter${label}${operator}${number}`.replaceAll(" ", ""))
+            }
+        }
+        else if(operator === ">"){
+            if(!(obj[name][value] > number)){
+                tracker[i]["filter"].push(`filter${label}${operator}${number}`.replaceAll(" ", ""))
+            }
+        }
+        else if(operator === "<"){
+            if(!(obj[name][value] < number)){
+                tracker[i]["filter"].push(`filter${label}${operator}${number}`.replaceAll(" ", ""))
+            }
+        }
+    }
+
+    createOperatorFilter(label, operator, number)
+}

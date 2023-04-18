@@ -1,6 +1,7 @@
 async function displaySetup(){    
     await footerP("")
 
+    lazyLoading(true)
 
     await tableInput.classList.remove("hide")
 
@@ -21,43 +22,32 @@ async function displaySetup(){
 
 
 
-function sortTableByClassName(table, className, asc = true, parseINT = false) {
+function sortTableByClassName(table, obj, key, classHeader, asc = true) {
     const dirModifier = asc ? 1 : -1;
-    const tBody = table.tBodies[0];
-    const rows = Array.from(tBody.querySelectorAll("tr"));
 
-    // Sort each row
-    const sortedRows = rows.sort((a, b) => {
-        let aColText = a.querySelector(`.${className}`).textContent.trim();
-        let bColText = b.querySelector(`.${className}`).textContent.trim();
-
-        if(parseINT)
-        {
-            aColText = parseInt(aColText)
-            if(isNaN(aColText))
-                aColText = 0
-            bColText = parseInt(bColText)
-            if(isNaN(bColText))
-                bColText = 0
+    tracker.sort((a, b) => {
+        let stringA = ""
+        let stringB = ""
+        for(let i = 0; i < key.length; i++){
+            stringA += obj[a["key"]][key[i]]
+            stringB += obj[b["key"]][key[i]]
+        }
+        if(!isNaN(stringA)){
+            stringA = parseInt(stringA)
+        }
+        if(!isNaN(stringB)){
+            stringB = parseInt(stringB)
         }
 
-        return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
-    });
-
-    // Remove all existing TRs from the table
-    while (tBody.firstChild) {
-        tBody.removeChild(tBody.firstChild);
-    }
-
-    // Re-add the newly sorted rows
-    tBody.append(...sortedRows);
+        return stringA > stringB ? (1 * dirModifier) : (-1 * dirModifier)
+    })
 
     lazyLoading(true)
 
     // Remember how the column is currently sorted
     table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc", "th-sort-desc"));
-    table.querySelector(`th.${className}`).classList.toggle("th-sort-asc", asc);
-    table.querySelector(`th.${className}`).classList.toggle("th-sort-desc", !asc);
+    table.querySelector(`th.${classHeader}`).classList.toggle("th-sort-asc", asc);
+    table.querySelector(`th.${classHeader}`).classList.toggle("th-sort-desc", !asc);
 }
 
 
@@ -69,27 +59,17 @@ function sortTableByClassName(table, className, asc = true, parseINT = false) {
 function filterTableInput(input, obj, keyArray){
     const sanitizedInput = input.trim().replaceAll(/-|'| |_/g, "").toLowerCase()
     const regexInput = new RegExp(sanitizedInput, "i")
-    const table = document.getElementsByClassName("activeTable")[0]
-    const rows = table.querySelectorAll("tbody > tr")
-    for (let j = 0; j < rows.length; j++){
-        const key = rows[j].querySelector(".key").innerHTML
-        rows[j].classList.add("hide")
-        for (let i = 0; i < keyArray.length; i++){
-            if(/^\./i.test(keyArray[i])){
-                const compare = rows[j].getElementsByClassName(keyArray[i].replace(".", ""))[0].innerText.replaceAll(/-|'| |_/g, "").toLowerCase()
-                if(compare.includes(sanitizedInput)){
-                    rows[j].classList.remove("hide")
-                    break
-                }
-            }
-            else{
-                if(regexInput.test(obj[key][keyArray[i]].toString().replaceAll(/-|'| |_/g, ""))){
-                    rows[j].classList.remove("hide")
-                    break
-                }
+
+    for(let i = 0, j = Object.keys(tracker).length; i < j; i++){
+        tracker[i]["filter"].push("input")
+        for (let k = 0; k < keyArray.length; k++){
+            if(regexInput.test(("" + obj[tracker[i]["key"]][keyArray[k]]).replaceAll(/-|'| |_/g, ""))){
+                tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
+                break
             }
         }
     }
+
     lazyLoading(true)
 }
 
@@ -98,21 +78,35 @@ function filterTableInput(input, obj, keyArray){
 
 
 
-function refreshLocationsTables(){
-    if(!locationsTable.classList.contains("hide")){
-        const locationsTables = locationsTableTbody.children
-        for(let i = 0; i < locationsTables.length; i++){
-            locationsTables[i].classList.add("hide")
-            const tableTbody = locationsTables[i].children[1]
-            for(let j = 0; j < tableTbody.children.length; j++){
-                if(!tableTbody.children[j].className.includes("hide")){
-                    locationsTables[i].classList.remove("hide")
+
+
+function filterLocationsTableInput(input, obj, keyArray){
+    const sanitizedInput = input.trim().replaceAll(/-|'| |_/g, "").toLowerCase()
+    const regexInput = new RegExp(sanitizedInput, "i")
+
+    for(let i = 0, j = Object.keys(tracker).length; i < j; i++){
+        const zone = tracker[i]["key"].split("\\")[0].replaceAll(/-|'| |_/g, "").toLowerCase()
+        const method = tracker[i]["key"].split("\\")[1].replaceAll(/-|'| |_/g, "").toLowerCase()
+        const name = tracker[i]["key"].split("\\")[2]
+        tracker[i]["filter"].push("input")
+        for (let k = 0; k < keyArray.length; k++){
+            if(name in species){
+                if(regexInput.test(zone) || regexInput.test(method)){
+                    tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
+                    continue
+                }
+                if(regexInput.test(("" + obj[name][keyArray[k]]).replaceAll(/-|'| |_/g, ""))){
+                    tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
                     break
                 }
             }
         }
     }
+
+    lazyLoading(true)
 }
+
+
 
 
 
@@ -121,36 +115,50 @@ function refreshLocationsTables(){
 
 
 function lazyLoading(reset = false){
-    const activeTable = document.getElementsByClassName("activeTable")[0]
-    if(activeTable)
+    const activeTable = document.querySelectorAll(".activeTable > tbody")[0]
+    if(activeTable && typeof tracker !== 'undefined')
     {
-        const rows = activeTable.querySelectorAll("tbody > tr")
-        let count = 0
-        for(let i = 0; i < rows.length; i++){
-            if(reset){
-                if(count <= 75){
-                    if(!rows[i].classList.contains("hide") && !rows[i].className.includes("hideFilter") && !rows[i].className.includes("hideChanged")){
-                        rows[i].classList.remove("hideTemp")
-                        count++
-                    }
-                }
-                else
-                    rows[i].classList.add("hideTemp")
-            }
-            else{
-                if(!rows[i].classList.contains("hide") && !rows[i].className.includes("hideFilter")){
-                    if(rows[i].classList.contains("hideTemp")){
-                        count++
-                        rows[i].classList.remove("hideTemp")
-                    }
-                }
-                if(count >= 75)
-                    break
+        if(reset){
+            while (activeTable.firstChild) {
+                activeTable.removeChild(activeTable.firstChild)
             }
         }
-        refreshLocationsTables()
+        let target = 75
+        let counter = 0
+
+        let displayFunction = ""
+        if(tracker === speciesTracker){
+            displayFunction = "appendSpeciesToTable"
+        }
+        else if(tracker === abilitiesTracker){
+            displayFunction = "appendAbilitiesToTable"
+        }
+        else if(tracker === movesTracker){
+            displayFunction = "appendMovesToTable"
+        }
+        else if(tracker === locationsTracker){
+            displayFunction = "appendLocationsToTable"
+        }
+        else{
+            return
+        }
+
+        for(let i = 0, j = tracker.length; i < j; i++){
+            if(counter < target){
+                if(tracker[i]["filter"].length === 0 && !document.getElementById(tracker[i]["key"])){
+                    window[displayFunction](tracker[i]["key"])
+                    counter++
+                }
+            }
+            else{
+                break
+            }
+        }
     }
 }
+
+
+
 
 
 
@@ -202,3 +210,4 @@ async function tableButtonClick(input){
 
     await lazyLoading(reset = true)
 }
+
