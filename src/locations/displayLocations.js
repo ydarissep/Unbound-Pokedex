@@ -90,13 +90,13 @@ function createRowHeader(location, method){
 
 
 function returnMethodSprite(method){
-    if(method.match(/raid/i) !== null){
+    if(method.match(/raid/i)){
         return "Raid"
     }
-    else if(method.match(/shard/i) !== null){
+    else if(method.match(/shard/i)){
         return "Egg"
     }
-    else if(method.match(/sprouted|taller|flowering|berries/i) !== null){
+    else if(method.match(/sprouted|taller|flowering|berries/i)){
         return "Berry"
     }
     else{

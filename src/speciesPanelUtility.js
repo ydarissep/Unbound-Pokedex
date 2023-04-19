@@ -313,16 +313,6 @@ speciesPanelInputSpecies.addEventListener("input", e => {
 
 
 
-function getSpeciesSpriteSrc(speciesName){
-    if(sprites[speciesName]){
-        return sprites[speciesName]
-    }
-    else{
-        return species[speciesName]["sprite"]
-    }
-}
-
-
 
 function createClickableImgAndName(speciesName){
     const container = document.createElement("div")

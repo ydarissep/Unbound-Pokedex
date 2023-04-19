@@ -1,4 +1,9 @@
 function appendSpeciesToTable(speciesName){
+
+    if(species[speciesName]["baseSpeed"] <= 0){
+        return
+    }
+
     const tBody = speciesTableTbody
     let row = document.createElement("tr")
     row.setAttribute("id", `${speciesName}`)

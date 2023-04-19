@@ -47,13 +47,6 @@ async function buildMovesObj(){
     moves = await getVanillaMovesDescription(moves)
     moves = await getMovesDescription(moves)
     moves = await getMovesIngameName(moves)
-    delete moves["MOVE_NONE"]
-    delete moves["MOVE_SMELLINGSALT"]
-
-    Object.keys(moves).forEach(name => { // Delete Z moves
-        if(moves[name]["PP"] == "1" && moves[name]["split"] !== "SPLIT_STATUS")
-            delete moves[name]
-    })
 
     await localStorage.setItem("moves", LZString.compressToUTF16(JSON.stringify(moves)))
     return moves

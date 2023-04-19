@@ -58,12 +58,6 @@ async function buildAbilitiesObj(){
         }
     })
 
-    delete abilities["ABILITY_NONE"]
-    delete abilities["ABILITY_NAME_LENGTH"]
-    delete abilities["ABILITY_NAMELENGTH"]
-
-    
-
     await localStorage.setItem("abilities", LZString.compressToUTF16(JSON.stringify(abilities)))
     return abilities
 }

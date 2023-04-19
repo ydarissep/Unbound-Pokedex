@@ -1,4 +1,9 @@
 function appendMovesToTable(moveName){
+
+    if(moves[moveName]["PP"] <= 0 || moves[moveName]["description"] == ""){
+        return
+    }
+
     let tBody = movesTableTbody
 
     let row = document.createElement("tr")
