@@ -20,6 +20,7 @@ function appendSpeciesToTable(speciesName){
     let spriteContainer = document.createElement("td")
     spriteContainer.className = "sprite"
     let sprite = document.createElement("img")
+    sprite.className = `sprite${speciesName}`
     sprite.src = getSpeciesSpriteSrc(speciesName)
     spriteContainer.append(sprite)
     row.append(spriteContainer)
@@ -193,6 +194,12 @@ async function spriteRemoveBgReturnBase64(speciesName, species){
         if(!localStorage.getItem(`${speciesName}`)){
             await localStorage.setItem(`${speciesName}`, LZString.compressToUTF16(canvas.toDataURL()))
             sprites[speciesName] = canvas.toDataURL()
+        }
+        if(document.getElementsByClassName(`sprite${speciesName}`).length > 0){
+            const els = document.getElementsByClassName(`sprite${speciesName}`)
+            for(let i = 0; i < els.length; i++){
+                els[i].src = canvas.toDataURL()
+            }
         }
     }
 }

@@ -39,6 +39,7 @@ async function createSpeciesPanel(name){
     speciesName.innerText = sanitizeString(name)
     speciesID.innerText = `#${species[name]["ID"]}`
 
+    speciesSprite.className = `sprite${name}`
     speciesSprite.src = getSpeciesSpriteSrc(name)
 
     speciesType1.innerText = sanitizeString(species[name]["type1"])
@@ -142,7 +143,7 @@ async function createSpeciesPanel(name){
             const sprite = document.createElement("img")
             evoMethod.innerText = `${sanitizeString(species[name]["evolution"][i][0])} (${sanitizeString(species[name]["evolution"][i][1])}) ➝ ${sanitizeString(species[name]["evolution"][i][2])}`
             sprite.src = getSpeciesSpriteSrc(species[name]["evolution"][i][2])
-            sprite.className = "miniSprite2"
+            sprite.className = `sprite${species[name]["evolution"][i][2]} miniSprite2`
             evoMethod.className = "evoMethod"
             evoMethod.append(sprite)
 
@@ -322,7 +323,7 @@ function createClickableImgAndName(speciesName){
     container.className = "flexCenter flex flexRow hover"
 
     sprite.src = getSpeciesSpriteSrc(speciesName)
-    sprite.className = "miniSprite"
+    sprite.className = `sprite${speciesName} miniSprite`
 
     name.innerText = sanitizeString(species[speciesName]["name"])
     name.className = "underline"

@@ -34,7 +34,7 @@ function appendLocationsToTable(key){
     spriteContainer.className = "sprite"
     let sprite = document.createElement("img")
     sprite.src = getSpeciesSpriteSrc(speciesKey)
-    sprite.className = "miniSprite3"
+    sprite.className = `sprite${speciesKey} miniSprite3`
     spriteContainer.append(sprite)
     row.append(spriteContainer)
 
