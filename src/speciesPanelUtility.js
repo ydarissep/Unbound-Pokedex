@@ -32,7 +32,7 @@ const speciesPanelEggMovesTableTbody = document.getElementById("speciesPanelEggM
 
 async function createSpeciesPanel(name){
     panelSpecies = name
-    speciesPanelMainContainer.classList.remove("hide")
+    speciesPanel("show")
 
     const row = document.getElementById(`${name}`)
 
@@ -597,6 +597,19 @@ function buildSpeciesPanelEggMovesTable(Tbody, name, input){
 
 
 speciesPanelCloseButton.addEventListener("click", () => {
-        speciesPanelMainContainer.classList.add("hide")
+    speciesPanel("hide")
 })
+
+async function speciesPanel(param){
+    if(param === "hide"){
+        speciesPanelMainContainer.classList.add("hide")
+    }
+    else if(param === "show"){
+        speciesPanelMainContainer.classList.remove("hide")
+    }
+    else{
+        speciesPanelMainContainer.classList.toggle("hide")
+    }
+    refreshURLParams()
+}
 

@@ -63,7 +63,7 @@ function filterTableInput(input, obj, keyArray){
     for(let i = 0, j = Object.keys(tracker).length; i < j; i++){
         tracker[i]["filter"].push("input")
         for (let k = 0; k < keyArray.length; k++){
-            if(regexInput.test(("" + obj[tracker[i]["key"]][keyArray[k]]).replaceAll(/-|'| |_/g, ""))){
+            if(regexInput.test(sanitizeString("" + obj[tracker[i]["key"]][keyArray[k]]).replaceAll(/-|'| |_/g, ""))){
                 tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
                 break
             }
@@ -82,6 +82,7 @@ function filterTableInput(input, obj, keyArray){
 
 function filterLocationsTableInput(input, obj, keyArray){
     const sanitizedInput = input.trim().replaceAll(/-|'| |_/g, "").toLowerCase()
+    const arraySanitizedInput = input.trim().split(/-|'| |_/g)
     const regexInput = new RegExp(sanitizedInput, "i")
 
     for(let i = 0, j = Object.keys(tracker).length; i < j; i++){
@@ -91,14 +92,16 @@ function filterLocationsTableInput(input, obj, keyArray){
         tracker[i]["filter"].push("input")
         for (let k = 0; k < keyArray.length; k++){
             if(name in species){
-                if(regexInput.test(zone) || regexInput.test(method)){
-                    tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
-                    continue
-                }
                 if(regexInput.test(("" + obj[name][keyArray[k]]).replaceAll(/-|'| |_/g, ""))){
                     tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
                     break
                 }
+            }
+        }
+        tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
+        for(splitInput of arraySanitizedInput){
+            if(!(zone+method).includes(splitInput.toLowerCase())){
+                tracker[i]["filter"].push("input")
             }
         }
     }
@@ -114,7 +117,7 @@ function filterLocationsTableInput(input, obj, keyArray){
 
 
 
-function lazyLoading(reset = false){
+async function lazyLoading(reset = false){
     const activeTable = document.querySelectorAll(".activeTable > tbody")[0]
     if(activeTable && typeof tracker !== 'undefined')
     {
@@ -122,6 +125,7 @@ function lazyLoading(reset = false){
             while (activeTable.firstChild) {
                 activeTable.removeChild(activeTable.firstChild)
             }
+            refreshURLParams()
         }
         let target = 75
         let counter = 0
@@ -208,6 +212,8 @@ async function tableButtonClick(input){
     targetFilter.classList.remove("hide")
     targetFilter.classList.add("activeFilter")
 
-    await lazyLoading(reset = true)
+    tracker = window[`${input}Tracker`]
+
+    await lazyLoading(true)
 }
 

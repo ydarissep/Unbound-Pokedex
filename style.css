@@ -277,7 +277,7 @@ td, th {
 
 .Move {color: #86FF64;}
 .Item, .Split {color: #FFC2F0;}
-/*.Type {color: #70FFFA;}*/
+.BaseStats {color: #70FFFA;}
 .Ability {color: #FFF86E;}
 .EggGroup {color: #ACAAFF;}
 .Form {color: #FFAFAF;}

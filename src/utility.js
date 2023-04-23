@@ -24,6 +24,9 @@ function sanitizeString(string){
 
 
 async function fetchData(){
+    history.pushState(null, null, location.href)
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
     await forceUpdate()
 
     await fetchMovesObj()
@@ -37,6 +40,7 @@ async function fetchData(){
     await setDataList()
     await setFilters()
     await displaySetup()
+    await displayParams(urlParams)
 
     await window.scrollTo(0, 0)
 }
@@ -122,6 +126,141 @@ function getSpeciesSpriteSrc(speciesName){
         return species[speciesName]["sprite"]
     }
 }
+
+
+
+
+
+
+async function refreshURLParams(){
+    const url = document.location.href.split("?")[0] + "?"
+    let params = ""
+
+    if(!speciesPanelMainContainer.classList.contains("hide")){
+        params += `species=${panelSpecies}&`
+    }
+    if(document.getElementsByClassName("activeTable").length > 0){
+        params += `table=${document.getElementsByClassName("activeTable")[0].id}&`
+    }
+    if(document.getElementsByClassName("activeFilter")[0].getElementsByClassName("filter").length > 0){
+        params += "filter="
+        const filters = document.getElementsByClassName("activeFilter")[0].getElementsByClassName("filter")
+        for(let i = 0, j = filters.length; i < j; i++){
+            if(!/>|<|=/.test(filters[i].innerText)){
+                let param = filters[i].innerText.split(":")
+                params += `${param[0]}:${param[1].trim()}`
+                if(i !== j - 1){
+                    params += ","
+                }
+            }
+        }
+        params += "&"
+    }
+    if(document.getElementsByClassName("activeInput")[0].value !== ""){
+        params += `input=${document.getElementsByClassName("activeInput")[0].value}&`
+    }
+
+    await getHistoryState()
+    window.history.replaceState(`${url}${params}`, null, `${url}${params}`)
+    return `${url}${params}`, null, `${url}${params}`
+}
+
+
+
+
+
+
+async function displayParams(urlParams){
+    if(urlParams.get("species")){
+        scrollToSpecies = urlParams.get("species")
+        createSpeciesPanel(scrollToSpecies)
+    }
+    else{
+        speciesPanel("hide")
+    }
+    if(urlParams.get("table")){
+        await tableButtonClick(document.getElementById(urlParams.get("table")).id.replace("Table", ""))
+    }
+    if(urlParams.get("filter")){
+        urlParams.get("filter").split(",").forEach(filter => {
+            createFilter(filter.split(":")[1], filter.split(":")[0])
+        })
+    }
+    if(urlParams.get("input")){
+        document.getElementsByClassName("activeInput")[0].value = urlParams.get("input")
+        document.getElementsByClassName("activeInput")[0].dispatchEvent(new Event("input"))
+    }
+
+    await refreshURLParams()
+}
+
+
+
+
+
+
+
+async function getHistoryState(){
+    let historyStateObj = {}
+    if(!speciesPanelMainContainer.classList.contains("hide")){
+        historyStateObj["species"] = panelSpecies
+    }
+    if(document.getElementsByClassName("activeTable").length > 0){
+        historyStateObj["table"] = document.getElementsByClassName("activeTable")[0].id
+    }
+    if(document.getElementsByClassName("filter").length > 0){
+        historyStateObj["filter"] = {}
+        const filters = document.getElementsByClassName("filter")
+        for(let i = 0, j = filters.length; i < j; i++){
+            const table = filters[i].parentElement.id.replace("FilterContainer", "")
+            if(!(table in historyStateObj["filter"])){
+                historyStateObj["filter"][table] = []
+            }
+            historyStateObj["filter"][table].push(filters[i].innerText)
+        }
+    }
+
+    if(JSON.stringify(historyObj.slice(-1)[0]) !== JSON.stringify(historyStateObj)){
+        historyObj.push(historyStateObj)
+    }
+}
+
+
+
+
+
+
+
+async function displayHistoryObj(historyStateObj){
+    deleteFiltersFromTable()
+    if(historyStateObj){
+        if("species" in historyStateObj){
+            scrollToSpecies = historyStateObj["species"]
+            await createSpeciesPanel(scrollToSpecies)
+            window.scrollTo(0, 0)
+        }
+        else{
+            speciesPanel("hide")
+        }
+        if("table" in historyStateObj){
+            await tableButtonClick(historyStateObj["table"].replace("Table", ""))
+
+            deleteFiltersFromTable()
+            if("filter" in historyStateObj){
+                Object.keys(historyStateObj["filter"]).forEach(key => {
+                    if(key === historyStateObj["table"].replace("Table", "")){
+                        for(filter of historyStateObj["filter"][key]){
+                            if(!/>|<|=/.test(filter)){
+                                createFilter(filter.split(":")[1].trim(), filter.split(":")[0])
+                            }
+                        }
+                    }
+                })
+            }
+        }
+    }
+}
+
 
 
 
