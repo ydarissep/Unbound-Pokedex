@@ -81,28 +81,24 @@ function filterTableInput(input, obj, keyArray){
 
 
 function filterLocationsTableInput(input, obj, keyArray){
-    const sanitizedInput = input.trim().replaceAll(/-|'| |_/g, "").toLowerCase()
-    const arraySanitizedInput = input.trim().split(/-|'| |_/g)
-    const regexInput = new RegExp(sanitizedInput, "i")
+    const arraySanitizedInput = input.trim().split(/-|'| |,|_/g)
 
-    for(let i = 0, j = Object.keys(tracker).length; i < j; i++){
+    mainLoop: for(let i = 0, j = Object.keys(tracker).length; i < j; i++){
         const zone = tracker[i]["key"].split("\\")[0].replaceAll(/-|'| |_/g, "").toLowerCase()
         const method = tracker[i]["key"].split("\\")[1].replaceAll(/-|'| |_/g, "").toLowerCase()
         const name = tracker[i]["key"].split("\\")[2]
-        tracker[i]["filter"].push("input")
-        for (let k = 0; k < keyArray.length; k++){
-            if(name in species){
-                if(regexInput.test(("" + obj[name][keyArray[k]]).replaceAll(/-|'| |_/g, ""))){
-                    tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
-                    break
+        let compareString = `${zone},${method},`
+        if(name in species){
+            for (let k = 0; k < keyArray.length; k++){
+                compareString += (obj[name][keyArray[k]] + ",").replaceAll(/-|'| |_|species/gi, "").toLowerCase()
+            }
+            for(splitInput of arraySanitizedInput){
+                if(!compareString.includes(splitInput.toLowerCase())){
+                    tracker[i]["filter"].push("input")
+                    continue mainLoop
                 }
             }
-        }
-        tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
-        for(splitInput of arraySanitizedInput){
-            if(!(zone+method).includes(splitInput.toLowerCase())){
-                tracker[i]["filter"].push("input")
-            }
+            tracker[i]["filter"] = tracker[i]["filter"].filter(value => value !== "input")
         }
     }
 
