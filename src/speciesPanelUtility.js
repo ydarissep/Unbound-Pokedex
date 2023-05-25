@@ -14,8 +14,8 @@ const speciesType1 = document.getElementById("speciesType1")
 const speciesType2 = document.getElementById("speciesType2")
 const speciesAbilities = document.getElementById("speciesAbilities")
 const speciesBaseStatsGraph = document.getElementById("speciesBaseStatsGraph")
-const speciesEvolutionsContainer = document.getElementById("speciesEvolutionsContainer")
-const speciesEvoMethod = document.getElementById("speciesEvoMethod")
+const speciesEvolutionsText = document.getElementById("speciesEvolutionsText")
+const speciesEvoTable = document.getElementById("speciesEvoTable")
 const speciesFormes = document.getElementById("speciesFormes")
 const speciesFormesText = document.getElementById("speciesFormesText")
 const speciesEggGroups = document.getElementById("speciesEggGroups")
@@ -120,39 +120,43 @@ async function createSpeciesPanel(name){
 
 
 
-    while (speciesEvolutionsContainer.firstChild) 
-        speciesEvolutionsContainer.removeChild(speciesEvolutionsContainer.firstChild);
-    while (speciesEvoMethod.firstChild)
-        speciesEvoMethod.removeChild(speciesEvoMethod.firstChild)
+    while(speciesEvoTable.firstChild){
+        speciesEvoTable.removeChild(speciesEvoTable.firstChild)
+    }
 
     if(species[name]["evolutionLine"].length > 1){
-        for (let i = 0; i < species[name]["evolutionLine"].length; i++){
-            speciesEvolutionsContainer.append(createClickableImgAndName(species[name]["evolutionLine"][i]))
-        }
-    }
+        speciesEvolutionsText.classList.remove("hide")
+        let speciesArray = [species[name]["evolutionLine"][0]]
+        let targetSpeciesArray = []
+        const rootContainer = document.createElement("td")
+        rootContainer.append(createClickableImgAndName(species[name]["evolutionLine"][0], false, false, false))
+        speciesEvoTable.append(rootContainer)
 
-    if(species[name]["evolution"].length === 0){
-        const evoMethod = document.createElement("div")
-        evoMethod.innerText = "Does not evolve"
-        evoMethod.className = "italic"
-        speciesEvoMethod.append(evoMethod)
+        mainLoop: while(speciesArray.length > 0){
+
+            let speciesEvoTableContainer = document.createElement("td")
+
+            for(let i = 0; i < speciesArray.length; i++){
+                const targetSpecies = speciesArray[i]
+                for(let j = 0; j < species[targetSpecies]["evolution"].length; j++){
+                    if(species[targetSpecies]["evolutionLine"].indexOf(targetSpecies) >= species[targetSpecies]["evolutionLine"].indexOf(species[targetSpecies]["evolution"][j][2])){ // prevent infinite loop (dialga)
+                        break mainLoop
+                    }
+                    speciesEvoTableContainer.append(createClickableImgAndName(species[targetSpecies]["evolution"][j][2], species[targetSpecies]["evolution"][j], false, false))
+                    speciesEvoTable.append(speciesEvoTableContainer)
+
+                    targetSpeciesArray.push(species[targetSpecies]["evolution"][j][2])
+                }
+            }
+
+            targetSpeciesArray =  Array.from(new Set(targetSpeciesArray))
+
+            speciesArray = targetSpeciesArray
+            targetSpeciesArray = []
+        }
     }
     else{
-        for (let i = 0; i < species[name]["evolution"].length; i++){
-            const evoMethod = document.createElement("div")
-            const sprite = document.createElement("img")
-            evoMethod.innerText = `${sanitizeString(species[name]["evolution"][i][0])} (${sanitizeString(species[name]["evolution"][i][1])}) ➝ ${sanitizeString(species[name]["evolution"][i][2])}`
-            sprite.src = getSpeciesSpriteSrc(species[name]["evolution"][i][2])
-            sprite.className = `sprite${species[name]["evolution"][i][2]} miniSprite2`
-            evoMethod.className = "evoMethod"
-            evoMethod.append(sprite)
-
-            evoMethod.addEventListener("click", () => {
-                createSpeciesPanel(species[name]["evolution"][i][2])
-            })
-
-            speciesEvoMethod.append(evoMethod)
-        }
+        speciesEvolutionsText.classList.add("hide")
     }
 
 
@@ -160,7 +164,7 @@ async function createSpeciesPanel(name){
         speciesFormes.removeChild(speciesFormes.firstChild)
 
 
-    if(species[name]["forms"].length === 0)
+    if(species[name]["forms"].length <= 1)
         speciesFormesText.classList.add("hide")
     else
         speciesFormesText.classList.remove("hide")
@@ -315,7 +319,7 @@ speciesPanelInputSpecies.addEventListener("input", e => {
 
 
 
-function createClickableImgAndName(speciesName){
+function createClickableImgAndName(speciesName, evoConditions = false, showName = true, miniSprite = true){
     const container = document.createElement("div")
     const sprite = document.createElement("img")
     const name = document.createElement("span")
@@ -323,19 +327,36 @@ function createClickableImgAndName(speciesName){
     container.className = "flexCenter flex flexRow hover"
 
     sprite.src = getSpeciesSpriteSrc(speciesName)
-    sprite.className = `sprite${speciesName} miniSprite`
+    sprite.className = `sprite${speciesName}`
+    if(miniSprite){
+        sprite.classList.add("miniSprite")
+    }
+    else{
+        sprite.classList.add("miniSprite3")
+    }
 
-    name.innerText = sanitizeString(species[speciesName]["name"])
-    name.className = "underline"
-
+    if(evoConditions){
+        const evoCondition = document.createElement("span")
+        if(evoConditions[0] !== "EVO_MEGA"){
+            evoCondition.innerText = `${sanitizeString(evoConditions[0])} (${sanitizeString(evoConditions[1])})`
+        }
+        else{
+            evoCondition.innerText = `Mega`
+        }
+        evoCondition.innerText += ` ➝ `
+        evoCondition.className = "evoMethod"
+        container.append(evoCondition)
+    }
+    if(showName){
+        name.innerText = sanitizeString(species[speciesName]["name"])
+        name.className = "underline"
+    }
 
     container.append(sprite)
     container.append(name)
-
     container.addEventListener("click", () => {
         createSpeciesPanel(speciesName)
     })
-
     return container
 }
 

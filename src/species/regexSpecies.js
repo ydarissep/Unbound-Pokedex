@@ -602,7 +602,7 @@ function altFormsLearnsets(species, input, output){
             for (let j = 0; j < species[name][input].length; j++){
                 const targetSpecies = species[name][input][j]
 
-                if(species[targetSpecies][output].length < species[name][output].length){
+                if(species[targetSpecies][output].length <= 0){
                     species[targetSpecies][output] = species[name][output]
                 }
             }

@@ -435,7 +435,7 @@ document.addEventListener("keydown", e => {
             speciesPanel("toggle")
             window.scrollTo({ top: 0})
         }
-        else if(e.code === "Backspace" || e.code === "Escape" || e.code === "Delete"){
+        else if(e.code === "Escape" || e.code === "Delete"){
             speciesPanel("hide")
         }
     }
