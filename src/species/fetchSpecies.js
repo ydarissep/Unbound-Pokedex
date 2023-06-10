@@ -210,6 +210,10 @@ async function buildSpeciesObj(){
 
             return a - b
         })
+
+        if((species[name]["type1"] === "TYPE_DRAGON" || species[name]["type2"] === "TYPE_DRAGON") && !species[name]["tutorLearnsets"].includes(["MOVE_DRACOMETEOR", "0"])){
+            species[name]["tutorLearnsets"].push(["MOVE_DRACOMETEOR", "0"])
+        }
     })
     await localStorage.setItem("species", LZString.compressToUTF16(JSON.stringify(species)))
     return species
