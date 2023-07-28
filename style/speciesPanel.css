@@ -259,6 +259,13 @@
 
 
 @media 
+only screen and (max-width: 1020px) {
+	#speciesPanelSubcontainer1, #speciesPanelSubcontainer2, #speciesBaseStatsGraphContainer, #speciesEvolutionsMainContainer, #speciesFormesContainer, #speciesPanelSubcontainer4 {
+		margin-left: 20px;
+	}
+}
+
+@media 
 only screen and (max-width: 700px) {
 	.miniSprite, .miniSprite3 {
 		padding: 0px 5px 5px 5px !important;

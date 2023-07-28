@@ -436,29 +436,30 @@ function regexEvolution(textEvolution, species){
 }
 
 function getEvolutionLine(species){
-    for(let i = 0; i < 2; i++) // FUTURE ME DO NOT DARE QUESTION ME
-    {
-        for (const name of Object.keys(species)){
+    for (const name of Object.keys(species)){
+        let evolutionLine = [name]
 
-            for (let j = 0; j < species[name]["evolution"].length; j++){
-
-                const targetSpecies = species[name]["evolution"][j][2]
-                species[name]["evolutionLine"].push(targetSpecies)
+        for(let i = 0; i < evolutionLine.length; i++){
+            const targetSpecies = evolutionLine[i]
+            for(let j = 0; j < species[evolutionLine[i]]["evolution"].length; j++){
+                const targetSpeciesEvo = species[targetSpecies]["evolution"][j][2]
+                if(!evolutionLine.includes(targetSpeciesEvo)){
+                    evolutionLine.push(targetSpeciesEvo)
+                }
             }
+        }
 
-
-
-            for (let j = 0; j < species[name]["evolution"].length; j++){
-
-                const targetSpecies = species[name]["evolution"][j][2]
-                species[targetSpecies]["evolutionLine"] = species[name]["evolutionLine"]
+        for(let i = 0; i < evolutionLine.length; i++){
+            const targetSpecies = evolutionLine[i]
+            if(evolutionLine.length > species[targetSpecies]["evolutionLine"].length){
+                species[targetSpecies]["evolutionLine"] = evolutionLine
             }
         }
     }
 
-    for (const name of Object.keys(species))
+    for (const name of Object.keys(species)){
         species[name]["evolutionLine"] = Array.from(new Set(species[name]["evolutionLine"])) // remove duplicates
-
+    }
 
     return species
 }
