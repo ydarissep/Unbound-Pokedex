@@ -291,7 +291,7 @@ function regexTMHMLearnsets(textTMHMLearnsets, species, start, end){
 
                             const matchSpecies = `SPECIES_${line.trim()}`
                             if(species[matchSpecies] !== undefined)
-                                species[matchSpecies]["TMHMLearnsets"].push([matchMove[0], TMHM])
+                                species[matchSpecies]["TMHMLearnsets"].push(matchMove[0])
                         })
                     })
                 })
@@ -388,7 +388,7 @@ function regexTutorLearnsets(textTutorLearnsets, species, start, end){
 
                             const matchSpecies = `SPECIES_${line.trim()}`
                             if(species[matchSpecies] !== undefined)
-                                species[matchSpecies]["tutorLearnsets"].push([matchMove[0], tutor])
+                                species[matchSpecies]["tutorLearnsets"].push(matchMove[0])
                         })
                     })
                 })
@@ -435,7 +435,7 @@ function regexEvolution(textEvolution, species){
     return getEvolutionLine(species)
 }
 
-function getEvolutionLine(species){
+async function getEvolutionLine(species){
     for (const name of Object.keys(species)){
         let evolutionLine = [name]
 

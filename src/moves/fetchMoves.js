@@ -29,13 +29,11 @@ async function getVanillaMovesDescription(moves){
     return regexVanillaMovesDescription(textVanillaMovesDescription, moves)
 }
 
-async function getFlags(moves){
-    footerP("Fetching moves flags")
+async function getMovesFlags(moves){
     const rawMovesFlags = await fetch(`https://raw.githubusercontent.com/${repo1}/assembly/data/move_tables.json`)
-    const textMovesFlags = await rawMovesFlags.text()
-    const JSONMovesFlags = await JSON.parse(textMovesFlags)
+    const jsonMovesFlags = await rawMovesFlags.json()
 
-    return regexMovesFlags(JSONMovesFlags, moves)
+    return regexMovesFlags(jsonMovesFlags, moves)
 }
 
 
@@ -47,6 +45,16 @@ async function buildMovesObj(){
     moves = await getVanillaMovesDescription(moves)
     moves = await getMovesDescription(moves)
     moves = await getMovesIngameName(moves)
+    moves = await getMovesFlags(moves)
+
+    Object.keys(moves).forEach(move => {
+        if(moves[move]["priority"] > 0){
+            moves[move]["flags"].push(`FLAG_PRIORITY_PLUS_${moves[move]["priority"]}`)
+        }
+        else if(moves[move]["priority"] < 0){
+            moves[move]["flags"].push(`FLAG_PRIORITY_MINUS_${Math.abs(moves[move]["priority"])}`)
+        }
+    })
 
     await localStorage.setItem("moves", LZString.compressToUTF16(JSON.stringify(moves)))
     return moves
