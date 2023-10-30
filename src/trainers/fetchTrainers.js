@@ -77,6 +77,27 @@ async function fetchTrainersObj(){
 
 
 
+function getTrainerSpriteSrc(trainerSprite){
+    const url = `https://raw.githubusercontent.com/${repo}/graphics/trainers/front_pics/${trainerSprite.replace(/^TRAINER_PIC_/, "").toLowerCase()}_front_pic.png`
+    if(sprites[trainerSprite]){
+        if(sprites[trainerSprite].length < 500){
+            localStorage.removeItem(trainerSprite)
+            spriteRemoveTrainerBgReturnBase64(trainerSprite, url)
+            return url
+        }
+        else{
+            return sprites[trainerSprite]
+        }
+    }
+    else{
+        spriteRemoveTrainerBgReturnBase64(trainerSprite, url)
+        return url
+    }
+}
+
+
+
+
 
 
 

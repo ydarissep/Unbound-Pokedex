@@ -187,8 +187,8 @@ async function buildSpeciesObj(){
     species = await cleanSpecies(species)
 
     Object.keys(species).forEach(name => {
-        if((species[name]["type1"] === "TYPE_DRAGON" || species[name]["type2"] === "TYPE_DRAGON") && !species[name]["tutorLearnsets"].includes(["MOVE_DRACOMETEOR", "0"])){
-            species[name]["tutorLearnsets"].push(["MOVE_DRACOMETEOR", "0"])
+        if((species[name]["type1"] === "TYPE_DRAGON" || species[name]["type2"] === "TYPE_DRAGON") && !species[name]["tutorLearnsets"].includes("MOVE_DRACOMETEOR")){
+            species[name]["tutorLearnsets"].push("MOVE_DRACOMETEOR")
         }
     })
     await localStorage.setItem("species", LZString.compressToUTF16(JSON.stringify(species)))

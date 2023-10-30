@@ -7,10 +7,10 @@ async function regexScripts(textScripts, trainers){
             promises.text()
             .then(text => {
                 const zone = scripts[i].match(/data\/maps\/(.*)\/scripts.inc/i)[1].replaceAll("_", "").replace(/([A-Z])/g, " $1").replace(/(\d+)/g, " $1").trim()
-                const trainersFromScript = Array.from(new Set(text.match(/trainerbattle\w+ *TRAINER_\w+/g)))
+                const trainersFromScript = Array.from(new Set(text.match(/TRAINER_\w+/g)))
 
                 for(let k = 0; k < trainersFromScript.length; k++){
-                    const trainer = trainersFromScript[k].match(/TRAINER_\w+/)[0]
+                    const trainer = trainersFromScript[k]
                     if(!trainers[zone]){
                         trainers[zone] = {}
                     }
@@ -163,7 +163,7 @@ async function regexTrainersParties(textTrainersParties, [trainers, conversionTa
                 if(conversionTable[party]){
                     trainer = conversionTable[party]
                     zone = trainerToZone[trainer]
-                    if(/Insane$/i.test(party)){
+                    if(/Insane$/.test(party)){
                         difficulty = "Elite"
                     }
                 }
