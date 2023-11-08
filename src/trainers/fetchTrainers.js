@@ -48,12 +48,21 @@ async function fetchTrainersObj(){
 
             for(difficulty in trainers[zone][trainer]["party"]){
                 if(difficulty !== "Normal" && !document.getElementById(`difficulty${difficulty}`)){
-                    const newDifficulty = document.createElement("input"); newDifficulty.setAttribute("id", `difficulty${difficulty}`); newDifficulty.setAttribute("type", "checkbox")
-                    const difficultyLabel = document.createElement("label"); difficultyLabel.setAttribute("for", `difficulty${difficulty}`); difficultyLabel.innerText = difficulty
-                    difficultyCheckboxContainer.append(difficultyLabel)
-                    difficultyCheckboxContainer.append(newDifficulty)
+                    const newDifficulty = document.createElement("button"); newDifficulty.innerText = difficulty; newDifficulty.className = "setting"; newDifficulty.setAttribute("id", `difficulty${difficulty}`); newDifficulty.setAttribute("type", "button")
+                    difficultyButtonContainer.append(newDifficulty)
 
-                    newDifficulty.addEventListener("change", () => {
+                    newDifficulty.addEventListener("click", () => {
+                        if(newDifficulty.classList.contains("activeSetting")){
+                            trainersDifficulty = "Normal"
+                            newDifficulty.classList.remove("activeSetting")
+                        }
+                        else{
+                            for(const difficultyButton of difficultyButtonContainer.children){
+                                difficultyButton.classList.remove("activeSetting")
+                            }
+                            newDifficulty.classList.add("activeSetting")
+                            trainersDifficulty = newDifficulty.innerText
+                        }
                         trainerSpeciesMatchFilter(true)
                         filterTrainersTableInput(trainersInput.value)
                     })
@@ -94,7 +103,6 @@ function getTrainerSpriteSrc(trainerSprite){
         return url
     }
 }
-
 
 
 
