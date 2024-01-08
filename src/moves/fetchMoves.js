@@ -56,6 +56,9 @@ async function buildMovesObj(){
         }
     })
 
+    moves["MOVE_LEECHLIFE"]["power"] = 20
+    moves["MOVE_LEECHLIFE"]["PP"] = 15
+
     await localStorage.setItem("moves", LZString.compressToUTF16(JSON.stringify(moves)))
     return moves
 }
