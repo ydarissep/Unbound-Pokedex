@@ -36,6 +36,7 @@ function regexMovesDescription(textMovesDescription, moves){
 function regexMoves(textMoves, moves){
     const lines = textMoves.split("\n")
     let move = null, change = false
+    const regex = /ACTUAL_PLA_MOVE_POWERS|BUFFED_LEECH_LIFE/
 
     lines.forEach(line => {
         const matchMoves = line.match(/\[ *(MOVE_\w+) *\]/i)
@@ -56,11 +57,11 @@ function regexMoves(textMoves, moves){
                 }
             }
         }
-        if(line.includes("#ifdef")){
-            change = false
+        if(line.includes("#ifdef") && regex.test(line)){
+            change = true
         }
         else if(line.includes("ifndef")){
-            change = true
+            change = false
         }
         else if(line.includes("else")){
             if(change === true){
