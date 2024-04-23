@@ -3,7 +3,6 @@ async function regexStrategies(textStrategies, strategies){
     let name = null, inBracket = false, pushLine = false
 
     lines.forEach(line => {
-        checkTimeout()
         line = line.trim()
 
         if(line === "{"){

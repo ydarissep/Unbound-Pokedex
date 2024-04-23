@@ -281,19 +281,7 @@ async function bugFixTrainers(){
 
             }
             if(Object.keys(trainers[zone][trainer]["party"]).length === 0){
-                try{
-                    if(Object.keys(backupData[4][zone][trainer]["party"].length > 0)){
-                        trainers[zone][trainer] = backupData[4][zone][trainer]
-                        trainers[zone][trainer]["backup"] = true
-                    }
-                }
-                catch{
-                    if(trainers[zone][trainer]["rematch"]){
-                        trainers[zone][trainers[zone][trainer]["rematch"]]["rematchArray"] = trainers[zone][trainers[zone][trainer]["rematch"]]["rematchArray"].filter(value => value !== trainer)
-                    }
-                    delete trainers[zone][trainer]
-                }
-
+                delete trainers[zone][trainer]
                 if(Object.keys(trainers[zone]).length === 0){
                     delete trainers[zone]
                 }
