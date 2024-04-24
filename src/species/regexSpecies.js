@@ -424,7 +424,10 @@ function regexEvolution(textEvolution, species){
 
         const matchEvoInfo = line.match(/(\w+), *(\w+), *(\w+)/)
         if(matchEvoInfo){
-            const method = matchEvoInfo[1]
+            let method = matchEvoInfo[1]
+            if(/ITEM_HISUI_ROCK/i.test(line)){
+                method = method.replace(/HOLD_ITEM$/, "HOLD_HISUI_ROCK")
+            }
             const condition = matchEvoInfo[2]
             const targetSpecies = matchEvoInfo[3]
             species[name]["evolution"].push([method, condition, targetSpecies])
