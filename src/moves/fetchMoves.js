@@ -7,7 +7,6 @@ async function getMoves(moves){
 }
 
 async function getMovesDescription(moves){
-    footerP("Fetching moves descriptions")
     const rawMovesDescription = await fetch(`https://raw.githubusercontent.com/${repo1}/strings/attack_descriptions.string`)
     const textMovesDescription = await rawMovesDescription.text()
 
@@ -15,7 +14,6 @@ async function getMovesDescription(moves){
 }
 
 async function getMovesIngameName(moves){
-    footerP("Fetching moves ingame name")
     const rawMovesIngameName = await fetch(`https://raw.githubusercontent.com/${repo1}/strings/attack_name_table.string`)
     const textMovesIngameName = await rawMovesIngameName.text()
 

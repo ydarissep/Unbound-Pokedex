@@ -8,14 +8,12 @@ async function getSpecies(species){
 
 
 async function getBaseStats(species){
-    footerP("Fetching base stats")
     const rawBaseStats = await fetch(`https://raw.githubusercontent.com/${repo2}/src/Base_Stats.c`)
     const textBaseStats = await rawBaseStats.text()
     return regexBaseStats(textBaseStats, species)
 }
 
 async function getLevelUpLearnsets(species){
-    footerP("Fetching level up learnsets")
     const rawLevelUpLearnsets = await fetch(`https://raw.githubusercontent.com/${repo2}/src/Learnsets.c`)
     const textLevelUpLearnsets = await rawLevelUpLearnsets.text()
 
@@ -30,7 +28,6 @@ async function getLevelUpLearnsets(species){
 }
 
 async function getTMHMLearnsets(species){
-    footerP("Fetching TMHM learnsets")
     const rawTMHMLearnsets = await fetch(`https://raw.githubusercontent.com/${repo2}/src/TM_Tutor_Tables.c`)
     const textTMHMLearnsets = await rawTMHMLearnsets.text()
 
@@ -38,7 +35,6 @@ async function getTMHMLearnsets(species){
 }
 
 async function getTutorLearnsets(species){
-    footerP("Fetching tutor learnsets")
     const rawTutorLearnsets = await fetch(`https://raw.githubusercontent.com/${repo2}/src/TM_Tutor_Tables.c`)
     const textTutorLearnsets = await rawTutorLearnsets.text()
 
@@ -46,7 +42,6 @@ async function getTutorLearnsets(species){
 }
 
 async function getEvolution(species){
-    footerP("Fetching evolution line")
     const rawEvolution = await fetch(`https://raw.githubusercontent.com/${repo2}/src/Evolution%20Table.c`)
     const textEvolution = await rawEvolution.text()
 
@@ -54,7 +49,6 @@ async function getEvolution(species){
 }
 
 async function getForms(species){
-    footerP("Fetching alternate forms")
     const rawForms = await fetch(`https://raw.githubusercontent.com/${repo}/src/data/pokemon/form_species_tables.h`)
     const textForms = await rawForms.text()
 
@@ -62,7 +56,6 @@ async function getForms(species){
 }
 
 async function getEggMovesLearnsets(species){
-    footerP("Fetching egg moves learnsets")
     const rawEggMoves = await fetch(`https://raw.githubusercontent.com/${repo2}/src/Egg_Moves.c`)
     const textEggMoves = await rawEggMoves.text()
 
@@ -70,8 +63,6 @@ async function getEggMovesLearnsets(species){
 }
 
 async function getSprite(species){
-    footerP("Fetching sprites")
-
     const rawSprite = await fetch(`https://raw.githubusercontent.com/${repo2}/src/Front_Pic_Table.c`)
     const textSprite = await rawSprite.text()
 
@@ -86,8 +77,6 @@ async function getReplaceAbilities(species){
 }
 
 async function getChanges(species, url){
-    footerP("Fetching species changes")
-
     const rawAbilitiesChanges = await fetch("https://raw.githubusercontent.com/Skeli789/Complete-Fire-Red-Upgrade/master/include/constants/abilities.h")
     const textAbilitiesForChanges =  await rawAbilitiesChanges.text()
 
@@ -237,15 +226,6 @@ async function fetchSpeciesObj(){
     window.sprites = {}
     window.speciesTracker = []
 
-    await Object.keys(species).forEach(async name => {
-        if(localStorage.getItem(`${name}`)){
-            sprites[name] = await LZString.decompressFromUTF16(localStorage.getItem(`${name}`))
-            if(sprites[name].length < 500){
-                localStorage.removeItem(name)
-                spriteRemoveBgReturnBase64(name, species)
-            }
-        }
-    })
     for(let i = 0, j = Object.keys(species).length; i < j; i++){
         speciesTracker[i] = {}
         speciesTracker[i]["key"] = Object.keys(species)[i]
