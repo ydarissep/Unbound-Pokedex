@@ -36,7 +36,7 @@ function regexMovesDescription(textMovesDescription, moves){
 function regexMoves(textMoves, moves){
     const lines = textMoves.split("\n")
     let move = null, change = false
-    const regex = /ACTUAL_PLA_MOVE_POWERS|BUFFED_LEECH_LIFE|GEN_6_POWER_NERFS/
+    const regex = /ACTUAL_PLA_MOVE_POWERS|BUFFED_LEECH_LIFE|GEN_6_POWER_NERFS|DARK_VOID_ACC_NERF/
 
     lines.forEach(line => {
         const matchMoves = line.match(/\[ *(MOVE_\w+) *\]/i)
