@@ -1,15 +1,19 @@
 function regexAbilities(textAbilities, abilities){
     const lines = textAbilities.split("\n")
+    let idx = 0
 
     lines.forEach(line => {
-        const matchAbility = line.match(/ABILITY_\w+/i)
+        const matchAbility = line.match(/ (ABILITY_\w+)/i)
         if(matchAbility){
-            ability = matchAbility[0]
+            ability = matchAbility[1]
 
             abilities[ability] = {}
             abilities[ability]["name"] = ability
             abilities[ability]["ingameName"] = sanitizeString(ability)
             abilities[ability]["description"] = ""
+            if (abilities[ability] === undefined) {
+                abilities[ability]["id"] = idx++
+            }
         }
     })
     return abilities
