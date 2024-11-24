@@ -6,12 +6,12 @@ function regexAbilities(textAbilities, abilities){
         const matchAbility = line.match(/ (ABILITY_\w+)/i)
         if(matchAbility){
             ability = matchAbility[1]
-
+            const isNew = abilities[ability] === undefined
             abilities[ability] = {}
             abilities[ability]["name"] = ability
             abilities[ability]["ingameName"] = sanitizeString(ability)
             abilities[ability]["description"] = ""
-            if (abilities[ability] === undefined) {
+            if (isNew) {
                 abilities[ability]["id"] = idx++
             }
         }
