@@ -60,6 +60,7 @@ function submitEnhancements() {
 	const randomizedLearnsetChecked = document.getElementById("saveRandomizedLearnsetCheckbox").checked;
 	const rebalancedStatsChecked = document.getElementById("saveRebalancedStatsCheckbox").checked;
 	let data = {};
+	let yidChanged = false;
 	if (yid.length === 0) {
 		if (randomizedAbilitiesChecked || randomizedLearnsetChecked) {
 			alert("Randomizer options require a valid YID");
@@ -80,6 +81,9 @@ function submitEnhancements() {
 			trainerId,
 			trainerSecretId
 		};
+		if (typeof saveData !== 'undefined') {
+			yidChanged = saveData.trainerIdFull != trainerIdFull;
+		}
 	}
 	processSaveData(data);
 	const saveRandomizedAbilities = settings.includes("saveRandomizedAbilities");
@@ -88,7 +92,7 @@ function submitEnhancements() {
 	changeSaveSetting("saveRandomizedAbilities", randomizedAbilitiesChecked);
 	changeSaveSetting("saveRandomizedLearnset", randomizedLearnsetChecked);
 	changeSaveSetting("saveRebalancedStats", rebalancedStatsChecked);
-	if ((randomizedAbilitiesChecked != saveRandomizedAbilities) || (randomizedLearnsetChecked != saveRandomizedLearnset) || (rebalancedStatsChecked != saveRebalancedStats)) {
+	if ((yidChanged && (randomizedAbilitiesChecked || randomizedLearnsetChecked)) || (randomizedAbilitiesChecked != saveRandomizedAbilities) || (randomizedLearnsetChecked != saveRandomizedLearnset) || (rebalancedStatsChecked != saveRebalancedStats)) {
 		clearSpeciesReload();
 	} else {
 		overlay.click();
