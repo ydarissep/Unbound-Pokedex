@@ -36,6 +36,7 @@ function regexMovesDescription(textMovesDescription, moves){
 function regexMoves(textMoves, moves){
     const lines = textMoves.split("\n")
     let move = null, change = false
+    let idx = 0
     const regex = /ACTUAL_PLA_MOVE_POWERS|BUFFED_LEECH_LIFE|GEN_6_POWER_NERFS|DARK_VOID_ACC_NERF/
 
     lines.forEach(line => {
@@ -45,6 +46,7 @@ function regexMoves(textMoves, moves){
             if(moves[move] === undefined){
                 moves[move] = {}
                 moves[move]["name"] = move
+                moves[move]["id"] = idx++
                 moves[move]["changes"] = []
                 moves[move]["description"] = []
                 moves[move]["ingameName"] = sanitizeString(move)

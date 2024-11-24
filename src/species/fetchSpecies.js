@@ -89,8 +89,124 @@ async function getChanges(species, url){
     return regexChanges(textChanges, species, abilitiesArrayForChanges)
 }
 
+function randomizeAbility(trainerIdFull, trainerId, trainerSecretId, bannedOldAbilities, bannedNewAbilities, pokemonId, abilitiesById, ability) {
+	if (ability === "ABILITY_NONE" || bannedOldAbilities.includes(ability)) {
+		return ability;
+	}
+	const abilityId = abilities[ability].id;
+	const abilitiesCount = abilities["ABILITY_PASTELVEIL"].id + 1;
+	const startAt = ((trainerId % abilitiesCount) >>> 0) + pokemonId;
+	const xorVal = trainerSecretId % 0xFF;
+	let numAttempts = 0;
+	let newAbilityId = abilityId + startAt;
+	if (newAbilityId >= abilitiesCount) {
+		newAbilityId = newAbilityId - (abilitiesCount - 2);
+	}
+	newAbilityId ^= xorVal;
+	newAbilityId %= abilitiesCount;
+	let newAbility = abilitiesById.get(newAbilityId);
+	while ((newAbility === undefined || bannedNewAbilities.includes(newAbility)) && numAttempts < 100) {
+		newAbilityId *= xorVal;
+		newAbilityId %= abilitiesCount;
+		newAbility = abilitiesById.get(newAbilityId);
+		numAttempts++;
+	}
+	if (newAbility === undefined || ability === "ABILITY_NONE" || (numAttempts >= 100 && bannedNewAbilities.includes(newAbility))) {
+		newAbility = ability;
+	}
+	return newAbility;
+}
 
+function randomizeMove(trainerIdFull, trainerId, trainerSecretId, bannedNewMoves, movesById, move) {
+	if (move === "MOVE_NONE") {
+		return move;
+	}
+	const moveId = moves[move].id;
+	const movesCountRegular = moves["MOVE_GLACIALLANCE"].id + 1;
+	const startAt = (trainerId % movesCountRegular) >>> 0;
+	const xorVal = trainerSecretId % 0x300;
+	let numAttempts = 0;
+	let newMoveId = moveId + startAt;
+	if (newMoveId >= movesCountRegular) {
+		newMoveId = newMoveId - (movesCountRegular - 2);
+	}
+	newMoveId ^= xorVal;
+	newMoveId %= movesCountRegular;
+	let newMove = movesById.get(newMoveId);
+	while ((newMove === undefined || bannedNewMoves.includes(newMove)) && numAttempts < 100) {
+		newMoveId *= xorVal;
+		newMoveId %= movesCountRegular;
+		newMove = movesById.get(newMoveId);
+		numAttempts++;
+	}
+	if (newMove === undefined || (numAttempts >= 100 && bannedNewMoves.includes(newMove))) {
+		newMove = "MOVE_TACKLE";
+	}
+	return newMove;
+}
 
+function rebalanceStat(statBase, pokemon) {
+	return Math.min(Math.floor((statBase * (600 - pokemon.baseHP)) / (pokemon.BST - pokemon.baseHP)), 0xFF);
+}
+
+async function getJSONFromURL(url){
+    const raw = await fetch(url);
+    const text = await raw.text();
+    return JSON.parse(text);
+}
+
+async function applyEnhancements(species) {
+	const storedSaveData = localStorage.getItem("saveData");
+	const randomAbilities = settings.includes("saveRandomizedAbilities");
+	const randomLearnset = settings.includes("saveRandomizedLearnset");
+	const rebalancedStats = settings.includes("saveRebalancedStats");
+	if (rebalancedStats) {
+		Object.keys(species).forEach(name => {
+			const pokemon = species[name];
+			if (pokemon.ID > 0 && name != "SPECIES_SHEDINJA" && (pokemon.evolution.length == 0 || pokemon.evolution.every(evo => evo[0] === "EVO_MEGA" || evo[0] === "EVO_GIGANTAMAX"))) {
+				pokemon.baseAttack = rebalanceStat(pokemon.baseAttack, pokemon);
+				pokemon.baseDefense = rebalanceStat(pokemon.baseDefense, pokemon);
+				pokemon.baseSpAttack = rebalanceStat(pokemon.baseSpAttack, pokemon);
+				pokemon.baseSpDefense = rebalanceStat(pokemon.baseSpDefense, pokemon);
+				pokemon.baseSpeed = rebalanceStat(pokemon.baseSpeed, pokemon);
+				pokemon.BST = pokemon.baseHP + pokemon.baseAttack + pokemon.baseDefense + pokemon.baseSpAttack + pokemon.baseSpDefense + pokemon.baseSpeed;
+			}
+		});
+	}
+	if (!storedSaveData || storedSaveData == "undefined" || (!randomAbilities && !randomLearnset)) {
+		return species;
+	}
+	const saveData = JSON.parse(storedSaveData);
+	if (!saveData) {
+		return species;
+	}
+	const trainerIdFull = saveData.trainerIdFull;
+	const trainerId = saveData.trainerId;
+	const trainerSecretId = saveData.trainerSecretId;
+	if (randomAbilities) {
+		const abilityTables = await getJSONFromURL(`https://raw.githubusercontent.com/${repo1}/assembly/data/ability_tables.json`);
+		const abilitiesById = new Map(Object.entries(abilities).map(([ability, value]) => [value.id, ability]));
+		Object.keys(species).forEach(name => {
+			const pokemon = species[name];
+			if (pokemon.ID > 0) {
+				const oldAbilities = pokemon.abilities;
+				pokemon.abilities = oldAbilities.map(ability => randomizeAbility(trainerIdFull, trainerId, trainerSecretId, abilityTables.gRandomizerBannedOriginalAbilities, abilityTables.gRandomizerBannedNewAbilities, pokemon.ID, abilitiesById, ability));
+				species["SPECIES_BEEDRILL"].changes = species["SPECIES_BEEDRILL"].changes.filter(innerArray => innerArray[0] !== "abilities");
+			}
+		});
+	}
+	if (randomLearnset) {
+		const moveTables = await getJSONFromURL(`https://raw.githubusercontent.com/${repo1}/assembly/data/move_tables.json`);
+		const movesById = new Map(Object.entries(moves).map(([move, value]) => [value.id, move]));
+		Object.keys(species).forEach(name => {
+			const pokemon = species[name];
+			if (pokemon.ID > 0) {
+				pokemon.levelUpLearnsets = pokemon.levelUpLearnsets.map(([move, level]) => [randomizeMove(trainerIdFull, trainerId, trainerSecretId, moveTables.gRandomizerBanTable, movesById, move), level]);
+			}
+		});
+	}
+	return species;
+}
 
 async function cleanSpecies(species){
     footerP("Cleaning up...")
@@ -180,6 +296,8 @@ async function buildSpeciesObj(){
             species[name]["tutorLearnsets"].push("MOVE_DRACOMETEOR")
         }
     })
+	
+	species = await applyEnhancements(species)
     await localStorage.setItem("species", LZString.compressToUTF16(JSON.stringify(species)))
     return species
 }
