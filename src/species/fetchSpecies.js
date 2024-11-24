@@ -163,7 +163,7 @@ async function applyEnhancements(species) {
 	if (rebalancedStats) {
 		Object.keys(species).forEach(name => {
 			const pokemon = species[name];
-			if (name != "SPECIES_SHEDINJA" && (pokemon.evolution.length == 0 || pokemon.evolution.every(evo => evo[0] === "EVO_MEGA" || evo[0] === "EVO_GIGANTAMAX"))) {
+			if (pokemon.ID > 0 && name != "SPECIES_SHEDINJA" && (pokemon.evolution.length == 0 || pokemon.evolution.every(evo => evo[0] === "EVO_MEGA" || evo[0] === "EVO_GIGANTAMAX"))) {
 				pokemon.baseAttack = rebalanceStat(pokemon.baseAttack, pokemon);
 				pokemon.baseDefense = rebalanceStat(pokemon.baseDefense, pokemon);
 				pokemon.baseSpAttack = rebalanceStat(pokemon.baseSpAttack, pokemon);
@@ -188,18 +188,22 @@ async function applyEnhancements(species) {
 		const abilitiesById = new Map(Object.entries(abilities).map(([ability, value]) => [value.id, ability]));
 		Object.keys(species).forEach(name => {
 			const pokemon = species[name];
-			const oldAbilities = pokemon.abilities;
-			pokemon.abilities = oldAbilities.map(ability => randomizeAbility(trainerIdFull, trainerId, trainerSecretId, abilityTables.gRandomizerBannedOriginalAbilities, abilityTables.gRandomizerBannedNewAbilities, pokemon.ID, abilitiesById, ability));
-			species["SPECIES_BEEDRILL"].changes = species["SPECIES_BEEDRILL"].changes.filter(innerArray => innerArray[0] !== "abilities");
-			if (oldAbilities[0] != pokemon.abilities[0] || oldAbilities[1] != pokemon.abilities[1] || oldAbilities[2] != pokemon.abilities[2]) {
-				
+			if (pokemon.ID > 0) {
+				const oldAbilities = pokemon.abilities;
+				pokemon.abilities = oldAbilities.map(ability => randomizeAbility(trainerIdFull, trainerId, trainerSecretId, abilityTables.gRandomizerBannedOriginalAbilities, abilityTables.gRandomizerBannedNewAbilities, pokemon.ID, abilitiesById, ability));
+				species["SPECIES_BEEDRILL"].changes = species["SPECIES_BEEDRILL"].changes.filter(innerArray => innerArray[0] !== "abilities");
 			}
 		});
 	}
 	if (randomLearnset) {
 		const moveTables = await getJSONFromURL(`https://raw.githubusercontent.com/${repo1}/assembly/data/move_tables.json`);
 		const movesById = new Map(Object.entries(moves).map(([move, value]) => [value.id, move]));
-		Object.keys(species).forEach(name => species[name].levelUpLearnsets = species[name].levelUpLearnsets.map(([move, level]) => [randomizeMove(trainerIdFull, trainerId, trainerSecretId, moveTables.gRandomizerBanTable, movesById, move), level]));
+		Object.keys(species).forEach(name => {
+			const pokemon = species[name];
+			if (pokemon.ID > 0) {
+				pokemon.levelUpLearnsets = pokemon.levelUpLearnsets.map(([move, level]) => [randomizeMove(trainerIdFull, trainerId, trainerSecretId, moveTables.gRandomizerBanTable, movesById, move), level]);
+			}
+		});
 	}
 	return species;
 }
