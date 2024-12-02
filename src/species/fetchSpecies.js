@@ -89,12 +89,12 @@ async function getChanges(species, url){
     return regexChanges(textChanges, species, abilitiesArrayForChanges)
 }
 
-function randomizeAbility(trainerIdFull, trainerId, trainerSecretId, bannedOldAbilities, bannedNewAbilities, pokemonId, abilitiesById, ability) {
+function randomizeAbility(trainerIdFull, trainerId, trainerSecretId, abilitiesCount, abilitiesById, abilitiesAlso, bannedOldAbilities, bannedNewAbilities, pokemonId, ability) {
 	if (ability === "ABILITY_NONE" || bannedOldAbilities.includes(ability)) {
 		return ability;
 	}
-	const abilityId = abilities[ability].id;
-	const abilitiesCount = abilities["ABILITY_PASTELVEIL"].id + 1;
+	const abilityAlso = abilitiesAlso[ability];
+	const abilityId = abilities[abilityAlso === undefined ? ability : abilityAlso].id;
 	const startAt = ((trainerId % abilitiesCount) >>> 0) + pokemonId;
 	const xorVal = trainerSecretId % 0xFF;
 	let numAttempts = 0;
@@ -104,11 +104,11 @@ function randomizeAbility(trainerIdFull, trainerId, trainerSecretId, bannedOldAb
 	}
 	newAbilityId ^= xorVal;
 	newAbilityId %= abilitiesCount;
-	let newAbility = abilitiesById.get(newAbilityId);
+	let newAbility = abilitiesById[newAbilityId];
 	while ((newAbility === undefined || bannedNewAbilities.includes(newAbility)) && numAttempts < 100) {
 		newAbilityId *= xorVal;
 		newAbilityId %= abilitiesCount;
-		newAbility = abilitiesById.get(newAbilityId);
+		newAbility = abilitiesById[newAbilityId];
 		numAttempts++;
 	}
 	if (newAbility === undefined || ability === "ABILITY_NONE" || (numAttempts >= 100 && bannedNewAbilities.includes(newAbility))) {
@@ -163,7 +163,7 @@ async function applyEnhancements(species) {
 	if (rebalancedStats) {
 		Object.keys(species).forEach(name => {
 			const pokemon = species[name];
-			if (pokemon.ID > 0 && name != "SPECIES_SHEDINJA" && (pokemon.evolution.length == 0 || pokemon.evolution.every(evo => evo[0] === "EVO_MEGA" || evo[0] === "EVO_GIGANTAMAX"))) {
+			if (pokemon.ID > 0 && pokemon.baseHP > 1 && (pokemon.evolution.length == 0 || pokemon.evolution.every(evo => evo[0] === "EVO_MEGA" || evo[0] === "EVO_GIGANTAMAX"))) {
 				pokemon.baseAttack = rebalanceStat(pokemon.baseAttack, pokemon);
 				pokemon.baseDefense = rebalanceStat(pokemon.baseDefense, pokemon);
 				pokemon.baseSpAttack = rebalanceStat(pokemon.baseSpAttack, pokemon);
@@ -172,6 +172,7 @@ async function applyEnhancements(species) {
 				pokemon.BST = pokemon.baseHP + pokemon.baseAttack + pokemon.baseDefense + pokemon.baseSpAttack + pokemon.baseSpDefense + pokemon.baseSpeed;
 			}
 		});
+		Object.keys(species).forEach(name => species[name]["changes"] = species[name]["changes"].filter(change => change[0] != "BST" && change[0] != "baseAttack" && change[0] != "baseDefense" && change[0] != "baseHP" && change[0] != "baseSpAttack" && change[0] != "baseSpDefense" && change[0] != "baseSpeed"));
 	}
 	if (!storedSaveData || storedSaveData == "undefined" || (!randomAbilities && !randomLearnset)) {
 		return species;
@@ -184,15 +185,18 @@ async function applyEnhancements(species) {
 	const trainerId = saveData.trainerId;
 	const trainerSecretId = saveData.trainerSecretId;
 	if (randomAbilities) {
+		const abilitiesCount = abilities["ABILITY_PASTELVEIL"].id + 1;
 		const abilityTables = await getJSONFromURL(`https://raw.githubusercontent.com/${repo1}/assembly/data/ability_tables.json`);
-		const abilitiesById = new Map(Object.entries(abilities).map(([ability, value]) => [value.id, ability]));
+		const abilitiesById = Object.fromEntries(Object.entries(abilities).filter(([ability, values]) => values.id != undefined).map(([ability, value]) => [value.id, ability]));
+		const abilitiesAlso = Object.fromEntries(Object.entries(abilities).filter(([ability, values]) => values.also != undefined).flatMap(([ability, values]) => values.also.map(also => [also, ability])));
 		Object.keys(species).forEach(name => {
 			const pokemon = species[name];
-			if (pokemon.ID > 0) {
-				const oldAbilities = pokemon.abilities;
-				pokemon.abilities = oldAbilities.map(ability => randomizeAbility(trainerIdFull, trainerId, trainerSecretId, abilityTables.gRandomizerBannedOriginalAbilities, abilityTables.gRandomizerBannedNewAbilities, pokemon.ID, abilitiesById, ability));
-				species["SPECIES_BEEDRILL"].changes = species["SPECIES_BEEDRILL"].changes.filter(innerArray => innerArray[0] !== "abilities");
+			if (pokemon.ID > 0 && pokemon.baseHP > 0) {
+				pokemon.abilities = pokemon.abilities.map(ability => randomizeAbility(trainerIdFull, trainerId, trainerSecretId, abilitiesCount, abilitiesById, abilitiesAlso, abilityTables.gRandomizerBannedOriginalAbilities, abilityTables.gRandomizerBannedNewAbilities, pokemon.ID, ability));
 			}
+		});
+		Object.keys(species).forEach(name => {
+			species[name]["changes"] = species[name]["changes"].filter(change => change[0] != "abilities")
 		});
 	}
 	if (randomLearnset) {
@@ -200,11 +204,26 @@ async function applyEnhancements(species) {
 		const movesById = new Map(Object.entries(moves).map(([move, value]) => [value.id, move]));
 		Object.keys(species).forEach(name => {
 			const pokemon = species[name];
-			if (pokemon.ID > 0) {
+			if (pokemon.ID > 0 && pokemon.baseHP > 0) {
 				pokemon.levelUpLearnsets = pokemon.levelUpLearnsets.map(([move, level]) => [randomizeMove(trainerIdFull, trainerId, trainerSecretId, moveTables.gRandomizerBanTable, movesById, move), level]);
 			}
 		});
 	}
+	return species;
+}
+
+async function fixFormAbilities(species) {
+	Object.entries(species).filter(([name, pokemon]) => species[name + "_F"] != undefined && pokemon.forms.length == 2).forEach(([name, male]) => {
+		const female = species[name + "_F"];
+		female.id = male.id;
+		female.abilities = male.abilities.slice();
+	});
+	Object.entries(species).filter(([name, pokemon]) => species[name + "_FEMALE"] != undefined && pokemon.forms.length == 2).forEach(([name, male]) => {
+		const female = species[name + "_FEMALE"];
+		female.id = male.id;
+		female.abilities = male.abilities.slice();
+	});
+	species["SPECIES_UNOWN"].forms.forEach(form => species[form].abilities = species["SPECIES_UNOWN"].abilities.slice());
 	return species;
 }
 
@@ -298,6 +317,7 @@ async function buildSpeciesObj(){
     })
 	
 	species = await applyEnhancements(species)
+	species = await fixFormAbilities(species)
     await localStorage.setItem("species", LZString.compressToUTF16(JSON.stringify(species)))
     return species
 }
