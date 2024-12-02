@@ -267,9 +267,4 @@ new Promise(resolve => {
 	if (storedSaveData && storedSaveData != "undefined") {
 		processSaveData(JSON.parse(storedSaveData));
 	}
-	
-	if (settings.includes("saveRandomizedAbilities") || settings.includes("saveRandomizedLearnset") || settings.includes("saveRebalancedStats")) {
-		document.getElementById("changelogMode").classList.add("hide");
-		document.getElementById("onlyShowChangedPokemon").classList.add("hide");
-	}
 });
