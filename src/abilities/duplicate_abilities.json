@@ -33,13 +33,9 @@
         ]
     },
     "ABILITY_HUGEPOWER": {
-        "ABILITY_NINE_LIVES": [
-            "SPECIES_MEOWTH",
-            "SPECIES_PERSIAN"         
-        ],
-        "ABILITY_FOCUS_BELT": [
-            "SPECIES_MACHOKE",
-            "SPECIES_MACHAMP"  
+        "ABILITY_PUREPOWER": [
+            "SPECIES_MEDITITE",
+            "SPECIES_MEDICHAM"           
         ]
     },
     "ABILITY_STURDY": {
@@ -49,6 +45,14 @@
             "SPECIES_TIRTOUGA",
             "SPECIES_CARRACOSTA",
             "SPECIES_STONJOURNER"          
+        ],
+        "ABILITY_FOCUS_BELT": [
+            "SPECIES_MACHOKE",
+            "SPECIES_MACHAMP"  
+        ],
+        "ABILITY_NINE_LIVES": [
+            "SPECIES_MEOWTH",
+            "SPECIES_PERSIAN"         
         ]
     },
     "ABILITY_MOLDBREAKER": {
@@ -76,7 +80,7 @@
         ],
         "ABILITY_SHOCKING_NEIGH": [
             "SPECIES_BLITZLE",
-            "SPECIES_ZEBSTRIKA"        
+            "SPECIES_ZEBSTRIKA"
         ],
         "ABILITY_PRIDE": [
             "SPECIES_PIDOVE",
