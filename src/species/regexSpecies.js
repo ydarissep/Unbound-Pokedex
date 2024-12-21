@@ -540,6 +540,9 @@ function regexReplaceAbilities(replaceAbilities, species){
             for(let i = 0; i < replaceAbilities[oldAbility][newAbility].length; i++){
                 for(let j = 0; j < 3; j++){
                     if(species[replaceAbilities[oldAbility][newAbility][i]]["abilities"][j] === oldAbility){
+                        if(!species[replaceAbilities[oldAbility][newAbility][i]]["changes"].some(change => change[0] == "abilities") && (abilities[species[replaceAbilities[oldAbility][newAbility][i]]["abilities"][j]]["description"] != abilities[newAbility]["description"])){
+                            species[replaceAbilities[oldAbility][newAbility][i]]["changes"].push(["abilities", structuredClone(species[replaceAbilities[oldAbility][newAbility][i]]["abilities"])])
+                        }
                         species[replaceAbilities[oldAbility][newAbility][i]]["abilities"][j] = newAbility
                     }
                 }
