@@ -319,6 +319,7 @@ async function buildSpeciesObj(){
 	species = await applyEnhancements(species)
 	species = await fixFormAbilities(species)
     await localStorage.setItem("species", LZString.compressToUTF16(JSON.stringify(species)))
+    await localStorage.setItem("moves", LZString.compressToUTF16(JSON.stringify(moves)))
     return species
 }
 

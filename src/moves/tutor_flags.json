@@ -1,5 +1,5 @@
 {
-    "Shard tutor": [
+    "Shard Tutor": [
         "MOVE_HEX",
         "MOVE_HIGHHORSEPOWER",
         "MOVE_ICEPUNCH",
@@ -7,7 +7,7 @@
         "MOVE_THUNDERPUNCH",
         "MOVE_SEEDBOMB"
     ],
-    "KBT tutor": [
+    "KBT Tutor": [
         "MOVE_BUGBUZZ",
         "MOVE_MEGAHORN",
         "MOVE_NASTYPLOT",
@@ -36,7 +36,7 @@
         "MOVE_GUNKSHOT",
         "MOVE_CROSSPOISON",
         "MOVE_MAGICCOAT",
-        "MOVE_PSYCHICFANG",
+        "MOVE_PSYCHICFANGS",
         "MOVE_ROCKBLAST",
         "MOVE_POWERGEM",
         "MOVE_HEAVYSLAM",

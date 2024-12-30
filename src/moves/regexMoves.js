@@ -323,7 +323,7 @@ function regexVanillaMovesDescription(textVanillaMovesDescription, moves){
 
 
 
-function regexMovesFlags(jsonMovesFlags, moves){
+function regexMovesFlags(jsonMovesFlags, jsonTutorFlags, moves){
     Object.keys(jsonMovesFlags).forEach(key => {
         for(let i = 0; i < jsonMovesFlags[key].length; i++){
             const move = jsonMovesFlags[key][i]
@@ -331,6 +331,14 @@ function regexMovesFlags(jsonMovesFlags, moves){
                 moves[move]["flags"].push(key.replace(/([A-Z])/g, '_$1').replace(/^g/i, "FLAG").toUpperCase())
             }
         }
+    })
+
+    Object.keys(jsonTutorFlags).forEach(flag => {
+        Object.values(jsonTutorFlags[flag]).forEach(move => {
+            if(move in moves){
+                moves[move]["flags"].push(flag)
+            }
+        })
     })
     return moves
 }

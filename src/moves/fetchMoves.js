@@ -31,7 +31,10 @@ async function getMovesFlags(moves){
     const rawMovesFlags = await fetch(`https://raw.githubusercontent.com/${repo1}/assembly/data/move_tables.json`)
     const jsonMovesFlags = await rawMovesFlags.json()
 
-    return regexMovesFlags(jsonMovesFlags, moves)
+    const rawTutorFlags = await fetch(`https://raw.githubusercontent.com/ydarissep/Unbound-Pokedex/refs/heads/main/src/moves/tutor_flags.json`)
+    const jsonTutorFlags = await rawTutorFlags.json()
+
+    return regexMovesFlags(jsonMovesFlags, jsonTutorFlags, moves)
 }
 
 

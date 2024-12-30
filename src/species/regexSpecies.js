@@ -312,7 +312,7 @@ function regexTMHMLearnsets(textTMHMLearnsets, species, start, end){
 
 function regexTutorLearnsets(textTutorLearnsets, species, start, end){
     const lines = textTutorLearnsets.split("\n")
-    let name = null, startFound = false, tutor = 0, count = 0
+    let startFound = false, count = 0
 
     lines.forEach(line => {
         if(line.includes(start))
@@ -377,15 +377,12 @@ function regexTutorLearnsets(textTutorLearnsets, species, start, end){
                     const textTutor = promises.text()
                     .then(promises => {
 
+                        if(!/Tutor/.test(moves[matchMove[0]]["flags"].toString())){
+                            moves[matchMove[0]]["flags"].push("BF Tutor")
+                        }
+
                         const lines = promises.split("\n")
                         lines.forEach(line => {
-
-                            if(line.includes(":")){
-                                const matchTutor = line.match(/\d+/)
-                                if(matchTutor)
-                                    tutor = matchTutor[0]
-                            }
-
                             const matchSpecies = `SPECIES_${line.trim()}`
                             if(species[matchSpecies] !== undefined)
                                 species[matchSpecies]["tutorLearnsets"].push(matchMove[0])
