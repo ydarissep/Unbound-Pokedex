@@ -258,7 +258,7 @@ new Promise(resolve => {
 	buttonEnhancements.id = "buttonEnhancements";
 	buttonEnhancements.type = "button";
 	buttonEnhancements.textContent = "Enhancements";
-	buttonEnhancements.style.width = "150px";
+	buttonEnhancements.style.width = "140px";
 	buttonEnhancements.onclick = reloadPopupEnhancements;
 	enhancementsWrapper.append(buttonEnhancements);
 	tableButton.append(enhancementsWrapper);
