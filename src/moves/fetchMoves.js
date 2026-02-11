@@ -43,10 +43,12 @@ async function buildMovesObj(){
     let moves = {}
     moves = await getMoves(moves)
     //moves = await getFlags(moves) // file missing for unbound
-    moves = await getVanillaMovesDescription(moves)
-    moves = await getMovesDescription(moves)
-    moves = await getMovesIngameName(moves)
-    moves = await getMovesFlags(moves)
+    await Promise.all([
+        getVanillaMovesDescription(moves),
+        getMovesDescription(moves),
+        getMovesIngameName(moves),
+        getMovesFlags(moves)
+    ])
 
     Object.keys(moves).forEach(move => {
         if(moves[move]["priority"] > 0){

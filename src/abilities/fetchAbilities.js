@@ -39,11 +39,14 @@ async function getNewAbilities(abilities){
 
 async function buildAbilitiesObj(){
     let abilities = {}
-    abilities = await getAbilities(abilities) 
+    abilities = await getAbilities(abilities)
+
     abilities = await getVanillaAbilitiesDescription(abilities)
-    abilities = await getAbilitiesIngameName(abilities)
-    abilities = await getAbilitiesDescription(abilities)
-    abilities = await getNewAbilities(abilities)
+    await Promise.all([
+        getAbilitiesIngameName(abilities),
+        getAbilitiesDescription(abilities),
+        getNewAbilities(abilities)
+    ])
 
     abilities["ABILITY_NEUTRALIZINGGAS"]["description"] = "All Abilities are nullified."
     abilities["ABILITY_FULLMETALBODY"]["description"] = "Prevents ability reduction."

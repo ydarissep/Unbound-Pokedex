@@ -17,7 +17,9 @@ async function buildStrategiesObj(){
     }, "3000");
 
     try{
-        //strategies = await getStrategies(strategies)
+        /*await Promise.all([
+            getStrategies(strategies)
+        ])*/
     }
     catch(e){
         console.log(e.message)

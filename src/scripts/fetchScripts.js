@@ -73,10 +73,12 @@ async function buildScriptsObjs(){
 
     await getTrainers()
 
-    await getItemsIcon()
-    await getHiddenItems()
-    await getHeldItems()
-    await bugFixTrainers()
+    await Promise.all([
+        getItemsIcon(),
+        getHiddenItems(),
+        getHeldItems(),
+        bugFixTrainers()
+    ])
     */
 
     localStorage.setItem("trainers", LZString.compressToUTF16(JSON.stringify(trainers)))
