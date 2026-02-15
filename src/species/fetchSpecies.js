@@ -298,13 +298,13 @@ async function buildSpeciesObj(){
     //species = await getForms(species) // should be called in that order until here    // done in getLevelUpLearnsets for CFRU
     await Promise.all([
         getBaseStats(species),
-        getReplaceAbilities(species),
         getLevelUpLearnsets(species),
         getTMHMLearnsets(species),
         getEggMovesLearnsets(species),
         getTutorLearnsets(species),
         getSprite(species)
     ])
+    species = await getReplaceAbilities(species)
     species = await altFormsLearnsets(species, "forms", "tutorLearnsets")
     species = await altFormsLearnsets(species, "forms", "TMHMLearnsets")
     species = await getChanges(species, "https://raw.githubusercontent.com/Skeli789/Dynamic-Pokemon-Expansion/master/src/Base_Stats.c"),
