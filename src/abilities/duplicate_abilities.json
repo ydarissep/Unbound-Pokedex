@@ -217,5 +217,13 @@
             "SPECIES_FERROTHORN",
             "SPECIES_TOGEDEMARU"      
         ]
+    },
+    "ABILITY_GALEWINGS": {
+        "ABILITY_GRASS_DASH": [
+            "SPECIES_SUNFLORA"
+        ],
+        "ABILITY_SLIPPERY_TAIL": [
+            "SPECIES_SEVIPER"
+        ]
     }
 }

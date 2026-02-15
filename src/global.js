@@ -1,7 +1,7 @@
 window.repoDex = "ydarissep/Unbound-Pokedex"
 window.repo1 = "Skeli789/Complete-Fire-Red-Upgrade/master"
 window.repo2 = "Skeli789/Dynamic-Pokemon-Expansion/Unbound"
-window.checkUpdate = "18 Unbound"
+window.checkUpdate = "19 Unbound"
 
 
 fetch('https://raw.githubusercontent.com/ydarissep/dex-core/main/index.html').then(async response => {
