@@ -1,34 +1,42 @@
-function regexWildLocations(textWildLocations, locations){
-	const lines = textWildLocations.split("\n")
-	let zone = null, method = "-", index = 0
+function regexWildLocations(wildEncounters, locations){
 
-    lines.forEach(line => {
-    	const matchWildPokemon = line.match(/WildPokemon *s?(\w+)_(\w+)/i)
-    	if(matchWildPokemon){
-    		zone = matchWildPokemon[1].replace(/([A-Z])/g, " $1").replace(/(\d+)/g, " $1").trim()
-    		method = matchWildPokemon[2]
+	const methodArrayWild = ["grassAnytime", "grassDay", "grassNight", "water", "fishing", "rockSmash"]
 
-    		if(!(zone in locations)){
-    			locations[zone] = {}
-    		}
-    		index = 0
-    	}
-    	const matchSpecies = line.match(/SPECIES_\w+/i)
-    	if(matchSpecies && matchSpecies[0] in species){
-    		const tempMethod = replaceMethodString(method, index)
-    		if(!(tempMethod in locations[zone])){
-    			locations[zone][tempMethod] = {}
-    		}
-    		let name = matchSpecies[0]
-    		if(name in locations[zone][tempMethod]){
-    			locations[zone][tempMethod][name] += returnRarity(tempMethod, index)
-    		}
-    		else{
-    			locations[zone][tempMethod][name] = returnRarity(tempMethod, index)
-    		}
-    		index++
-    	}
-    })
+	for (let i = 0; i < wildEncounters.length; i++) {
+		let zone = "Placeholder"
+		zone = sanitizeString(wildEncounters[i]["mapName"].trim())
+
+		if (zone === "Unknown") {
+			continue
+		}
+
+		if(!(zone in locations)){
+			locations[zone] = {}
+		}
+
+		for(let j = 0; j < methodArrayWild.length; j++){
+			if(methodArrayWild[j] in wildEncounters[i]["encounters"]){
+				for(let k = 0; k < wildEncounters[i]["encounters"][methodArrayWild[j]]["slots"].length; k++){
+
+					const method = replaceMethodString(methodArrayWild[j], k)
+					const name = wildEncounters[i]["encounters"][methodArrayWild[j]]["slots"][k]["species"]
+
+					if(!(method in locations[zone])){
+						locations[zone][method] = {}
+					}
+
+
+					if(name in locations[zone][method]){
+						locations[zone][method][name] += returnRarity(method, k)
+					}
+					else{
+						locations[zone][method][name] = returnRarity(method, k)
+					}
+
+				}
+			}
+		}
+	}
 
     return locations
 }
@@ -98,7 +106,7 @@ function replaceMethodString(method, index){
 		else
 			return "Fishing"
 	}
-	else if(method.match(/surf/i)){
+	else if(method.match(/water/i)){
 		return "Surfing"
 	}
 	else if(method.match(/smash/i)){
@@ -110,8 +118,8 @@ function replaceMethodString(method, index){
 	else if(method.match(/day/i)){
 		return "Day"
 	}
-	else if(method.match(/LandMons/i)){
-		return "Day"
+	else if(method.match(/anytime/i)){
+		return "Land"
 	}
     else{
     	console.log(method)
@@ -121,7 +129,7 @@ function replaceMethodString(method, index){
 
 
 function returnRarity(method, index){
-	if(method === "Night" || method === "Day"){
+	if(method === "Night" || method === "Day" || method === "Land"){
 		if(index === 0 || index === 1)
 			return 20
 		else if(index >= 2 && index <= 5){

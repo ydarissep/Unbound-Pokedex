@@ -1,9 +1,9 @@
 async function getWildLocations(locations){
     footerP("Fetching wild locations")
-    const rawWildLocations = await fetch(`https://raw.githubusercontent.com/${repo1}/src/Tables/wild_encounter_tables.c`)
-    const textWildLocations = await rawWildLocations.text()
+    const rawWildLocations = await fetch(`https://raw.githubusercontent.com/ydarissep/Unbound-Pokedex/refs/heads/main/src/locations/encounters.json`)
+    const jsonWildLocations = await rawWildLocations.json()
 
-    return regexWildLocations(textWildLocations, locations)   
+    return regexWildLocations(jsonWildLocations, locations)   
 }
 
 async function getRaidLocations(locations){
@@ -17,12 +17,10 @@ async function getRaidLocations(locations){
 async function buildLocationsObj(){
     let locations = {}
 
-    /*await Promise.all([
-        getWildLocations(locations),
-        getRaidLocations(locations)
-    ])*/
+    locations = await getWildLocations(locations)
+    locations = await getRaidLocations(locations)
 
-    await localStorage.setItem("locations", LZString.compressToUTF16(JSON.stringify(locations)))
+    localStorage.setItem("locations", LZString.compressToUTF16(JSON.stringify(locations)))
     return locations
 }
 
