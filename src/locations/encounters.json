@@ -4,7 +4,7 @@
     "mapNum": 4,
     "mapName": "FLOWER_PARADISE_A",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 20,
         "slots": [
           {
@@ -106,7 +106,7 @@
     "mapNum": 5,
     "mapName": "FLOWER_PARADISE_B",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 20,
         "slots": [
           {
@@ -208,7 +208,7 @@
     "mapNum": 6,
     "mapName": "FLOWER_PARADISE_C",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 20,
         "slots": [
           {
@@ -310,7 +310,7 @@
     "mapNum": 33,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -382,7 +382,7 @@
     "mapNum": 34,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -454,7 +454,7 @@
     "mapNum": 35,
     "mapName": "RIFT_CAVE_B1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -526,7 +526,7 @@
     "mapNum": 36,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -598,7 +598,7 @@
     "mapNum": 46,
     "mapName": "CINDER_VOLCANO_3F_1",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -730,7 +730,7 @@
     "mapNum": 48,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -802,7 +802,7 @@
     "mapNum": 49,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -934,7 +934,7 @@
     "mapNum": 50,
     "mapName": "CINDER_VOLCANO_4F_2",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -1006,7 +1006,7 @@
     "mapNum": 51,
     "mapName": "CINDER_VOLCANO_SHADOW_B1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -1108,7 +1108,7 @@
     "mapNum": 52,
     "mapName": "CINDER_VOLCANO_SHADOW_B2F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -1240,7 +1240,7 @@
     "mapNum": 53,
     "mapName": "CINDER_VOLCANO_SHADOW_STORAGE_1",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -1372,7 +1372,7 @@
     "mapNum": 54,
     "mapName": "CINDER_VOLCANO_SHADOW_STORAGE_2",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -1504,7 +1504,7 @@
     "mapNum": 63,
     "mapName": "DISTORTION_WORLD_1",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 0,
         "slots": [
           {
@@ -1576,7 +1576,7 @@
     "mapNum": 64,
     "mapName": "DISTORTION_WORLD_2",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 0,
         "slots": [
           {
@@ -1648,7 +1648,7 @@
     "mapNum": 65,
     "mapName": "DISTORTION_WORLD_3",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 0,
         "slots": [
           {
@@ -1720,7 +1720,7 @@
     "mapNum": 68,
     "mapName": "ANTISIS_SEWERS_NORTH",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -1792,7 +1792,7 @@
     "mapNum": 69,
     "mapName": "ANTISIS_SEWERS_SOUTH",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -1949,7 +1949,7 @@
     "mapNum": 72,
     "mapName": "ANTISIS_SEWERS_ROOM",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2021,7 +2021,7 @@
     "mapNum": 81,
     "mapName": "FROZEN_FOREST",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -2086,7 +2086,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -2158,7 +2158,7 @@
     "mapNum": 83,
     "mapName": "TOMB_OF_BORRIUS_1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2230,7 +2230,7 @@
     "mapNum": 84,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2332,7 +2332,7 @@
     "mapNum": 85,
     "mapName": "TOMB_OF_BORRIUS_B3F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2404,7 +2404,7 @@
     "mapNum": 86,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2476,7 +2476,7 @@
     "mapNum": 87,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2548,7 +2548,7 @@
     "mapNum": 88,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2620,7 +2620,7 @@
     "mapNum": 89,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2692,7 +2692,7 @@
     "mapNum": 90,
     "mapName": "TOMB_OF_BORRIUS_1F_BACK",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -2764,7 +2764,7 @@
     "mapNum": 98,
     "mapName": "REDWOOD_FOREST",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -2829,7 +2829,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -3016,7 +3016,7 @@
     "mapNum": 99,
     "mapName": "VIVILL_WOODS",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -3081,7 +3081,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -3330,7 +3330,7 @@
     "mapNum": 107,
     "mapName": "RUINS_OF_VOID_B3F_ALT",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -3402,7 +3402,7 @@
     "mapNum": 108,
     "mapName": "ROV_POST_GAME_AKLOVE",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -3566,7 +3566,7 @@
     "mapNum": 110,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -3638,7 +3638,7 @@
     "mapNum": 111,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -3740,7 +3740,7 @@
     "mapNum": 112,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -3812,7 +3812,7 @@
     "mapNum": 113,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -3914,7 +3914,7 @@
     "mapNum": 114,
     "mapName": "RUINS_OF_VOID_B3F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -4016,7 +4016,7 @@
     "mapNum": 115,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -4088,7 +4088,7 @@
     "mapNum": 116,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -4160,7 +4160,7 @@
     "mapNum": 117,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -4324,7 +4324,7 @@
     "mapNum": 120,
     "mapName": "AUTL_WOODS_EAST",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 15,
         "slots": [
           {
@@ -4481,7 +4481,7 @@
     "mapNum": 121,
     "mapName": "LOST_TUNNEL_B1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -4583,7 +4583,7 @@
     "mapNum": 0,
     "mapName": "ICY_HOLE_1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -4740,7 +4740,7 @@
     "mapNum": 14,
     "mapName": "ICY_HOLE_B1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -4996,7 +4996,7 @@
     "mapNum": 59,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -5160,7 +5160,7 @@
     "mapNum": 1,
     "mapName": "COOTES_BOG",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -5225,7 +5225,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -5382,7 +5382,7 @@
     "mapNum": 4,
     "mapName": "MAGNOLIA_FIELDS",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -5447,7 +5447,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -5733,7 +5733,7 @@
     "mapNum": 67,
     "mapName": "ROUTE_1",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 15,
         "slots": [
           {
@@ -5805,7 +5805,7 @@
     "mapNum": 69,
     "mapName": "ROUTE_2",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -5870,7 +5870,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -6057,7 +6057,7 @@
     "mapNum": 70,
     "mapName": "ROUTE_3",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -6122,7 +6122,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -6371,7 +6371,7 @@
     "mapNum": 72,
     "mapName": "ROUTE_4",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -6436,7 +6436,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -6593,7 +6593,7 @@
     "mapNum": 73,
     "mapName": "ROUTE_5",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -6658,7 +6658,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -6815,7 +6815,7 @@
     "mapNum": 75,
     "mapName": "ROUTE_6",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -6880,7 +6880,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -7037,7 +7037,7 @@
     "mapNum": 76,
     "mapName": "ROUTE_7",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -7102,7 +7102,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -7259,7 +7259,7 @@
     "mapNum": 77,
     "mapName": "ROUTE_8",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -7324,7 +7324,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -7426,7 +7426,7 @@
     "mapNum": 79,
     "mapName": "ROUTE_9",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 15,
         "slots": [
           {
@@ -7675,7 +7675,7 @@
     "mapNum": 81,
     "mapName": "ROUTE_10",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 15,
         "slots": [
           {
@@ -7924,7 +7924,7 @@
     "mapNum": 83,
     "mapName": "AUBURN_WATERWAY_B",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 15,
         "slots": [
           {
@@ -8173,7 +8173,7 @@
     "mapNum": 85,
     "mapName": "ROUTE_11",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -8238,7 +8238,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -8609,7 +8609,7 @@
     "mapNum": 88,
     "mapName": "ROUTE_12",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -8674,7 +8674,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -8923,7 +8923,7 @@
     "mapNum": 90,
     "mapName": "GREAT_DESERT_A",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 7,
         "slots": [
           {
@@ -9025,7 +9025,7 @@
     "mapNum": 91,
     "mapName": "GREAT_DESERT_B",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 7,
         "slots": [
           {
@@ -9127,7 +9127,7 @@
     "mapNum": 92,
     "mapName": "GREAT_DESERT_C",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 7,
         "slots": [
           {
@@ -9595,7 +9595,7 @@
     "mapNum": 96,
     "mapName": "ROUTE_14_B",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -9660,7 +9660,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -9817,7 +9817,7 @@
     "mapNum": 97,
     "mapName": "ROUTE_14_C",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -9882,7 +9882,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -10315,7 +10315,7 @@
     "mapNum": 101,
     "mapName": "ROUTE_16",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 15,
         "slots": [
           {
@@ -10716,7 +10716,7 @@
     "mapNum": 104,
     "mapName": "ROUTE_17",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -10781,7 +10781,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -11182,7 +11182,7 @@
     "mapNum": 107,
     "mapName": "ROUTE_18_B",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -11247,7 +11247,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -11404,7 +11404,7 @@
     "mapNum": 12,
     "mapName": "CINDER_VOLCANO_SHADOW_1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 7,
         "slots": [
           {
@@ -11476,7 +11476,7 @@
     "mapNum": 0,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 20,
         "slots": [
           {
@@ -11548,7 +11548,7 @@
     "mapNum": 1,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 20,
         "slots": [
           {
@@ -11620,7 +11620,7 @@
     "mapNum": 2,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 20,
         "slots": [
           {
@@ -11692,7 +11692,7 @@
     "mapNum": 5,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 20,
         "slots": [
           {
@@ -11764,7 +11764,7 @@
     "mapNum": 6,
     "mapName": "UNDERWATER_ROUTE_17",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 20,
         "slots": [
           {
@@ -11836,7 +11836,7 @@
     "mapNum": 0,
     "mapName": "ICICLE_CAVE_1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -11908,7 +11908,7 @@
     "mapNum": 1,
     "mapName": "ICICLE_CAVE_B1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -12095,7 +12095,7 @@
     "mapNum": 2,
     "mapName": "ICICLE_CAVE_B2F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -12282,7 +12282,7 @@
     "mapNum": 3,
     "mapName": "ICICLE_CAVE_B3F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -12354,7 +12354,7 @@
     "mapNum": 4,
     "mapName": "ICICLE_CAVE_B3F_ALT",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -12456,7 +12456,7 @@
     "mapNum": 5,
     "mapName": "ICICLE_CAVE_1F_BACK",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -12558,7 +12558,7 @@
     "mapNum": 6,
     "mapName": "ICICLE_CAVE_CLEARING",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 21,
         "slots": [
           {
@@ -12630,7 +12630,7 @@
     "mapNum": 7,
     "mapName": "ICICLE_CAVE_B4F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -12732,7 +12732,7 @@
     "mapNum": 1,
     "mapName": "GRIM_WOODS",
     "encounters": {
-      "grass_day": {
+      "grassDay": {
         "encounterRate": 15,
         "slots": [
           {
@@ -12797,7 +12797,7 @@
           }
         ]
       },
-      "grass_night": {
+      "grassNight": {
         "encounterRate": 15,
         "slots": [
           {
@@ -12954,7 +12954,7 @@
     "mapNum": 3,
     "mapName": "CINDER_VOLCANO_F1",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13086,7 +13086,7 @@
     "mapNum": 4,
     "mapName": "CINDER_VOLCANO_2F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13218,7 +13218,7 @@
     "mapNum": 5,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13320,7 +13320,7 @@
     "mapNum": 0,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13422,7 +13422,7 @@
     "mapNum": 1,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13494,7 +13494,7 @@
     "mapNum": 2,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13566,7 +13566,7 @@
     "mapNum": 3,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13638,7 +13638,7 @@
     "mapNum": 4,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13740,7 +13740,7 @@
     "mapNum": 5,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13812,7 +13812,7 @@
     "mapNum": 6,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13884,7 +13884,7 @@
     "mapNum": 7,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -13956,7 +13956,7 @@
     "mapNum": 8,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14028,7 +14028,7 @@
     "mapNum": 9,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14100,7 +14100,7 @@
     "mapNum": 10,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 21,
         "slots": [
           {
@@ -14172,7 +14172,7 @@
     "mapNum": 0,
     "mapName": "VALLEY_CAVE_A",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14244,7 +14244,7 @@
     "mapNum": 1,
     "mapName": "VALLEY_CAVE_B",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14431,7 +14431,7 @@
     "mapNum": 2,
     "mapName": "VALLEY_CAVE_C",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14503,7 +14503,7 @@
     "mapNum": 3,
     "mapName": "VALLEY_CAVE_D",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14575,7 +14575,7 @@
     "mapNum": 1,
     "mapName": "FROST_MOUNTAIN_3F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14647,7 +14647,7 @@
     "mapNum": 0,
     "mapName": "FROST_MOUNTAIN_1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14804,7 +14804,7 @@
     "mapNum": 1,
     "mapName": "FROST_MOUNTAIN_2F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -14961,7 +14961,7 @@
     "mapNum": 0,
     "mapName": "CLIFF_CAVE_1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -15033,7 +15033,7 @@
     "mapNum": 1,
     "mapName": "CLIFF_CAVE_2F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -15105,7 +15105,7 @@
     "mapNum": 2,
     "mapName": "CLIFF_CAVE_3F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -15177,7 +15177,7 @@
     "mapNum": 1,
     "mapName": "THUNDERCAP_MT_1F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -15334,7 +15334,7 @@
     "mapNum": 2,
     "mapName": "THUNDERCAP_MT_2F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -15521,7 +15521,7 @@
     "mapNum": 3,
     "mapName": "THUNDERCAP_MT_3F_3",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -15708,7 +15708,7 @@
     "mapNum": 4,
     "mapName": "THUNDERCAP_MT_3F_2",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -15895,7 +15895,7 @@
     "mapNum": 5,
     "mapName": "THUNDERCAP_MT_3F_1",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -16082,7 +16082,7 @@
     "mapNum": 6,
     "mapName": "THUNDERCAP_MT_3F_1_BACK",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -16239,7 +16239,7 @@
     "mapNum": 7,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -16341,7 +16341,7 @@
     "mapNum": 8,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -16413,7 +16413,7 @@
     "mapNum": 9,
     "mapName": "THUNDERCAP_MT_4F_2",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -16600,7 +16600,7 @@
     "mapNum": 11,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -16702,7 +16702,7 @@
     "mapNum": 0,
     "mapName": "VICTORY_ROAD_CAVE_A",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -16859,7 +16859,7 @@
     "mapNum": 1,
     "mapName": "VICTORY_ROAD_CAVE_B",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -17016,7 +17016,7 @@
     "mapNum": 2,
     "mapName": "VICTORY_ROAD_VOLCANO",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -17118,7 +17118,7 @@
     "mapNum": 3,
     "mapName": "VICTORY_ROAD_CAVE_C",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -17275,7 +17275,7 @@
     "mapNum": 4,
     "mapName": "VICTORY_ROAD_GRASSY",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 15,
         "slots": [
           {
@@ -17432,7 +17432,7 @@
     "mapNum": 5,
     "mapName": "VICTORY_ROAD_CAVE_D",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -17504,7 +17504,7 @@
     "mapNum": 6,
     "mapName": "VICTORY_ROAD_MOUNTAINSIDE",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 15,
         "slots": [
           {
@@ -17576,7 +17576,7 @@
     "mapNum": 7,
     "mapName": "VICTORY_ROAD_ICE_CAVE_A",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -17648,7 +17648,7 @@
     "mapNum": 8,
     "mapName": "VICTORY_ROAD_ICE_CAVE_B",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -17805,7 +17805,7 @@
     "mapNum": 0,
     "mapName": "CRYSTAL_PEAK_BOG_ENTRANCE",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -17907,7 +17907,7 @@
     "mapNum": 1,
     "mapName": "CRYSTAL_PEAK_B1F_LEFT",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18064,7 +18064,7 @@
     "mapNum": 2,
     "mapName": "CRYSTAL_PEAK_1F_MAIN_ROOM",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18221,7 +18221,7 @@
     "mapNum": 3,
     "mapName": "CRYSTAL_PEAK_1F_LEFT_ROOM",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18378,7 +18378,7 @@
     "mapNum": 4,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18450,7 +18450,7 @@
     "mapNum": 5,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18522,7 +18522,7 @@
     "mapNum": 6,
     "mapName": "CRYSTAL_PEAK_CUBE_ENTRANCE",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18679,7 +18679,7 @@
     "mapNum": 7,
     "mapName": "CRYSTAL_PEAK_CLIFFSIDE",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18751,7 +18751,7 @@
     "mapNum": 8,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18823,7 +18823,7 @@
     "mapNum": 9,
     "mapName": "CRYSTAL_PEAK_3F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -18980,7 +18980,7 @@
     "mapNum": 10,
     "mapName": "Unknown",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
@@ -19167,7 +19167,7 @@
     "mapNum": 11,
     "mapName": "CRYSTAL_PEAK_5F",
     "encounters": {
-      "grass_anytime": {
+      "grassAnytime": {
         "encounterRate": 3,
         "slots": [
           {
