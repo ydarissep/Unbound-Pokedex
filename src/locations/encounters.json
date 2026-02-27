@@ -6,28 +6,28 @@
     "grass": {
       "encounterRate": 20,
       "day": [
-        "FLABEBE_ORANGE",
-        "FLABEBE_ORANGE",
-        "FLABEBE_ORANGE",
-        "FLABEBE_ORANGE",
-        "CUTIEFLY",
-        "CUTIEFLY",
-        "CUTIEFLY",
-        "ORICORIO_P",
-        "COMFEY",
-        "PANSAGE",
-        "COMBEE",
-        "PANSAGE"
+        "SPECIES_FLABEBE_ORANGE",
+        "SPECIES_FLABEBE_ORANGE",
+        "SPECIES_FLABEBE_ORANGE",
+        "SPECIES_FLABEBE_ORANGE",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_ORICORIO_P",
+        "SPECIES_COMFEY",
+        "SPECIES_PANSAGE",
+        "SPECIES_COMBEE",
+        "SPECIES_PANSAGE"
       ]
     },
     "water": {
       "encounterRate": 21,
       "day": [
-        "FLABEBE_YELLOW",
-        "CUTIEFLY",
-        "ORICORIO_Y",
-        "ORICORIO_Y",
-        "COMBEE"
+        "SPECIES_FLABEBE_YELLOW",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_ORICORIO_Y",
+        "SPECIES_ORICORIO_Y",
+        "SPECIES_COMBEE"
       ]
     }
   },
@@ -38,28 +38,28 @@
     "grass": {
       "encounterRate": 20,
       "day": [
-        "FLABEBE",
-        "FLABEBE",
-        "FLABEBE",
-        "FLABEBE",
-        "CUTIEFLY",
-        "CUTIEFLY",
-        "CUTIEFLY",
-        "ORICORIO",
-        "COMFEY",
-        "PANSEAR",
-        "COMBEE",
-        "PANSEAR"
+        "SPECIES_FLABEBE",
+        "SPECIES_FLABEBE",
+        "SPECIES_FLABEBE",
+        "SPECIES_FLABEBE",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_ORICORIO",
+        "SPECIES_COMFEY",
+        "SPECIES_PANSEAR",
+        "SPECIES_COMBEE",
+        "SPECIES_PANSEAR"
       ]
     },
     "water": {
       "encounterRate": 21,
       "day": [
-        "FLABEBE_BLUE",
-        "CUTIEFLY",
-        "PANPOUR",
-        "COMBEE",
-        "COMBEE"
+        "SPECIES_FLABEBE_BLUE",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_PANPOUR",
+        "SPECIES_COMBEE",
+        "SPECIES_COMBEE"
       ]
     }
   },
@@ -70,28 +70,28 @@
     "grass": {
       "encounterRate": 20,
       "day": [
-        "FLABEBE_WHITE",
-        "FLABEBE_WHITE",
-        "FLABEBE_WHITE",
-        "FLABEBE_WHITE",
-        "CUTIEFLY",
-        "CUTIEFLY",
-        "ORICORIO_S",
-        "ORICORIO_S",
-        "COMFEY",
-        "COMFEY",
-        "COMFEY",
-        "COMBEE"
+        "SPECIES_FLABEBE_WHITE",
+        "SPECIES_FLABEBE_WHITE",
+        "SPECIES_FLABEBE_WHITE",
+        "SPECIES_FLABEBE_WHITE",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_ORICORIO_S",
+        "SPECIES_ORICORIO_S",
+        "SPECIES_COMFEY",
+        "SPECIES_COMFEY",
+        "SPECIES_COMFEY",
+        "SPECIES_COMBEE"
       ]
     },
     "water": {
       "encounterRate": 21,
       "day": [
-        "FLABEBE_WHITE",
-        "CUTIEFLY",
-        "ORICORIO_S",
-        "ORICORIO_S",
-        "COMBEE"
+        "SPECIES_FLABEBE_WHITE",
+        "SPECIES_CUTIEFLY",
+        "SPECIES_ORICORIO_S",
+        "SPECIES_ORICORIO_S",
+        "SPECIES_COMBEE"
       ]
     }
   },
@@ -102,18 +102,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HAUNTER",
-        "DUSKULL",
-        "DUSKULL",
-        "GOLETT",
-        "BRONZOR",
-        "BRONZOR",
-        "CHIMECHO",
-        "BRONZONG",
-        "DUSCLOPS",
-        "BRONZONG",
-        "DUSCLOPS"
+        "SPECIES_GOLBAT",
+        "SPECIES_HAUNTER",
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL",
+        "SPECIES_GOLETT",
+        "SPECIES_BRONZOR",
+        "SPECIES_BRONZOR",
+        "SPECIES_CHIMECHO",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS"
       ]
     }
   },
@@ -124,18 +124,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HAUNTER",
-        "DUSKULL",
-        "DUSKULL",
-        "GOLETT",
-        "BRONZOR",
-        "BRONZOR",
-        "CHIMECHO",
-        "BRONZONG",
-        "DUSCLOPS",
-        "BRONZONG",
-        "DUSCLOPS"
+        "SPECIES_GOLBAT",
+        "SPECIES_HAUNTER",
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL",
+        "SPECIES_GOLETT",
+        "SPECIES_BRONZOR",
+        "SPECIES_BRONZOR",
+        "SPECIES_CHIMECHO",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS"
       ]
     }
   },
@@ -146,18 +146,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HAUNTER",
-        "DUSCLOPS",
-        "DUSCLOPS",
-        "GOLURK",
-        "BRONZONG",
-        "BRONZONG",
-        "CHIMECHO",
-        "BRONZONG",
-        "DUSCLOPS",
-        "BRONZONG",
-        "DUSCLOPS"
+        "SPECIES_GOLBAT",
+        "SPECIES_HAUNTER",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_GOLURK",
+        "SPECIES_BRONZONG",
+        "SPECIES_BRONZONG",
+        "SPECIES_CHIMECHO",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS"
       ]
     }
   },
@@ -168,18 +168,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HAUNTER",
-        "DUSCLOPS",
-        "DUSCLOPS",
-        "GOLURK",
-        "BRONZONG",
-        "BRONZONG",
-        "CHIMECHO",
-        "BRONZONG",
-        "DUSCLOPS",
-        "BRONZONG",
-        "DUSCLOPS"
+        "SPECIES_GOLBAT",
+        "SPECIES_HAUNTER",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_GOLURK",
+        "SPECIES_BRONZONG",
+        "SPECIES_BRONZONG",
+        "SPECIES_CHIMECHO",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS"
       ]
     }
   },
@@ -190,38 +190,38 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "NUMEL",
-        "GEODUDE",
-        "GEODUDE",
-        "NUMEL",
-        "DRILBUR",
-        "TORKOAL",
-        "MAGBY",
-        "TORKOAL",
-        "MAGBY"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_NUMEL",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_NUMEL",
+        "SPECIES_DRILBUR",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "GRAVELER",
-        "GRAVELER",
-        "SHUCKLE"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -232,18 +232,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "NUMEL",
-        "GEODUDE",
-        "GEODUDE",
-        "NUMEL",
-        "DRILBUR",
-        "TORKOAL",
-        "MAGBY",
-        "TORKOAL",
-        "MAGBY"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_NUMEL",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_NUMEL",
+        "SPECIES_DRILBUR",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY"
       ]
     }
   },
@@ -254,38 +254,38 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "NUMEL",
-        "GEODUDE",
-        "GEODUDE",
-        "NUMEL",
-        "DRILBUR",
-        "TORKOAL",
-        "MAGBY",
-        "TORKOAL",
-        "MAGBY"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_NUMEL",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_NUMEL",
+        "SPECIES_DRILBUR",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "GRAVELER",
-        "GRAVELER",
-        "SHUCKLE"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -296,18 +296,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "NUMEL",
-        "GEODUDE",
-        "GEODUDE",
-        "NUMEL",
-        "DRILBUR",
-        "TORKOAL",
-        "MAGBY",
-        "TORKOAL",
-        "MAGBY"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_NUMEL",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_NUMEL",
+        "SPECIES_DRILBUR",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY"
       ]
     }
   },
@@ -318,28 +318,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "CAMERUPT",
-        "GRAVELER",
-        "GRAVELER",
-        "CAMERUPT",
-        "EXCADRILL",
-        "HEATMOR",
-        "MAGMAR",
-        "HEATMOR",
-        "MAGMAR"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_CAMERUPT",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_CAMERUPT",
+        "SPECIES_EXCADRILL",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     }
   },
@@ -350,38 +350,38 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "CAMERUPT",
-        "GRAVELER",
-        "GRAVELER",
-        "CAMERUPT",
-        "EXCADRILL",
-        "HEATMOR",
-        "MAGMAR",
-        "HEATMOR",
-        "MAGMAR"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_CAMERUPT",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_CAMERUPT",
+        "SPECIES_EXCADRILL",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "GRAVELER",
-        "GRAVELER",
-        "SHUCKLE"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -392,38 +392,38 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "CAMERUPT",
-        "GRAVELER",
-        "GRAVELER",
-        "CAMERUPT",
-        "EXCADRILL",
-        "HEATMOR",
-        "MAGMAR",
-        "HEATMOR",
-        "MAGMAR"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_CAMERUPT",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_CAMERUPT",
+        "SPECIES_EXCADRILL",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "GRAVELER",
-        "GRAVELER",
-        "SHUCKLE"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -434,38 +434,38 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "CAMERUPT",
-        "GRAVELER",
-        "GRAVELER",
-        "CAMERUPT",
-        "EXCADRILL",
-        "HEATMOR",
-        "MAGMAR",
-        "HEATMOR",
-        "MAGMAR"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_CAMERUPT",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_CAMERUPT",
+        "SPECIES_EXCADRILL",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO",
-        "GRAVELER",
-        "SHUCKLE"
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO",
+        "SPECIES_GRAVELER",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -476,18 +476,18 @@
     "grass": {
       "encounterRate": 0,
       "day": [
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN"
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN"
       ]
     }
   },
@@ -498,18 +498,18 @@
     "grass": {
       "encounterRate": 0,
       "day": [
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN"
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN"
       ]
     }
   },
@@ -520,18 +520,18 @@
     "grass": {
       "encounterRate": 0,
       "day": [
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN",
-        "GIRATINA_ORIGIN"
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN",
+        "SPECIES_GIRATINA_ORIGIN"
       ]
     }
   },
@@ -542,18 +542,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GRIMER",
-        "RATICATE",
-        "GRIMER",
-        "RATICATE",
-        "GOLBAT",
-        "GOLBAT",
-        "KOFFING",
-        "KOFFING",
-        "MUK",
-        "WEEZING",
-        "MUK",
-        "WEEZING"
+        "SPECIES_GRIMER",
+        "SPECIES_RATICATE",
+        "SPECIES_GRIMER",
+        "SPECIES_RATICATE",
+        "SPECIES_GOLBAT",
+        "SPECIES_GOLBAT",
+        "SPECIES_KOFFING",
+        "SPECIES_KOFFING",
+        "SPECIES_MUK",
+        "SPECIES_WEEZING",
+        "SPECIES_MUK",
+        "SPECIES_WEEZING"
       ]
     }
   },
@@ -564,43 +564,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GRIMER",
-        "RATICATE",
-        "GRIMER",
-        "RATICATE",
-        "GOLBAT",
-        "GOLBAT",
-        "KOFFING",
-        "KOFFING",
-        "MUK",
-        "WEEZING",
-        "MUK",
-        "WEEZING"
+        "SPECIES_GRIMER",
+        "SPECIES_RATICATE",
+        "SPECIES_GRIMER",
+        "SPECIES_RATICATE",
+        "SPECIES_GOLBAT",
+        "SPECIES_GOLBAT",
+        "SPECIES_KOFFING",
+        "SPECIES_KOFFING",
+        "SPECIES_MUK",
+        "SPECIES_WEEZING",
+        "SPECIES_MUK",
+        "SPECIES_WEEZING"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "GRIMER",
-        "GRIMER",
-        "GOLBAT",
-        "MUK",
-        "MUK"
+        "SPECIES_GRIMER",
+        "SPECIES_GRIMER",
+        "SPECIES_GOLBAT",
+        "SPECIES_MUK",
+        "SPECIES_MUK"
       ]
     },
     "fishing": {
       "encounterRate": 20,
       "day": [
-        "GRIMER",
-        "GRIMER",
-        "GRIMER",
-        "GRIMER",
-        "GRIMER",
-        "MUK",
-        "MUK",
-        "MUK",
-        "MUK",
-        "MUK"
+        "SPECIES_GRIMER",
+        "SPECIES_GRIMER",
+        "SPECIES_GRIMER",
+        "SPECIES_GRIMER",
+        "SPECIES_GRIMER",
+        "SPECIES_MUK",
+        "SPECIES_MUK",
+        "SPECIES_MUK",
+        "SPECIES_MUK",
+        "SPECIES_MUK"
       ]
     }
   },
@@ -611,18 +611,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GRIMER",
-        "RATICATE",
-        "GRIMER",
-        "RATICATE",
-        "GOLBAT",
-        "GOLBAT",
-        "KOFFING",
-        "KOFFING",
-        "MUK",
-        "WEEZING",
-        "MUK",
-        "WEEZING"
+        "SPECIES_GRIMER",
+        "SPECIES_RATICATE",
+        "SPECIES_GRIMER",
+        "SPECIES_RATICATE",
+        "SPECIES_GOLBAT",
+        "SPECIES_GOLBAT",
+        "SPECIES_KOFFING",
+        "SPECIES_KOFFING",
+        "SPECIES_MUK",
+        "SPECIES_WEEZING",
+        "SPECIES_MUK",
+        "SPECIES_WEEZING"
       ]
     }
   },
@@ -633,32 +633,32 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "SNOVER",
-        "SNOVER",
-        "SNOVER",
-        "CUBCHOO",
-        "CUBCHOO",
-        "CUBCHOO",
-        "SNOVER",
-        "CUBCHOO",
-        "CUBCHOO",
-        "CUBCHOO",
-        "CUBCHOO",
-        "CUBCHOO"
+        "SPECIES_SNOVER",
+        "SPECIES_SNOVER",
+        "SPECIES_SNOVER",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_SNOVER",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO"
       ],
       "night": [
-        "SNOVER",
-        "SNOVER",
-        "SNEASEL",
-        "CUBCHOO",
-        "CUBCHOO",
-        "CUBCHOO",
-        "SNOVER",
-        "SNEASEL",
-        "CUBCHOO",
-        "CUBCHOO",
-        "CUBCHOO",
-        "CUBCHOO"
+        "SPECIES_SNOVER",
+        "SPECIES_SNOVER",
+        "SPECIES_SNEASEL",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_SNOVER",
+        "SPECIES_SNEASEL",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO",
+        "SPECIES_CUBCHOO"
       ]
     }
   },
@@ -669,18 +669,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "SIGILYPH"
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_SIGILYPH"
       ]
     }
   },
@@ -691,28 +691,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "SIGILYPH"
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_SIGILYPH"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GRAVELER",
-        "GRAVELER",
-        "GRAVELER",
-        "SHUCKLE",
-        "SHUCKLE"
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_SHUCKLE",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -723,18 +723,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "SIGILYPH"
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_SIGILYPH"
       ]
     }
   },
@@ -745,18 +745,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "SIGILYPH"
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_SIGILYPH"
       ]
     }
   },
@@ -767,18 +767,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "SIGILYPH"
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_SIGILYPH"
       ]
     }
   },
@@ -789,18 +789,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "SIGILYPH"
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_SIGILYPH"
       ]
     }
   },
@@ -811,18 +811,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "SIGILYPH"
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_SIGILYPH"
       ]
     }
   },
@@ -833,18 +833,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN",
-        "UNOWN"
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN",
+        "SPECIES_UNOWN"
       ]
     }
   },
@@ -855,67 +855,67 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "LEDIAN",
-        "VIGOROTH",
-        "LEDIAN",
-        "VIGOROTH",
-        "URSARING",
-        "URSARING",
-        "HERACROSS",
-        "KOMALA",
-        "KOMALA",
-        "KOMALA",
-        "PASSIMIAN",
-        "ORANGURU"
+        "SPECIES_LEDIAN",
+        "SPECIES_VIGOROTH",
+        "SPECIES_LEDIAN",
+        "SPECIES_VIGOROTH",
+        "SPECIES_URSARING",
+        "SPECIES_URSARING",
+        "SPECIES_HERACROSS",
+        "SPECIES_KOMALA",
+        "SPECIES_KOMALA",
+        "SPECIES_KOMALA",
+        "SPECIES_PASSIMIAN",
+        "SPECIES_ORANGURU"
       ],
       "night": [
-        "ARIADOS",
-        "VIGOROTH",
-        "ARIADOS",
-        "VIGOROTH",
-        "URSARING",
-        "URSARING",
-        "HERACROSS",
-        "KOMALA",
-        "KOMALA",
-        "KOMALA",
-        "PASSIMIAN",
-        "ORANGURU"
+        "SPECIES_ARIADOS",
+        "SPECIES_VIGOROTH",
+        "SPECIES_ARIADOS",
+        "SPECIES_VIGOROTH",
+        "SPECIES_URSARING",
+        "SPECIES_URSARING",
+        "SPECIES_HERACROSS",
+        "SPECIES_KOMALA",
+        "SPECIES_KOMALA",
+        "SPECIES_KOMALA",
+        "SPECIES_PASSIMIAN",
+        "SPECIES_ORANGURU"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "MASQUERAIN",
-        "GOLDUCK",
-        "MASQUERAIN",
-        "GOLDUCK",
-        "GOLDUCK"
+        "SPECIES_MASQUERAIN",
+        "SPECIES_GOLDUCK",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK"
       ]
     },
     "rockSmash": {
       "encounterRate": 255,
       "day": [
-        "PINECO",
-        "AIPOM",
-        "HERACROSS",
-        "SCYTHER",
-        "PINSIR"
+        "SPECIES_PINECO",
+        "SPECIES_AIPOM",
+        "SPECIES_HERACROSS",
+        "SPECIES_SCYTHER",
+        "SPECIES_PINSIR"
       ]
     },
     "fishing": {
       "encounterRate": 50,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "PSYDUCK",
-        "BARBOACH",
-        "GOLDUCK",
-        "GOLDUCK",
-        "WHISCASH",
-        "WHISCASH",
-        "WHISCASH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_PSYDUCK",
+        "SPECIES_BARBOACH",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_WHISCASH",
+        "SPECIES_WHISCASH",
+        "SPECIES_WHISCASH"
       ]
     }
   },
@@ -926,57 +926,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "CATERPIE",
-        "WURMPLE",
-        "SCATTERBUG",
-        "COTTONEE",
-        "SWADLOON",
-        "PETILIL",
-        "SPEWPA",
-        "METAPOD",
-        "SILCOON",
-        "CASCOON",
-        "SILCOON",
-        "CASCOON"
+        "SPECIES_CATERPIE",
+        "SPECIES_WURMPLE",
+        "SPECIES_SCATTERBUG",
+        "SPECIES_COTTONEE",
+        "SPECIES_SWADLOON",
+        "SPECIES_PETILIL",
+        "SPECIES_SPEWPA",
+        "SPECIES_METAPOD",
+        "SPECIES_SILCOON",
+        "SPECIES_CASCOON",
+        "SPECIES_SILCOON",
+        "SPECIES_CASCOON"
       ],
       "night": [
-        "WEEDLE",
-        "WURMPLE",
-        "SCATTERBUG",
-        "COTTONEE",
-        "SWADLOON",
-        "PETILIL",
-        "SPEWPA",
-        "KAKUNA",
-        "SILCOON",
-        "CASCOON",
-        "SILCOON",
-        "CASCOON"
+        "SPECIES_WEEDLE",
+        "SPECIES_WURMPLE",
+        "SPECIES_SCATTERBUG",
+        "SPECIES_COTTONEE",
+        "SPECIES_SWADLOON",
+        "SPECIES_PETILIL",
+        "SPECIES_SPEWPA",
+        "SPECIES_KAKUNA",
+        "SPECIES_SILCOON",
+        "SPECIES_CASCOON",
+        "SPECIES_SILCOON",
+        "SPECIES_CASCOON"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SURSKIT",
-        "GOLDUCK",
-        "MASQUERAIN",
-        "PSYDUCK",
-        "PSYDUCK"
+        "SPECIES_SURSKIT",
+        "SPECIES_GOLDUCK",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_PSYDUCK",
+        "SPECIES_PSYDUCK"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "PSYDUCK",
-        "BARBOACH",
-        "GOLDUCK",
-        "GOLDUCK",
-        "WHISCASH",
-        "WHISCASH",
-        "WHISCASH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_PSYDUCK",
+        "SPECIES_BARBOACH",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_WHISCASH",
+        "SPECIES_WHISCASH",
+        "SPECIES_WHISCASH"
       ]
     }
   },
@@ -987,26 +987,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "BASCULIN_RED",
-        "TENTACRUEL",
-        "SEADRA",
-        "SEADRA"
+        "SPECIES_TENTACOOL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_SEADRA",
+        "SPECIES_SEADRA"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "HORSEA",
-        "SHELLDER",
-        "SHELLDER",
-        "SEADRA",
-        "SHELLDER",
-        "GYARADOS",
-        "DHELMISE",
-        "DHELMISE"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_HORSEA",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SEADRA",
+        "SPECIES_SHELLDER",
+        "SPECIES_GYARADOS",
+        "SPECIES_DHELMISE",
+        "SPECIES_DHELMISE"
       ]
     }
   },
@@ -1017,18 +1017,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "CLAYDOL",
-        "COFAGRIGUS",
-        "CLAYDOL",
-        "COFAGRIGUS",
-        "DUSCLOPS",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_CLAYDOL",
+        "SPECIES_COFAGRIGUS",
+        "SPECIES_CLAYDOL",
+        "SPECIES_COFAGRIGUS",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     }
   },
@@ -1039,18 +1039,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "CLAYDOL",
-        "COFAGRIGUS",
-        "CLAYDOL",
-        "COFAGRIGUS",
-        "DUSCLOPS",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_CLAYDOL",
+        "SPECIES_COFAGRIGUS",
+        "SPECIES_CLAYDOL",
+        "SPECIES_COFAGRIGUS",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     }
   },
@@ -1061,26 +1061,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTINE",
-        "GOLDUCK"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTINE",
+        "SPECIES_GOLDUCK"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "HORSEA",
-        "SHELLDER",
-        "SHELLDER",
-        "SEADRA",
-        "SHELLDER",
-        "GYARADOS",
-        "GYARADOS",
-        "KINGDRA"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_HORSEA",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SEADRA",
+        "SPECIES_SHELLDER",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_KINGDRA"
       ]
     }
   },
@@ -1091,18 +1091,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "BALTOY",
-        "YAMASK",
-        "BALTOY",
-        "YAMASK",
-        "DUSKULL",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_DUSKULL",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     }
   },
@@ -1113,28 +1113,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "BALTOY",
-        "YAMASK",
-        "BALTOY",
-        "YAMASK",
-        "DUSKULL",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_DUSKULL",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "BALTOY",
-        "BALTOY",
-        "BALTOY"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY"
       ]
     }
   },
@@ -1145,18 +1145,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "BALTOY",
-        "YAMASK",
-        "BALTOY",
-        "YAMASK",
-        "DUSKULL",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_DUSKULL",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     }
   },
@@ -1167,28 +1167,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "BALTOY",
-        "YAMASK",
-        "BALTOY",
-        "YAMASK",
-        "DUSKULL",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_DUSKULL",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "BALTOY",
-        "BALTOY",
-        "BALTOY"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY"
       ]
     }
   },
@@ -1199,28 +1199,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "BALTOY",
-        "YAMASK",
-        "BALTOY",
-        "YAMASK",
-        "DUSKULL",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_DUSKULL",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "BALTOY",
-        "BALTOY",
-        "BALTOY"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY"
       ]
     }
   },
@@ -1231,18 +1231,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "BALTOY",
-        "YAMASK",
-        "BALTOY",
-        "YAMASK",
-        "DUSKULL",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_DUSKULL",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     }
   },
@@ -1253,18 +1253,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "BALTOY",
-        "YAMASK",
-        "BALTOY",
-        "YAMASK",
-        "DUSKULL",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_DUSKULL",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     }
   },
@@ -1275,18 +1275,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "BALTOY",
-        "YAMASK",
-        "BALTOY",
-        "YAMASK",
-        "DUSKULL",
-        "SABLEYE",
-        "BRONZONG",
-        "DUSCLOPS",
-        "LUNATONE",
-        "SOLROCK",
-        "SIGILYPH",
-        "COFAGRIGUS"
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_BALTOY",
+        "SPECIES_YAMASK",
+        "SPECIES_DUSKULL",
+        "SPECIES_SABLEYE",
+        "SPECIES_BRONZONG",
+        "SPECIES_DUSCLOPS",
+        "SPECIES_LUNATONE",
+        "SPECIES_SOLROCK",
+        "SPECIES_SIGILYPH",
+        "SPECIES_COFAGRIGUS"
       ]
     }
   },
@@ -1297,26 +1297,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "MARILL",
-        "SURSKIT",
-        "MASQUERAIN",
-        "AZUMARILL",
-        "AZUMARILL"
+        "SPECIES_MARILL",
+        "SPECIES_SURSKIT",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_AZUMARILL",
+        "SPECIES_AZUMARILL"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "GOLDEEN",
-        "WISHIWASHI",
-        "SEAKING",
-        "GYARADOS",
-        "GYARADOS",
-        "BRUXISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_GOLDEEN",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_SEAKING",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_BRUXISH"
       ]
     }
   },
@@ -1327,43 +1327,43 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "SPEAROW",
-        "GRUBBIN",
-        "MARILL",
-        "MARILL",
-        "DEERLING_AUTUMN",
-        "SHROOMISH",
-        "SHROOMISH",
-        "DEERLING_AUTUMN",
-        "SKORUPI",
-        "AUDINO",
-        "SKORUPI",
-        "SKORUPI"
+        "SPECIES_SPEAROW",
+        "SPECIES_GRUBBIN",
+        "SPECIES_MARILL",
+        "SPECIES_MARILL",
+        "SPECIES_DEERLING_AUTUMN",
+        "SPECIES_SHROOMISH",
+        "SPECIES_SHROOMISH",
+        "SPECIES_DEERLING_AUTUMN",
+        "SPECIES_SKORUPI",
+        "SPECIES_AUDINO",
+        "SPECIES_SKORUPI",
+        "SPECIES_SKORUPI"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "MARILL",
-        "SURSKIT",
-        "MASQUERAIN",
-        "AZUMARILL",
-        "AZUMARILL"
+        "SPECIES_MARILL",
+        "SPECIES_SURSKIT",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_AZUMARILL",
+        "SPECIES_AZUMARILL"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "GOLDEEN",
-        "WISHIWASHI",
-        "SEAKING",
-        "GYARADOS",
-        "GYARADOS",
-        "BRUXISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_GOLDEEN",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_SEAKING",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_BRUXISH"
       ]
     }
   },
@@ -1374,28 +1374,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GRAVELER",
-        "GRAVELER",
-        "WOOBAT",
-        "WOOBAT",
-        "WOOBAT",
-        "WOOBAT",
-        "LAIRON",
-        "DIGLETT",
-        "DIGLETT",
-        "DUGTRIO",
-        "DIGLETT",
-        "DUGTRIO"
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_WOOBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_LAIRON",
+        "SPECIES_DIGLETT",
+        "SPECIES_DIGLETT",
+        "SPECIES_DUGTRIO",
+        "SPECIES_DIGLETT",
+        "SPECIES_DUGTRIO"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "GRAVELER",
-        "GRAVELER",
-        "GRAVELER"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER"
       ]
     }
   },
@@ -1406,43 +1406,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HARIYAMA",
-        "SEALEO",
-        "SEALEO",
-        "SEALEO",
-        "JYNX",
-        "HARIYAMA",
-        "AVALUGG",
-        "BOLDORE",
-        "PILOSWINE",
-        "BOLDORE",
-        "PILOSWINE"
+        "SPECIES_GOLBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_JYNX",
+        "SPECIES_HARIYAMA",
+        "SPECIES_AVALUGG",
+        "SPECIES_BOLDORE",
+        "SPECIES_PILOSWINE",
+        "SPECIES_BOLDORE",
+        "SPECIES_PILOSWINE"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "DEWGONG",
-        "SEALEO",
-        "DEWGONG",
-        "SEALEO",
-        "LAPRAS"
+        "SPECIES_DEWGONG",
+        "SPECIES_SEALEO",
+        "SPECIES_DEWGONG",
+        "SPECIES_SEALEO",
+        "SPECIES_LAPRAS"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "SEEL",
-        "SEEL",
-        "SHELLDER",
-        "DEWGONG",
-        "SHELLDER",
-        "SHELLDER",
-        "SHELLDER",
-        "CLOYSTER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_SEEL",
+        "SPECIES_SEEL",
+        "SPECIES_SHELLDER",
+        "SPECIES_DEWGONG",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_CLOYSTER"
       ]
     }
   },
@@ -1453,18 +1453,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HARIYAMA",
-        "SEALEO",
-        "SEALEO",
-        "SEALEO",
-        "JYNX",
-        "HARIYAMA",
-        "AVALUGG",
-        "BOLDORE",
-        "PILOSWINE",
-        "BOLDORE",
-        "PILOSWINE"
+        "SPECIES_GOLBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_JYNX",
+        "SPECIES_HARIYAMA",
+        "SPECIES_AVALUGG",
+        "SPECIES_BOLDORE",
+        "SPECIES_PILOSWINE",
+        "SPECIES_BOLDORE",
+        "SPECIES_PILOSWINE"
       ]
     }
   },
@@ -1475,26 +1475,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "CORSOLA",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "CORSOLA",
-        "CORSOLA",
-        "LAPRAS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_CORSOLA",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA",
+        "SPECIES_LAPRAS"
       ]
     }
   },
@@ -1505,26 +1505,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "BASCULIN_RED",
-        "BASCULIN_RED"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_BASCULIN_RED"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CORPHISH",
-        "CORPHISH",
-        "STARYU",
-        "CRAWDAUNT",
-        "STARYU",
-        "GYARADOS",
-        "GYARADOS",
-        "STARMIE"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CORPHISH",
+        "SPECIES_CORPHISH",
+        "SPECIES_STARYU",
+        "SPECIES_CRAWDAUNT",
+        "SPECIES_STARYU",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_STARMIE"
       ]
     }
   },
@@ -1535,18 +1535,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GRAVELER",
-        "GRAVELER",
-        "WOOBAT",
-        "WOOBAT",
-        "WOOBAT",
-        "WOOBAT",
-        "DIGLETT",
-        "DIGLETT",
-        "DIGLETT",
-        "DUGTRIO",
-        "DIGLETT",
-        "DUGTRIO"
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_WOOBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_DIGLETT",
+        "SPECIES_DIGLETT",
+        "SPECIES_DIGLETT",
+        "SPECIES_DUGTRIO",
+        "SPECIES_DIGLETT",
+        "SPECIES_DUGTRIO"
       ]
     }
   },
@@ -1557,26 +1557,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "PALPITOAD",
-        "STUNFISK",
-        "GASTRODON_EAST",
-        "SLIGGOO",
-        "SLIGGOO"
+        "SPECIES_PALPITOAD",
+        "SPECIES_STUNFISK",
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_SLIGGOO",
+        "SPECIES_SLIGGOO"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "POLIWAG",
-        "BARBOACH",
-        "POLIWHIRL",
-        "POLIWHIRL",
-        "POLIWHIRL",
-        "WHISCASH",
-        "POLIWHIRL",
-        "POLITOED",
-        "POLITOED"
+        "SPECIES_MAGIKARP",
+        "SPECIES_POLIWAG",
+        "SPECIES_BARBOACH",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_WHISCASH",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_POLITOED",
+        "SPECIES_POLITOED"
       ]
     }
   },
@@ -1587,57 +1587,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "CROAGUNK",
-        "QUAGSIRE",
-        "CROAGUNK",
-        "SLIGGOO",
-        "SLIGGOO",
-        "DRAPION",
-        "CARNIVINE",
-        "WEEPINBELL",
-        "WEEPINBELL",
-        "TOXICROAK",
-        "WEEPINBELL",
-        "TOXICROAK"
+        "SPECIES_CROAGUNK",
+        "SPECIES_QUAGSIRE",
+        "SPECIES_CROAGUNK",
+        "SPECIES_SLIGGOO",
+        "SPECIES_SLIGGOO",
+        "SPECIES_DRAPION",
+        "SPECIES_CARNIVINE",
+        "SPECIES_WEEPINBELL",
+        "SPECIES_WEEPINBELL",
+        "SPECIES_TOXICROAK",
+        "SPECIES_WEEPINBELL",
+        "SPECIES_TOXICROAK"
       ],
       "night": [
-        "CROAGUNK",
-        "QUAGSIRE",
-        "CROAGUNK",
-        "SLIGGOO",
-        "SLIGGOO",
-        "DRAPION",
-        "CARNIVINE",
-        "GLOOM",
-        "GLOOM",
-        "TOXICROAK",
-        "GLOOM",
-        "TOXICROAK"
+        "SPECIES_CROAGUNK",
+        "SPECIES_QUAGSIRE",
+        "SPECIES_CROAGUNK",
+        "SPECIES_SLIGGOO",
+        "SPECIES_SLIGGOO",
+        "SPECIES_DRAPION",
+        "SPECIES_CARNIVINE",
+        "SPECIES_GLOOM",
+        "SPECIES_GLOOM",
+        "SPECIES_TOXICROAK",
+        "SPECIES_GLOOM",
+        "SPECIES_TOXICROAK"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "QUAGSIRE",
-        "STUNFISK",
-        "GASTRODON_EAST",
-        "SLIGGOO",
-        "SLIGGOO"
+        "SPECIES_QUAGSIRE",
+        "SPECIES_STUNFISK",
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_SLIGGOO",
+        "SPECIES_SLIGGOO"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "POLIWAG",
-        "BARBOACH",
-        "POLIWHIRL",
-        "POLIWHIRL",
-        "POLIWHIRL",
-        "WHISCASH",
-        "POLIWHIRL",
-        "POLITOED",
-        "POLITOED"
+        "SPECIES_MAGIKARP",
+        "SPECIES_POLIWAG",
+        "SPECIES_BARBOACH",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_WHISCASH",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_POLITOED",
+        "SPECIES_POLITOED"
       ]
     }
   },
@@ -1648,57 +1648,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "TRANQUILL",
-        "FURFROU",
-        "TRANQUILL",
-        "MUDSDALE",
-        "MUDSDALE",
-        "GOGOAT",
-        "FURFROU",
-        "GOGOAT",
-        "MILTANK",
-        "MILTANK",
-        "MILTANK",
-        "TAUROS"
+        "SPECIES_TRANQUILL",
+        "SPECIES_FURFROU",
+        "SPECIES_TRANQUILL",
+        "SPECIES_MUDSDALE",
+        "SPECIES_MUDSDALE",
+        "SPECIES_GOGOAT",
+        "SPECIES_FURFROU",
+        "SPECIES_GOGOAT",
+        "SPECIES_MILTANK",
+        "SPECIES_MILTANK",
+        "SPECIES_MILTANK",
+        "SPECIES_TAUROS"
       ],
       "night": [
-        "NOCTOWL",
-        "FURFROU",
-        "TRANQUILL",
-        "MUDSDALE",
-        "MUDSDALE",
-        "GOGOAT",
-        "FURFROU",
-        "GOGOAT",
-        "MILTANK",
-        "MILTANK",
-        "MILTANK",
-        "TAUROS"
+        "SPECIES_NOCTOWL",
+        "SPECIES_FURFROU",
+        "SPECIES_TRANQUILL",
+        "SPECIES_MUDSDALE",
+        "SPECIES_MUDSDALE",
+        "SPECIES_GOGOAT",
+        "SPECIES_FURFROU",
+        "SPECIES_GOGOAT",
+        "SPECIES_MILTANK",
+        "SPECIES_MILTANK",
+        "SPECIES_MILTANK",
+        "SPECIES_TAUROS"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "FRILLISH",
-        "PELIPPER",
-        "JELLICENT",
-        "JELLICENT",
-        "JELLICENT"
+        "SPECIES_FRILLISH",
+        "SPECIES_PELIPPER",
+        "SPECIES_JELLICENT",
+        "SPECIES_JELLICENT",
+        "SPECIES_JELLICENT"
       ]
     },
     "fishing": {
       "encounterRate": 20,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "GYARADOS",
-        "WAILMER",
-        "WAILMER",
-        "GYARADOS",
-        "WAILORD",
-        "WAILORD",
-        "QWILFISH",
-        "QWILFISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_GYARADOS",
+        "SPECIES_WAILMER",
+        "SPECIES_WAILMER",
+        "SPECIES_GYARADOS",
+        "SPECIES_WAILORD",
+        "SPECIES_WAILORD",
+        "SPECIES_QWILFISH",
+        "SPECIES_QWILFISH"
       ]
     }
   },
@@ -1709,11 +1709,11 @@
     "rockSmash": {
       "encounterRate": 255,
       "day": [
-        "PINECO",
-        "AIPOM",
-        "HERACROSS",
-        "SCYTHER",
-        "PINSIR"
+        "SPECIES_PINECO",
+        "SPECIES_AIPOM",
+        "SPECIES_HERACROSS",
+        "SPECIES_SCYTHER",
+        "SPECIES_PINSIR"
       ]
     }
   },
@@ -1724,26 +1724,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "JELLICENT",
-        "PELIPPER",
-        "DITTO",
-        "DITTO",
-        "DITTO"
+        "SPECIES_JELLICENT",
+        "SPECIES_PELIPPER",
+        "SPECIES_DITTO",
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
       ]
     },
     "fishing": {
       "encounterRate": 0,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "GYARADOS",
-        "WAILMER",
-        "WAILMER",
-        "GYARADOS",
-        "WAILORD",
-        "WAILORD",
-        "DITTO",
-        "DITTO"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_GYARADOS",
+        "SPECIES_WAILMER",
+        "SPECIES_WAILMER",
+        "SPECIES_GYARADOS",
+        "SPECIES_WAILORD",
+        "SPECIES_WAILORD",
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
       ]
     }
   },
@@ -1754,18 +1754,18 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "SNORUNT",
-        "SNORUNT",
-        "VANILLITE",
-        "VANILLITE",
-        "VANILLITE",
-        "VANILLITE",
-        "VANILLITE",
-        "SNORUNT",
-        "DELIBIRD",
-        "VANILLITE",
-        "MINIOR_SHIELD",
-        "MINIOR_SHIELD"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT",
+        "SPECIES_VANILLITE",
+        "SPECIES_VANILLITE",
+        "SPECIES_VANILLITE",
+        "SPECIES_VANILLITE",
+        "SPECIES_VANILLITE",
+        "SPECIES_SNORUNT",
+        "SPECIES_DELIBIRD",
+        "SPECIES_VANILLITE",
+        "SPECIES_MINIOR_SHIELD",
+        "SPECIES_MINIOR_SHIELD"
       ]
     }
   },
@@ -1776,67 +1776,67 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "PIKIPEK",
-        "PATRAT",
-        "INKAY",
-        "MINCCINO",
-        "ELECTRIKE",
-        "AZURILL",
-        "STUFFUL",
-        "STUFFUL",
-        "SCRAGGY",
-        "RIOLU",
-        "SCRAGGY",
-        "RIOLU"
+        "SPECIES_PIKIPEK",
+        "SPECIES_PATRAT",
+        "SPECIES_INKAY",
+        "SPECIES_MINCCINO",
+        "SPECIES_ELECTRIKE",
+        "SPECIES_AZURILL",
+        "SPECIES_STUFFUL",
+        "SPECIES_STUFFUL",
+        "SPECIES_SCRAGGY",
+        "SPECIES_RIOLU",
+        "SPECIES_SCRAGGY",
+        "SPECIES_RIOLU"
       ],
       "night": [
-        "HOOTHOOT",
-        "RATTATA",
-        "INKAY",
-        "MINCCINO",
-        "ELECTRIKE",
-        "AZURILL",
-        "STUFFUL",
-        "STUFFUL",
-        "SCRAGGY",
-        "RIOLU",
-        "SCRAGGY",
-        "RIOLU"
+        "SPECIES_HOOTHOOT",
+        "SPECIES_RATTATA",
+        "SPECIES_INKAY",
+        "SPECIES_MINCCINO",
+        "SPECIES_ELECTRIKE",
+        "SPECIES_AZURILL",
+        "SPECIES_STUFFUL",
+        "SPECIES_STUFFUL",
+        "SPECIES_SCRAGGY",
+        "SPECIES_RIOLU",
+        "SPECIES_SCRAGGY",
+        "SPECIES_RIOLU"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "BASCULIN_RED",
-        "BASCULIN_RED"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_BASCULIN_RED"
       ]
     },
     "rockSmash": {
       "encounterRate": 50,
       "day": [
-        "BINACLE",
-        "KRABBY",
-        "KRABBY",
-        "KRABBY",
-        "KRABBY"
+        "SPECIES_BINACLE",
+        "SPECIES_KRABBY",
+        "SPECIES_KRABBY",
+        "SPECIES_KRABBY",
+        "SPECIES_KRABBY"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "STARYU",
-        "STARYU",
-        "SHELLDER",
-        "STARYU",
-        "SHELLDER",
-        "GYARADOS",
-        "GYARADOS",
-        "STARMIE"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_STARYU",
+        "SPECIES_STARYU",
+        "SPECIES_SHELLDER",
+        "SPECIES_STARYU",
+        "SPECIES_SHELLDER",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_STARMIE"
       ]
     }
   },
@@ -1847,57 +1847,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "WINGULL",
-        "BIDOOF",
-        "SLOWPOKE",
-        "SLOWPOKE",
-        "SHELLOS",
-        "CHERUBI",
-        "DEWPIDER",
-        "BUIZEL",
-        "POLIWAG",
-        "POLIWAG",
-        "POLIWAG",
-        "POLIWAG"
+        "SPECIES_WINGULL",
+        "SPECIES_BIDOOF",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_SHELLOS",
+        "SPECIES_CHERUBI",
+        "SPECIES_DEWPIDER",
+        "SPECIES_BUIZEL",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLIWAG"
       ],
       "night": [
-        "WINGULL",
-        "BIDOOF",
-        "SLOWPOKE",
-        "SLOWPOKE",
-        "SHELLOS",
-        "SURSKIT",
-        "SURSKIT",
-        "BUIZEL",
-        "POLIWAG",
-        "POLIWAG",
-        "POLIWAG",
-        "POLIWAG"
+        "SPECIES_WINGULL",
+        "SPECIES_BIDOOF",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_SHELLOS",
+        "SPECIES_SURSKIT",
+        "SPECIES_SURSKIT",
+        "SPECIES_BUIZEL",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLIWAG"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "ARAQUANID",
-        "ARAQUANID"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_ARAQUANID",
+        "SPECIES_ARAQUANID"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "STARYU",
-        "KRABBY",
-        "SHELLDER",
-        "STARYU",
-        "SHELLDER",
-        "KINGLER",
-        "KINGLER",
-        "CLOYSTER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_STARYU",
+        "SPECIES_KRABBY",
+        "SPECIES_SHELLDER",
+        "SPECIES_STARYU",
+        "SPECIES_SHELLDER",
+        "SPECIES_KINGLER",
+        "SPECIES_KINGLER",
+        "SPECIES_CLOYSTER"
       ]
     }
   },
@@ -1908,26 +1908,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "BASCULIN_RED",
-        "BASCULIN_RED"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_BASCULIN_RED"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "STARYU",
-        "STARYU",
-        "SHELLDER",
-        "STARYU",
-        "SHELLDER",
-        "GYARADOS",
-        "GYARADOS",
-        "STARMIE"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_STARYU",
+        "SPECIES_STARYU",
+        "SPECIES_SHELLDER",
+        "SPECIES_STARYU",
+        "SPECIES_SHELLDER",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_STARMIE"
       ]
     }
   },
@@ -1938,57 +1938,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "STARLY",
-        "STARLY",
-        "LILLIPUP",
-        "LILLIPUP",
-        "EKANS",
-        "NUMEL",
-        "BUDEW",
-        "BUDEW",
-        "MANKEY",
-        "RALTS",
-        "MANKEY",
-        "RALTS"
+        "SPECIES_STARLY",
+        "SPECIES_STARLY",
+        "SPECIES_LILLIPUP",
+        "SPECIES_LILLIPUP",
+        "SPECIES_EKANS",
+        "SPECIES_NUMEL",
+        "SPECIES_BUDEW",
+        "SPECIES_BUDEW",
+        "SPECIES_MANKEY",
+        "SPECIES_RALTS",
+        "SPECIES_MANKEY",
+        "SPECIES_RALTS"
       ],
       "night": [
-        "HOOTHOOT",
-        "HOOTHOOT",
-        "LILLIPUP",
-        "LILLIPUP",
-        "EKANS",
-        "NUMEL",
-        "BUDEW",
-        "BUDEW",
-        "MANKEY",
-        "RALTS",
-        "MANKEY",
-        "RALTS"
+        "SPECIES_HOOTHOOT",
+        "SPECIES_HOOTHOOT",
+        "SPECIES_LILLIPUP",
+        "SPECIES_LILLIPUP",
+        "SPECIES_EKANS",
+        "SPECIES_NUMEL",
+        "SPECIES_BUDEW",
+        "SPECIES_BUDEW",
+        "SPECIES_MANKEY",
+        "SPECIES_RALTS",
+        "SPECIES_MANKEY",
+        "SPECIES_RALTS"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "BASCULIN_RED",
-        "BASCULIN_RED"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_BASCULIN_RED"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CORPHISH",
-        "CORPHISH",
-        "STARYU",
-        "CRAWDAUNT",
-        "STARYU",
-        "GYARADOS",
-        "GYARADOS",
-        "STARMIE"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CORPHISH",
+        "SPECIES_CORPHISH",
+        "SPECIES_STARYU",
+        "SPECIES_CRAWDAUNT",
+        "SPECIES_STARYU",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_STARMIE"
       ]
     }
   },
@@ -1999,57 +1999,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "PURRLOIN",
-        "TAILLOW",
-        "NIDORAN_M",
-        "NIDORAN_F",
-        "GROWLITHE",
-        "PURRLOIN",
-        "LICKITUNG",
-        "LICKITUNG",
-        "YANMA",
-        "YANMA",
-        "DITTO",
-        "DITTO"
+        "SPECIES_PURRLOIN",
+        "SPECIES_TAILLOW",
+        "SPECIES_NIDORAN_M",
+        "SPECIES_NIDORAN_F",
+        "SPECIES_GROWLITHE",
+        "SPECIES_PURRLOIN",
+        "SPECIES_LICKITUNG",
+        "SPECIES_LICKITUNG",
+        "SPECIES_YANMA",
+        "SPECIES_YANMA",
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
       ],
       "night": [
-        "PURRLOIN",
-        "MURKROW",
-        "NIDORAN_M",
-        "NIDORAN_F",
-        "HOUNDOUR",
-        "PURRLOIN",
-        "LICKITUNG",
-        "LICKITUNG",
-        "VENONAT",
-        "VENONAT",
-        "DITTO",
-        "DITTO"
+        "SPECIES_PURRLOIN",
+        "SPECIES_MURKROW",
+        "SPECIES_NIDORAN_M",
+        "SPECIES_NIDORAN_F",
+        "SPECIES_HOUNDOUR",
+        "SPECIES_PURRLOIN",
+        "SPECIES_LICKITUNG",
+        "SPECIES_LICKITUNG",
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT",
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "BASCULIN_RED",
-        "BASCULIN_RED"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_BASCULIN_RED"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CORPHISH",
-        "CORPHISH",
-        "STARYU",
-        "CRAWDAUNT",
-        "STARYU",
-        "GYARADOS",
-        "GYARADOS",
-        "STARMIE"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CORPHISH",
+        "SPECIES_CORPHISH",
+        "SPECIES_STARYU",
+        "SPECIES_CRAWDAUNT",
+        "SPECIES_STARYU",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_STARMIE"
       ]
     }
   },
@@ -2060,57 +2060,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "BUNNELBY",
-        "LEDYBA",
-        "SHINX",
-        "DEERLING",
-        "BUNNELBY",
-        "SUNKERN",
-        "SUNKERN",
-        "SUNKERN",
-        "DEERLING",
-        "SUNKERN",
-        "LEDIAN",
-        "LUXIO"
+        "SPECIES_BUNNELBY",
+        "SPECIES_LEDYBA",
+        "SPECIES_SHINX",
+        "SPECIES_DEERLING",
+        "SPECIES_BUNNELBY",
+        "SPECIES_SUNKERN",
+        "SPECIES_SUNKERN",
+        "SPECIES_SUNKERN",
+        "SPECIES_DEERLING",
+        "SPECIES_SUNKERN",
+        "SPECIES_LEDIAN",
+        "SPECIES_LUXIO"
       ],
       "night": [
-        "BUNNELBY",
-        "SPINARAK",
-        "SHINX",
-        "DEERLING",
-        "BUNNELBY",
-        "KRICKETOT",
-        "KRICKETOT",
-        "KRICKETOT",
-        "DEERLING",
-        "KRICKETOT",
-        "ARIADOS",
-        "LUXIO"
+        "SPECIES_BUNNELBY",
+        "SPECIES_SPINARAK",
+        "SPECIES_SHINX",
+        "SPECIES_DEERLING",
+        "SPECIES_BUNNELBY",
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT",
+        "SPECIES_DEERLING",
+        "SPECIES_KRICKETOT",
+        "SPECIES_ARIADOS",
+        "SPECIES_LUXIO"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "GOLDEEN",
-        "GOLDEEN",
-        "REMORAID",
-        "SEAKING",
-        "OCTILLERY",
-        "GYARADOS",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_GOLDEEN",
+        "SPECIES_GOLDEEN",
+        "SPECIES_REMORAID",
+        "SPECIES_SEAKING",
+        "SPECIES_OCTILLERY",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -2121,57 +2121,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "YUNGOOS",
-        "DODUO",
-        "BUNEARY",
-        "ESPURR",
-        "ABRA",
-        "MAREEP",
-        "SHINX",
-        "SHINX",
-        "YUNGOOS",
-        "BUNEARY",
-        "LUXIO",
-        "GUMSHOOS"
+        "SPECIES_YUNGOOS",
+        "SPECIES_DODUO",
+        "SPECIES_BUNEARY",
+        "SPECIES_ESPURR",
+        "SPECIES_ABRA",
+        "SPECIES_MAREEP",
+        "SPECIES_SHINX",
+        "SPECIES_SHINX",
+        "SPECIES_YUNGOOS",
+        "SPECIES_BUNEARY",
+        "SPECIES_LUXIO",
+        "SPECIES_GUMSHOOS"
       ],
       "night": [
-        "RATTATA_A",
-        "HOOTHOOT",
-        "BUNEARY",
-        "DROWZEE",
-        "ABRA",
-        "MAREEP",
-        "SHINX",
-        "SHINX",
-        "RATTATA_A",
-        "BUNEARY",
-        "LUXIO",
-        "RATICATE_A"
+        "SPECIES_RATTATA_A",
+        "SPECIES_HOOTHOOT",
+        "SPECIES_BUNEARY",
+        "SPECIES_DROWZEE",
+        "SPECIES_ABRA",
+        "SPECIES_MAREEP",
+        "SPECIES_SHINX",
+        "SPECIES_SHINX",
+        "SPECIES_RATTATA_A",
+        "SPECIES_BUNEARY",
+        "SPECIES_LUXIO",
+        "SPECIES_RATICATE_A"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "GOLDEEN",
-        "GOLDEEN",
-        "REMORAID",
-        "SEAKING",
-        "OCTILLERY",
-        "GYARADOS",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_GOLDEEN",
+        "SPECIES_GOLDEEN",
+        "SPECIES_REMORAID",
+        "SPECIES_SEAKING",
+        "SPECIES_OCTILLERY",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -2182,42 +2182,42 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "SNOVER",
-        "SNORUNT",
-        "SNOVER",
-        "SNORUNT",
-        "CUBCHOO",
-        "DEERLING_WINTER",
-        "DEERLING_WINTER",
-        "FLAAFFY",
-        "SNOVER",
-        "SNORUNT",
-        "MINIOR_SHIELD",
-        "MINIOR_SHIELD"
+        "SPECIES_SNOVER",
+        "SPECIES_SNORUNT",
+        "SPECIES_SNOVER",
+        "SPECIES_SNORUNT",
+        "SPECIES_CUBCHOO",
+        "SPECIES_DEERLING_WINTER",
+        "SPECIES_DEERLING_WINTER",
+        "SPECIES_FLAAFFY",
+        "SPECIES_SNOVER",
+        "SPECIES_SNORUNT",
+        "SPECIES_MINIOR_SHIELD",
+        "SPECIES_MINIOR_SHIELD"
       ],
       "night": [
-        "SNOVER",
-        "SNORUNT",
-        "SNEASEL",
-        "SNORUNT",
-        "CUBCHOO",
-        "DEERLING_WINTER",
-        "DEERLING_WINTER",
-        "FLAAFFY",
-        "SNOVER",
-        "SNORUNT",
-        "MINIOR_SHIELD",
-        "MINIOR_SHIELD"
+        "SPECIES_SNOVER",
+        "SPECIES_SNORUNT",
+        "SPECIES_SNEASEL",
+        "SPECIES_SNORUNT",
+        "SPECIES_CUBCHOO",
+        "SPECIES_DEERLING_WINTER",
+        "SPECIES_DEERLING_WINTER",
+        "SPECIES_FLAAFFY",
+        "SPECIES_SNOVER",
+        "SPECIES_SNORUNT",
+        "SPECIES_MINIOR_SHIELD",
+        "SPECIES_MINIOR_SHIELD"
       ]
     },
     "rockSmash": {
       "encounterRate": 50,
       "day": [
-        "ROGGENROLA",
-        "ROGGENROLA",
-        "ROGGENROLA",
-        "ROGGENROLA",
-        "MINIOR_SHIELD"
+        "SPECIES_ROGGENROLA",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_MINIOR_SHIELD"
       ]
     }
   },
@@ -2228,43 +2228,43 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "SPEAROW",
-        "GRUBBIN",
-        "MARILL",
-        "MARILL",
-        "DEERLING_AUTUMN",
-        "SHROOMISH",
-        "SHROOMISH",
-        "DEERLING_AUTUMN",
-        "SKORUPI",
-        "AUDINO",
-        "SKORUPI",
-        "SKORUPI"
+        "SPECIES_SPEAROW",
+        "SPECIES_GRUBBIN",
+        "SPECIES_MARILL",
+        "SPECIES_MARILL",
+        "SPECIES_DEERLING_AUTUMN",
+        "SPECIES_SHROOMISH",
+        "SPECIES_SHROOMISH",
+        "SPECIES_DEERLING_AUTUMN",
+        "SPECIES_SKORUPI",
+        "SPECIES_AUDINO",
+        "SPECIES_SKORUPI",
+        "SPECIES_SKORUPI"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "MARILL",
-        "SURSKIT",
-        "MASQUERAIN",
-        "AZUMARILL",
-        "AZUMARILL"
+        "SPECIES_MARILL",
+        "SPECIES_SURSKIT",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_AZUMARILL",
+        "SPECIES_AZUMARILL"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "GOLDEEN",
-        "WISHIWASHI",
-        "SEAKING",
-        "GYARADOS",
-        "GYARADOS",
-        "BRUXISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_GOLDEEN",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_SEAKING",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_BRUXISH"
       ]
     }
   },
@@ -2275,26 +2275,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "MARILL",
-        "PSYDUCK",
-        "GOLDUCK",
-        "AZUMARILL",
-        "AZUMARILL"
+        "SPECIES_MARILL",
+        "SPECIES_PSYDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_AZUMARILL",
+        "SPECIES_AZUMARILL"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "GOLDEEN",
-        "WISHIWASHI",
-        "SEAKING",
-        "GYARADOS",
-        "GYARADOS",
-        "BRUXISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_GOLDEEN",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_SEAKING",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_BRUXISH"
       ]
     }
   },
@@ -2305,43 +2305,43 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "LOTAD",
-        "TYMPOLE",
-        "MARILL",
-        "MARILL",
-        "LOTAD",
-        "LINOONE",
-        "LOMBRE",
-        "PALPITOAD",
-        "LINOONE",
-        "GOOMY",
-        "DITTO",
-        "GOOMY"
+        "SPECIES_LOTAD",
+        "SPECIES_TYMPOLE",
+        "SPECIES_MARILL",
+        "SPECIES_MARILL",
+        "SPECIES_LOTAD",
+        "SPECIES_LINOONE",
+        "SPECIES_LOMBRE",
+        "SPECIES_PALPITOAD",
+        "SPECIES_LINOONE",
+        "SPECIES_GOOMY",
+        "SPECIES_DITTO",
+        "SPECIES_GOOMY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "PALPITOAD",
-        "SURSKIT",
-        "LOMBRE",
-        "MASQUERAIN",
-        "MASQUERAIN"
+        "SPECIES_PALPITOAD",
+        "SPECIES_SURSKIT",
+        "SPECIES_LOMBRE",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_MASQUERAIN"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "BRUXISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_BRUXISH"
       ]
     }
   },
@@ -2352,26 +2352,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "PALPITOAD",
-        "SURSKIT",
-        "LOMBRE",
-        "MASQUERAIN",
-        "MASQUERAIN"
+        "SPECIES_PALPITOAD",
+        "SPECIES_SURSKIT",
+        "SPECIES_LOMBRE",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_MASQUERAIN"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "GOLDEEN",
-        "WISHIWASHI",
-        "SEAKING",
-        "GYARADOS",
-        "GYARADOS",
-        "BRUXISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_GOLDEEN",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_SEAKING",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_BRUXISH"
       ]
     }
   },
@@ -2382,43 +2382,43 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "LOTAD",
-        "TYMPOLE",
-        "MARILL",
-        "MARILL",
-        "LOTAD",
-        "LINOONE",
-        "LOMBRE",
-        "PALPITOAD",
-        "LINOONE",
-        "GOOMY",
-        "DITTO",
-        "GOOMY"
+        "SPECIES_LOTAD",
+        "SPECIES_TYMPOLE",
+        "SPECIES_MARILL",
+        "SPECIES_MARILL",
+        "SPECIES_LOTAD",
+        "SPECIES_LINOONE",
+        "SPECIES_LOMBRE",
+        "SPECIES_PALPITOAD",
+        "SPECIES_LINOONE",
+        "SPECIES_GOOMY",
+        "SPECIES_DITTO",
+        "SPECIES_GOOMY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "PALPITOAD",
-        "SURSKIT",
-        "LOMBRE",
-        "MASQUERAIN",
-        "MASQUERAIN"
+        "SPECIES_PALPITOAD",
+        "SPECIES_SURSKIT",
+        "SPECIES_LOMBRE",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_MASQUERAIN"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "WISHIWASHI",
-        "WISHIWASHI",
-        "GOLDEEN",
-        "WISHIWASHI",
-        "SEAKING",
-        "GYARADOS",
-        "GYARADOS",
-        "BRUXISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_GOLDEEN",
+        "SPECIES_WISHIWASHI",
+        "SPECIES_SEAKING",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_BRUXISH"
       ]
     }
   },
@@ -2429,26 +2429,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "PYUKUMUKU",
-        "PYUKUMUKU"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_PYUKUMUKU",
+        "SPECIES_PYUKUMUKU"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "CARVANHA",
-        "LUVDISC",
-        "OCTILLERY",
-        "SHARPEDO",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_CARVANHA",
+        "SPECIES_LUVDISC",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SHARPEDO",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC"
       ]
     }
   },
@@ -2459,57 +2459,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "SWABLU",
-        "EXEGGCUTE",
-        "SPOINK",
-        "SPOINK",
-        "GULPIN",
-        "MEDITITE",
-        "MEDITITE",
-        "TOGEDEMARU",
-        "SWABLU",
-        "GULPIN",
-        "SWABLU",
-        "GULPIN"
+        "SPECIES_SWABLU",
+        "SPECIES_EXEGGCUTE",
+        "SPECIES_SPOINK",
+        "SPECIES_SPOINK",
+        "SPECIES_GULPIN",
+        "SPECIES_MEDITITE",
+        "SPECIES_MEDITITE",
+        "SPECIES_TOGEDEMARU",
+        "SPECIES_SWABLU",
+        "SPECIES_GULPIN",
+        "SPECIES_SWABLU",
+        "SPECIES_GULPIN"
       ],
       "night": [
-        "NOCTOWL",
-        "EXEGGCUTE",
-        "SPOINK",
-        "SPOINK",
-        "GULPIN",
-        "MEDITITE",
-        "MEDITITE",
-        "TOGEDEMARU",
-        "NOCTOWL",
-        "GULPIN",
-        "NOCTOWL",
-        "GULPIN"
+        "SPECIES_NOCTOWL",
+        "SPECIES_EXEGGCUTE",
+        "SPECIES_SPOINK",
+        "SPECIES_SPOINK",
+        "SPECIES_GULPIN",
+        "SPECIES_MEDITITE",
+        "SPECIES_MEDITITE",
+        "SPECIES_TOGEDEMARU",
+        "SPECIES_NOCTOWL",
+        "SPECIES_GULPIN",
+        "SPECIES_NOCTOWL",
+        "SPECIES_GULPIN"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "BASCULIN_RED",
-        "BASCULIN_RED"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_BASCULIN_RED"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "BARBOACH",
-        "LUVDISC",
-        "REMORAID",
-        "WHISCASH",
-        "OCTILLERY",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_BARBOACH",
+        "SPECIES_LUVDISC",
+        "SPECIES_REMORAID",
+        "SPECIES_WHISCASH",
+        "SPECIES_OCTILLERY",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC"
       ]
     }
   },
@@ -2520,36 +2520,36 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "FINNEON",
-        "PSYDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "GOLDUCK"
+        "SPECIES_FINNEON",
+        "SPECIES_PSYDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "GRAVELER",
-        "GRAVELER",
-        "GRAVELER"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "BARBOACH",
-        "BARBOACH",
-        "LUVDISC",
-        "WHISCASH",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_BARBOACH",
+        "SPECIES_BARBOACH",
+        "SPECIES_LUVDISC",
+        "SPECIES_WHISCASH",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC"
       ]
     }
   },
@@ -2560,26 +2560,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "POLIWHIRL",
-        "SLOWPOKE",
-        "SLOWPOKE",
-        "POLIWAG",
-        "POLITOED"
+        "SPECIES_POLIWHIRL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLITOED"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "POLIWAG",
-        "POLIWAG",
-        "PSYDUCK",
-        "POLIWHIRL",
-        "POLIWHIRL",
-        "GOLDUCK",
-        "GOLDUCK",
-        "GOLDUCK"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLIWAG",
+        "SPECIES_PSYDUCK",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK"
       ]
     }
   },
@@ -2590,57 +2590,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "FLETCHLING",
-        "ROCKRUFF",
-        "SOLOSIS",
-        "MIENFOO",
-        "PONYTA",
-        "SNUBBULL",
-        "SOLOSIS",
-        "MIENFOO",
-        "DEERLING_SUMMER",
-        "DEERLING_SUMMER",
-        "FLETCHINDER",
-        "DEDENNE"
+        "SPECIES_FLETCHLING",
+        "SPECIES_ROCKRUFF",
+        "SPECIES_SOLOSIS",
+        "SPECIES_MIENFOO",
+        "SPECIES_PONYTA",
+        "SPECIES_SNUBBULL",
+        "SPECIES_SOLOSIS",
+        "SPECIES_MIENFOO",
+        "SPECIES_DEERLING_SUMMER",
+        "SPECIES_DEERLING_SUMMER",
+        "SPECIES_FLETCHINDER",
+        "SPECIES_DEDENNE"
       ],
       "night": [
-        "HOOTHOOT",
-        "ROCKRUFF",
-        "GOTHITA",
-        "MIENFOO",
-        "PONYTA",
-        "SNUBBULL",
-        "GOTHITA",
-        "MIENFOO",
-        "DEERLING_SUMMER",
-        "DEERLING_SUMMER",
-        "NOCTOWL",
-        "DEDENNE"
+        "SPECIES_HOOTHOOT",
+        "SPECIES_ROCKRUFF",
+        "SPECIES_GOTHITA",
+        "SPECIES_MIENFOO",
+        "SPECIES_PONYTA",
+        "SPECIES_SNUBBULL",
+        "SPECIES_GOTHITA",
+        "SPECIES_MIENFOO",
+        "SPECIES_DEERLING_SUMMER",
+        "SPECIES_DEERLING_SUMMER",
+        "SPECIES_NOCTOWL",
+        "SPECIES_DEDENNE"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CARVANHA",
-        "WAILMER",
-        "WAILMER",
-        "SHARPEDO",
-        "WAILORD",
-        "GYARADOS",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CARVANHA",
+        "SPECIES_WAILMER",
+        "SPECIES_WAILMER",
+        "SPECIES_SHARPEDO",
+        "SPECIES_WAILORD",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -2651,26 +2651,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "PYUKUMUKU",
-        "PYUKUMUKU"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_PYUKUMUKU",
+        "SPECIES_PYUKUMUKU"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "STARYU",
-        "POLIWAG",
-        "POLIWAG",
-        "STARYU",
-        "POLIWHIRL",
-        "STARYU",
-        "STARYU",
-        "STARMIE"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_STARYU",
+        "SPECIES_POLIWAG",
+        "SPECIES_POLIWAG",
+        "SPECIES_STARYU",
+        "SPECIES_POLIWHIRL",
+        "SPECIES_STARYU",
+        "SPECIES_STARYU",
+        "SPECIES_STARMIE"
       ]
     }
   },
@@ -2681,28 +2681,28 @@
     "grass": {
       "encounterRate": 7,
       "day": [
-        "SANDSLASH",
-        "DWEBBLE",
-        "KROKOROK",
-        "KROKOROK",
-        "CACNEA",
-        "DARUMAKA",
-        "HIPPOWDON",
-        "VIBRAVA",
-        "HIPPOWDON",
-        "MARACTUS",
-        "HIPPOWDON",
-        "MARACTUS"
+        "SPECIES_SANDSLASH",
+        "SPECIES_DWEBBLE",
+        "SPECIES_KROKOROK",
+        "SPECIES_KROKOROK",
+        "SPECIES_CACNEA",
+        "SPECIES_DARUMAKA",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_VIBRAVA",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_MARACTUS",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_MARACTUS"
       ]
     },
     "rockSmash": {
       "encounterRate": 64,
       "day": [
-        "DWEBBLE",
-        "GEODUDE",
-        "BINACLE",
-        "BINACLE",
-        "BINACLE"
+        "SPECIES_DWEBBLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_BINACLE",
+        "SPECIES_BINACLE",
+        "SPECIES_BINACLE"
       ]
     }
   },
@@ -2713,28 +2713,28 @@
     "grass": {
       "encounterRate": 7,
       "day": [
-        "SANDSLASH",
-        "DWEBBLE",
-        "KROKOROK",
-        "KROKOROK",
-        "CACNEA",
-        "DARUMAKA",
-        "HIPPOWDON",
-        "VIBRAVA",
-        "HIPPOWDON",
-        "MARACTUS",
-        "HIPPOWDON",
-        "MARACTUS"
+        "SPECIES_SANDSLASH",
+        "SPECIES_DWEBBLE",
+        "SPECIES_KROKOROK",
+        "SPECIES_KROKOROK",
+        "SPECIES_CACNEA",
+        "SPECIES_DARUMAKA",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_VIBRAVA",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_MARACTUS",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_MARACTUS"
       ]
     },
     "rockSmash": {
       "encounterRate": 64,
       "day": [
-        "DWEBBLE",
-        "GEODUDE",
-        "BINACLE",
-        "BINACLE",
-        "BINACLE"
+        "SPECIES_DWEBBLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_BINACLE",
+        "SPECIES_BINACLE",
+        "SPECIES_BINACLE"
       ]
     }
   },
@@ -2745,28 +2745,28 @@
     "grass": {
       "encounterRate": 7,
       "day": [
-        "SANDSLASH",
-        "DWEBBLE",
-        "KROKOROK",
-        "KROKOROK",
-        "CACNEA",
-        "DARUMAKA",
-        "HIPPOWDON",
-        "VIBRAVA",
-        "HIPPOWDON",
-        "MARACTUS",
-        "HIPPOWDON",
-        "MARACTUS"
+        "SPECIES_SANDSLASH",
+        "SPECIES_DWEBBLE",
+        "SPECIES_KROKOROK",
+        "SPECIES_KROKOROK",
+        "SPECIES_CACNEA",
+        "SPECIES_DARUMAKA",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_VIBRAVA",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_MARACTUS",
+        "SPECIES_HIPPOWDON",
+        "SPECIES_MARACTUS"
       ]
     },
     "rockSmash": {
       "encounterRate": 64,
       "day": [
-        "DWEBBLE",
-        "GEODUDE",
-        "BINACLE",
-        "BINACLE",
-        "BINACLE"
+        "SPECIES_DWEBBLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_BINACLE",
+        "SPECIES_BINACLE",
+        "SPECIES_BINACLE"
       ]
     }
   },
@@ -2777,36 +2777,36 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "ALOMOMOLA",
-        "ALOMOMOLA"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_ALOMOMOLA",
+        "SPECIES_ALOMOMOLA"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BINACLE",
-        "GEODUDE",
-        "KRABBY",
-        "CORSOLA",
-        "KINGLER"
+        "SPECIES_BINACLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_KRABBY",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGLER"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "SKRELP",
-        "CLAUNCHER",
-        "CLAUNCHER",
-        "DRAGALGE",
-        "DRAGALGE",
-        "CLAWITZER",
-        "CLAWITZER",
-        "CLAWITZER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_SKRELP",
+        "SPECIES_CLAUNCHER",
+        "SPECIES_CLAUNCHER",
+        "SPECIES_DRAGALGE",
+        "SPECIES_DRAGALGE",
+        "SPECIES_CLAWITZER",
+        "SPECIES_CLAWITZER",
+        "SPECIES_CLAWITZER"
       ]
     }
   },
@@ -2817,36 +2817,36 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "ALOMOMOLA",
-        "ALOMOMOLA"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_ALOMOMOLA",
+        "SPECIES_ALOMOMOLA"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BINACLE",
-        "GEODUDE",
-        "KRABBY",
-        "CORSOLA",
-        "KINGLER"
+        "SPECIES_BINACLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_KRABBY",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGLER"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CLAUNCHER",
-        "SKRELP",
-        "SKRELP",
-        "CLAWITZER",
-        "CLAWITZER",
-        "DRAGALGE",
-        "DRAGALGE",
-        "DRAGALGE"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CLAUNCHER",
+        "SPECIES_SKRELP",
+        "SPECIES_SKRELP",
+        "SPECIES_CLAWITZER",
+        "SPECIES_CLAWITZER",
+        "SPECIES_DRAGALGE",
+        "SPECIES_DRAGALGE",
+        "SPECIES_DRAGALGE"
       ]
     }
   },
@@ -2857,36 +2857,36 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTINE",
-        "MANTINE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTINE",
+        "SPECIES_MANTINE"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BINACLE",
-        "GEODUDE",
-        "KRABBY",
-        "CORSOLA",
-        "KINGLER"
+        "SPECIES_BINACLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_KRABBY",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGLER"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "HORSEA",
-        "SHELLDER",
-        "CARVANHA",
-        "SEADRA",
-        "CLOYSTER",
-        "SHARPEDO",
-        "SHARPEDO",
-        "SHARPEDO"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_HORSEA",
+        "SPECIES_SHELLDER",
+        "SPECIES_CARVANHA",
+        "SPECIES_SEADRA",
+        "SPECIES_CLOYSTER",
+        "SPECIES_SHARPEDO",
+        "SPECIES_SHARPEDO",
+        "SPECIES_SHARPEDO"
       ]
     }
   },
@@ -2897,57 +2897,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "PELIPPER",
-        "BIBAREL",
-        "GOLDUCK",
-        "GASTRODON",
-        "FLOATZEL",
-        "SLOWPOKE",
-        "WEEPINBELL",
-        "WEEPINBELL",
-        "FLOATZEL",
-        "SLOWPOKE",
-        "BELLSPROUT",
-        "BELLSPROUT"
+        "SPECIES_PELIPPER",
+        "SPECIES_BIBAREL",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GASTRODON",
+        "SPECIES_FLOATZEL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_WEEPINBELL",
+        "SPECIES_WEEPINBELL",
+        "SPECIES_FLOATZEL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_BELLSPROUT",
+        "SPECIES_BELLSPROUT"
       ],
       "night": [
-        "PELIPPER",
-        "BIBAREL",
-        "GOLDUCK",
-        "GASTRODON",
-        "FLOATZEL",
-        "SLOWPOKE",
-        "GLOOM",
-        "GLOOM",
-        "FLOATZEL",
-        "SLOWPOKE",
-        "ODDISH",
-        "ODDISH"
+        "SPECIES_PELIPPER",
+        "SPECIES_BIBAREL",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GASTRODON",
+        "SPECIES_FLOATZEL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_GLOOM",
+        "SPECIES_GLOOM",
+        "SPECIES_FLOATZEL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_ODDISH",
+        "SPECIES_ODDISH"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTINE",
-        "MANTINE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTINE",
+        "SPECIES_MANTINE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "HORSEA",
-        "SHELLDER",
-        "WAILMER",
-        "SEADRA",
-        "SHELLDER",
-        "WAILORD",
-        "WAILORD",
-        "WAILORD"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_HORSEA",
+        "SPECIES_SHELLDER",
+        "SPECIES_WAILMER",
+        "SPECIES_SEADRA",
+        "SPECIES_SHELLDER",
+        "SPECIES_WAILORD",
+        "SPECIES_WAILORD",
+        "SPECIES_WAILORD"
       ]
     }
   },
@@ -2958,57 +2958,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "PELIPPER",
-        "BIBAREL",
-        "GOLDUCK",
-        "GASTRODON",
-        "FLOATZEL",
-        "SLOWPOKE",
-        "WEEPINBELL",
-        "WEEPINBELL",
-        "FLOATZEL",
-        "SLOWPOKE",
-        "BELLSPROUT",
-        "BELLSPROUT"
+        "SPECIES_PELIPPER",
+        "SPECIES_BIBAREL",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GASTRODON",
+        "SPECIES_FLOATZEL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_WEEPINBELL",
+        "SPECIES_WEEPINBELL",
+        "SPECIES_FLOATZEL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_BELLSPROUT",
+        "SPECIES_BELLSPROUT"
       ],
       "night": [
-        "PELIPPER",
-        "BIBAREL",
-        "GOLDUCK",
-        "GASTRODON",
-        "FLOATZEL",
-        "SLOWPOKE",
-        "GLOOM",
-        "GLOOM",
-        "FLOATZEL",
-        "SLOWPOKE",
-        "ODDISH",
-        "ODDISH"
+        "SPECIES_PELIPPER",
+        "SPECIES_BIBAREL",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GASTRODON",
+        "SPECIES_FLOATZEL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_GLOOM",
+        "SPECIES_GLOOM",
+        "SPECIES_FLOATZEL",
+        "SPECIES_SLOWPOKE",
+        "SPECIES_ODDISH",
+        "SPECIES_ODDISH"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTINE",
-        "MANTINE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTINE",
+        "SPECIES_MANTINE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "SHELLDER",
-        "HORSEA",
-        "LUVDISC",
-        "SHELLDER",
-        "SEADRA",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_SHELLDER",
+        "SPECIES_HORSEA",
+        "SPECIES_LUVDISC",
+        "SPECIES_SHELLDER",
+        "SPECIES_SEADRA",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC"
       ]
     }
   },
@@ -3019,26 +3019,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTINE",
-        "MANTINE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTINE",
+        "SPECIES_MANTINE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "CORSOLA",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "CORSOLA",
-        "KINGDRA",
-        "KINGDRA"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_CORSOLA",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGDRA",
+        "SPECIES_KINGDRA"
       ]
     }
   },
@@ -3049,26 +3049,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "BASCULIN_RED",
-        "BASCULIN_RED"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_BASCULIN_RED"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "HORSEA",
-        "SHELLDER",
-        "SHELLDER",
-        "SEADRA",
-        "SHELLDER",
-        "GYARADOS",
-        "GYARADOS",
-        "CLOYSTER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_HORSEA",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SEADRA",
+        "SPECIES_SHELLDER",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_CLOYSTER"
       ]
     }
   },
@@ -3079,26 +3079,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "BASCULIN_RED",
-        "BASCULIN_RED"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_BASCULIN_RED",
+        "SPECIES_BASCULIN_RED"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "HORSEA",
-        "SHELLDER",
-        "SHELLDER",
-        "SEADRA",
-        "SHELLDER",
-        "GYARADOS",
-        "GYARADOS",
-        "CLOYSTER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_HORSEA",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SEADRA",
+        "SPECIES_SHELLDER",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_CLOYSTER"
       ]
     }
   },
@@ -3109,53 +3109,53 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "TANGELA",
-        "GIRAFARIG",
-        "TANGELA",
-        "GIRAFARIG",
-        "PANCHAM",
-        "PAWNIARD",
-        "PANCHAM",
-        "CHATOT",
-        "THROH",
-        "SAWK",
-        "THROH",
-        "SAWK"
+        "SPECIES_TANGELA",
+        "SPECIES_GIRAFARIG",
+        "SPECIES_TANGELA",
+        "SPECIES_GIRAFARIG",
+        "SPECIES_PANCHAM",
+        "SPECIES_PAWNIARD",
+        "SPECIES_PANCHAM",
+        "SPECIES_CHATOT",
+        "SPECIES_THROH",
+        "SPECIES_SAWK",
+        "SPECIES_THROH",
+        "SPECIES_SAWK"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BINACLE",
-        "GEODUDE",
-        "KRABBY",
-        "CORSOLA",
-        "KINGLER"
+        "SPECIES_BINACLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_KRABBY",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGLER"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "CORSOLA",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "CORSOLA",
-        "CORSOLA",
-        "CORSOLA"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_CORSOLA",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA"
       ]
     }
   },
@@ -3166,26 +3166,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "fishing": {
       "encounterRate": 20,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "REMORAID",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "GYARADOS",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_REMORAID",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -3196,36 +3196,36 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BINACLE",
-        "GEODUDE_A",
-        "KRABBY",
-        "CORSOLA",
-        "KINGLER"
+        "SPECIES_BINACLE",
+        "SPECIES_GEODUDE_A",
+        "SPECIES_KRABBY",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGLER"
       ]
     },
     "fishing": {
       "encounterRate": 20,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "HORSEA",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "GYARADOS",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_HORSEA",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -3236,67 +3236,67 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "SKIPLOOM",
-        "PELIPPER",
-        "SKIPLOOM",
-        "PELIPPER",
-        "TROPIUS",
-        "PIDGEOTTO",
-        "PIDGEOTTO",
-        "TROPIUS",
-        "ZANGOOSE",
-        "SEVIPER",
-        "BAGON",
-        "BAGON"
+        "SPECIES_SKIPLOOM",
+        "SPECIES_PELIPPER",
+        "SPECIES_SKIPLOOM",
+        "SPECIES_PELIPPER",
+        "SPECIES_TROPIUS",
+        "SPECIES_PIDGEOTTO",
+        "SPECIES_PIDGEOTTO",
+        "SPECIES_TROPIUS",
+        "SPECIES_ZANGOOSE",
+        "SPECIES_SEVIPER",
+        "SPECIES_BAGON",
+        "SPECIES_BAGON"
       ],
       "night": [
-        "NOCTOWL",
-        "PELIPPER",
-        "NOCTOWL",
-        "PELIPPER",
-        "NOCTOWL",
-        "NOCTOWL",
-        "NOCTOWL",
-        "NOCTOWL",
-        "ZANGOOSE",
-        "SEVIPER",
-        "BAGON",
-        "BAGON"
+        "SPECIES_NOCTOWL",
+        "SPECIES_PELIPPER",
+        "SPECIES_NOCTOWL",
+        "SPECIES_PELIPPER",
+        "SPECIES_NOCTOWL",
+        "SPECIES_NOCTOWL",
+        "SPECIES_NOCTOWL",
+        "SPECIES_NOCTOWL",
+        "SPECIES_ZANGOOSE",
+        "SPECIES_SEVIPER",
+        "SPECIES_BAGON",
+        "SPECIES_BAGON"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BINACLE",
-        "GEODUDE",
-        "KRABBY",
-        "CORSOLA",
-        "KINGLER"
+        "SPECIES_BINACLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_KRABBY",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGLER"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "CORSOLA",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "CORSOLA",
-        "CORSOLA",
-        "LAPRAS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_CORSOLA",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA",
+        "SPECIES_LAPRAS"
       ]
     }
   },
@@ -3307,26 +3307,26 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTYKE",
-        "MANTYKE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTYKE",
+        "SPECIES_MANTYKE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "CORSOLA",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "CORSOLA",
-        "CORSOLA",
-        "LAPRAS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_CORSOLA",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA",
+        "SPECIES_LAPRAS"
       ]
     }
   },
@@ -3337,36 +3337,36 @@
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTINE",
-        "MANTINE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTINE",
+        "SPECIES_MANTINE"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BINACLE",
-        "GEODUDE",
-        "KRABBY",
-        "CORSOLA",
-        "KINGLER"
+        "SPECIES_BINACLE",
+        "SPECIES_GEODUDE",
+        "SPECIES_KRABBY",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGLER"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "CORSOLA",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "CORSOLA",
-        "KINGDRA",
-        "KINGDRA"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_CORSOLA",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_CORSOLA",
+        "SPECIES_KINGDRA",
+        "SPECIES_KINGDRA"
       ]
     }
   },
@@ -3377,57 +3377,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "FARFETCHD",
-        "PERSIAN",
-        "FARFETCHD",
-        "PERSIAN",
-        "BOUFFALANT",
-        "BOUFFALANT",
-        "FARFETCHD",
-        "PERSIAN",
-        "SUDOWOODO",
-        "SUDOWOODO",
-        "SUDOWOODO",
-        "HAPPINY"
+        "SPECIES_FARFETCHD",
+        "SPECIES_PERSIAN",
+        "SPECIES_FARFETCHD",
+        "SPECIES_PERSIAN",
+        "SPECIES_BOUFFALANT",
+        "SPECIES_BOUFFALANT",
+        "SPECIES_FARFETCHD",
+        "SPECIES_PERSIAN",
+        "SPECIES_SUDOWOODO",
+        "SPECIES_SUDOWOODO",
+        "SPECIES_SUDOWOODO",
+        "SPECIES_HAPPINY"
       ],
       "night": [
-        "NOCTOWL",
-        "SKUNTANK",
-        "NOCTOWL",
-        "SKUNTANK",
-        "BOUFFALANT",
-        "BOUFFALANT",
-        "NOCTOWL",
-        "SKUNTANK",
-        "SUDOWOODO",
-        "SUDOWOODO",
-        "SUDOWOODO",
-        "HAPPINY"
+        "SPECIES_NOCTOWL",
+        "SPECIES_SKUNTANK",
+        "SPECIES_NOCTOWL",
+        "SPECIES_SKUNTANK",
+        "SPECIES_BOUFFALANT",
+        "SPECIES_BOUFFALANT",
+        "SPECIES_NOCTOWL",
+        "SPECIES_SKUNTANK",
+        "SPECIES_SUDOWOODO",
+        "SPECIES_SUDOWOODO",
+        "SPECIES_SUDOWOODO",
+        "SPECIES_HAPPINY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "TENTACOOL",
-        "PELIPPER",
-        "TENTACRUEL",
-        "MANTINE",
-        "MANTINE"
+        "SPECIES_TENTACOOL",
+        "SPECIES_PELIPPER",
+        "SPECIES_TENTACRUEL",
+        "SPECIES_MANTINE",
+        "SPECIES_MANTINE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "REMORAID",
-        "CORSOLA",
-        "HORSEA",
-        "OCTILLERY",
-        "SEADRA",
-        "CORSOLA",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_REMORAID",
+        "SPECIES_CORSOLA",
+        "SPECIES_HORSEA",
+        "SPECIES_OCTILLERY",
+        "SPECIES_SEADRA",
+        "SPECIES_CORSOLA",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -3438,18 +3438,18 @@
     "grass": {
       "encounterRate": 7,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "CAMERUPT",
-        "GRAVELER",
-        "GRAVELER",
-        "CAMERUPT",
-        "EXCADRILL",
-        "HEATMOR",
-        "MAGMAR",
-        "HEATMOR",
-        "MAGMAR"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_CAMERUPT",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_CAMERUPT",
+        "SPECIES_EXCADRILL",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR"
       ]
     }
   },
@@ -3460,18 +3460,18 @@
     "grass": {
       "encounterRate": 20,
       "day": [
-        "CLAMPERL",
-        "CLAMPERL",
-        "CLAMPERL",
-        "MAREANIE",
-        "MAREANIE",
-        "TOXAPEX",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC"
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_MAREANIE",
+        "SPECIES_MAREANIE",
+        "SPECIES_TOXAPEX",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC"
       ]
     }
   },
@@ -3482,18 +3482,18 @@
     "grass": {
       "encounterRate": 20,
       "day": [
-        "CLAMPERL",
-        "CLAMPERL",
-        "CLAMPERL",
-        "MAREANIE",
-        "MAREANIE",
-        "TOXAPEX",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC"
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_MAREANIE",
+        "SPECIES_MAREANIE",
+        "SPECIES_TOXAPEX",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC"
       ]
     }
   },
@@ -3504,18 +3504,18 @@
     "grass": {
       "encounterRate": 20,
       "day": [
-        "CLAMPERL",
-        "CLAMPERL",
-        "CLAMPERL",
-        "MAREANIE",
-        "MAREANIE",
-        "TOXAPEX",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LUVDISC",
-        "LUVDISC",
-        "RELICANTH"
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_MAREANIE",
+        "SPECIES_MAREANIE",
+        "SPECIES_TOXAPEX",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_RELICANTH"
       ]
     }
   },
@@ -3526,18 +3526,18 @@
     "grass": {
       "encounterRate": 20,
       "day": [
-        "CLAMPERL",
-        "CLAMPERL",
-        "CLAMPERL",
-        "REMORAID",
-        "REMORAID",
-        "OCTILLERY",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "CORSOLA",
-        "CORSOLA",
-        "CORSOLA"
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_REMORAID",
+        "SPECIES_REMORAID",
+        "SPECIES_OCTILLERY",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA"
       ]
     }
   },
@@ -3548,18 +3548,18 @@
     "grass": {
       "encounterRate": 20,
       "day": [
-        "CLAMPERL",
-        "CLAMPERL",
-        "CLAMPERL",
-        "CARVANHA",
-        "CARVANHA",
-        "SHARPEDO",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "CORSOLA",
-        "CORSOLA",
-        "CORSOLA"
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_CLAMPERL",
+        "SPECIES_CARVANHA",
+        "SPECIES_CARVANHA",
+        "SPECIES_SHARPEDO",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA",
+        "SPECIES_CORSOLA"
       ]
     }
   },
@@ -3570,18 +3570,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "MAKUHITA",
-        "SPHEAL",
-        "SPHEAL",
-        "SPHEAL",
-        "SMOOCHUM",
-        "MAKUHITA",
-        "BERGMITE",
-        "ROGGENROLA",
-        "SWINUB",
-        "ROGGENROLA",
-        "SWINUB"
+        "SPECIES_ZUBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_SPHEAL",
+        "SPECIES_SPHEAL",
+        "SPECIES_SPHEAL",
+        "SPECIES_SMOOCHUM",
+        "SPECIES_MAKUHITA",
+        "SPECIES_BERGMITE",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_SWINUB",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_SWINUB"
       ]
     }
   },
@@ -3592,53 +3592,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "MAKUHITA",
-        "SPHEAL",
-        "SPHEAL",
-        "SPHEAL",
-        "SMOOCHUM",
-        "MAKUHITA",
-        "BERGMITE",
-        "ROGGENROLA",
-        "SWINUB",
-        "ROGGENROLA",
-        "SWINUB"
+        "SPECIES_ZUBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_SPHEAL",
+        "SPECIES_SPHEAL",
+        "SPECIES_SPHEAL",
+        "SPECIES_SMOOCHUM",
+        "SPECIES_MAKUHITA",
+        "SPECIES_BERGMITE",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_SWINUB",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_SWINUB"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SEEL",
-        "SPHEAL",
-        "DEWGONG",
-        "SEALEO",
-        "LAPRAS"
+        "SPECIES_SEEL",
+        "SPECIES_SPHEAL",
+        "SPECIES_DEWGONG",
+        "SPECIES_SEALEO",
+        "SPECIES_LAPRAS"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "ROGGENROLA",
-        "BERGMITE",
-        "BERGMITE",
-        "BOLDORE",
-        "BOLDORE"
+        "SPECIES_ROGGENROLA",
+        "SPECIES_BERGMITE",
+        "SPECIES_BERGMITE",
+        "SPECIES_BOLDORE",
+        "SPECIES_BOLDORE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "SEEL",
-        "SEEL",
-        "SHELLDER",
-        "DEWGONG",
-        "SHELLDER",
-        "SHELLDER",
-        "SHELLDER",
-        "CLOYSTER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_SEEL",
+        "SPECIES_SEEL",
+        "SPECIES_SHELLDER",
+        "SPECIES_DEWGONG",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_CLOYSTER"
       ]
     }
   },
@@ -3649,53 +3649,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "MAKUHITA",
-        "SPHEAL",
-        "SPHEAL",
-        "SPHEAL",
-        "SMOOCHUM",
-        "MAKUHITA",
-        "BERGMITE",
-        "ROGGENROLA",
-        "SWINUB",
-        "ROGGENROLA",
-        "SWINUB"
+        "SPECIES_ZUBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_SPHEAL",
+        "SPECIES_SPHEAL",
+        "SPECIES_SPHEAL",
+        "SPECIES_SMOOCHUM",
+        "SPECIES_MAKUHITA",
+        "SPECIES_BERGMITE",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_SWINUB",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_SWINUB"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SEEL",
-        "SPHEAL",
-        "DEWGONG",
-        "SEALEO",
-        "LAPRAS"
+        "SPECIES_SEEL",
+        "SPECIES_SPHEAL",
+        "SPECIES_DEWGONG",
+        "SPECIES_SEALEO",
+        "SPECIES_LAPRAS"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "ROGGENROLA",
-        "BERGMITE",
-        "BERGMITE",
-        "BOLDORE",
-        "BOLDORE"
+        "SPECIES_ROGGENROLA",
+        "SPECIES_BERGMITE",
+        "SPECIES_BERGMITE",
+        "SPECIES_BOLDORE",
+        "SPECIES_BOLDORE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "SEEL",
-        "SEEL",
-        "SHELLDER",
-        "DEWGONG",
-        "SHELLDER",
-        "SHELLDER",
-        "SHELLDER",
-        "CLOYSTER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_SEEL",
+        "SPECIES_SEEL",
+        "SPECIES_SHELLDER",
+        "SPECIES_DEWGONG",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_CLOYSTER"
       ]
     }
   },
@@ -3706,18 +3706,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "MAKUHITA",
-        "SPHEAL",
-        "SPHEAL",
-        "SPHEAL",
-        "SMOOCHUM",
-        "MAKUHITA",
-        "BERGMITE",
-        "ROGGENROLA",
-        "SWINUB",
-        "ROGGENROLA",
-        "SWINUB"
+        "SPECIES_ZUBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_SPHEAL",
+        "SPECIES_SPHEAL",
+        "SPECIES_SPHEAL",
+        "SPECIES_SMOOCHUM",
+        "SPECIES_MAKUHITA",
+        "SPECIES_BERGMITE",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_SWINUB",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_SWINUB"
       ]
     }
   },
@@ -3728,28 +3728,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HARIYAMA",
-        "SEALEO",
-        "SEALEO",
-        "SEALEO",
-        "JYNX",
-        "HARIYAMA",
-        "AVALUGG",
-        "BOLDORE",
-        "PILOSWINE",
-        "BOLDORE",
-        "PILOSWINE"
+        "SPECIES_GOLBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_JYNX",
+        "SPECIES_HARIYAMA",
+        "SPECIES_AVALUGG",
+        "SPECIES_BOLDORE",
+        "SPECIES_PILOSWINE",
+        "SPECIES_BOLDORE",
+        "SPECIES_PILOSWINE"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BOLDORE",
-        "AVALUGG",
-        "AVALUGG",
-        "AVALUGG",
-        "SHUCKLE"
+        "SPECIES_BOLDORE",
+        "SPECIES_AVALUGG",
+        "SPECIES_AVALUGG",
+        "SPECIES_AVALUGG",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -3760,28 +3760,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "ZUBAT",
-        "ROGGENROLA",
-        "ROGGENROLA",
-        "ROGGENROLA",
-        "MAKUHITA",
-        "MAKUHITA",
-        "MAKUHITA",
-        "DRILBUR",
-        "MAWILE",
-        "DRILBUR",
-        "MAWILE"
+        "SPECIES_ZUBAT",
+        "SPECIES_ZUBAT",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_ROGGENROLA",
+        "SPECIES_MAKUHITA",
+        "SPECIES_MAKUHITA",
+        "SPECIES_MAKUHITA",
+        "SPECIES_DRILBUR",
+        "SPECIES_MAWILE",
+        "SPECIES_DRILBUR",
+        "SPECIES_MAWILE"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BOLDORE",
-        "BOLDORE",
-        "BOLDORE",
-        "BOLDORE",
-        "BOLDORE"
+        "SPECIES_BOLDORE",
+        "SPECIES_BOLDORE",
+        "SPECIES_BOLDORE",
+        "SPECIES_BOLDORE",
+        "SPECIES_BOLDORE"
       ]
     }
   },
@@ -3792,18 +3792,18 @@
     "grass": {
       "encounterRate": 21,
       "day": [
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A",
-        "SANDSHREW_A"
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A",
+        "SPECIES_SANDSHREW_A"
       ]
     }
   },
@@ -3814,28 +3814,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HARIYAMA",
-        "SEALEO",
-        "SEALEO",
-        "SEALEO",
-        "JYNX",
-        "HARIYAMA",
-        "AVALUGG",
-        "BOLDORE",
-        "PILOSWINE",
-        "BOLDORE",
-        "PILOSWINE"
+        "SPECIES_GOLBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_JYNX",
+        "SPECIES_HARIYAMA",
+        "SPECIES_AVALUGG",
+        "SPECIES_BOLDORE",
+        "SPECIES_PILOSWINE",
+        "SPECIES_BOLDORE",
+        "SPECIES_PILOSWINE"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "BOLDORE",
-        "BERGMITE",
-        "BERGMITE",
-        "AVALUGG",
-        "AVALUGG"
+        "SPECIES_BOLDORE",
+        "SPECIES_BERGMITE",
+        "SPECIES_BERGMITE",
+        "SPECIES_AVALUGG",
+        "SPECIES_AVALUGG"
       ]
     }
   },
@@ -3846,57 +3846,57 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "CATERPIE",
-        "SEEDOT",
-        "PUMPKABOO",
-        "PUMPKABOO_M",
-        "PUMPKABOO_L",
-        "PUMPKABOO_XL",
-        "GASTLY",
-        "SHUPPET",
-        "DUSKULL",
-        "PHANTUMP",
-        "DUSKULL",
-        "PHANTUMP"
+        "SPECIES_CATERPIE",
+        "SPECIES_SEEDOT",
+        "SPECIES_PUMPKABOO",
+        "SPECIES_PUMPKABOO_M",
+        "SPECIES_PUMPKABOO_L",
+        "SPECIES_PUMPKABOO_XL",
+        "SPECIES_GASTLY",
+        "SPECIES_SHUPPET",
+        "SPECIES_DUSKULL",
+        "SPECIES_PHANTUMP",
+        "SPECIES_DUSKULL",
+        "SPECIES_PHANTUMP"
       ],
       "night": [
-        "WEEDLE",
-        "SEEDOT",
-        "PUMPKABOO",
-        "PUMPKABOO_M",
-        "PUMPKABOO_L",
-        "PUMPKABOO_XL",
-        "GASTLY",
-        "SHUPPET",
-        "DUSKULL",
-        "PHANTUMP",
-        "DUSKULL",
-        "PHANTUMP"
+        "SPECIES_WEEDLE",
+        "SPECIES_SEEDOT",
+        "SPECIES_PUMPKABOO",
+        "SPECIES_PUMPKABOO_M",
+        "SPECIES_PUMPKABOO_L",
+        "SPECIES_PUMPKABOO_XL",
+        "SPECIES_GASTLY",
+        "SPECIES_SHUPPET",
+        "SPECIES_DUSKULL",
+        "SPECIES_PHANTUMP",
+        "SPECIES_DUSKULL",
+        "SPECIES_PHANTUMP"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "PSYDUCK",
-        "MASQUERAIN",
-        "GOLDUCK",
-        "SURSKIT",
-        "SURSKIT"
+        "SPECIES_PSYDUCK",
+        "SPECIES_MASQUERAIN",
+        "SPECIES_GOLDUCK",
+        "SPECIES_SURSKIT",
+        "SPECIES_SURSKIT"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "PSYDUCK",
-        "BARBOACH",
-        "GOLDUCK",
-        "GOLDUCK",
-        "WHISCASH",
-        "WHISCASH",
-        "WHISCASH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_PSYDUCK",
+        "SPECIES_BARBOACH",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_WHISCASH",
+        "SPECIES_WHISCASH",
+        "SPECIES_WHISCASH"
       ]
     }
   },
@@ -3907,38 +3907,38 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "NUMEL",
-        "GEODUDE",
-        "GEODUDE",
-        "NUMEL",
-        "DRILBUR",
-        "TORKOAL",
-        "MAGBY",
-        "TORKOAL",
-        "MAGBY"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_NUMEL",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_NUMEL",
+        "SPECIES_DRILBUR",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY"
       ]
     },
     "water": {
       "encounterRate": 7,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "GRAVELER",
-        "GRAVELER",
-        "SHUCKLE"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -3949,38 +3949,38 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "NUMEL",
-        "GEODUDE",
-        "GEODUDE",
-        "NUMEL",
-        "DRILBUR",
-        "TORKOAL",
-        "MAGBY",
-        "TORKOAL",
-        "MAGBY"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_NUMEL",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_NUMEL",
+        "SPECIES_DRILBUR",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY"
       ]
     },
     "water": {
       "encounterRate": 7,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "GEODUDE",
-        "GRAVELER",
-        "GRAVELER",
-        "SHUCKLE"
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -3991,28 +3991,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "SLUGMA",
-        "SALANDIT",
-        "NUMEL",
-        "GEODUDE",
-        "GEODUDE",
-        "NUMEL",
-        "DRILBUR",
-        "TORKOAL",
-        "MAGBY",
-        "TORKOAL",
-        "MAGBY"
+        "SPECIES_WOOBAT",
+        "SPECIES_SLUGMA",
+        "SPECIES_SALANDIT",
+        "SPECIES_NUMEL",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_NUMEL",
+        "SPECIES_DRILBUR",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY",
+        "SPECIES_TORKOAL",
+        "SPECIES_MAGBY"
       ]
     },
     "water": {
       "encounterRate": 7,
       "day": [
-        "SLUGMA",
-        "SLUGMA",
-        "SLUGMA",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     }
   },
@@ -4023,28 +4023,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "ARON",
-        "NOSEPASS",
-        "GEODUDE",
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "NOIBAT",
-        "MAKUHITA",
-        "NOIBAT"
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_ARON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "NOSEPASS",
-        "GEODUDE",
-        "GEODUDE",
-        "GEODUDE"
+        "SPECIES_GEODUDE",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE"
       ]
     }
   },
@@ -4055,18 +4055,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "ARON",
-        "NOSEPASS",
-        "GEODUDE",
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "NOIBAT",
-        "MAKUHITA",
-        "NOIBAT"
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_ARON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT"
       ]
     }
   },
@@ -4077,18 +4077,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "ARON",
-        "NOSEPASS",
-        "GEODUDE",
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "NOIBAT",
-        "MAKUHITA",
-        "NOIBAT"
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_ARON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT"
       ]
     }
   },
@@ -4099,18 +4099,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "ARON",
-        "NOSEPASS",
-        "GEODUDE",
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "NOIBAT",
-        "MAKUHITA",
-        "NOIBAT"
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_ARON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT"
       ]
     }
   },
@@ -4121,28 +4121,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "ARON",
-        "NOSEPASS",
-        "GEODUDE",
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "NOIBAT",
-        "MAKUHITA",
-        "NOIBAT"
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_ARON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "NOSEPASS",
-        "GEODUDE",
-        "GEODUDE",
-        "GEODUDE"
+        "SPECIES_GEODUDE",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE"
       ]
     }
   },
@@ -4153,18 +4153,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "ARON",
-        "NOSEPASS",
-        "GEODUDE",
-        "ZUBAT",
-        "WOOBAT",
-        "MAKUHITA",
-        "NOIBAT",
-        "MAKUHITA",
-        "NOIBAT"
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_ARON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_ZUBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT",
+        "SPECIES_MAKUHITA",
+        "SPECIES_NOIBAT"
       ]
     }
   },
@@ -4175,18 +4175,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "WOOBAT",
-        "HARIYAMA",
-        "LAIRON",
-        "NOSEPASS",
-        "GRAVELER",
-        "GOLBAT",
-        "WOOBAT",
-        "HARIYAMA",
-        "NOIBAT",
-        "HARIYAMA",
-        "HARIYAMA"
+        "SPECIES_GOLBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_LAIRON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GRAVELER",
+        "SPECIES_GOLBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_NOIBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_HARIYAMA"
       ]
     }
   },
@@ -4197,18 +4197,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "WOOBAT",
-        "HARIYAMA",
-        "LAIRON",
-        "NOSEPASS",
-        "GRAVELER",
-        "GOLBAT",
-        "WOOBAT",
-        "HARIYAMA",
-        "NOIBAT",
-        "HARIYAMA",
-        "HARIYAMA"
+        "SPECIES_GOLBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_LAIRON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GRAVELER",
+        "SPECIES_GOLBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_NOIBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_HARIYAMA"
       ]
     }
   },
@@ -4219,18 +4219,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "WOOBAT",
-        "HARIYAMA",
-        "LAIRON",
-        "NOSEPASS",
-        "GRAVELER",
-        "GOLBAT",
-        "WOOBAT",
-        "HARIYAMA",
-        "NOIBAT",
-        "HARIYAMA",
-        "HARIYAMA"
+        "SPECIES_GOLBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_LAIRON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GRAVELER",
+        "SPECIES_GOLBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_NOIBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_HARIYAMA"
       ]
     }
   },
@@ -4241,18 +4241,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "WOOBAT",
-        "HARIYAMA",
-        "LAIRON",
-        "NOSEPASS",
-        "GRAVELER",
-        "GOLBAT",
-        "WOOBAT",
-        "HARIYAMA",
-        "NOIBAT",
-        "HARIYAMA",
-        "HARIYAMA"
+        "SPECIES_GOLBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_LAIRON",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GRAVELER",
+        "SPECIES_GOLBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_NOIBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_HARIYAMA"
       ]
     }
   },
@@ -4263,18 +4263,18 @@
     "grass": {
       "encounterRate": 21,
       "day": [
-        "GEODUDE",
-        "PHANPY",
-        "CUBONE",
-        "FEAROW",
-        "MAROWAK",
-        "MEOWTH",
-        "ONIX",
-        "SKARMORY",
-        "LARVITAR",
-        "PERSIAN",
-        "LARVITAR",
-        "PERSIAN"
+        "SPECIES_GEODUDE",
+        "SPECIES_PHANPY",
+        "SPECIES_CUBONE",
+        "SPECIES_FEAROW",
+        "SPECIES_MAROWAK",
+        "SPECIES_MEOWTH",
+        "SPECIES_ONIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_LARVITAR",
+        "SPECIES_PERSIAN",
+        "SPECIES_LARVITAR",
+        "SPECIES_PERSIAN"
       ]
     }
   },
@@ -4285,18 +4285,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "PHANPY",
-        "NOSEPASS",
-        "ARON",
-        "WOOBAT",
-        "PHANPY",
-        "NOSEPASS",
-        "NOSEPASS",
-        "WOOBAT",
-        "ARON",
-        "WOOBAT",
-        "ARON"
+        "SPECIES_WOOBAT",
+        "SPECIES_PHANPY",
+        "SPECIES_NOSEPASS",
+        "SPECIES_ARON",
+        "SPECIES_WOOBAT",
+        "SPECIES_PHANPY",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON"
       ]
     }
   },
@@ -4307,53 +4307,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "PHANPY",
-        "NOSEPASS",
-        "ARON",
-        "WOOBAT",
-        "PHANPY",
-        "NOSEPASS",
-        "NOSEPASS",
-        "NOIBAT",
-        "GLIGAR",
-        "NOIBAT",
-        "GLIGAR"
+        "SPECIES_WOOBAT",
+        "SPECIES_PHANPY",
+        "SPECIES_NOSEPASS",
+        "SPECIES_ARON",
+        "SPECIES_WOOBAT",
+        "SPECIES_PHANPY",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOIBAT",
+        "SPECIES_GLIGAR",
+        "SPECIES_NOIBAT",
+        "SPECIES_GLIGAR"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "FINNEON",
-        "WOOBAT",
-        "PSYDUCK",
-        "GOLDUCK",
-        "PSYDUCK"
+        "SPECIES_FINNEON",
+        "SPECIES_WOOBAT",
+        "SPECIES_PSYDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_PSYDUCK"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE",
-        "NOSEPASS",
-        "GEODUDE",
-        "GEODUDE",
-        "GEODUDE"
+        "SPECIES_GEODUDE",
+        "SPECIES_NOSEPASS",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE",
+        "SPECIES_GEODUDE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "FINNEON",
-        "FINNEON",
-        "PSYDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_PSYDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -4364,18 +4364,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "PHANPY",
-        "NOSEPASS",
-        "ARON",
-        "WOOBAT",
-        "PHANPY",
-        "NOSEPASS",
-        "NOSEPASS",
-        "WOOBAT",
-        "ARON",
-        "WOOBAT",
-        "ARON"
+        "SPECIES_WOOBAT",
+        "SPECIES_PHANPY",
+        "SPECIES_NOSEPASS",
+        "SPECIES_ARON",
+        "SPECIES_WOOBAT",
+        "SPECIES_PHANPY",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON"
       ]
     }
   },
@@ -4386,18 +4386,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "PHANPY",
-        "NOSEPASS",
-        "ARON",
-        "WOOBAT",
-        "PHANPY",
-        "NOSEPASS",
-        "NOSEPASS",
-        "WOOBAT",
-        "ARON",
-        "WOOBAT",
-        "ARON"
+        "SPECIES_WOOBAT",
+        "SPECIES_PHANPY",
+        "SPECIES_NOSEPASS",
+        "SPECIES_ARON",
+        "SPECIES_WOOBAT",
+        "SPECIES_PHANPY",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON"
       ]
     }
   },
@@ -4408,18 +4408,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ROGGENROLA",
-        "WOOBAT",
-        "ARON",
-        "ARON",
-        "BRONZOR",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SNEASEL",
-        "ONIX",
-        "CRYOGONAL",
-        "ONIX",
-        "CRYOGONAL"
+        "SPECIES_ROGGENROLA",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON",
+        "SPECIES_ARON",
+        "SPECIES_BRONZOR",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SNEASEL",
+        "SPECIES_ONIX",
+        "SPECIES_CRYOGONAL",
+        "SPECIES_ONIX",
+        "SPECIES_CRYOGONAL"
       ]
     }
   },
@@ -4430,43 +4430,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ROGGENROLA",
-        "WOOBAT",
-        "ARON",
-        "ARON",
-        "BRONZOR",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SNEASEL",
-        "ONIX",
-        "CRYOGONAL",
-        "ONIX",
-        "CRYOGONAL"
+        "SPECIES_ROGGENROLA",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON",
+        "SPECIES_ARON",
+        "SPECIES_BRONZOR",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SNEASEL",
+        "SPECIES_ONIX",
+        "SPECIES_CRYOGONAL",
+        "SPECIES_ONIX",
+        "SPECIES_CRYOGONAL"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SEEL",
-        "SPHEAL",
-        "DEWGONG",
-        "SEALEO",
-        "LAPRAS"
+        "SPECIES_SEEL",
+        "SPECIES_SPHEAL",
+        "SPECIES_DEWGONG",
+        "SPECIES_SEALEO",
+        "SPECIES_LAPRAS"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "SEEL",
-        "SEEL",
-        "SHELLDER",
-        "DEWGONG",
-        "SHELLDER",
-        "SHELLDER",
-        "SHELLDER",
-        "CLOYSTER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_SEEL",
+        "SPECIES_SEEL",
+        "SPECIES_SHELLDER",
+        "SPECIES_DEWGONG",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_CLOYSTER"
       ]
     }
   },
@@ -4477,43 +4477,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "ROGGENROLA",
-        "WOOBAT",
-        "ARON",
-        "ARON",
-        "BRONZOR",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SNEASEL",
-        "ONIX",
-        "CRYOGONAL",
-        "ONIX",
-        "CRYOGONAL"
+        "SPECIES_ROGGENROLA",
+        "SPECIES_WOOBAT",
+        "SPECIES_ARON",
+        "SPECIES_ARON",
+        "SPECIES_BRONZOR",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SNEASEL",
+        "SPECIES_ONIX",
+        "SPECIES_CRYOGONAL",
+        "SPECIES_ONIX",
+        "SPECIES_CRYOGONAL"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "SEEL",
-        "SPHEAL",
-        "DEWGONG",
-        "SEALEO",
-        "LAPRAS"
+        "SPECIES_SEEL",
+        "SPECIES_SPHEAL",
+        "SPECIES_DEWGONG",
+        "SPECIES_SEALEO",
+        "SPECIES_LAPRAS"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "SEEL",
-        "SEEL",
-        "SHELLDER",
-        "DEWGONG",
-        "SHELLDER",
-        "SHELLDER",
-        "SHELLDER",
-        "CLOYSTER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_SEEL",
+        "SPECIES_SEEL",
+        "SPECIES_SHELLDER",
+        "SPECIES_DEWGONG",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_CLOYSTER"
       ]
     }
   },
@@ -4524,18 +4524,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "GEODUDE_A",
-        "MACHOP",
-        "ONIX",
-        "WOOPER",
-        "MISDREAVUS",
-        "ONIX",
-        "QUAGSIRE",
-        "GRAVELER_A",
-        "MACHOKE",
-        "STEELIX",
-        "STEELIX"
+        "SPECIES_GOLBAT",
+        "SPECIES_GEODUDE_A",
+        "SPECIES_MACHOP",
+        "SPECIES_ONIX",
+        "SPECIES_WOOPER",
+        "SPECIES_MISDREAVUS",
+        "SPECIES_ONIX",
+        "SPECIES_QUAGSIRE",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_MACHOKE",
+        "SPECIES_STEELIX",
+        "SPECIES_STEELIX"
       ]
     }
   },
@@ -4546,18 +4546,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "GEODUDE_A",
-        "MACHOP",
-        "ONIX",
-        "WOOPER",
-        "MISDREAVUS",
-        "ONIX",
-        "QUAGSIRE",
-        "GRAVELER_A",
-        "MACHOKE",
-        "STEELIX",
-        "STEELIX"
+        "SPECIES_GOLBAT",
+        "SPECIES_GEODUDE_A",
+        "SPECIES_MACHOP",
+        "SPECIES_ONIX",
+        "SPECIES_WOOPER",
+        "SPECIES_MISDREAVUS",
+        "SPECIES_ONIX",
+        "SPECIES_QUAGSIRE",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_MACHOKE",
+        "SPECIES_STEELIX",
+        "SPECIES_STEELIX"
       ]
     }
   },
@@ -4568,18 +4568,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "GEODUDE_A",
-        "MACHOP",
-        "ONIX",
-        "WOOPER",
-        "MISDREAVUS",
-        "ONIX",
-        "QUAGSIRE",
-        "GRAVELER_A",
-        "MACHOKE",
-        "STEELIX",
-        "STEELIX"
+        "SPECIES_GOLBAT",
+        "SPECIES_GEODUDE_A",
+        "SPECIES_MACHOP",
+        "SPECIES_ONIX",
+        "SPECIES_WOOPER",
+        "SPECIES_MISDREAVUS",
+        "SPECIES_ONIX",
+        "SPECIES_QUAGSIRE",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_MACHOKE",
+        "SPECIES_STEELIX",
+        "SPECIES_STEELIX"
       ]
     }
   },
@@ -4590,43 +4590,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNEMITE",
-        "CUBONE",
-        "KLINK",
-        "KLINK",
-        "ELEKID",
-        "MAGNEMITE",
-        "TYNAMO",
-        "MAGNETON",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "ELECTABUZZ"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_CUBONE",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELEKID",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_TYNAMO",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "STUNFISK",
-        "CHINCHOU",
-        "TYNAMO",
-        "STUNFISK",
-        "LANTURN"
+        "SPECIES_STUNFISK",
+        "SPECIES_CHINCHOU",
+        "SPECIES_TYNAMO",
+        "SPECIES_STUNFISK",
+        "SPECIES_LANTURN"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CHINCHOU",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN"
       ]
     }
   },
@@ -4637,53 +4637,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNEMITE",
-        "TIMBURR",
-        "KLINK",
-        "KLINK",
-        "ELEKID",
-        "KLINK",
-        "TYNAMO",
-        "MAGNETON",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "ELECTABUZZ"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_TIMBURR",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELEKID",
+        "SPECIES_KLINK",
+        "SPECIES_TYNAMO",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "STUNFISK",
-        "CHINCHOU",
-        "TYNAMO",
-        "STUNFISK",
-        "LANTURN"
+        "SPECIES_STUNFISK",
+        "SPECIES_CHINCHOU",
+        "SPECIES_TYNAMO",
+        "SPECIES_STUNFISK",
+        "SPECIES_LANTURN"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE_A",
-        "GRAVELER_A",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SHUCKLE"
+        "SPECIES_GEODUDE_A",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SHUCKLE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CHINCHOU",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN"
       ]
     }
   },
@@ -4694,53 +4694,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNETON",
-        "MAROWAK",
-        "KLANG",
-        "KLANG",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "EELEKTRIK",
-        "NOSEPASS",
-        "NOSEPASS",
-        "NOSEPASS",
-        "NOSEPASS"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNETON",
+        "SPECIES_MAROWAK",
+        "SPECIES_KLANG",
+        "SPECIES_KLANG",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_EELEKTRIK",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "STUNFISK",
-        "LANTURN",
-        "TYNAMO",
-        "STUNFISK",
-        "EELEKTRIK"
+        "SPECIES_STUNFISK",
+        "SPECIES_LANTURN",
+        "SPECIES_TYNAMO",
+        "SPECIES_STUNFISK",
+        "SPECIES_EELEKTRIK"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GRAVELER_A",
-        "GRAVELER_A",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SHUCKLE"
+        "SPECIES_GRAVELER_A",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SHUCKLE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CHINCHOU",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN"
       ]
     }
   },
@@ -4751,53 +4751,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNEMITE",
-        "CUBONE",
-        "KLINK",
-        "KLINK",
-        "ELEKID",
-        "MAGNEMITE",
-        "TYNAMO",
-        "MAGNETON",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "ELECTABUZZ"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_CUBONE",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELEKID",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_TYNAMO",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "STUNFISK",
-        "CHINCHOU",
-        "TYNAMO",
-        "STUNFISK",
-        "LANTURN"
+        "SPECIES_STUNFISK",
+        "SPECIES_CHINCHOU",
+        "SPECIES_TYNAMO",
+        "SPECIES_STUNFISK",
+        "SPECIES_LANTURN"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE_A",
-        "GRAVELER_A",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SHUCKLE"
+        "SPECIES_GEODUDE_A",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SHUCKLE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CHINCHOU",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN"
       ]
     }
   },
@@ -4808,53 +4808,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNEMITE",
-        "CUBONE",
-        "KLINK",
-        "KLINK",
-        "ELEKID",
-        "MAGNEMITE",
-        "TYNAMO",
-        "MAGNETON",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "ELECTABUZZ"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_CUBONE",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELEKID",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_TYNAMO",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "STUNFISK",
-        "CHINCHOU",
-        "TYNAMO",
-        "STUNFISK",
-        "LANTURN"
+        "SPECIES_STUNFISK",
+        "SPECIES_CHINCHOU",
+        "SPECIES_TYNAMO",
+        "SPECIES_STUNFISK",
+        "SPECIES_LANTURN"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE_A",
-        "GRAVELER_A",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SHUCKLE"
+        "SPECIES_GEODUDE_A",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SHUCKLE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CHINCHOU",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN"
       ]
     }
   },
@@ -4865,43 +4865,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNEMITE",
-        "CUBONE",
-        "KLINK",
-        "KLINK",
-        "ELEKID",
-        "MAGNEMITE",
-        "TYNAMO",
-        "MAGNETON",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "ELECTABUZZ"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_CUBONE",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELEKID",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_TYNAMO",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "STUNFISK",
-        "CHINCHOU",
-        "TYNAMO",
-        "STUNFISK",
-        "LANTURN"
+        "SPECIES_STUNFISK",
+        "SPECIES_CHINCHOU",
+        "SPECIES_TYNAMO",
+        "SPECIES_STUNFISK",
+        "SPECIES_LANTURN"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CHINCHOU",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN"
       ]
     }
   },
@@ -4912,28 +4912,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNETON",
-        "GURDURR",
-        "KLINK",
-        "KLINK",
-        "ELECTABUZZ",
-        "KLINK",
-        "TYNAMO",
-        "GURDURR",
-        "KLANG",
-        "GURDURR",
-        "KLANG"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNETON",
+        "SPECIES_GURDURR",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_KLINK",
+        "SPECIES_TYNAMO",
+        "SPECIES_GURDURR",
+        "SPECIES_KLANG",
+        "SPECIES_GURDURR",
+        "SPECIES_KLANG"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GRAVELER_A",
-        "SHUCKLE",
-        "SHUCKLE",
-        "SHUCKLE",
-        "SHUCKLE"
+        "SPECIES_GRAVELER_A",
+        "SPECIES_SHUCKLE",
+        "SPECIES_SHUCKLE",
+        "SPECIES_SHUCKLE",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -4944,18 +4944,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNEMITE",
-        "TIMBURR",
-        "KLINK",
-        "KLINK",
-        "ELEKID",
-        "KLINK",
-        "TYNAMO",
-        "MAGNETON",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "ELECTABUZZ"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_TIMBURR",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELEKID",
+        "SPECIES_KLINK",
+        "SPECIES_TYNAMO",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ"
       ]
     }
   },
@@ -4966,53 +4966,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNEMITE",
-        "TIMBURR",
-        "KLINK",
-        "KLINK",
-        "ELEKID",
-        "KLINK",
-        "TYNAMO",
-        "MAGNETON",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "ELECTABUZZ"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_TIMBURR",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELEKID",
+        "SPECIES_KLINK",
+        "SPECIES_TYNAMO",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "STUNFISK",
-        "CHINCHOU",
-        "TYNAMO",
-        "STUNFISK",
-        "LANTURN"
+        "SPECIES_STUNFISK",
+        "SPECIES_CHINCHOU",
+        "SPECIES_TYNAMO",
+        "SPECIES_STUNFISK",
+        "SPECIES_LANTURN"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE_A",
-        "GRAVELER_A",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SHUCKLE"
+        "SPECIES_GEODUDE_A",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SHUCKLE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "CHINCHOU",
-        "CHINCHOU",
-        "CHINCHOU",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN",
-        "LANTURN"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_CHINCHOU",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN",
+        "SPECIES_LANTURN"
       ]
     }
   },
@@ -5023,28 +5023,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "NOSEPASS",
-        "MAGNEMITE",
-        "TIMBURR",
-        "KLINK",
-        "KLINK",
-        "ELEKID",
-        "KLINK",
-        "TYNAMO",
-        "MAGNETON",
-        "ELECTABUZZ",
-        "MAGNETON",
-        "ELECTABUZZ"
+        "SPECIES_NOSEPASS",
+        "SPECIES_MAGNEMITE",
+        "SPECIES_TIMBURR",
+        "SPECIES_KLINK",
+        "SPECIES_KLINK",
+        "SPECIES_ELEKID",
+        "SPECIES_KLINK",
+        "SPECIES_TYNAMO",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ",
+        "SPECIES_MAGNETON",
+        "SPECIES_ELECTABUZZ"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GEODUDE_A",
-        "GRAVELER_A",
-        "NOSEPASS",
-        "NOSEPASS",
-        "SHUCKLE"
+        "SPECIES_GEODUDE_A",
+        "SPECIES_GRAVELER_A",
+        "SPECIES_NOSEPASS",
+        "SPECIES_NOSEPASS",
+        "SPECIES_SHUCKLE"
       ]
     }
   },
@@ -5055,43 +5055,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "GOLBAT",
-        "BOLDORE",
-        "BOLDORE",
-        "BOLDORE",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "DURANT"
+        "SPECIES_GOLBAT",
+        "SPECIES_GOLBAT",
+        "SPECIES_BOLDORE",
+        "SPECIES_BOLDORE",
+        "SPECIES_BOLDORE",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "LUMINEON",
-        "GOLBAT",
-        "MARILL",
-        "AZUMARILL",
-        "MARILL"
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLBAT",
+        "SPECIES_MARILL",
+        "SPECIES_AZUMARILL",
+        "SPECIES_MARILL"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "FINNEON",
-        "FINNEON",
-        "PSYDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_PSYDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -5102,43 +5102,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "WOOBAT",
-        "GRAVELER",
-        "GRAVELER",
-        "GRAVELER",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "DURANT"
+        "SPECIES_WOOBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "LUMINEON",
-        "WOOBAT",
-        "MARILL",
-        "AZUMARILL",
-        "MARILL"
+        "SPECIES_LUMINEON",
+        "SPECIES_WOOBAT",
+        "SPECIES_MARILL",
+        "SPECIES_AZUMARILL",
+        "SPECIES_MARILL"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "FINNEON",
-        "FINNEON",
-        "PSYDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_PSYDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -5149,28 +5149,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "MAGCARGO",
-        "SALAZZLE",
-        "CAMERUPT",
-        "GRAVELER",
-        "GRAVELER",
-        "CAMERUPT",
-        "EXCADRILL",
-        "HEATMOR",
-        "MAGMAR",
-        "HEATMOR",
-        "MAGMAR"
+        "SPECIES_WOOBAT",
+        "SPECIES_MAGCARGO",
+        "SPECIES_SALAZZLE",
+        "SPECIES_CAMERUPT",
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_CAMERUPT",
+        "SPECIES_EXCADRILL",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR",
+        "SPECIES_HEATMOR",
+        "SPECIES_MAGMAR"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "MAGCARGO",
-        "MAGCARGO",
-        "MAGCARGO",
-        "MAGCARGO",
-        "MAGCARGO"
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO",
+        "SPECIES_MAGCARGO"
       ]
     }
   },
@@ -5181,43 +5181,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "DRUDDIGON",
-        "DRUDDIGON",
-        "DRUDDIGON",
-        "DRUDDIGON",
-        "DRUDDIGON",
-        "DRUDDIGON",
-        "TURTONATOR",
-        "TURTONATOR",
-        "DRAMPA",
-        "DRAMPA",
-        "DRAMPA",
-        "DRAMPA"
+        "SPECIES_DRUDDIGON",
+        "SPECIES_DRUDDIGON",
+        "SPECIES_DRUDDIGON",
+        "SPECIES_DRUDDIGON",
+        "SPECIES_DRUDDIGON",
+        "SPECIES_DRUDDIGON",
+        "SPECIES_TURTONATOR",
+        "SPECIES_TURTONATOR",
+        "SPECIES_DRAMPA",
+        "SPECIES_DRAMPA",
+        "SPECIES_DRAMPA",
+        "SPECIES_DRAMPA"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "LUMINEON",
-        "WOOBAT",
-        "MARILL",
-        "AZUMARILL",
-        "MARILL"
+        "SPECIES_LUMINEON",
+        "SPECIES_WOOBAT",
+        "SPECIES_MARILL",
+        "SPECIES_AZUMARILL",
+        "SPECIES_MARILL"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "FINNEON",
-        "FINNEON",
-        "PSYDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GYARADOS",
-        "GYARADOS"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_PSYDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GYARADOS",
+        "SPECIES_GYARADOS"
       ]
     }
   },
@@ -5228,43 +5228,43 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "HEATMOR",
-        "HEATMOR",
-        "ROSELIA",
-        "ROSELIA",
-        "CHANSEY",
-        "LURANTIS",
-        "LURANTIS",
-        "LURANTIS",
-        "ROSELIA",
-        "JIGGLYPUFF",
-        "ROSELIA",
-        "JIGGLYPUFF"
+        "SPECIES_HEATMOR",
+        "SPECIES_HEATMOR",
+        "SPECIES_ROSELIA",
+        "SPECIES_ROSELIA",
+        "SPECIES_CHANSEY",
+        "SPECIES_LURANTIS",
+        "SPECIES_LURANTIS",
+        "SPECIES_LURANTIS",
+        "SPECIES_ROSELIA",
+        "SPECIES_JIGGLYPUFF",
+        "SPECIES_ROSELIA",
+        "SPECIES_JIGGLYPUFF"
       ]
     },
     "water": {
       "encounterRate": 20,
       "day": [
-        "FLOATZEL",
-        "BASCULIN_BLUE",
-        "BASCULIN_BLUE",
-        "BASCULIN_BLUE",
-        "BASCULIN_BLUE"
+        "SPECIES_FLOATZEL",
+        "SPECIES_BASCULIN_BLUE",
+        "SPECIES_BASCULIN_BLUE",
+        "SPECIES_BASCULIN_BLUE",
+        "SPECIES_BASCULIN_BLUE"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC",
-        "LUVDISC",
-        "BRUXISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_LUVDISC",
+        "SPECIES_BRUXISH"
       ]
     }
   },
@@ -5275,18 +5275,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "WOOBAT",
-        "WOOBAT",
-        "DURANT",
-        "DURANT",
-        "DURANT",
-        "TURTONATOR",
-        "DRAMPA",
-        "DRAMPA",
-        "HAKAMO_O",
-        "HAKAMO_O",
-        "HAKAMO_O",
-        "HAKAMO_O"
+        "SPECIES_WOOBAT",
+        "SPECIES_WOOBAT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_DURANT",
+        "SPECIES_TURTONATOR",
+        "SPECIES_DRAMPA",
+        "SPECIES_DRAMPA",
+        "SPECIES_HAKAMO_O",
+        "SPECIES_HAKAMO_O",
+        "SPECIES_HAKAMO_O",
+        "SPECIES_HAKAMO_O"
       ]
     }
   },
@@ -5297,18 +5297,18 @@
     "grass": {
       "encounterRate": 15,
       "day": [
-        "ABOMASNOW",
-        "GLALIE",
-        "ABOMASNOW",
-        "GLALIE",
-        "VANILLISH",
-        "VANILLISH",
-        "BEARTIC",
-        "BEARTIC",
-        "BEARTIC",
-        "BEARTIC",
-        "MINIOR_SHIELD",
-        "MINIOR_SHIELD"
+        "SPECIES_ABOMASNOW",
+        "SPECIES_GLALIE",
+        "SPECIES_ABOMASNOW",
+        "SPECIES_GLALIE",
+        "SPECIES_VANILLISH",
+        "SPECIES_VANILLISH",
+        "SPECIES_BEARTIC",
+        "SPECIES_BEARTIC",
+        "SPECIES_BEARTIC",
+        "SPECIES_BEARTIC",
+        "SPECIES_MINIOR_SHIELD",
+        "SPECIES_MINIOR_SHIELD"
       ]
     }
   },
@@ -5319,18 +5319,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HARIYAMA",
-        "SEALEO",
-        "SEALEO",
-        "SEALEO",
-        "JYNX",
-        "HARIYAMA",
-        "AVALUGG",
-        "GLALIE",
-        "PILOSWINE",
-        "GLALIE",
-        "PILOSWINE"
+        "SPECIES_GOLBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_JYNX",
+        "SPECIES_HARIYAMA",
+        "SPECIES_AVALUGG",
+        "SPECIES_GLALIE",
+        "SPECIES_PILOSWINE",
+        "SPECIES_GLALIE",
+        "SPECIES_PILOSWINE"
       ]
     }
   },
@@ -5341,43 +5341,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "GOLBAT",
-        "HARIYAMA",
-        "SEALEO",
-        "SEALEO",
-        "SEALEO",
-        "JYNX",
-        "HARIYAMA",
-        "AVALUGG",
-        "GLALIE",
-        "PILOSWINE",
-        "GLALIE",
-        "PILOSWINE"
+        "SPECIES_GOLBAT",
+        "SPECIES_HARIYAMA",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_SEALEO",
+        "SPECIES_JYNX",
+        "SPECIES_HARIYAMA",
+        "SPECIES_AVALUGG",
+        "SPECIES_GLALIE",
+        "SPECIES_PILOSWINE",
+        "SPECIES_GLALIE",
+        "SPECIES_PILOSWINE"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "DEWGONG",
-        "SEALEO",
-        "DEWGONG",
-        "SEALEO",
-        "LAPRAS"
+        "SPECIES_DEWGONG",
+        "SPECIES_SEALEO",
+        "SPECIES_DEWGONG",
+        "SPECIES_SEALEO",
+        "SPECIES_LAPRAS"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "SEEL",
-        "SEEL",
-        "SHELLDER",
-        "DEWGONG",
-        "SHELLDER",
-        "SHELLDER",
-        "SHELLDER",
-        "SHELLDER"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_SEEL",
+        "SPECIES_SEEL",
+        "SPECIES_SHELLDER",
+        "SPECIES_DEWGONG",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER",
+        "SPECIES_SHELLDER"
       ]
     }
   },
@@ -5388,28 +5388,28 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GRAVELER",
-        "GRAVELER",
-        "ONIX",
-        "ONIX",
-        "ONIX"
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_ONIX",
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
       ]
     }
   },
@@ -5420,43 +5420,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "GASTRODON_EAST",
-        "GASTRODON_EAST",
-        "GOLDUCK",
-        "GOLDUCK",
-        "DRAGONAIR"
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_DRAGONAIR"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "FINNEON",
-        "FINNEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "QWILFISH",
-        "QWILFISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_QWILFISH",
+        "SPECIES_QWILFISH"
       ]
     }
   },
@@ -5467,43 +5467,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "GASTRODON_EAST",
-        "GASTRODON_EAST",
-        "GOLDUCK",
-        "GOLDUCK",
-        "DRAGONAIR"
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_DRAGONAIR"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "FINNEON",
-        "FINNEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "QWILFISH",
-        "QWILFISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_QWILFISH",
+        "SPECIES_QWILFISH"
       ]
     }
   },
@@ -5514,43 +5514,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "GASTRODON_EAST",
-        "GASTRODON_EAST",
-        "GOLDUCK",
-        "GOLDUCK",
-        "DRAGONAIR"
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_DRAGONAIR"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "FINNEON",
-        "FINNEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "QWILFISH",
-        "QWILFISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_QWILFISH",
+        "SPECIES_QWILFISH"
       ]
     }
   },
@@ -5561,18 +5561,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIVERN",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIVERN",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     }
   },
@@ -5583,18 +5583,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     }
   },
@@ -5605,43 +5605,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIVERN",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIVERN",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "GASTRODON_EAST",
-        "GASTRODON_EAST",
-        "GOLDUCK",
-        "GOLDUCK",
-        "DRAGONAIR"
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_DRAGONAIR"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "FINNEON",
-        "FINNEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "QWILFISH",
-        "QWILFISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_QWILFISH",
+        "SPECIES_QWILFISH"
       ]
     }
   },
@@ -5652,18 +5652,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "DRIFBLIM",
-        "DRIFBLIM",
-        "DRIFBLIM",
-        "DRIFBLIM",
-        "DRIFBLIM",
-        "DRIFBLIM",
-        "DRIFBLIM",
-        "ABSOL",
-        "RUFFLET",
-        "VULLABY",
-        "RUFFLET",
-        "VULLABY"
+        "SPECIES_DRIFBLIM",
+        "SPECIES_DRIFBLIM",
+        "SPECIES_DRIFBLIM",
+        "SPECIES_DRIFBLIM",
+        "SPECIES_DRIFBLIM",
+        "SPECIES_DRIFBLIM",
+        "SPECIES_DRIFBLIM",
+        "SPECIES_ABSOL",
+        "SPECIES_RUFFLET",
+        "SPECIES_VULLABY",
+        "SPECIES_RUFFLET",
+        "SPECIES_VULLABY"
       ]
     }
   },
@@ -5674,18 +5674,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     }
   },
@@ -5696,43 +5696,43 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "GASTRODON_EAST",
-        "GASTRODON_EAST",
-        "GOLDUCK",
-        "GOLDUCK",
-        "DRAGONAIR"
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_DRAGONAIR"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "FINNEON",
-        "FINNEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "QWILFISH",
-        "QWILFISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_QWILFISH",
+        "SPECIES_QWILFISH"
       ]
     }
   },
@@ -5743,53 +5743,53 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     },
     "water": {
       "encounterRate": 2,
       "day": [
-        "GASTRODON_EAST",
-        "GASTRODON_EAST",
-        "GOLDUCK",
-        "GOLDUCK",
-        "DRAGONAIR"
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GASTRODON_EAST",
+        "SPECIES_GOLDUCK",
+        "SPECIES_GOLDUCK",
+        "SPECIES_DRAGONAIR"
       ]
     },
     "rockSmash": {
       "encounterRate": 128,
       "day": [
-        "GRAVELER",
-        "GRAVELER",
-        "ONIX",
-        "ONIX",
-        "ONIX"
+        "SPECIES_GRAVELER",
+        "SPECIES_GRAVELER",
+        "SPECIES_ONIX",
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
       ]
     },
     "fishing": {
       "encounterRate": 10,
       "day": [
-        "MAGIKARP",
-        "MAGIKARP",
-        "PSYDUCK",
-        "FINNEON",
-        "FINNEON",
-        "GOLDUCK",
-        "LUMINEON",
-        "GOLDUCK",
-        "QWILFISH",
-        "QWILFISH"
+        "SPECIES_MAGIKARP",
+        "SPECIES_MAGIKARP",
+        "SPECIES_PSYDUCK",
+        "SPECIES_FINNEON",
+        "SPECIES_FINNEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_LUMINEON",
+        "SPECIES_GOLDUCK",
+        "SPECIES_QWILFISH",
+        "SPECIES_QWILFISH"
       ]
     }
   },
@@ -5800,18 +5800,18 @@
     "grass": {
       "encounterRate": 3,
       "day": [
-        "LOUDRED",
-        "WOOBAT",
-        "LOUDRED",
-        "WOOBAT",
-        "ONIX",
-        "NOIBAT",
-        "ZWEILOUS",
-        "ZWEILOUS",
-        "STEELIX",
-        "SKARMORY",
-        "STEELIX",
-        "SKARMORY"
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_LOUDRED",
+        "SPECIES_WOOBAT",
+        "SPECIES_ONIX",
+        "SPECIES_NOIBAT",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_ZWEILOUS",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY",
+        "SPECIES_STEELIX",
+        "SPECIES_SKARMORY"
       ]
     }
   }
