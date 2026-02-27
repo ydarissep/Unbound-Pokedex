@@ -1,0 +1,5818 @@
+[
+  {
+    "mapGroup": 1,
+    "mapNum": 4,
+    "mapName": "FLOWER_PARADISE_A",
+    "grass": {
+      "encounterRate": 20,
+      "day": [
+        "FLABEBE_ORANGE",
+        "FLABEBE_ORANGE",
+        "FLABEBE_ORANGE",
+        "FLABEBE_ORANGE",
+        "CUTIEFLY",
+        "CUTIEFLY",
+        "CUTIEFLY",
+        "ORICORIO_P",
+        "COMFEY",
+        "PANSAGE",
+        "COMBEE",
+        "PANSAGE"
+      ]
+    },
+    "water": {
+      "encounterRate": 21,
+      "day": [
+        "FLABEBE_YELLOW",
+        "CUTIEFLY",
+        "ORICORIO_Y",
+        "ORICORIO_Y",
+        "COMBEE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 5,
+    "mapName": "FLOWER_PARADISE_B",
+    "grass": {
+      "encounterRate": 20,
+      "day": [
+        "FLABEBE",
+        "FLABEBE",
+        "FLABEBE",
+        "FLABEBE",
+        "CUTIEFLY",
+        "CUTIEFLY",
+        "CUTIEFLY",
+        "ORICORIO",
+        "COMFEY",
+        "PANSEAR",
+        "COMBEE",
+        "PANSEAR"
+      ]
+    },
+    "water": {
+      "encounterRate": 21,
+      "day": [
+        "FLABEBE_BLUE",
+        "CUTIEFLY",
+        "PANPOUR",
+        "COMBEE",
+        "COMBEE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 6,
+    "mapName": "FLOWER_PARADISE_C",
+    "grass": {
+      "encounterRate": 20,
+      "day": [
+        "FLABEBE_WHITE",
+        "FLABEBE_WHITE",
+        "FLABEBE_WHITE",
+        "FLABEBE_WHITE",
+        "CUTIEFLY",
+        "CUTIEFLY",
+        "ORICORIO_S",
+        "ORICORIO_S",
+        "COMFEY",
+        "COMFEY",
+        "COMFEY",
+        "COMBEE"
+      ]
+    },
+    "water": {
+      "encounterRate": 21,
+      "day": [
+        "FLABEBE_WHITE",
+        "CUTIEFLY",
+        "ORICORIO_S",
+        "ORICORIO_S",
+        "COMBEE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 33,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HAUNTER",
+        "DUSKULL",
+        "DUSKULL",
+        "GOLETT",
+        "BRONZOR",
+        "BRONZOR",
+        "CHIMECHO",
+        "BRONZONG",
+        "DUSCLOPS",
+        "BRONZONG",
+        "DUSCLOPS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 34,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HAUNTER",
+        "DUSKULL",
+        "DUSKULL",
+        "GOLETT",
+        "BRONZOR",
+        "BRONZOR",
+        "CHIMECHO",
+        "BRONZONG",
+        "DUSCLOPS",
+        "BRONZONG",
+        "DUSCLOPS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 35,
+    "mapName": "RIFT_CAVE_B1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HAUNTER",
+        "DUSCLOPS",
+        "DUSCLOPS",
+        "GOLURK",
+        "BRONZONG",
+        "BRONZONG",
+        "CHIMECHO",
+        "BRONZONG",
+        "DUSCLOPS",
+        "BRONZONG",
+        "DUSCLOPS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 36,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HAUNTER",
+        "DUSCLOPS",
+        "DUSCLOPS",
+        "GOLURK",
+        "BRONZONG",
+        "BRONZONG",
+        "CHIMECHO",
+        "BRONZONG",
+        "DUSCLOPS",
+        "BRONZONG",
+        "DUSCLOPS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 46,
+    "mapName": "CINDER_VOLCANO_3F_1",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "NUMEL",
+        "GEODUDE",
+        "GEODUDE",
+        "NUMEL",
+        "DRILBUR",
+        "TORKOAL",
+        "MAGBY",
+        "TORKOAL",
+        "MAGBY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "GRAVELER",
+        "GRAVELER",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 48,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "NUMEL",
+        "GEODUDE",
+        "GEODUDE",
+        "NUMEL",
+        "DRILBUR",
+        "TORKOAL",
+        "MAGBY",
+        "TORKOAL",
+        "MAGBY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 49,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "NUMEL",
+        "GEODUDE",
+        "GEODUDE",
+        "NUMEL",
+        "DRILBUR",
+        "TORKOAL",
+        "MAGBY",
+        "TORKOAL",
+        "MAGBY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "GRAVELER",
+        "GRAVELER",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 50,
+    "mapName": "CINDER_VOLCANO_4F_2",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "NUMEL",
+        "GEODUDE",
+        "GEODUDE",
+        "NUMEL",
+        "DRILBUR",
+        "TORKOAL",
+        "MAGBY",
+        "TORKOAL",
+        "MAGBY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 51,
+    "mapName": "CINDER_VOLCANO_SHADOW_B1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "CAMERUPT",
+        "GRAVELER",
+        "GRAVELER",
+        "CAMERUPT",
+        "EXCADRILL",
+        "HEATMOR",
+        "MAGMAR",
+        "HEATMOR",
+        "MAGMAR"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 52,
+    "mapName": "CINDER_VOLCANO_SHADOW_B2F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "CAMERUPT",
+        "GRAVELER",
+        "GRAVELER",
+        "CAMERUPT",
+        "EXCADRILL",
+        "HEATMOR",
+        "MAGMAR",
+        "HEATMOR",
+        "MAGMAR"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "GRAVELER",
+        "GRAVELER",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 53,
+    "mapName": "CINDER_VOLCANO_SHADOW_STORAGE_1",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "CAMERUPT",
+        "GRAVELER",
+        "GRAVELER",
+        "CAMERUPT",
+        "EXCADRILL",
+        "HEATMOR",
+        "MAGMAR",
+        "HEATMOR",
+        "MAGMAR"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "GRAVELER",
+        "GRAVELER",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 54,
+    "mapName": "CINDER_VOLCANO_SHADOW_STORAGE_2",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "CAMERUPT",
+        "GRAVELER",
+        "GRAVELER",
+        "CAMERUPT",
+        "EXCADRILL",
+        "HEATMOR",
+        "MAGMAR",
+        "HEATMOR",
+        "MAGMAR"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO",
+        "GRAVELER",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 63,
+    "mapName": "DISTORTION_WORLD_1",
+    "grass": {
+      "encounterRate": 0,
+      "day": [
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 64,
+    "mapName": "DISTORTION_WORLD_2",
+    "grass": {
+      "encounterRate": 0,
+      "day": [
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 65,
+    "mapName": "DISTORTION_WORLD_3",
+    "grass": {
+      "encounterRate": 0,
+      "day": [
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN",
+        "GIRATINA_ORIGIN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 68,
+    "mapName": "ANTISIS_SEWERS_NORTH",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GRIMER",
+        "RATICATE",
+        "GRIMER",
+        "RATICATE",
+        "GOLBAT",
+        "GOLBAT",
+        "KOFFING",
+        "KOFFING",
+        "MUK",
+        "WEEZING",
+        "MUK",
+        "WEEZING"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 69,
+    "mapName": "ANTISIS_SEWERS_SOUTH",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GRIMER",
+        "RATICATE",
+        "GRIMER",
+        "RATICATE",
+        "GOLBAT",
+        "GOLBAT",
+        "KOFFING",
+        "KOFFING",
+        "MUK",
+        "WEEZING",
+        "MUK",
+        "WEEZING"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "GRIMER",
+        "GRIMER",
+        "GOLBAT",
+        "MUK",
+        "MUK"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 20,
+      "day": [
+        "GRIMER",
+        "GRIMER",
+        "GRIMER",
+        "GRIMER",
+        "GRIMER",
+        "MUK",
+        "MUK",
+        "MUK",
+        "MUK",
+        "MUK"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 72,
+    "mapName": "ANTISIS_SEWERS_ROOM",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GRIMER",
+        "RATICATE",
+        "GRIMER",
+        "RATICATE",
+        "GOLBAT",
+        "GOLBAT",
+        "KOFFING",
+        "KOFFING",
+        "MUK",
+        "WEEZING",
+        "MUK",
+        "WEEZING"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 81,
+    "mapName": "FROZEN_FOREST",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "SNOVER",
+        "SNOVER",
+        "SNOVER",
+        "CUBCHOO",
+        "CUBCHOO",
+        "CUBCHOO",
+        "SNOVER",
+        "CUBCHOO",
+        "CUBCHOO",
+        "CUBCHOO",
+        "CUBCHOO",
+        "CUBCHOO"
+      ],
+      "night": [
+        "SNOVER",
+        "SNOVER",
+        "SNEASEL",
+        "CUBCHOO",
+        "CUBCHOO",
+        "CUBCHOO",
+        "SNOVER",
+        "SNEASEL",
+        "CUBCHOO",
+        "CUBCHOO",
+        "CUBCHOO",
+        "CUBCHOO"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 83,
+    "mapName": "TOMB_OF_BORRIUS_1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "SIGILYPH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 84,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "SIGILYPH"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GRAVELER",
+        "GRAVELER",
+        "GRAVELER",
+        "SHUCKLE",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 85,
+    "mapName": "TOMB_OF_BORRIUS_B3F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "SIGILYPH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 86,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "SIGILYPH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 87,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "SIGILYPH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 88,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "SIGILYPH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 89,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "SIGILYPH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 90,
+    "mapName": "TOMB_OF_BORRIUS_1F_BACK",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN",
+        "UNOWN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 98,
+    "mapName": "REDWOOD_FOREST",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "LEDIAN",
+        "VIGOROTH",
+        "LEDIAN",
+        "VIGOROTH",
+        "URSARING",
+        "URSARING",
+        "HERACROSS",
+        "KOMALA",
+        "KOMALA",
+        "KOMALA",
+        "PASSIMIAN",
+        "ORANGURU"
+      ],
+      "night": [
+        "ARIADOS",
+        "VIGOROTH",
+        "ARIADOS",
+        "VIGOROTH",
+        "URSARING",
+        "URSARING",
+        "HERACROSS",
+        "KOMALA",
+        "KOMALA",
+        "KOMALA",
+        "PASSIMIAN",
+        "ORANGURU"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "MASQUERAIN",
+        "GOLDUCK",
+        "MASQUERAIN",
+        "GOLDUCK",
+        "GOLDUCK"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 255,
+      "day": [
+        "PINECO",
+        "AIPOM",
+        "HERACROSS",
+        "SCYTHER",
+        "PINSIR"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 50,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "PSYDUCK",
+        "BARBOACH",
+        "GOLDUCK",
+        "GOLDUCK",
+        "WHISCASH",
+        "WHISCASH",
+        "WHISCASH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 99,
+    "mapName": "VIVILL_WOODS",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "CATERPIE",
+        "WURMPLE",
+        "SCATTERBUG",
+        "COTTONEE",
+        "SWADLOON",
+        "PETILIL",
+        "SPEWPA",
+        "METAPOD",
+        "SILCOON",
+        "CASCOON",
+        "SILCOON",
+        "CASCOON"
+      ],
+      "night": [
+        "WEEDLE",
+        "WURMPLE",
+        "SCATTERBUG",
+        "COTTONEE",
+        "SWADLOON",
+        "PETILIL",
+        "SPEWPA",
+        "KAKUNA",
+        "SILCOON",
+        "CASCOON",
+        "SILCOON",
+        "CASCOON"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SURSKIT",
+        "GOLDUCK",
+        "MASQUERAIN",
+        "PSYDUCK",
+        "PSYDUCK"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "PSYDUCK",
+        "BARBOACH",
+        "GOLDUCK",
+        "GOLDUCK",
+        "WHISCASH",
+        "WHISCASH",
+        "WHISCASH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 102,
+    "mapName": "VIVILL_WAREHOUSE_RESEARCH_ROOM",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "BASCULIN_RED",
+        "TENTACRUEL",
+        "SEADRA",
+        "SEADRA"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "HORSEA",
+        "SHELLDER",
+        "SHELLDER",
+        "SEADRA",
+        "SHELLDER",
+        "GYARADOS",
+        "DHELMISE",
+        "DHELMISE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 107,
+    "mapName": "RUINS_OF_VOID_B3F_ALT",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "CLAYDOL",
+        "COFAGRIGUS",
+        "CLAYDOL",
+        "COFAGRIGUS",
+        "DUSCLOPS",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 108,
+    "mapName": "ROV_POST_GAME_AKLOVE",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "CLAYDOL",
+        "COFAGRIGUS",
+        "CLAYDOL",
+        "COFAGRIGUS",
+        "DUSCLOPS",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 109,
+    "mapName": "RUINS_OF_VOID_EXT",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTINE",
+        "GOLDUCK"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "HORSEA",
+        "SHELLDER",
+        "SHELLDER",
+        "SEADRA",
+        "SHELLDER",
+        "GYARADOS",
+        "GYARADOS",
+        "KINGDRA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 110,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "BALTOY",
+        "YAMASK",
+        "BALTOY",
+        "YAMASK",
+        "DUSKULL",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 111,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "BALTOY",
+        "YAMASK",
+        "BALTOY",
+        "YAMASK",
+        "DUSKULL",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "BALTOY",
+        "BALTOY",
+        "BALTOY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 112,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "BALTOY",
+        "YAMASK",
+        "BALTOY",
+        "YAMASK",
+        "DUSKULL",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 113,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "BALTOY",
+        "YAMASK",
+        "BALTOY",
+        "YAMASK",
+        "DUSKULL",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "BALTOY",
+        "BALTOY",
+        "BALTOY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 114,
+    "mapName": "RUINS_OF_VOID_B3F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "BALTOY",
+        "YAMASK",
+        "BALTOY",
+        "YAMASK",
+        "DUSKULL",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "BALTOY",
+        "BALTOY",
+        "BALTOY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 115,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "BALTOY",
+        "YAMASK",
+        "BALTOY",
+        "YAMASK",
+        "DUSKULL",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 116,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "BALTOY",
+        "YAMASK",
+        "BALTOY",
+        "YAMASK",
+        "DUSKULL",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 117,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "BALTOY",
+        "YAMASK",
+        "BALTOY",
+        "YAMASK",
+        "DUSKULL",
+        "SABLEYE",
+        "BRONZONG",
+        "DUSCLOPS",
+        "LUNATONE",
+        "SOLROCK",
+        "SIGILYPH",
+        "COFAGRIGUS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 119,
+    "mapName": "AUTL_WOODS_WEST",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "MARILL",
+        "SURSKIT",
+        "MASQUERAIN",
+        "AZUMARILL",
+        "AZUMARILL"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "GOLDEEN",
+        "WISHIWASHI",
+        "SEAKING",
+        "GYARADOS",
+        "GYARADOS",
+        "BRUXISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 120,
+    "mapName": "AUTL_WOODS_EAST",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "SPEAROW",
+        "GRUBBIN",
+        "MARILL",
+        "MARILL",
+        "DEERLING_AUTUMN",
+        "SHROOMISH",
+        "SHROOMISH",
+        "DEERLING_AUTUMN",
+        "SKORUPI",
+        "AUDINO",
+        "SKORUPI",
+        "SKORUPI"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "MARILL",
+        "SURSKIT",
+        "MASQUERAIN",
+        "AZUMARILL",
+        "AZUMARILL"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "GOLDEEN",
+        "WISHIWASHI",
+        "SEAKING",
+        "GYARADOS",
+        "GYARADOS",
+        "BRUXISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 1,
+    "mapNum": 121,
+    "mapName": "LOST_TUNNEL_B1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GRAVELER",
+        "GRAVELER",
+        "WOOBAT",
+        "WOOBAT",
+        "WOOBAT",
+        "WOOBAT",
+        "LAIRON",
+        "DIGLETT",
+        "DIGLETT",
+        "DUGTRIO",
+        "DIGLETT",
+        "DUGTRIO"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "GRAVELER",
+        "GRAVELER",
+        "GRAVELER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 2,
+    "mapNum": 0,
+    "mapName": "ICY_HOLE_1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HARIYAMA",
+        "SEALEO",
+        "SEALEO",
+        "SEALEO",
+        "JYNX",
+        "HARIYAMA",
+        "AVALUGG",
+        "BOLDORE",
+        "PILOSWINE",
+        "BOLDORE",
+        "PILOSWINE"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "DEWGONG",
+        "SEALEO",
+        "DEWGONG",
+        "SEALEO",
+        "LAPRAS"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "SEEL",
+        "SEEL",
+        "SHELLDER",
+        "DEWGONG",
+        "SHELLDER",
+        "SHELLDER",
+        "SHELLDER",
+        "CLOYSTER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 2,
+    "mapNum": 14,
+    "mapName": "ICY_HOLE_B1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HARIYAMA",
+        "SEALEO",
+        "SEALEO",
+        "SEALEO",
+        "JYNX",
+        "HARIYAMA",
+        "AVALUGG",
+        "BOLDORE",
+        "PILOSWINE",
+        "BOLDORE",
+        "PILOSWINE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 2,
+    "mapNum": 26,
+    "mapName": "Unknown",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "CORSOLA",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "CORSOLA",
+        "CORSOLA",
+        "LAPRAS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 2,
+    "mapNum": 27,
+    "mapName": "Unknown",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "BASCULIN_RED",
+        "BASCULIN_RED"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CORPHISH",
+        "CORPHISH",
+        "STARYU",
+        "CRAWDAUNT",
+        "STARYU",
+        "GYARADOS",
+        "GYARADOS",
+        "STARMIE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 2,
+    "mapNum": 59,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GRAVELER",
+        "GRAVELER",
+        "WOOBAT",
+        "WOOBAT",
+        "WOOBAT",
+        "WOOBAT",
+        "DIGLETT",
+        "DIGLETT",
+        "DIGLETT",
+        "DUGTRIO",
+        "DIGLETT",
+        "DUGTRIO"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 0,
+    "mapName": "POLDER_TOWN",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "PALPITOAD",
+        "STUNFISK",
+        "GASTRODON_EAST",
+        "SLIGGOO",
+        "SLIGGOO"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "POLIWAG",
+        "BARBOACH",
+        "POLIWHIRL",
+        "POLIWHIRL",
+        "POLIWHIRL",
+        "WHISCASH",
+        "POLIWHIRL",
+        "POLITOED",
+        "POLITOED"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 1,
+    "mapName": "COOTES_BOG",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "CROAGUNK",
+        "QUAGSIRE",
+        "CROAGUNK",
+        "SLIGGOO",
+        "SLIGGOO",
+        "DRAPION",
+        "CARNIVINE",
+        "WEEPINBELL",
+        "WEEPINBELL",
+        "TOXICROAK",
+        "WEEPINBELL",
+        "TOXICROAK"
+      ],
+      "night": [
+        "CROAGUNK",
+        "QUAGSIRE",
+        "CROAGUNK",
+        "SLIGGOO",
+        "SLIGGOO",
+        "DRAPION",
+        "CARNIVINE",
+        "GLOOM",
+        "GLOOM",
+        "TOXICROAK",
+        "GLOOM",
+        "TOXICROAK"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "QUAGSIRE",
+        "STUNFISK",
+        "GASTRODON_EAST",
+        "SLIGGOO",
+        "SLIGGOO"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "POLIWAG",
+        "BARBOACH",
+        "POLIWHIRL",
+        "POLIWHIRL",
+        "POLIWHIRL",
+        "WHISCASH",
+        "POLIWHIRL",
+        "POLITOED",
+        "POLITOED"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 4,
+    "mapName": "MAGNOLIA_FIELDS",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "TRANQUILL",
+        "FURFROU",
+        "TRANQUILL",
+        "MUDSDALE",
+        "MUDSDALE",
+        "GOGOAT",
+        "FURFROU",
+        "GOGOAT",
+        "MILTANK",
+        "MILTANK",
+        "MILTANK",
+        "TAUROS"
+      ],
+      "night": [
+        "NOCTOWL",
+        "FURFROU",
+        "TRANQUILL",
+        "MUDSDALE",
+        "MUDSDALE",
+        "GOGOAT",
+        "FURFROU",
+        "GOGOAT",
+        "MILTANK",
+        "MILTANK",
+        "MILTANK",
+        "TAUROS"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "FRILLISH",
+        "PELIPPER",
+        "JELLICENT",
+        "JELLICENT",
+        "JELLICENT"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 20,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "GYARADOS",
+        "WAILMER",
+        "WAILMER",
+        "GYARADOS",
+        "WAILORD",
+        "WAILORD",
+        "QWILFISH",
+        "QWILFISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 5,
+    "mapName": "REDWOOD_VILLAGE",
+    "rockSmash": {
+      "encounterRate": 255,
+      "day": [
+        "PINECO",
+        "AIPOM",
+        "HERACROSS",
+        "SCYTHER",
+        "PINSIR"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 6,
+    "mapName": "CUBE_CORP",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "JELLICENT",
+        "PELIPPER",
+        "DITTO",
+        "DITTO",
+        "DITTO"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 0,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "GYARADOS",
+        "WAILMER",
+        "WAILMER",
+        "GYARADOS",
+        "WAILORD",
+        "WAILORD",
+        "DITTO",
+        "DITTO"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 67,
+    "mapName": "ROUTE_1",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "SNORUNT",
+        "SNORUNT",
+        "VANILLITE",
+        "VANILLITE",
+        "VANILLITE",
+        "VANILLITE",
+        "VANILLITE",
+        "SNORUNT",
+        "DELIBIRD",
+        "VANILLITE",
+        "MINIOR_SHIELD",
+        "MINIOR_SHIELD"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 69,
+    "mapName": "ROUTE_2",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "PIKIPEK",
+        "PATRAT",
+        "INKAY",
+        "MINCCINO",
+        "ELECTRIKE",
+        "AZURILL",
+        "STUFFUL",
+        "STUFFUL",
+        "SCRAGGY",
+        "RIOLU",
+        "SCRAGGY",
+        "RIOLU"
+      ],
+      "night": [
+        "HOOTHOOT",
+        "RATTATA",
+        "INKAY",
+        "MINCCINO",
+        "ELECTRIKE",
+        "AZURILL",
+        "STUFFUL",
+        "STUFFUL",
+        "SCRAGGY",
+        "RIOLU",
+        "SCRAGGY",
+        "RIOLU"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "BASCULIN_RED",
+        "BASCULIN_RED"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 50,
+      "day": [
+        "BINACLE",
+        "KRABBY",
+        "KRABBY",
+        "KRABBY",
+        "KRABBY"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "STARYU",
+        "STARYU",
+        "SHELLDER",
+        "STARYU",
+        "SHELLDER",
+        "GYARADOS",
+        "GYARADOS",
+        "STARMIE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 70,
+    "mapName": "ROUTE_3",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "WINGULL",
+        "BIDOOF",
+        "SLOWPOKE",
+        "SLOWPOKE",
+        "SHELLOS",
+        "CHERUBI",
+        "DEWPIDER",
+        "BUIZEL",
+        "POLIWAG",
+        "POLIWAG",
+        "POLIWAG",
+        "POLIWAG"
+      ],
+      "night": [
+        "WINGULL",
+        "BIDOOF",
+        "SLOWPOKE",
+        "SLOWPOKE",
+        "SHELLOS",
+        "SURSKIT",
+        "SURSKIT",
+        "BUIZEL",
+        "POLIWAG",
+        "POLIWAG",
+        "POLIWAG",
+        "POLIWAG"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "ARAQUANID",
+        "ARAQUANID"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "STARYU",
+        "KRABBY",
+        "SHELLDER",
+        "STARYU",
+        "SHELLDER",
+        "KINGLER",
+        "KINGLER",
+        "CLOYSTER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 71,
+    "mapName": "DRESCO_TOWN",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "BASCULIN_RED",
+        "BASCULIN_RED"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "STARYU",
+        "STARYU",
+        "SHELLDER",
+        "STARYU",
+        "SHELLDER",
+        "GYARADOS",
+        "GYARADOS",
+        "STARMIE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 72,
+    "mapName": "ROUTE_4",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "STARLY",
+        "STARLY",
+        "LILLIPUP",
+        "LILLIPUP",
+        "EKANS",
+        "NUMEL",
+        "BUDEW",
+        "BUDEW",
+        "MANKEY",
+        "RALTS",
+        "MANKEY",
+        "RALTS"
+      ],
+      "night": [
+        "HOOTHOOT",
+        "HOOTHOOT",
+        "LILLIPUP",
+        "LILLIPUP",
+        "EKANS",
+        "NUMEL",
+        "BUDEW",
+        "BUDEW",
+        "MANKEY",
+        "RALTS",
+        "MANKEY",
+        "RALTS"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "BASCULIN_RED",
+        "BASCULIN_RED"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CORPHISH",
+        "CORPHISH",
+        "STARYU",
+        "CRAWDAUNT",
+        "STARYU",
+        "GYARADOS",
+        "GYARADOS",
+        "STARMIE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 73,
+    "mapName": "ROUTE_5",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "PURRLOIN",
+        "TAILLOW",
+        "NIDORAN_M",
+        "NIDORAN_F",
+        "GROWLITHE",
+        "PURRLOIN",
+        "LICKITUNG",
+        "LICKITUNG",
+        "YANMA",
+        "YANMA",
+        "DITTO",
+        "DITTO"
+      ],
+      "night": [
+        "PURRLOIN",
+        "MURKROW",
+        "NIDORAN_M",
+        "NIDORAN_F",
+        "HOUNDOUR",
+        "PURRLOIN",
+        "LICKITUNG",
+        "LICKITUNG",
+        "VENONAT",
+        "VENONAT",
+        "DITTO",
+        "DITTO"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "BASCULIN_RED",
+        "BASCULIN_RED"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CORPHISH",
+        "CORPHISH",
+        "STARYU",
+        "CRAWDAUNT",
+        "STARYU",
+        "GYARADOS",
+        "GYARADOS",
+        "STARMIE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 75,
+    "mapName": "ROUTE_6",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "BUNNELBY",
+        "LEDYBA",
+        "SHINX",
+        "DEERLING",
+        "BUNNELBY",
+        "SUNKERN",
+        "SUNKERN",
+        "SUNKERN",
+        "DEERLING",
+        "SUNKERN",
+        "LEDIAN",
+        "LUXIO"
+      ],
+      "night": [
+        "BUNNELBY",
+        "SPINARAK",
+        "SHINX",
+        "DEERLING",
+        "BUNNELBY",
+        "KRICKETOT",
+        "KRICKETOT",
+        "KRICKETOT",
+        "DEERLING",
+        "KRICKETOT",
+        "ARIADOS",
+        "LUXIO"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "GOLDEEN",
+        "GOLDEEN",
+        "REMORAID",
+        "SEAKING",
+        "OCTILLERY",
+        "GYARADOS",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 76,
+    "mapName": "ROUTE_7",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "YUNGOOS",
+        "DODUO",
+        "BUNEARY",
+        "ESPURR",
+        "ABRA",
+        "MAREEP",
+        "SHINX",
+        "SHINX",
+        "YUNGOOS",
+        "BUNEARY",
+        "LUXIO",
+        "GUMSHOOS"
+      ],
+      "night": [
+        "RATTATA_A",
+        "HOOTHOOT",
+        "BUNEARY",
+        "DROWZEE",
+        "ABRA",
+        "MAREEP",
+        "SHINX",
+        "SHINX",
+        "RATTATA_A",
+        "BUNEARY",
+        "LUXIO",
+        "RATICATE_A"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "GOLDEEN",
+        "GOLDEEN",
+        "REMORAID",
+        "SEAKING",
+        "OCTILLERY",
+        "GYARADOS",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 77,
+    "mapName": "ROUTE_8",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "SNOVER",
+        "SNORUNT",
+        "SNOVER",
+        "SNORUNT",
+        "CUBCHOO",
+        "DEERLING_WINTER",
+        "DEERLING_WINTER",
+        "FLAAFFY",
+        "SNOVER",
+        "SNORUNT",
+        "MINIOR_SHIELD",
+        "MINIOR_SHIELD"
+      ],
+      "night": [
+        "SNOVER",
+        "SNORUNT",
+        "SNEASEL",
+        "SNORUNT",
+        "CUBCHOO",
+        "DEERLING_WINTER",
+        "DEERLING_WINTER",
+        "FLAAFFY",
+        "SNOVER",
+        "SNORUNT",
+        "MINIOR_SHIELD",
+        "MINIOR_SHIELD"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 50,
+      "day": [
+        "ROGGENROLA",
+        "ROGGENROLA",
+        "ROGGENROLA",
+        "ROGGENROLA",
+        "MINIOR_SHIELD"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 79,
+    "mapName": "ROUTE_9",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "SPEAROW",
+        "GRUBBIN",
+        "MARILL",
+        "MARILL",
+        "DEERLING_AUTUMN",
+        "SHROOMISH",
+        "SHROOMISH",
+        "DEERLING_AUTUMN",
+        "SKORUPI",
+        "AUDINO",
+        "SKORUPI",
+        "SKORUPI"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "MARILL",
+        "SURSKIT",
+        "MASQUERAIN",
+        "AZUMARILL",
+        "AZUMARILL"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "GOLDEEN",
+        "WISHIWASHI",
+        "SEAKING",
+        "GYARADOS",
+        "GYARADOS",
+        "BRUXISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 80,
+    "mapName": "TEHL_TOWN",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "MARILL",
+        "PSYDUCK",
+        "GOLDUCK",
+        "AZUMARILL",
+        "AZUMARILL"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "GOLDEEN",
+        "WISHIWASHI",
+        "SEAKING",
+        "GYARADOS",
+        "GYARADOS",
+        "BRUXISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 81,
+    "mapName": "ROUTE_10",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "LOTAD",
+        "TYMPOLE",
+        "MARILL",
+        "MARILL",
+        "LOTAD",
+        "LINOONE",
+        "LOMBRE",
+        "PALPITOAD",
+        "LINOONE",
+        "GOOMY",
+        "DITTO",
+        "GOOMY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "PALPITOAD",
+        "SURSKIT",
+        "LOMBRE",
+        "MASQUERAIN",
+        "MASQUERAIN"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "BRUXISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 82,
+    "mapName": "AUBURN_WATERWAY_A",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "PALPITOAD",
+        "SURSKIT",
+        "LOMBRE",
+        "MASQUERAIN",
+        "MASQUERAIN"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "GOLDEEN",
+        "WISHIWASHI",
+        "SEAKING",
+        "GYARADOS",
+        "GYARADOS",
+        "BRUXISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 83,
+    "mapName": "AUBURN_WATERWAY_B",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "LOTAD",
+        "TYMPOLE",
+        "MARILL",
+        "MARILL",
+        "LOTAD",
+        "LINOONE",
+        "LOMBRE",
+        "PALPITOAD",
+        "LINOONE",
+        "GOOMY",
+        "DITTO",
+        "GOOMY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "PALPITOAD",
+        "SURSKIT",
+        "LOMBRE",
+        "MASQUERAIN",
+        "MASQUERAIN"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "WISHIWASHI",
+        "WISHIWASHI",
+        "GOLDEEN",
+        "WISHIWASHI",
+        "SEAKING",
+        "GYARADOS",
+        "GYARADOS",
+        "BRUXISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 84,
+    "mapName": "FALLSHORE_CITY",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "PYUKUMUKU",
+        "PYUKUMUKU"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "CARVANHA",
+        "LUVDISC",
+        "OCTILLERY",
+        "SHARPEDO",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 85,
+    "mapName": "ROUTE_11",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "SWABLU",
+        "EXEGGCUTE",
+        "SPOINK",
+        "SPOINK",
+        "GULPIN",
+        "MEDITITE",
+        "MEDITITE",
+        "TOGEDEMARU",
+        "SWABLU",
+        "GULPIN",
+        "SWABLU",
+        "GULPIN"
+      ],
+      "night": [
+        "NOCTOWL",
+        "EXEGGCUTE",
+        "SPOINK",
+        "SPOINK",
+        "GULPIN",
+        "MEDITITE",
+        "MEDITITE",
+        "TOGEDEMARU",
+        "NOCTOWL",
+        "GULPIN",
+        "NOCTOWL",
+        "GULPIN"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "BASCULIN_RED",
+        "BASCULIN_RED"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "BARBOACH",
+        "LUVDISC",
+        "REMORAID",
+        "WHISCASH",
+        "OCTILLERY",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 86,
+    "mapName": "EPIDIMY_TOWN",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "FINNEON",
+        "PSYDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "GOLDUCK"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "GRAVELER",
+        "GRAVELER",
+        "GRAVELER"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "BARBOACH",
+        "BARBOACH",
+        "LUVDISC",
+        "WHISCASH",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 87,
+    "mapName": "TARMIGAN_TOWN",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "POLIWHIRL",
+        "SLOWPOKE",
+        "SLOWPOKE",
+        "POLIWAG",
+        "POLITOED"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "POLIWAG",
+        "POLIWAG",
+        "PSYDUCK",
+        "POLIWHIRL",
+        "POLIWHIRL",
+        "GOLDUCK",
+        "GOLDUCK",
+        "GOLDUCK"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 88,
+    "mapName": "ROUTE_12",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "FLETCHLING",
+        "ROCKRUFF",
+        "SOLOSIS",
+        "MIENFOO",
+        "PONYTA",
+        "SNUBBULL",
+        "SOLOSIS",
+        "MIENFOO",
+        "DEERLING_SUMMER",
+        "DEERLING_SUMMER",
+        "FLETCHINDER",
+        "DEDENNE"
+      ],
+      "night": [
+        "HOOTHOOT",
+        "ROCKRUFF",
+        "GOTHITA",
+        "MIENFOO",
+        "PONYTA",
+        "SNUBBULL",
+        "GOTHITA",
+        "MIENFOO",
+        "DEERLING_SUMMER",
+        "DEERLING_SUMMER",
+        "NOCTOWL",
+        "DEDENNE"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CARVANHA",
+        "WAILMER",
+        "WAILMER",
+        "SHARPEDO",
+        "WAILORD",
+        "GYARADOS",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 89,
+    "mapName": "DEHARA_CITY",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "PYUKUMUKU",
+        "PYUKUMUKU"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "STARYU",
+        "POLIWAG",
+        "POLIWAG",
+        "STARYU",
+        "POLIWHIRL",
+        "STARYU",
+        "STARYU",
+        "STARMIE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 90,
+    "mapName": "GREAT_DESERT_A",
+    "grass": {
+      "encounterRate": 7,
+      "day": [
+        "SANDSLASH",
+        "DWEBBLE",
+        "KROKOROK",
+        "KROKOROK",
+        "CACNEA",
+        "DARUMAKA",
+        "HIPPOWDON",
+        "VIBRAVA",
+        "HIPPOWDON",
+        "MARACTUS",
+        "HIPPOWDON",
+        "MARACTUS"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 64,
+      "day": [
+        "DWEBBLE",
+        "GEODUDE",
+        "BINACLE",
+        "BINACLE",
+        "BINACLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 91,
+    "mapName": "GREAT_DESERT_B",
+    "grass": {
+      "encounterRate": 7,
+      "day": [
+        "SANDSLASH",
+        "DWEBBLE",
+        "KROKOROK",
+        "KROKOROK",
+        "CACNEA",
+        "DARUMAKA",
+        "HIPPOWDON",
+        "VIBRAVA",
+        "HIPPOWDON",
+        "MARACTUS",
+        "HIPPOWDON",
+        "MARACTUS"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 64,
+      "day": [
+        "DWEBBLE",
+        "GEODUDE",
+        "BINACLE",
+        "BINACLE",
+        "BINACLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 92,
+    "mapName": "GREAT_DESERT_C",
+    "grass": {
+      "encounterRate": 7,
+      "day": [
+        "SANDSLASH",
+        "DWEBBLE",
+        "KROKOROK",
+        "KROKOROK",
+        "CACNEA",
+        "DARUMAKA",
+        "HIPPOWDON",
+        "VIBRAVA",
+        "HIPPOWDON",
+        "MARACTUS",
+        "HIPPOWDON",
+        "MARACTUS"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 64,
+      "day": [
+        "DWEBBLE",
+        "GEODUDE",
+        "BINACLE",
+        "BINACLE",
+        "BINACLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 93,
+    "mapName": "ROUTE_13_A",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "ALOMOMOLA",
+        "ALOMOMOLA"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BINACLE",
+        "GEODUDE",
+        "KRABBY",
+        "CORSOLA",
+        "KINGLER"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "SKRELP",
+        "CLAUNCHER",
+        "CLAUNCHER",
+        "DRAGALGE",
+        "DRAGALGE",
+        "CLAWITZER",
+        "CLAWITZER",
+        "CLAWITZER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 94,
+    "mapName": "ROUTE_13_B",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "ALOMOMOLA",
+        "ALOMOMOLA"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BINACLE",
+        "GEODUDE",
+        "KRABBY",
+        "CORSOLA",
+        "KINGLER"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CLAUNCHER",
+        "SKRELP",
+        "SKRELP",
+        "CLAWITZER",
+        "CLAWITZER",
+        "DRAGALGE",
+        "DRAGALGE",
+        "DRAGALGE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 95,
+    "mapName": "ROUTE_14_A",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTINE",
+        "MANTINE"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BINACLE",
+        "GEODUDE",
+        "KRABBY",
+        "CORSOLA",
+        "KINGLER"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "HORSEA",
+        "SHELLDER",
+        "CARVANHA",
+        "SEADRA",
+        "CLOYSTER",
+        "SHARPEDO",
+        "SHARPEDO",
+        "SHARPEDO"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 96,
+    "mapName": "ROUTE_14_B",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "PELIPPER",
+        "BIBAREL",
+        "GOLDUCK",
+        "GASTRODON",
+        "FLOATZEL",
+        "SLOWPOKE",
+        "WEEPINBELL",
+        "WEEPINBELL",
+        "FLOATZEL",
+        "SLOWPOKE",
+        "BELLSPROUT",
+        "BELLSPROUT"
+      ],
+      "night": [
+        "PELIPPER",
+        "BIBAREL",
+        "GOLDUCK",
+        "GASTRODON",
+        "FLOATZEL",
+        "SLOWPOKE",
+        "GLOOM",
+        "GLOOM",
+        "FLOATZEL",
+        "SLOWPOKE",
+        "ODDISH",
+        "ODDISH"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTINE",
+        "MANTINE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "HORSEA",
+        "SHELLDER",
+        "WAILMER",
+        "SEADRA",
+        "SHELLDER",
+        "WAILORD",
+        "WAILORD",
+        "WAILORD"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 97,
+    "mapName": "ROUTE_14_C",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "PELIPPER",
+        "BIBAREL",
+        "GOLDUCK",
+        "GASTRODON",
+        "FLOATZEL",
+        "SLOWPOKE",
+        "WEEPINBELL",
+        "WEEPINBELL",
+        "FLOATZEL",
+        "SLOWPOKE",
+        "BELLSPROUT",
+        "BELLSPROUT"
+      ],
+      "night": [
+        "PELIPPER",
+        "BIBAREL",
+        "GOLDUCK",
+        "GASTRODON",
+        "FLOATZEL",
+        "SLOWPOKE",
+        "GLOOM",
+        "GLOOM",
+        "FLOATZEL",
+        "SLOWPOKE",
+        "ODDISH",
+        "ODDISH"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTINE",
+        "MANTINE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "SHELLDER",
+        "HORSEA",
+        "LUVDISC",
+        "SHELLDER",
+        "SEADRA",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 98,
+    "mapName": "GURUN_TOWN",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTINE",
+        "MANTINE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "CORSOLA",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "CORSOLA",
+        "KINGDRA",
+        "KINGDRA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 99,
+    "mapName": "VIVILL_TOWN",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "BASCULIN_RED",
+        "BASCULIN_RED"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "HORSEA",
+        "SHELLDER",
+        "SHELLDER",
+        "SEADRA",
+        "SHELLDER",
+        "GYARADOS",
+        "GYARADOS",
+        "CLOYSTER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 100,
+    "mapName": "ROUTE_15",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "BASCULIN_RED",
+        "BASCULIN_RED"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "HORSEA",
+        "SHELLDER",
+        "SHELLDER",
+        "SEADRA",
+        "SHELLDER",
+        "GYARADOS",
+        "GYARADOS",
+        "CLOYSTER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 101,
+    "mapName": "ROUTE_16",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "TANGELA",
+        "GIRAFARIG",
+        "TANGELA",
+        "GIRAFARIG",
+        "PANCHAM",
+        "PAWNIARD",
+        "PANCHAM",
+        "CHATOT",
+        "THROH",
+        "SAWK",
+        "THROH",
+        "SAWK"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BINACLE",
+        "GEODUDE",
+        "KRABBY",
+        "CORSOLA",
+        "KINGLER"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "CORSOLA",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "CORSOLA",
+        "CORSOLA",
+        "CORSOLA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 102,
+    "mapName": "ANTISIS_CITY",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 20,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "REMORAID",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "GYARADOS",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 103,
+    "mapName": "THUNDERCAP_MT_EXT",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BINACLE",
+        "GEODUDE_A",
+        "KRABBY",
+        "CORSOLA",
+        "KINGLER"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 20,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "HORSEA",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "GYARADOS",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 104,
+    "mapName": "ROUTE_17",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "SKIPLOOM",
+        "PELIPPER",
+        "SKIPLOOM",
+        "PELIPPER",
+        "TROPIUS",
+        "PIDGEOTTO",
+        "PIDGEOTTO",
+        "TROPIUS",
+        "ZANGOOSE",
+        "SEVIPER",
+        "BAGON",
+        "BAGON"
+      ],
+      "night": [
+        "NOCTOWL",
+        "PELIPPER",
+        "NOCTOWL",
+        "PELIPPER",
+        "NOCTOWL",
+        "NOCTOWL",
+        "NOCTOWL",
+        "NOCTOWL",
+        "ZANGOOSE",
+        "SEVIPER",
+        "BAGON",
+        "BAGON"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BINACLE",
+        "GEODUDE",
+        "KRABBY",
+        "CORSOLA",
+        "KINGLER"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "CORSOLA",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "CORSOLA",
+        "CORSOLA",
+        "LAPRAS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 105,
+    "mapName": "SEAPORT_CITY",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTYKE",
+        "MANTYKE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "CORSOLA",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "CORSOLA",
+        "CORSOLA",
+        "LAPRAS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 106,
+    "mapName": "ROUTE_18_A",
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTINE",
+        "MANTINE"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BINACLE",
+        "GEODUDE",
+        "KRABBY",
+        "CORSOLA",
+        "KINGLER"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "CORSOLA",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "CORSOLA",
+        "KINGDRA",
+        "KINGDRA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 3,
+    "mapNum": 107,
+    "mapName": "ROUTE_18_B",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "FARFETCHD",
+        "PERSIAN",
+        "FARFETCHD",
+        "PERSIAN",
+        "BOUFFALANT",
+        "BOUFFALANT",
+        "FARFETCHD",
+        "PERSIAN",
+        "SUDOWOODO",
+        "SUDOWOODO",
+        "SUDOWOODO",
+        "HAPPINY"
+      ],
+      "night": [
+        "NOCTOWL",
+        "SKUNTANK",
+        "NOCTOWL",
+        "SKUNTANK",
+        "BOUFFALANT",
+        "BOUFFALANT",
+        "NOCTOWL",
+        "SKUNTANK",
+        "SUDOWOODO",
+        "SUDOWOODO",
+        "SUDOWOODO",
+        "HAPPINY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "TENTACOOL",
+        "PELIPPER",
+        "TENTACRUEL",
+        "MANTINE",
+        "MANTINE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "REMORAID",
+        "CORSOLA",
+        "HORSEA",
+        "OCTILLERY",
+        "SEADRA",
+        "CORSOLA",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 6,
+    "mapNum": 12,
+    "mapName": "CINDER_VOLCANO_SHADOW_1F",
+    "grass": {
+      "encounterRate": 7,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "CAMERUPT",
+        "GRAVELER",
+        "GRAVELER",
+        "CAMERUPT",
+        "EXCADRILL",
+        "HEATMOR",
+        "MAGMAR",
+        "HEATMOR",
+        "MAGMAR"
+      ]
+    }
+  },
+  {
+    "mapGroup": 32,
+    "mapNum": 0,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 20,
+      "day": [
+        "CLAMPERL",
+        "CLAMPERL",
+        "CLAMPERL",
+        "MAREANIE",
+        "MAREANIE",
+        "TOXAPEX",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC"
+      ]
+    }
+  },
+  {
+    "mapGroup": 32,
+    "mapNum": 1,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 20,
+      "day": [
+        "CLAMPERL",
+        "CLAMPERL",
+        "CLAMPERL",
+        "MAREANIE",
+        "MAREANIE",
+        "TOXAPEX",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC"
+      ]
+    }
+  },
+  {
+    "mapGroup": 32,
+    "mapNum": 2,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 20,
+      "day": [
+        "CLAMPERL",
+        "CLAMPERL",
+        "CLAMPERL",
+        "MAREANIE",
+        "MAREANIE",
+        "TOXAPEX",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LUVDISC",
+        "LUVDISC",
+        "RELICANTH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 32,
+    "mapNum": 5,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 20,
+      "day": [
+        "CLAMPERL",
+        "CLAMPERL",
+        "CLAMPERL",
+        "REMORAID",
+        "REMORAID",
+        "OCTILLERY",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "CORSOLA",
+        "CORSOLA",
+        "CORSOLA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 32,
+    "mapNum": 6,
+    "mapName": "UNDERWATER_ROUTE_17",
+    "grass": {
+      "encounterRate": 20,
+      "day": [
+        "CLAMPERL",
+        "CLAMPERL",
+        "CLAMPERL",
+        "CARVANHA",
+        "CARVANHA",
+        "SHARPEDO",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "CORSOLA",
+        "CORSOLA",
+        "CORSOLA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 43,
+    "mapNum": 0,
+    "mapName": "ICICLE_CAVE_1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "MAKUHITA",
+        "SPHEAL",
+        "SPHEAL",
+        "SPHEAL",
+        "SMOOCHUM",
+        "MAKUHITA",
+        "BERGMITE",
+        "ROGGENROLA",
+        "SWINUB",
+        "ROGGENROLA",
+        "SWINUB"
+      ]
+    }
+  },
+  {
+    "mapGroup": 43,
+    "mapNum": 1,
+    "mapName": "ICICLE_CAVE_B1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "MAKUHITA",
+        "SPHEAL",
+        "SPHEAL",
+        "SPHEAL",
+        "SMOOCHUM",
+        "MAKUHITA",
+        "BERGMITE",
+        "ROGGENROLA",
+        "SWINUB",
+        "ROGGENROLA",
+        "SWINUB"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SEEL",
+        "SPHEAL",
+        "DEWGONG",
+        "SEALEO",
+        "LAPRAS"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "ROGGENROLA",
+        "BERGMITE",
+        "BERGMITE",
+        "BOLDORE",
+        "BOLDORE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "SEEL",
+        "SEEL",
+        "SHELLDER",
+        "DEWGONG",
+        "SHELLDER",
+        "SHELLDER",
+        "SHELLDER",
+        "CLOYSTER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 43,
+    "mapNum": 2,
+    "mapName": "ICICLE_CAVE_B2F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "MAKUHITA",
+        "SPHEAL",
+        "SPHEAL",
+        "SPHEAL",
+        "SMOOCHUM",
+        "MAKUHITA",
+        "BERGMITE",
+        "ROGGENROLA",
+        "SWINUB",
+        "ROGGENROLA",
+        "SWINUB"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SEEL",
+        "SPHEAL",
+        "DEWGONG",
+        "SEALEO",
+        "LAPRAS"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "ROGGENROLA",
+        "BERGMITE",
+        "BERGMITE",
+        "BOLDORE",
+        "BOLDORE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "SEEL",
+        "SEEL",
+        "SHELLDER",
+        "DEWGONG",
+        "SHELLDER",
+        "SHELLDER",
+        "SHELLDER",
+        "CLOYSTER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 43,
+    "mapNum": 3,
+    "mapName": "ICICLE_CAVE_B3F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "MAKUHITA",
+        "SPHEAL",
+        "SPHEAL",
+        "SPHEAL",
+        "SMOOCHUM",
+        "MAKUHITA",
+        "BERGMITE",
+        "ROGGENROLA",
+        "SWINUB",
+        "ROGGENROLA",
+        "SWINUB"
+      ]
+    }
+  },
+  {
+    "mapGroup": 43,
+    "mapNum": 4,
+    "mapName": "ICICLE_CAVE_B3F_ALT",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HARIYAMA",
+        "SEALEO",
+        "SEALEO",
+        "SEALEO",
+        "JYNX",
+        "HARIYAMA",
+        "AVALUGG",
+        "BOLDORE",
+        "PILOSWINE",
+        "BOLDORE",
+        "PILOSWINE"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BOLDORE",
+        "AVALUGG",
+        "AVALUGG",
+        "AVALUGG",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 43,
+    "mapNum": 5,
+    "mapName": "ICICLE_CAVE_1F_BACK",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "ZUBAT",
+        "ROGGENROLA",
+        "ROGGENROLA",
+        "ROGGENROLA",
+        "MAKUHITA",
+        "MAKUHITA",
+        "MAKUHITA",
+        "DRILBUR",
+        "MAWILE",
+        "DRILBUR",
+        "MAWILE"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BOLDORE",
+        "BOLDORE",
+        "BOLDORE",
+        "BOLDORE",
+        "BOLDORE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 43,
+    "mapNum": 6,
+    "mapName": "ICICLE_CAVE_CLEARING",
+    "grass": {
+      "encounterRate": 21,
+      "day": [
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A",
+        "SANDSHREW_A"
+      ]
+    }
+  },
+  {
+    "mapGroup": 43,
+    "mapNum": 7,
+    "mapName": "ICICLE_CAVE_B4F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HARIYAMA",
+        "SEALEO",
+        "SEALEO",
+        "SEALEO",
+        "JYNX",
+        "HARIYAMA",
+        "AVALUGG",
+        "BOLDORE",
+        "PILOSWINE",
+        "BOLDORE",
+        "PILOSWINE"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "BOLDORE",
+        "BERGMITE",
+        "BERGMITE",
+        "AVALUGG",
+        "AVALUGG"
+      ]
+    }
+  },
+  {
+    "mapGroup": 45,
+    "mapNum": 1,
+    "mapName": "GRIM_WOODS",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "CATERPIE",
+        "SEEDOT",
+        "PUMPKABOO",
+        "PUMPKABOO_M",
+        "PUMPKABOO_L",
+        "PUMPKABOO_XL",
+        "GASTLY",
+        "SHUPPET",
+        "DUSKULL",
+        "PHANTUMP",
+        "DUSKULL",
+        "PHANTUMP"
+      ],
+      "night": [
+        "WEEDLE",
+        "SEEDOT",
+        "PUMPKABOO",
+        "PUMPKABOO_M",
+        "PUMPKABOO_L",
+        "PUMPKABOO_XL",
+        "GASTLY",
+        "SHUPPET",
+        "DUSKULL",
+        "PHANTUMP",
+        "DUSKULL",
+        "PHANTUMP"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "PSYDUCK",
+        "MASQUERAIN",
+        "GOLDUCK",
+        "SURSKIT",
+        "SURSKIT"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "PSYDUCK",
+        "BARBOACH",
+        "GOLDUCK",
+        "GOLDUCK",
+        "WHISCASH",
+        "WHISCASH",
+        "WHISCASH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 45,
+    "mapNum": 3,
+    "mapName": "CINDER_VOLCANO_F1",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "NUMEL",
+        "GEODUDE",
+        "GEODUDE",
+        "NUMEL",
+        "DRILBUR",
+        "TORKOAL",
+        "MAGBY",
+        "TORKOAL",
+        "MAGBY"
+      ]
+    },
+    "water": {
+      "encounterRate": 7,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "GRAVELER",
+        "GRAVELER",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 45,
+    "mapNum": 4,
+    "mapName": "CINDER_VOLCANO_2F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "NUMEL",
+        "GEODUDE",
+        "GEODUDE",
+        "NUMEL",
+        "DRILBUR",
+        "TORKOAL",
+        "MAGBY",
+        "TORKOAL",
+        "MAGBY"
+      ]
+    },
+    "water": {
+      "encounterRate": 7,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "GEODUDE",
+        "GRAVELER",
+        "GRAVELER",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 45,
+    "mapNum": 5,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "SLUGMA",
+        "SALANDIT",
+        "NUMEL",
+        "GEODUDE",
+        "GEODUDE",
+        "NUMEL",
+        "DRILBUR",
+        "TORKOAL",
+        "MAGBY",
+        "TORKOAL",
+        "MAGBY"
+      ]
+    },
+    "water": {
+      "encounterRate": 7,
+      "day": [
+        "SLUGMA",
+        "SLUGMA",
+        "SLUGMA",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 0,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "ARON",
+        "NOSEPASS",
+        "GEODUDE",
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "NOIBAT",
+        "MAKUHITA",
+        "NOIBAT"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "NOSEPASS",
+        "GEODUDE",
+        "GEODUDE",
+        "GEODUDE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 1,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "ARON",
+        "NOSEPASS",
+        "GEODUDE",
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "NOIBAT",
+        "MAKUHITA",
+        "NOIBAT"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 2,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "ARON",
+        "NOSEPASS",
+        "GEODUDE",
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "NOIBAT",
+        "MAKUHITA",
+        "NOIBAT"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 3,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "ARON",
+        "NOSEPASS",
+        "GEODUDE",
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "NOIBAT",
+        "MAKUHITA",
+        "NOIBAT"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 4,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "ARON",
+        "NOSEPASS",
+        "GEODUDE",
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "NOIBAT",
+        "MAKUHITA",
+        "NOIBAT"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "NOSEPASS",
+        "GEODUDE",
+        "GEODUDE",
+        "GEODUDE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 5,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "ARON",
+        "NOSEPASS",
+        "GEODUDE",
+        "ZUBAT",
+        "WOOBAT",
+        "MAKUHITA",
+        "NOIBAT",
+        "MAKUHITA",
+        "NOIBAT"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 6,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "WOOBAT",
+        "HARIYAMA",
+        "LAIRON",
+        "NOSEPASS",
+        "GRAVELER",
+        "GOLBAT",
+        "WOOBAT",
+        "HARIYAMA",
+        "NOIBAT",
+        "HARIYAMA",
+        "HARIYAMA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 7,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "WOOBAT",
+        "HARIYAMA",
+        "LAIRON",
+        "NOSEPASS",
+        "GRAVELER",
+        "GOLBAT",
+        "WOOBAT",
+        "HARIYAMA",
+        "NOIBAT",
+        "HARIYAMA",
+        "HARIYAMA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 8,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "WOOBAT",
+        "HARIYAMA",
+        "LAIRON",
+        "NOSEPASS",
+        "GRAVELER",
+        "GOLBAT",
+        "WOOBAT",
+        "HARIYAMA",
+        "NOIBAT",
+        "HARIYAMA",
+        "HARIYAMA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 9,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "WOOBAT",
+        "HARIYAMA",
+        "LAIRON",
+        "NOSEPASS",
+        "GRAVELER",
+        "GOLBAT",
+        "WOOBAT",
+        "HARIYAMA",
+        "NOIBAT",
+        "HARIYAMA",
+        "HARIYAMA"
+      ]
+    }
+  },
+  {
+    "mapGroup": 46,
+    "mapNum": 10,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 21,
+      "day": [
+        "GEODUDE",
+        "PHANPY",
+        "CUBONE",
+        "FEAROW",
+        "MAROWAK",
+        "MEOWTH",
+        "ONIX",
+        "SKARMORY",
+        "LARVITAR",
+        "PERSIAN",
+        "LARVITAR",
+        "PERSIAN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 47,
+    "mapNum": 0,
+    "mapName": "VALLEY_CAVE_A",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "PHANPY",
+        "NOSEPASS",
+        "ARON",
+        "WOOBAT",
+        "PHANPY",
+        "NOSEPASS",
+        "NOSEPASS",
+        "WOOBAT",
+        "ARON",
+        "WOOBAT",
+        "ARON"
+      ]
+    }
+  },
+  {
+    "mapGroup": 47,
+    "mapNum": 1,
+    "mapName": "VALLEY_CAVE_B",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "PHANPY",
+        "NOSEPASS",
+        "ARON",
+        "WOOBAT",
+        "PHANPY",
+        "NOSEPASS",
+        "NOSEPASS",
+        "NOIBAT",
+        "GLIGAR",
+        "NOIBAT",
+        "GLIGAR"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "FINNEON",
+        "WOOBAT",
+        "PSYDUCK",
+        "GOLDUCK",
+        "PSYDUCK"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE",
+        "NOSEPASS",
+        "GEODUDE",
+        "GEODUDE",
+        "GEODUDE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "FINNEON",
+        "FINNEON",
+        "PSYDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 47,
+    "mapNum": 2,
+    "mapName": "VALLEY_CAVE_C",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "PHANPY",
+        "NOSEPASS",
+        "ARON",
+        "WOOBAT",
+        "PHANPY",
+        "NOSEPASS",
+        "NOSEPASS",
+        "WOOBAT",
+        "ARON",
+        "WOOBAT",
+        "ARON"
+      ]
+    }
+  },
+  {
+    "mapGroup": 47,
+    "mapNum": 3,
+    "mapName": "VALLEY_CAVE_D",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "PHANPY",
+        "NOSEPASS",
+        "ARON",
+        "WOOBAT",
+        "PHANPY",
+        "NOSEPASS",
+        "NOSEPASS",
+        "WOOBAT",
+        "ARON",
+        "WOOBAT",
+        "ARON"
+      ]
+    }
+  },
+  {
+    "mapGroup": 48,
+    "mapNum": 1,
+    "mapName": "FROST_MOUNTAIN_3F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ROGGENROLA",
+        "WOOBAT",
+        "ARON",
+        "ARON",
+        "BRONZOR",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SNEASEL",
+        "ONIX",
+        "CRYOGONAL",
+        "ONIX",
+        "CRYOGONAL"
+      ]
+    }
+  },
+  {
+    "mapGroup": 50,
+    "mapNum": 0,
+    "mapName": "FROST_MOUNTAIN_1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ROGGENROLA",
+        "WOOBAT",
+        "ARON",
+        "ARON",
+        "BRONZOR",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SNEASEL",
+        "ONIX",
+        "CRYOGONAL",
+        "ONIX",
+        "CRYOGONAL"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SEEL",
+        "SPHEAL",
+        "DEWGONG",
+        "SEALEO",
+        "LAPRAS"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "SEEL",
+        "SEEL",
+        "SHELLDER",
+        "DEWGONG",
+        "SHELLDER",
+        "SHELLDER",
+        "SHELLDER",
+        "CLOYSTER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 50,
+    "mapNum": 1,
+    "mapName": "FROST_MOUNTAIN_2F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "ROGGENROLA",
+        "WOOBAT",
+        "ARON",
+        "ARON",
+        "BRONZOR",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SNEASEL",
+        "ONIX",
+        "CRYOGONAL",
+        "ONIX",
+        "CRYOGONAL"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "SEEL",
+        "SPHEAL",
+        "DEWGONG",
+        "SEALEO",
+        "LAPRAS"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "SEEL",
+        "SEEL",
+        "SHELLDER",
+        "DEWGONG",
+        "SHELLDER",
+        "SHELLDER",
+        "SHELLDER",
+        "CLOYSTER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 52,
+    "mapNum": 0,
+    "mapName": "CLIFF_CAVE_1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "GEODUDE_A",
+        "MACHOP",
+        "ONIX",
+        "WOOPER",
+        "MISDREAVUS",
+        "ONIX",
+        "QUAGSIRE",
+        "GRAVELER_A",
+        "MACHOKE",
+        "STEELIX",
+        "STEELIX"
+      ]
+    }
+  },
+  {
+    "mapGroup": 52,
+    "mapNum": 1,
+    "mapName": "CLIFF_CAVE_2F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "GEODUDE_A",
+        "MACHOP",
+        "ONIX",
+        "WOOPER",
+        "MISDREAVUS",
+        "ONIX",
+        "QUAGSIRE",
+        "GRAVELER_A",
+        "MACHOKE",
+        "STEELIX",
+        "STEELIX"
+      ]
+    }
+  },
+  {
+    "mapGroup": 52,
+    "mapNum": 2,
+    "mapName": "CLIFF_CAVE_3F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "GEODUDE_A",
+        "MACHOP",
+        "ONIX",
+        "WOOPER",
+        "MISDREAVUS",
+        "ONIX",
+        "QUAGSIRE",
+        "GRAVELER_A",
+        "MACHOKE",
+        "STEELIX",
+        "STEELIX"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 1,
+    "mapName": "THUNDERCAP_MT_1F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNEMITE",
+        "CUBONE",
+        "KLINK",
+        "KLINK",
+        "ELEKID",
+        "MAGNEMITE",
+        "TYNAMO",
+        "MAGNETON",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "ELECTABUZZ"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "STUNFISK",
+        "CHINCHOU",
+        "TYNAMO",
+        "STUNFISK",
+        "LANTURN"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CHINCHOU",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 2,
+    "mapName": "THUNDERCAP_MT_2F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNEMITE",
+        "TIMBURR",
+        "KLINK",
+        "KLINK",
+        "ELEKID",
+        "KLINK",
+        "TYNAMO",
+        "MAGNETON",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "ELECTABUZZ"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "STUNFISK",
+        "CHINCHOU",
+        "TYNAMO",
+        "STUNFISK",
+        "LANTURN"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE_A",
+        "GRAVELER_A",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SHUCKLE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CHINCHOU",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 3,
+    "mapName": "THUNDERCAP_MT_3F_3",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNETON",
+        "MAROWAK",
+        "KLANG",
+        "KLANG",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "EELEKTRIK",
+        "NOSEPASS",
+        "NOSEPASS",
+        "NOSEPASS",
+        "NOSEPASS"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "STUNFISK",
+        "LANTURN",
+        "TYNAMO",
+        "STUNFISK",
+        "EELEKTRIK"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GRAVELER_A",
+        "GRAVELER_A",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SHUCKLE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CHINCHOU",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 4,
+    "mapName": "THUNDERCAP_MT_3F_2",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNEMITE",
+        "CUBONE",
+        "KLINK",
+        "KLINK",
+        "ELEKID",
+        "MAGNEMITE",
+        "TYNAMO",
+        "MAGNETON",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "ELECTABUZZ"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "STUNFISK",
+        "CHINCHOU",
+        "TYNAMO",
+        "STUNFISK",
+        "LANTURN"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE_A",
+        "GRAVELER_A",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SHUCKLE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CHINCHOU",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 5,
+    "mapName": "THUNDERCAP_MT_3F_1",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNEMITE",
+        "CUBONE",
+        "KLINK",
+        "KLINK",
+        "ELEKID",
+        "MAGNEMITE",
+        "TYNAMO",
+        "MAGNETON",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "ELECTABUZZ"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "STUNFISK",
+        "CHINCHOU",
+        "TYNAMO",
+        "STUNFISK",
+        "LANTURN"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE_A",
+        "GRAVELER_A",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SHUCKLE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CHINCHOU",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 6,
+    "mapName": "THUNDERCAP_MT_3F_1_BACK",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNEMITE",
+        "CUBONE",
+        "KLINK",
+        "KLINK",
+        "ELEKID",
+        "MAGNEMITE",
+        "TYNAMO",
+        "MAGNETON",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "ELECTABUZZ"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "STUNFISK",
+        "CHINCHOU",
+        "TYNAMO",
+        "STUNFISK",
+        "LANTURN"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CHINCHOU",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 7,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNETON",
+        "GURDURR",
+        "KLINK",
+        "KLINK",
+        "ELECTABUZZ",
+        "KLINK",
+        "TYNAMO",
+        "GURDURR",
+        "KLANG",
+        "GURDURR",
+        "KLANG"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GRAVELER_A",
+        "SHUCKLE",
+        "SHUCKLE",
+        "SHUCKLE",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 8,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNEMITE",
+        "TIMBURR",
+        "KLINK",
+        "KLINK",
+        "ELEKID",
+        "KLINK",
+        "TYNAMO",
+        "MAGNETON",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "ELECTABUZZ"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 9,
+    "mapName": "THUNDERCAP_MT_4F_2",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNEMITE",
+        "TIMBURR",
+        "KLINK",
+        "KLINK",
+        "ELEKID",
+        "KLINK",
+        "TYNAMO",
+        "MAGNETON",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "ELECTABUZZ"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "STUNFISK",
+        "CHINCHOU",
+        "TYNAMO",
+        "STUNFISK",
+        "LANTURN"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE_A",
+        "GRAVELER_A",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SHUCKLE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "CHINCHOU",
+        "CHINCHOU",
+        "CHINCHOU",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN",
+        "LANTURN"
+      ]
+    }
+  },
+  {
+    "mapGroup": 53,
+    "mapNum": 11,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "NOSEPASS",
+        "MAGNEMITE",
+        "TIMBURR",
+        "KLINK",
+        "KLINK",
+        "ELEKID",
+        "KLINK",
+        "TYNAMO",
+        "MAGNETON",
+        "ELECTABUZZ",
+        "MAGNETON",
+        "ELECTABUZZ"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GEODUDE_A",
+        "GRAVELER_A",
+        "NOSEPASS",
+        "NOSEPASS",
+        "SHUCKLE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 0,
+    "mapName": "VICTORY_ROAD_CAVE_A",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "GOLBAT",
+        "BOLDORE",
+        "BOLDORE",
+        "BOLDORE",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "DURANT"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "LUMINEON",
+        "GOLBAT",
+        "MARILL",
+        "AZUMARILL",
+        "MARILL"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "FINNEON",
+        "FINNEON",
+        "PSYDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 1,
+    "mapName": "VICTORY_ROAD_CAVE_B",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "WOOBAT",
+        "GRAVELER",
+        "GRAVELER",
+        "GRAVELER",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "DURANT"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "LUMINEON",
+        "WOOBAT",
+        "MARILL",
+        "AZUMARILL",
+        "MARILL"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "FINNEON",
+        "FINNEON",
+        "PSYDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 2,
+    "mapName": "VICTORY_ROAD_VOLCANO",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "MAGCARGO",
+        "SALAZZLE",
+        "CAMERUPT",
+        "GRAVELER",
+        "GRAVELER",
+        "CAMERUPT",
+        "EXCADRILL",
+        "HEATMOR",
+        "MAGMAR",
+        "HEATMOR",
+        "MAGMAR"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "MAGCARGO",
+        "MAGCARGO",
+        "MAGCARGO",
+        "MAGCARGO",
+        "MAGCARGO"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 3,
+    "mapName": "VICTORY_ROAD_CAVE_C",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "DRUDDIGON",
+        "DRUDDIGON",
+        "DRUDDIGON",
+        "DRUDDIGON",
+        "DRUDDIGON",
+        "DRUDDIGON",
+        "TURTONATOR",
+        "TURTONATOR",
+        "DRAMPA",
+        "DRAMPA",
+        "DRAMPA",
+        "DRAMPA"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "LUMINEON",
+        "WOOBAT",
+        "MARILL",
+        "AZUMARILL",
+        "MARILL"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "FINNEON",
+        "FINNEON",
+        "PSYDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GYARADOS",
+        "GYARADOS"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 4,
+    "mapName": "VICTORY_ROAD_GRASSY",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "HEATMOR",
+        "HEATMOR",
+        "ROSELIA",
+        "ROSELIA",
+        "CHANSEY",
+        "LURANTIS",
+        "LURANTIS",
+        "LURANTIS",
+        "ROSELIA",
+        "JIGGLYPUFF",
+        "ROSELIA",
+        "JIGGLYPUFF"
+      ]
+    },
+    "water": {
+      "encounterRate": 20,
+      "day": [
+        "FLOATZEL",
+        "BASCULIN_BLUE",
+        "BASCULIN_BLUE",
+        "BASCULIN_BLUE",
+        "BASCULIN_BLUE"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC",
+        "LUVDISC",
+        "BRUXISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 5,
+    "mapName": "VICTORY_ROAD_CAVE_D",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "WOOBAT",
+        "WOOBAT",
+        "DURANT",
+        "DURANT",
+        "DURANT",
+        "TURTONATOR",
+        "DRAMPA",
+        "DRAMPA",
+        "HAKAMO_O",
+        "HAKAMO_O",
+        "HAKAMO_O",
+        "HAKAMO_O"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 6,
+    "mapName": "VICTORY_ROAD_MOUNTAINSIDE",
+    "grass": {
+      "encounterRate": 15,
+      "day": [
+        "ABOMASNOW",
+        "GLALIE",
+        "ABOMASNOW",
+        "GLALIE",
+        "VANILLISH",
+        "VANILLISH",
+        "BEARTIC",
+        "BEARTIC",
+        "BEARTIC",
+        "BEARTIC",
+        "MINIOR_SHIELD",
+        "MINIOR_SHIELD"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 7,
+    "mapName": "VICTORY_ROAD_ICE_CAVE_A",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HARIYAMA",
+        "SEALEO",
+        "SEALEO",
+        "SEALEO",
+        "JYNX",
+        "HARIYAMA",
+        "AVALUGG",
+        "GLALIE",
+        "PILOSWINE",
+        "GLALIE",
+        "PILOSWINE"
+      ]
+    }
+  },
+  {
+    "mapGroup": 55,
+    "mapNum": 8,
+    "mapName": "VICTORY_ROAD_ICE_CAVE_B",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "GOLBAT",
+        "HARIYAMA",
+        "SEALEO",
+        "SEALEO",
+        "SEALEO",
+        "JYNX",
+        "HARIYAMA",
+        "AVALUGG",
+        "GLALIE",
+        "PILOSWINE",
+        "GLALIE",
+        "PILOSWINE"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "DEWGONG",
+        "SEALEO",
+        "DEWGONG",
+        "SEALEO",
+        "LAPRAS"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "SEEL",
+        "SEEL",
+        "SHELLDER",
+        "DEWGONG",
+        "SHELLDER",
+        "SHELLDER",
+        "SHELLDER",
+        "SHELLDER"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 0,
+    "mapName": "CRYSTAL_PEAK_BOG_ENTRANCE",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GRAVELER",
+        "GRAVELER",
+        "ONIX",
+        "ONIX",
+        "ONIX"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 1,
+    "mapName": "CRYSTAL_PEAK_B1F_LEFT",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "GASTRODON_EAST",
+        "GASTRODON_EAST",
+        "GOLDUCK",
+        "GOLDUCK",
+        "DRAGONAIR"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "FINNEON",
+        "FINNEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "QWILFISH",
+        "QWILFISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 2,
+    "mapName": "CRYSTAL_PEAK_1F_MAIN_ROOM",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "GASTRODON_EAST",
+        "GASTRODON_EAST",
+        "GOLDUCK",
+        "GOLDUCK",
+        "DRAGONAIR"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "FINNEON",
+        "FINNEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "QWILFISH",
+        "QWILFISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 3,
+    "mapName": "CRYSTAL_PEAK_1F_LEFT_ROOM",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "GASTRODON_EAST",
+        "GASTRODON_EAST",
+        "GOLDUCK",
+        "GOLDUCK",
+        "DRAGONAIR"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "FINNEON",
+        "FINNEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "QWILFISH",
+        "QWILFISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 4,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIVERN",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 5,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 6,
+    "mapName": "CRYSTAL_PEAK_CUBE_ENTRANCE",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIVERN",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "GASTRODON_EAST",
+        "GASTRODON_EAST",
+        "GOLDUCK",
+        "GOLDUCK",
+        "DRAGONAIR"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "FINNEON",
+        "FINNEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "QWILFISH",
+        "QWILFISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 7,
+    "mapName": "CRYSTAL_PEAK_CLIFFSIDE",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "DRIFBLIM",
+        "DRIFBLIM",
+        "DRIFBLIM",
+        "DRIFBLIM",
+        "DRIFBLIM",
+        "DRIFBLIM",
+        "DRIFBLIM",
+        "ABSOL",
+        "RUFFLET",
+        "VULLABY",
+        "RUFFLET",
+        "VULLABY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 8,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 9,
+    "mapName": "CRYSTAL_PEAK_3F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "GASTRODON_EAST",
+        "GASTRODON_EAST",
+        "GOLDUCK",
+        "GOLDUCK",
+        "DRAGONAIR"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "FINNEON",
+        "FINNEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "QWILFISH",
+        "QWILFISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 10,
+    "mapName": "Unknown",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    },
+    "water": {
+      "encounterRate": 2,
+      "day": [
+        "GASTRODON_EAST",
+        "GASTRODON_EAST",
+        "GOLDUCK",
+        "GOLDUCK",
+        "DRAGONAIR"
+      ]
+    },
+    "rockSmash": {
+      "encounterRate": 128,
+      "day": [
+        "GRAVELER",
+        "GRAVELER",
+        "ONIX",
+        "ONIX",
+        "ONIX"
+      ]
+    },
+    "fishing": {
+      "encounterRate": 10,
+      "day": [
+        "MAGIKARP",
+        "MAGIKARP",
+        "PSYDUCK",
+        "FINNEON",
+        "FINNEON",
+        "GOLDUCK",
+        "LUMINEON",
+        "GOLDUCK",
+        "QWILFISH",
+        "QWILFISH"
+      ]
+    }
+  },
+  {
+    "mapGroup": 56,
+    "mapNum": 11,
+    "mapName": "CRYSTAL_PEAK_5F",
+    "grass": {
+      "encounterRate": 3,
+      "day": [
+        "LOUDRED",
+        "WOOBAT",
+        "LOUDRED",
+        "WOOBAT",
+        "ONIX",
+        "NOIBAT",
+        "ZWEILOUS",
+        "ZWEILOUS",
+        "STEELIX",
+        "SKARMORY",
+        "STEELIX",
+        "SKARMORY"
+      ]
+    }
+  }
+]
