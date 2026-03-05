@@ -246,9 +246,10 @@ function regexLevelUpLearnsets(textLevelUpLearnsets, conversionTable, species){
 
 
 
-function regexTMHMLearnsets(textTMHMLearnsets, species, start, end){
+async function regexTMHMLearnsets(textTMHMLearnsets, species, start, end){
     const lines = textTMHMLearnsets.split("\n")
     let name = null, startFound = false, TMHM = 0, count = 0
+    const fetchPromises = []
 
     lines.forEach(line => {
         if(line.includes(start))
@@ -278,28 +279,26 @@ function regexTMHMLearnsets(textTMHMLearnsets, species, start, end){
 
 
                 const rawTMHM = fetch(`https://raw.githubusercontent.com/${repo2}/src/tm_compatibility/${count} - ${move}.txt`)
-                .then(promises => {
-                    const textTMHM = promises.text()
-                    .then(promises => {
-                        const lines = promises.split("\n")
-
-                        lines.forEach(line => {
-                            const matchTMHM = line.match(/TM\d+|HM\d+/i)
-                            if(matchTMHM)
-                                TMHM = matchTMHM[0]
+                .then(raw => raw.text())
+                .then(text => {
+                    text.split("\n").forEach(line => {
+                        const matchTMHM = line.match(/TM\d+|HM\d+/i)
+                        if(matchTMHM)
+                            TMHM = matchTMHM[0]
 
 
-                            const matchSpecies = `SPECIES_${line.trim()}`
-                            if(species[matchSpecies] !== undefined)
-                                species[matchSpecies]["TMHMLearnsets"].push(matchMove[0])
-                        })
+                        const matchSpecies = `SPECIES_${line.trim()}`
+                        if(species[matchSpecies] !== undefined)
+                            species[matchSpecies]["TMHMLearnsets"].push(matchMove[0])
                     })
                 })
+                fetchPromises.push(rawTMHM)
             }
         }
         
     })
 
+    await Promise.all(fetchPromises)
     return species
     //return altFormsLearnsets(species, "forms", "TMHMLearnsets")
 }
@@ -310,9 +309,10 @@ function regexTMHMLearnsets(textTMHMLearnsets, species, start, end){
 
 
 
-function regexTutorLearnsets(textTutorLearnsets, species, start, end){
+async function regexTutorLearnsets(textTutorLearnsets, species, start, end){
     const lines = textTutorLearnsets.split("\n")
     let startFound = false, count = 0
+    const fetchPromises = []
 
     lines.forEach(line => {
         if(line.includes(start))
@@ -373,27 +373,26 @@ function regexTutorLearnsets(textTutorLearnsets, species, start, end){
                     move = "Dual Wingbeat"
 
                 const rawTutor = fetch(`https://raw.githubusercontent.com/${repo2}/src/tutor_compatibility/${count} - ${move}.txt`)
-                .then(promises => {
-                    const textTutor = promises.text()
-                    .then(promises => {
+                .then(raw => raw.text())
+                .then(text => {
+                    if(!/Tutor/.test(moves[matchMove[0]]["flags"].toString())){
+                        moves[matchMove[0]]["flags"].push("BF Tutor")
+                    }
 
-                        if(!/Tutor/.test(moves[matchMove[0]]["flags"].toString())){
-                            moves[matchMove[0]]["flags"].push("BF Tutor")
-                        }
-
-                        const lines = promises.split("\n")
-                        lines.forEach(line => {
-                            const matchSpecies = `SPECIES_${line.trim()}`
-                            if(species[matchSpecies] !== undefined)
-                                species[matchSpecies]["tutorLearnsets"].push(matchMove[0])
-                        })
+                    text.split("\n").forEach(line => {
+                        const matchSpecies = `SPECIES_${line.trim()}`
+                        if(species[matchSpecies] !== undefined)
+                            species[matchSpecies]["tutorLearnsets"].push(matchMove[0])
                     })
                 })
+
+                fetchPromises.push(rawTutor)
             }
         }
         
     })
 
+    await Promise.all(fetchPromises)
     return species
     //return altFormsLearnsets(species, "forms", "tutorLearnsets")
 }
