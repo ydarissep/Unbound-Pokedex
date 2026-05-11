@@ -164,10 +164,10 @@ async function reloadPopupEnhancements() {
 		yidInput.value = encodeYID(saveData.trainerIdFull);
 	}
 	saveOptionsFieldset.append(yidFieldset);
+	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedSpecies", "Randomized Species"));
 	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedAbilities", "Randomized Abilities"));
 	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedLearnset", "Randomized Learnset"));
 	saveOptionsFieldset.append(returnSaveSettingEl("saveRebalancedStats", "Rebalanced Stats"));
-	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedSpecies", "Randomized Species"));
 	const dataWrapper = document.createElement("div");
 	dataWrapper.id = "dataWrapper";
 	dataWrapper.style.display = "flex";
