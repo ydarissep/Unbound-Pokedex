@@ -145,7 +145,7 @@ function randomizeMove(trainerIdFull, trainerId, trainerSecretId, bannedNewMoves
 	return newMove;
 }
 
-function randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemonId) {
+function randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemonId, species) {
 	const speciesCount = species["SPECIES_XERNEAS_NATURAL"].ID + 1;
 	const startAt = (trainerId % speciesCount) >>> 0;
 	const xorVal = trainerSecretId % 0x400;
@@ -248,7 +248,7 @@ async function applyEnhancements(species) {
 		Object.keys(species).forEach(name => {
 			const pokemon = species[name];
 			if (pokemon.ID > 0 && pokemon.baseHP > 0) {
-				pokemon.randomized = randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemon.ID);
+				pokemon.randomized = randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemon.ID, species);
 			}
 		});
 	}
