@@ -59,10 +59,11 @@ function submitEnhancements() {
 	const randomizedAbilitiesChecked = document.getElementById("saveRandomizedAbilitiesCheckbox").checked;
 	const randomizedLearnsetChecked = document.getElementById("saveRandomizedLearnsetCheckbox").checked;
 	const rebalancedStatsChecked = document.getElementById("saveRebalancedStatsCheckbox").checked;
+	const randomizedSpeciesChecked = document.getElementById("saveRandomizedSpeciesCheckbox").checked;
 	let data = {};
 	let yidChanged = false;
 	if (yid.length === 0) {
-		if (randomizedAbilitiesChecked || randomizedLearnsetChecked) {
+		if (randomizedAbilitiesChecked || randomizedLearnsetChecked || randomizedSpeciesChecked) {
 			alert("Randomizer options require a valid YID");
 			return;
 		} else {
@@ -89,10 +90,12 @@ function submitEnhancements() {
 	const saveRandomizedAbilities = settings.includes("saveRandomizedAbilities");
 	const saveRandomizedLearnset = settings.includes("saveRandomizedLearnset");
 	const saveRebalancedStats = settings.includes("saveRebalancedStats");
+	const saveRandomizedSpecies = settings.includes("saveRandomizedSpecies");
 	changeSaveSetting("saveRandomizedAbilities", randomizedAbilitiesChecked);
 	changeSaveSetting("saveRandomizedLearnset", randomizedLearnsetChecked);
 	changeSaveSetting("saveRebalancedStats", rebalancedStatsChecked);
-	if ((yidChanged && (randomizedAbilitiesChecked || randomizedLearnsetChecked)) || (randomizedAbilitiesChecked != saveRandomizedAbilities) || (randomizedLearnsetChecked != saveRandomizedLearnset) || (rebalancedStatsChecked != saveRebalancedStats)) {
+	changeSaveSetting("saveRandomizedSpecies", randomizedSpeciesChecked);
+	if ((yidChanged && (randomizedAbilitiesChecked || randomizedLearnsetChecked || randomizedSpeciesChecked)) || (randomizedAbilitiesChecked != saveRandomizedAbilities) || (randomizedLearnsetChecked != saveRandomizedLearnset) || (rebalancedStatsChecked != saveRebalancedStats) || (randomizedSpeciesChecked != saveRandomizedSpecies)) {
 		clearSpeciesReload();
 	} else {
 		overlay.click();
@@ -164,6 +167,7 @@ async function reloadPopupEnhancements() {
 	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedAbilities", "Randomized Abilities"));
 	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedLearnset", "Randomized Learnset"));
 	saveOptionsFieldset.append(returnSaveSettingEl("saveRebalancedStats", "Rebalanced Stats"));
+	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedSpecies", "Randomized Species"));
 	const dataWrapper = document.createElement("div");
 	dataWrapper.id = "dataWrapper";
 	dataWrapper.style.display = "flex";
@@ -202,6 +206,7 @@ function clearCurrentSave() {
 	document.getElementById("saveRandomizedAbilitiesCheckbox").checked = false;
 	document.getElementById("saveRandomizedLearnsetCheckbox").checked = false;
 	document.getElementById("saveRebalancedStatsCheckbox").checked = false;
+	document.getElementById("saveRandomizedSpeciesCheckbox").checked = false;
 }
 
 async function clearSpeciesReload() {
