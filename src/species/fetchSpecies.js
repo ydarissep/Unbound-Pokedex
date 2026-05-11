@@ -158,8 +158,7 @@ function randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeci
 	newSpeciesId %= speciesCount;
 	let newSpecies = speciesById[newSpeciesId];
 	while ((newSpecies === undefined || bannedSpeciesIds.has(newSpeciesId)) && numAttempts < 100) {
-		newSpeciesId *= xorVal;
-		newSpeciesId %= speciesCount;
+		newSpeciesId = ((newSpeciesId * xorVal) & 0xFFFF) % speciesCount;
 		newSpecies = speciesById[newSpeciesId];
 		numAttempts++;
 	}
