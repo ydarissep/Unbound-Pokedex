@@ -60,6 +60,7 @@ function submitEnhancements() {
 	const randomizedLearnsetChecked = document.getElementById("saveRandomizedLearnsetCheckbox").checked;
 	const rebalancedStatsChecked = document.getElementById("saveRebalancedStatsCheckbox").checked;
 	const randomizedSpeciesChecked = document.getElementById("saveRandomizedSpeciesCheckbox").checked;
+	const gen8UnlockedChecked = document.getElementById("saveGen8UnlockedCheckbox")?.checked ?? false;
 	let data = {};
 	let yidChanged = false;
 	if (yid.length === 0) {
@@ -91,11 +92,13 @@ function submitEnhancements() {
 	const saveRandomizedLearnset = settings.includes("saveRandomizedLearnset");
 	const saveRebalancedStats = settings.includes("saveRebalancedStats");
 	const saveRandomizedSpecies = settings.includes("saveRandomizedSpecies");
+	const saveGen8Unlocked = settings.includes("saveGen8Unlocked");
 	changeSaveSetting("saveRandomizedAbilities", randomizedAbilitiesChecked);
 	changeSaveSetting("saveRandomizedLearnset", randomizedLearnsetChecked);
 	changeSaveSetting("saveRebalancedStats", rebalancedStatsChecked);
 	changeSaveSetting("saveRandomizedSpecies", randomizedSpeciesChecked);
-	if ((yidChanged && (randomizedAbilitiesChecked || randomizedLearnsetChecked || randomizedSpeciesChecked)) || (randomizedAbilitiesChecked != saveRandomizedAbilities) || (randomizedLearnsetChecked != saveRandomizedLearnset) || (rebalancedStatsChecked != saveRebalancedStats) || (randomizedSpeciesChecked != saveRandomizedSpecies)) {
+	changeSaveSetting("saveGen8Unlocked", gen8UnlockedChecked);
+	if ((yidChanged && (randomizedAbilitiesChecked || randomizedLearnsetChecked || randomizedSpeciesChecked)) || (randomizedAbilitiesChecked != saveRandomizedAbilities) || (randomizedLearnsetChecked != saveRandomizedLearnset) || (rebalancedStatsChecked != saveRebalancedStats) || (randomizedSpeciesChecked != saveRandomizedSpecies) || (gen8UnlockedChecked != saveGen8Unlocked)) {
 		clearSpeciesReload();
 	} else {
 		overlay.click();
@@ -164,10 +167,20 @@ async function reloadPopupEnhancements() {
 		yidInput.value = encodeYID(saveData.trainerIdFull);
 	}
 	saveOptionsFieldset.append(yidFieldset);
-	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedSpecies", "Randomized Species"));
+	saveOptionsFieldset.append(returnSaveSettingEl("saveRebalancedStats", "Rebalanced Stats"));
 	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedAbilities", "Randomized Abilities"));
 	saveOptionsFieldset.append(returnSaveSettingEl("saveRandomizedLearnset", "Randomized Learnset"));
-	saveOptionsFieldset.append(returnSaveSettingEl("saveRebalancedStats", "Rebalanced Stats"));
+	const randomizedSpeciesEl = returnSaveSettingEl("saveRandomizedSpecies", "Randomized Species");
+	saveOptionsFieldset.append(randomizedSpeciesEl);
+	const gen8El = returnSaveSettingEl("saveGen8Unlocked", "Gen 8 Unlocked?");
+	gen8El.style.display = settings.includes("saveRandomizedSpecies") ? "" : "none";
+	randomizedSpeciesEl.querySelector("input[type='checkbox']").addEventListener("change", function() {
+		gen8El.style.display = this.checked ? "" : "none";
+		if (!this.checked) {
+			gen8El.querySelector("input[type='checkbox']").checked = false;
+		}
+	});
+	saveOptionsFieldset.append(gen8El);
 	const dataWrapper = document.createElement("div");
 	dataWrapper.id = "dataWrapper";
 	dataWrapper.style.display = "flex";
@@ -207,6 +220,8 @@ function clearCurrentSave() {
 	document.getElementById("saveRandomizedLearnsetCheckbox").checked = false;
 	document.getElementById("saveRebalancedStatsCheckbox").checked = false;
 	document.getElementById("saveRandomizedSpeciesCheckbox").checked = false;
+	const gen8Checkbox = document.getElementById("saveGen8UnlockedCheckbox");
+	if (gen8Checkbox) gen8Checkbox.checked = false;
 }
 
 async function clearSpeciesReload() {

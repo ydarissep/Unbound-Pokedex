@@ -143,8 +143,8 @@ function randomizeMove(trainerIdFull, trainerId, trainerSecretId, bannedNewMoves
 	return newMove;
 }
 
-function randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemonId, species) {
-	const speciesCount = species["SPECIES_XERNEAS_NATURAL"].ID + 1;
+function randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemonId, species, gen8Unlocked) {
+	const speciesCount = species[gen8Unlocked ? "SPECIES_ENAMORUS_THERIAN" : "SPECIES_XERNEAS_NATURAL"].ID + 1;
 	const startAt = (trainerId % speciesCount) & 0xFFFF;
 	const xorVal = (trainerSecretId % 0x400) & 0xFFFF;
 	let numAttempts = 0;
@@ -241,10 +241,11 @@ async function applyEnhancements(species) {
 			}
 			return null;
 		}).filter(id => id !== null));
+		const gen8Unlocked = settings.includes("saveGen8Unlocked");
 		Object.keys(species).forEach(name => {
 			const pokemon = species[name];
 			if (pokemon.ID > 0 && pokemon.baseHP > 0) {
-				pokemon.randomized = randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemon.ID, species);
+				pokemon.randomized = randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemon.ID, species, gen8Unlocked);
 			}
 		});
 	}
