@@ -134,8 +134,7 @@ function randomizeMove(trainerIdFull, trainerId, trainerSecretId, bannedNewMoves
 	newMoveId %= movesCountRegular;
 	let newMove = movesById.get(newMoveId);
 	while ((newMove === undefined || bannedNewMoves.includes(newMove)) && numAttempts < 100) {
-		newMoveId *= xorVal;
-		newMoveId %= movesCountRegular;
+		newMoveId = ((newMoveId * xorVal) & 0xFFFF) % movesCountRegular;
 		newMove = movesById.get(newMoveId);
 		numAttempts++;
 	}
