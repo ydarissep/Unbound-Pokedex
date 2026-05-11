@@ -123,15 +123,14 @@ function randomizeMove(trainerIdFull, trainerId, trainerSecretId, bannedNewMoves
 	}
 	const moveId = moves[move].id;
 	const movesCountRegular = moves["MOVE_GLACIALLANCE"].id + 1;
-	const startAt = (trainerId % movesCountRegular) >>> 0;
-	const xorVal = trainerSecretId % 0x300;
+	const startAt = (trainerId % movesCountRegular) & 0xFFFF;
+	const xorVal = (trainerSecretId % 0x300) & 0xFFFF;
 	let numAttempts = 0;
-	let newMoveId = moveId + startAt;
+	let newMoveId = (moveId + startAt) & 0xFFFF;
 	if (newMoveId >= movesCountRegular) {
-		newMoveId = newMoveId - (movesCountRegular - 2);
+		newMoveId = (newMoveId - (movesCountRegular - 2)) & 0xFFFF;
 	}
-	newMoveId ^= xorVal;
-	newMoveId %= movesCountRegular;
+	newMoveId = ((newMoveId ^ xorVal) & 0xFFFF) % movesCountRegular;
 	let newMove = movesById.get(newMoveId);
 	while ((newMove === undefined || bannedNewMoves.includes(newMove)) && numAttempts < 100) {
 		newMoveId = ((newMoveId * xorVal) & 0xFFFF) % movesCountRegular;
@@ -146,15 +145,14 @@ function randomizeMove(trainerIdFull, trainerId, trainerSecretId, bannedNewMoves
 
 function randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemonId, species) {
 	const speciesCount = species["SPECIES_XERNEAS_NATURAL"].ID + 1;
-	const startAt = (trainerId % speciesCount) >>> 0;
-	const xorVal = trainerSecretId % 0x400;
+	const startAt = (trainerId % speciesCount) & 0xFFFF;
+	const xorVal = (trainerSecretId % 0x400) & 0xFFFF;
 	let numAttempts = 0;
-	let newSpeciesId = pokemonId + startAt;
+	let newSpeciesId = (pokemonId + startAt) & 0xFFFF;
 	if (newSpeciesId >= speciesCount) {
-		newSpeciesId = newSpeciesId - (speciesCount - 2);
+		newSpeciesId = (newSpeciesId - (speciesCount - 2)) & 0xFFFF;
 	}
-	newSpeciesId ^= xorVal;
-	newSpeciesId %= speciesCount;
+	newSpeciesId = ((newSpeciesId ^ xorVal) & 0xFFFF) % speciesCount;
 	let newSpecies = speciesById[newSpeciesId];
 	while ((newSpecies === undefined || bannedSpeciesIds.has(newSpeciesId)) && numAttempts < 100) {
 		newSpeciesId = ((newSpeciesId * xorVal) & 0xFFFF) % speciesCount;
