@@ -33,6 +33,23 @@ async function fetchLocationsObj(){
         window.locations = await JSON.parse(LZString.decompressFromUTF16(localStorage.getItem("locations")))   
     }
 
+    if (settings.includes("saveRandomizedSpecies")) {
+        Object.keys(locations).forEach(zone => {
+            Object.keys(locations[zone]).forEach(method => {
+                const renamedMethod = {};
+                Object.keys(locations[zone][method]).forEach(speciesName => {
+                    const randomized = (species[speciesName] && species[speciesName].randomized) || speciesName;
+                    if (randomized in renamedMethod) {
+                        renamedMethod[randomized] += locations[zone][method][speciesName];
+                    } else {
+                        renamedMethod[randomized] = locations[zone][method][speciesName];
+                    }
+                });
+                locations[zone][method] = renamedMethod;
+            });
+        });
+    }
+
     let counter = 0
     window.locationsTracker = []
     Object.keys(locations).forEach(zone => {

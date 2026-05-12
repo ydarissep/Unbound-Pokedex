@@ -123,19 +123,17 @@ function randomizeMove(trainerIdFull, trainerId, trainerSecretId, bannedNewMoves
 	}
 	const moveId = moves[move].id;
 	const movesCountRegular = moves["MOVE_GLACIALLANCE"].id + 1;
-	const startAt = (trainerId % movesCountRegular) >>> 0;
-	const xorVal = trainerSecretId % 0x300;
+	const startAt = (trainerId % movesCountRegular) & 0xFFFF;
+	const xorVal = (trainerSecretId % 0x300) & 0xFFFF;
 	let numAttempts = 0;
-	let newMoveId = moveId + startAt;
+	let newMoveId = (moveId + startAt) & 0xFFFF;
 	if (newMoveId >= movesCountRegular) {
-		newMoveId = newMoveId - (movesCountRegular - 2);
+		newMoveId = (newMoveId - (movesCountRegular - 2)) & 0xFFFF;
 	}
-	newMoveId ^= xorVal;
-	newMoveId %= movesCountRegular;
+	newMoveId = ((newMoveId ^ xorVal) & 0xFFFF) % movesCountRegular;
 	let newMove = movesById.get(newMoveId);
 	while ((newMove === undefined || bannedNewMoves.includes(newMove)) && numAttempts < 100) {
-		newMoveId *= xorVal;
-		newMoveId %= movesCountRegular;
+		newMoveId = ((newMoveId * xorVal) & 0xFFFF) % movesCountRegular;
 		newMove = movesById.get(newMoveId);
 		numAttempts++;
 	}
@@ -143,6 +141,28 @@ function randomizeMove(trainerIdFull, trainerId, trainerSecretId, bannedNewMoves
 		newMove = "MOVE_TACKLE";
 	}
 	return newMove;
+}
+
+function randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemonId, species, gen8Unlocked) {
+	const speciesCount = species[gen8Unlocked ? "SPECIES_ENAMORUS_THERIAN" : "SPECIES_XERNEAS_NATURAL"].ID + 1;
+	const startAt = (trainerId % speciesCount) & 0xFFFF;
+	const xorVal = (trainerSecretId % 0x400) & 0xFFFF;
+	let numAttempts = 0;
+	let newSpeciesId = (pokemonId + startAt) & 0xFFFF;
+	if (newSpeciesId >= speciesCount) {
+		newSpeciesId = (newSpeciesId - (speciesCount - 2)) & 0xFFFF;
+	}
+	newSpeciesId = ((newSpeciesId ^ xorVal) & 0xFFFF) % speciesCount;
+	let newSpecies = speciesById[newSpeciesId];
+	while ((newSpecies === undefined || bannedSpeciesIds.has(newSpeciesId)) && numAttempts < 100) {
+		newSpeciesId = ((newSpeciesId * xorVal) & 0xFFFF) % speciesCount;
+		newSpecies = speciesById[newSpeciesId];
+		numAttempts++;
+	}
+	if (newSpecies === undefined || (numAttempts >= 100 && bannedSpeciesIds.has(newSpeciesId))) {
+		newSpecies = "SPECIES_DITTO";
+	}
+	return newSpecies;
 }
 
 function rebalanceStat(statBase, pokemon) {
@@ -159,6 +179,7 @@ async function applyEnhancements(species) {
 	const storedSaveData = localStorage.getItem("saveData");
 	const randomAbilities = settings.includes("saveRandomizedAbilities");
 	const randomLearnset = settings.includes("saveRandomizedLearnset");
+	const randomSpecies = settings.includes("saveRandomizedSpecies");
 	const rebalancedStats = settings.includes("saveRebalancedStats");
 	if (rebalancedStats) {
 		Object.keys(species).forEach(name => {
@@ -174,7 +195,7 @@ async function applyEnhancements(species) {
 		});
 		Object.keys(species).forEach(name => species[name]["changes"] = species[name]["changes"].filter(change => change[0] != "BST" && change[0] != "baseAttack" && change[0] != "baseDefense" && change[0] != "baseHP" && change[0] != "baseSpAttack" && change[0] != "baseSpDefense" && change[0] != "baseSpeed"));
 	}
-	if (!storedSaveData || storedSaveData == "undefined" || (!randomAbilities && !randomLearnset)) {
+	if (!storedSaveData || storedSaveData == "undefined" || (!randomAbilities && !randomLearnset && !randomSpecies)) {
 		return species;
 	}
 	const saveData = JSON.parse(storedSaveData);
@@ -206,6 +227,25 @@ async function applyEnhancements(species) {
 			const pokemon = species[name];
 			if (pokemon.ID > 0 && pokemon.baseHP > 0) {
 				pokemon.levelUpLearnsets = pokemon.levelUpLearnsets.map(([move, level]) => [randomizeMove(trainerIdFull, trainerId, trainerSecretId, moveTables.gRandomizerBanTable, movesById, move), level]);
+			}
+		});
+	}
+	if (randomSpecies) {
+		const speciesTables = await getJSONFromURL(`https://raw.githubusercontent.com/${repo1}/assembly/data/species_tables.json`);
+		const speciesById = Object.fromEntries(Object.entries(species).filter(([name, values]) => values.ID != undefined).map(([name, value]) => [value.ID, name]));
+		const bannedSpeciesIds = new Set(speciesTables.randomizerBan.map(entry => {
+			if (/^0[xX]/.test(entry)) {
+				return parseInt(entry, 16);
+			} else if (entry in species) {
+				return species[entry].ID;
+			}
+			return null;
+		}).filter(id => id !== null));
+		const gen8Unlocked = settings.includes("saveGen8Unlocked");
+		Object.keys(species).forEach(name => {
+			const pokemon = species[name];
+			if (pokemon.ID > 0 && pokemon.baseHP > 0) {
+				pokemon.randomized = randomizeSpecies(trainerIdFull, trainerId, trainerSecretId, bannedSpeciesIds, speciesById, pokemon.ID, species, gen8Unlocked);
 			}
 		});
 	}
@@ -351,6 +391,7 @@ function initializeSpeciesObj(species){
         species[name]["evolutionLine"] = [name]
         species[name]["forms"] = []
         species[name]["sprite"] = ""
+        species[name]["randomized"] = ""
     }
     return species
 }
