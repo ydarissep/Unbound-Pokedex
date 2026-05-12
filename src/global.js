@@ -22,7 +22,7 @@ fetch('https://raw.githubusercontent.com/ydarissep/dex-core/main/index.html').th
     await fetch("https://raw.githubusercontent.com/ydarissep/dex-core/main/src/global.js").then(async response => {
         return response.text()
     }).then(async text => {
-        text = text.replace("Credit to ris", "Credit to DMan16 for:\n- Enhancements settings\n\nCredit to ris")
+        text = text.replace("Credit to ris", "Credit to DMan16 for:\n- Randomized Abilities\n- Randomized Learnset\n- Rebalanced Stats\n\nCredit to Aussi for:\n- Randomized Species\n\nCredit to ris")
         await eval.call(window,text)
     }).catch(error => {
         console.warn(error)
