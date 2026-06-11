@@ -37,6 +37,8 @@ function regexMoves(textMoves, moves){
     const lines = textMoves.split("\n")
     let move = null, change = false
     let idx = 0
+    const isDefined = /BUFFED_LEECH_LIFE|FROSTBITE|UNBOUND/
+    const isUndefined = /ACTUAL_PLA_MOVE_POWERS|GEN_6_POWER_NERFS|DARK_VOID_ACC_NERF/
     const regex = /ACTUAL_PLA_MOVE_POWERS|BUFFED_LEECH_LIFE|GEN_6_POWER_NERFS|DARK_VOID_ACC_NERF|FROSTBITE|UNBOUND/
 
     lines.forEach(line => {
@@ -59,11 +61,21 @@ function regexMoves(textMoves, moves){
                 }
             }
         }
-        if(/#ifn?def/.test(line) && regex.test(line)){
-            change = true
+        if(/#ifdef/.test(line) && regex.test(line)){
+            if(isDefined.test(line)){
+                change = false
+            }
+            else{
+                change = true
+            }
         }
-        else if(line.includes("ifndef")){
-            change = false
+        else if(/#ifndef/.test(line) && regex.test(line)){
+            if(isUndefined.test(line)){
+                change = false
+            }
+            else{
+                change = true
+            }
         }
         else if(line.includes("else")){
             if(change === true){

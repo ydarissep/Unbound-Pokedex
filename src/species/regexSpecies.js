@@ -603,7 +603,7 @@ function altFormsLearnsets(species, input, output){
                 const targetSpecies = species[name][input][j]
 
                 if(species[targetSpecies][output].length <= 0){
-                    species[targetSpecies][output] = species[name][output]
+                    species[targetSpecies][output] = JSON.parse(JSON.stringify(species[name][output]))
                 }
             }
         }
